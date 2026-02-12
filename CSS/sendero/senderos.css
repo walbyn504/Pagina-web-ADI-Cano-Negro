@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f9f6;
+}
+
+/* ================= HEADER ================= */
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(90deg, #0f6b2f, #148a3d);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+
+.main-header.scrolled {
+    padding: 10px 60px;
+    background: #0c5a27;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.logo-area i {
+    font-size: 32px;
+    color: #00e676;
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo-text span {
+    font-size: 13px;
+    opacity: 0.85;
+    letter-spacing: 1px;
+}
+
+/* NAV */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 5px;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    background: #00e676;
+    transition: 0.3s ease;
+    border-radius: 2px;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+nav a.active::after {
+    width: 100%;
+}
+
+nav a.active {
+    font-weight: 600;
+}
+
+/* HERO */
+.hero-senderos {
+    height: 95vh;
+    background: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+              ),
+              url('../../img/senderos/sendero.jpg') center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    color: white;
+}
+
+.hero-senderos h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-senderos p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ================= INFO SENDEROS ================= */
+
+.info-senderos {
+    padding: 100px 60px 50px 60px; 
+    background: #f4f8f5;
+    text-align: center;
+}
+
+.info-senderos h2 {
+    font-size: 32px;
+    color: #0f6b2f;
+    margin-bottom: 50px;
+}
+
+.info-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.info-box {
+    background: white;
+    padding: 40px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+}
+
+.info-box i {
+    font-size: 40px;
+    color: #1fa85b;
+    margin-bottom: 20px;
+}
+
+.info-box h3 {
+    margin-bottom: 15px;
+    color: #0f6b2f;
+}
+
+.info-box p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* SECCIÓN */
+.senderos-section {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+.senderos-section h2 {
+    font-size: 36px;
+    color: #0f6b2f;
+    margin-bottom: 50px;
+}
+
+/* CARDS */
+.senderos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.sendero-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.sendero-card:hover {
+    transform: translateY(-10px);
+}
+
+.sendero-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.sendero-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.sendero-info h3 {
+    margin-bottom: 10px;
+    color: #0f6b2f;
+}
+
+.sendero-info h3 a {
+    text-decoration: none;
+    color: #0f6b2f;
+    transition: 0.3s;
+}
+
+.sendero-info h3 a:hover {
+    color: #10ff78;
+}
+
+.sendero-info span {
+    display: block;
+    margin-top: 15px;
+    color: #555;
+}
+
+.info-box {
+    background: white;
+    padding: 40px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+
+    position: relative;   /* ← necesario para ::before */
+    overflow: hidden;     /* ← evita que la línea sobresalga */
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Línea decorativa superior */
+.info-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0f6b2f, #1fa85b);
+}
+
+
+/* ================= FOOTER ================= */
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links a {
+    font-size: 26px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #a5d6a7;
+    transform: scale(1.2);
+}
+
+/* ================= BOTÓN WHATSAPP ================= */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    font-size: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 100px 20px 60px 20px;
+    }
+}
+

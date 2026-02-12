@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f8f5;
+    color: #333;
+}
+
+/* ================= HERO ================= */
+
+.album-header {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 8%;
+    background: linear-gradient(
+                rgba(0,0,0,0.55),
+                rgba(0,0,0,0.55)
+              ),
+              url('../../img/senderos/montaña/senderoMontaña.jpg') center/cover no-repeat;
+    color: white;
+    position: relative;
+}
+
+.album-header .hero-text {
+    max-width: 600px;
+}
+
+.album-header h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #00e676;
+}
+
+.album-header p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+
+/* ================= BREADCRUMB SOBRE HERO ================= */
+
+.breadcrumb {
+    position: absolute;      /* ← clave */
+    top: 35px;
+    right: 8%;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    z-index: 999;
+    color: #00e676;
+}
+
+
+.breadcrumb a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.25s ease;
+    font-size: 20px;
+}
+
+.breadcrumb a:hover {
+    color: #00e676;
+}
+
+.breadcrumb span {
+    margin: 0 10px;
+    opacity: 0.4;
+}
+
+.breadcrumb strong {
+    font-weight: 500;
+    color: white;
+}
+
+
+/* ================= INFO SECTION ================= */
+
+.info-section {
+    padding: 90px 8%;
+    background: linear-gradient(to bottom, #f4f8f5, #ffffff);
+}
+
+/* Título bonito */
+.info-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.info-title h2 {
+    font-size: 34px;
+    color: #0f6b2f;
+    margin-bottom: 10px;
+}
+
+.info-title p {
+    color: #777;
+    font-size: 16px;
+}
+
+/* Contenedor cards */
+.info-album {
+    display: flex;
+    gap: 35px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cards */
+.info-box, 
+.data-box {
+    flex: 1;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Línea decorativa superior */
+.info-box::before,
+.data-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
+
+/* Colorcito elegante */
+.info-box::before {
+    background: #0f6b2f;
+}
+
+.data-box::before {
+    background: #148a3d;
+}
+
+.info-box:hover,
+.data-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+}
+
+/* Títulos */
+.info-box h3,
+.data-box h3 {
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.info-box h3 {
+    color: #0f6b2f;
+}
+
+.data-box h3 {
+    color: #148a3d;
+}
+
+/* Lista */
+.data-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.data-box li {
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #444;
+}
+
+
+/* ================= GALERÍA ================= */
+
+.gallery {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    color: #0f6b2f;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.4s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.08);
+}
+
+/* ================= LIGHTBOX PRO ================= */
+
+.lightbox {
+    cursor: zoom-in;
+}
+
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Imagen */
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+    animation: zoomIn 0.3s ease;
+}
+
+/* Botón cerrar */
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.lightbox-close:hover {
+    transform: scale(1.2);
+}
+
+/* Flechas */
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    user-select: none;
+    transition: 0.3s ease;
+}
+
+.lightbox-arrow:hover {
+    transform: translateY(-50%) scale(1.15);
+}
+
+.lightbox-prev {
+    left: 30px;
+}
+
+.lightbox-next {
+    right: 30px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
