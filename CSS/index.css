@@ -258,6 +258,14 @@ nav a.active {
     color: #00e676; /* verde más claro */
 }
 
+.image-credit {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    padding: 0 20px 15px 20px;
+}
+
+
 /* ================= FOOTER ================= */
 footer {
     background: #1b5e20;
