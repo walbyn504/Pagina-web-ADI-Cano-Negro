@@ -254,6 +254,10 @@ nav a.active {
     color: #1b5e20;
 }
 
+.card:hover h3 {
+    color: #00e676; /* verde más claro */
+}
+
 /* ================= FOOTER ================= */
 footer {
     background: #1b5e20;
