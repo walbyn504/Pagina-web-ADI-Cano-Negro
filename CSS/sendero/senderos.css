@@ -15,7 +15,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    background: linear-gradient(90deg, #0f6b2f, #148a3d);
+    background: linear-gradient(90deg, #109f42, #0ca541);
     backdrop-filter: blur(6px);
     box-shadow: 0 6px 25px rgba(0,0,0,0.25);
     display: flex;
@@ -24,6 +24,7 @@ body {
     padding: 10px 60px;
     z-index: 1000;
     transition: 0.3s ease;
+    height: 100px;
 }
 
 .main-header.scrolled {
@@ -32,15 +33,21 @@ body {
     box-shadow: 0 6px 25px rgba(0,0,0,0.25);
 }
 
+.logo-img {
+    height: 140px;
+    width: auto;
+    object-fit: contain;
+}
+
 .logo-area {
     display: flex;
     align-items: center;
     gap: 15px;
     color: white;
+    font-size: 32px;
 }
 
 .logo-area i {
-    font-size: 32px;
     color: #00e676;
 }
 
@@ -101,7 +108,7 @@ nav a.active {
 .hero-senderos {
     height: 95vh;
     background: linear-gradient(
-                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.10),
                 rgba(0, 0, 0, 0.6)
               ),
               url('../../img/senderos/sendero.jpg') center/cover no-repeat;
