@@ -17,7 +17,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    background: linear-gradient(90deg, #109f42, #0ca541);
+    background: linear-gradient(90deg, #056125, #056125);
     backdrop-filter: blur(6px);
     box-shadow: 0 6px 25px rgba(0,0,0,0.25);
     display: flex;
@@ -115,7 +115,7 @@ nav a.active {
                 rgba(0, 0, 0, 0.20),
                 rgba(0, 0, 0, 0.20)
               ),
-              url('../img/index/fondo-cañoNegro.jpeg') center/cover no-repeat;
+              url('../img/index/fondoCañoNegro.jpeg') center/cover no-repeat;
 
     display: flex;
     align-items: center;
