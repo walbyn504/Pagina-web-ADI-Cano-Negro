@@ -1,276 +1,463 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ================= VARIABLES ================= */
+
+:root{
+    --verde-principal:#1b5e20;
+    --verde-secundario:#00e676;
+    --verde-hover:#00c853;
+    --fondo:#f4f8f5;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #f5f9f6;
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f5f9f6;
+    padding-top:100px;
 }
 
 /* ================= HEADER ================= */
 
-.main-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: linear-gradient(90deg, #056125, #056125);
-    backdrop-filter: blur(6px);
-    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 60px;
-    z-index: 1000;
-    transition: 0.3s ease;
-    height: 100px;
+.main-header{
+    position:fixed;
+    width:100%;
+    top:0;
+
+    background:linear-gradient(90deg,#056125,#0b7a34);
+
+    backdrop-filter:blur(6px);
+
+    box-shadow:0 8px 30px rgba(0,0,0,0.2);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 70px;
+
+    z-index:1000;
+
+    transition:all 0.3s ease;
+
+    height:100px;
 }
 
-.main-header.scrolled {
-    padding: 10px 60px;
-    background: #0c5a27;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+.main-header.scrolled{
+    background:rgba(27,94,32,0.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
 }
 
-.logo-img {
-    height: 140px;
-    width: auto;
-    object-fit: contain;
+/* ================= LOGO ================= */
+
+.logo-img{
+    height:80px;
+    width:auto;
+    object-fit:contain;
 }
 
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: white;
-    font-size: 32px;
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:white;
+    font-size:30px;
 }
 
-.logo-area i {
-    font-size: 32px;
-    color: #00e676;
+.logo-area i{
+    font-size:32px;
+    color:var(--verde-secundario);
 }
 
-.logo-text h1 {
-    font-size: 24px;
-    font-weight: 700;
+.logo-text h1{
+    font-size:24px;
+    font-weight:700;
 }
 
-.logo-text span {
-    font-size: 13px;
-    opacity: 0.85;
-    letter-spacing: 1px;
+.logo-text span{
+    font-size:13px;
+    opacity:0.85;
+    letter-spacing:1px;
 }
 
-/* NAV */
+/* ================= NAV ================= */
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
 }
 
-nav a {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    padding: 8px 5px;
-    transition: 0.3s;
+nav a{
+    position:relative;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    padding:8px 5px;
+    transition:0.3s;
 }
 
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0%;
-    height: 3px;
-    background: #00e676;
-    transition: 0.3s ease;
-    border-radius: 2px;
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:3px;
+
+    background:var(--verde-secundario);
+
+    transition:0.3s ease;
+
+    border-radius:2px;
 }
 
-nav a:hover::after {
-    width: 100%;
+nav a:hover::after{
+    width:100%;
 }
 
-
-nav a.active::after {
-    width: 100%;
+nav a.active::after{
+    width:100%;
 }
 
-nav a.active {
-    font-weight: 600;
+nav a.active{
+    font-weight:600;
 }
 
-/* HERO */
-.hero-comunidad {
-    height: 95vh;
-    background: linear-gradient(
-                rgba(0, 0, 0, 0.20),
-                rgba(0, 0, 0, 0.20)
-              ),
-              url('../../img/comunidad/cañoNegro.jpg') center/cover no-repeat;
+/* ================= HERO ================= */
 
-    display: flex;
-    align-items: center;
-    padding: 0 80px;
-    color: white;
+.hero-comunidad{
+
+    min-height:95vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.40),
+        rgba(0,0,0,0.40)
+    ),
+    url('../../img/comunidad/cañoNegro.jpg') center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 80px;
+
+    color:white;
 }
 
-.hero-comunidad h2 {
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 20px;
+/* CONTENEDOR HERO */
+
+.hero-content{
+    max-width:700px;
 }
 
-.hero-comunidad p {
-    font-size: 20px;
-    margin-top: 10px;
+/* TITULO HERO */
+
+.hero-comunidad h2{
+
+    font-size:56px;
+    margin-bottom:15px;
+    font-weight:700;
+
+    text-shadow:
+        0 6px 25px rgba(0,0,0,0.9),
+        0 3px 10px rgba(0,0,0,0.8);
+
+    animation:aparecer 1s ease;
 }
 
-/* ===== SECCION VISUAL COMUNIDAD ===== */
+/* TEXTO HERO */
 
-.info-comunidad {
-    padding: 80px 10%;
-    background: #ffffff;
+.hero-comunidad p{
+
+    font-size:20px;
+    line-height:1.6;
+    font-weight:600;
+
+    text-shadow:
+        0 4px 15px rgba(0,0,0,0.85);
+
+    animation:aparecer 1.4s ease;
 }
 
-.info-row {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    margin-bottom: 80px;
-    flex-wrap: wrap;
+/* ================= ANIMACIÓN HERO ================= */
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
 }
 
-.info-row.reverse {
-    flex-direction: row-reverse;
+/* ================= SECCION COMUNIDAD ================= */
+
+.info-comunidad{
+    padding:80px 10%;
+    background:white;
 }
 
-.info-img img {
-    width: 500px;
-    border-radius: 20px;
-    object-fit: cover;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-    transition: transform 0.4s ease;
-    display: block;
+.info-row{
+
+    display:flex;
+    align-items:center;
+
+    gap:60px;
+
+    margin-bottom:80px;
+
+    flex-wrap:wrap;
+
+    animation:fadeUp 0.8s ease;
+    transition:0.3s ease;
 }
 
-.info-img img:hover {
-    transform: scale(1.05);
+.info-row:hover{
+    transform:translateY(-5px);
 }
 
-.info-text {
-    flex: 1;
+.info-row.reverse{
+    flex-direction:row-reverse;
 }
 
-.info-text h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #2d6a4f;
+/* IMAGEN */
+
+.info-img img{
+
+    width:500px;
+
+    border-radius:20px;
+
+    object-fit:cover;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+
+    transition:0.5s ease;
+
+    display:block;
 }
 
-.info-text h2 i {
-    margin-right: 10px;
-    color: #40916c;
+.info-img img:hover{
+    transform:scale(1.07);
+    box-shadow:0 20px 50px rgba(0,0,0,0.18);
 }
 
-.info-text p {
-    line-height: 1.8;
-    font-size: 16px;
+/* TEXTO */
+
+.info-text{
+    flex:1;
 }
 
-.btn-ver-mas {
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    color: #2d6a4f;
+.info-text h2{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+    color:#2d6a4f;
 }
 
-.btn-ver-mas:hover {
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    color: #26fb9b;
+.info-text h2 i{
+    margin-right:10px;
+    color:#40916c;
 }
 
+/* línea decorativa */
+
+.info-text h2::after{
+
+    content:"";
+
+    width:120px;
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        #2d6a4f,
+        var(--verde-secundario)
+    );
+
+    display:block;
+
+    margin-top:12px;
+
+    border-radius:3px;
+}
+
+.info-text p{
+
+    line-height:1.8;
+
+    font-size:16px;
+}
+
+/* BOTÓN VER MÁS */
+
+.btn-ver-mas{
+
+    font-weight:500;
+
+    letter-spacing:0.5px;
+
+    color:#2d6a4f;
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    transition:0.3s;
+}
+
+.btn-ver-mas:hover{
+
+    color:#26fb9b;
+
+    transform:translateX(5px);
+}
 
 /* ================= FOOTER ================= */
-footer {
-    background: #1b5e20;
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
+
+footer{
+
+    background:linear-gradient(
+        90deg,
+        #1b5e20,
+        #2e7d32
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:10px 20px;
 }
 
-.social-links {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+.social-links{
+
+    margin-top:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
 }
 
-.social-links a {
-    font-size: 26px;
-    color: white;
-    transition: 0.3s;
+.social-links a{
+
+    font-size:26px;
+
+    color:white;
+
+    transition:0.3s;
 }
 
-.social-links a:hover {
-    color: #a5d6a7;
-    transform: scale(1.2);
+.social-links a:hover{
+
+    color:#a5d6a7;
+
+    transform:scale(1.2);
 }
 
-/* ================= BOTÓN WHATSAPP ================= */
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 25px;
-    right: 25px;
-    background: #25d366;
-    color: white;
-    border-radius: 50%;
-    font-size: 28px;
+/* ================= WHATSAPP ================= */
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.whatsapp-float{
 
-    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-    transition: 0.3s;
+    position:fixed;
+
+    width:60px;
+    height:60px;
+
+    bottom:25px;
+    right:25px;
+
+    background:#25d366;
+
+    color:white;
+
+    border-radius:50%;
+
+    font-size:28px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:0 6px 18px rgba(0,0,0,0.3);
+
+    transition:0.3s;
 }
 
-.whatsapp-float:hover {
-    transform: scale(1.1);
+.whatsapp-float:hover{
+    transform:scale(1.1);
+}
+
+/* ================= ANIMACIONES ================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
 
-    .info-img {
-        height: 250px;
+@media (max-width:768px){
+
+    .hero-comunidad{
+        padding:0 30px;
+        text-align:center;
     }
 
-    header {
-        padding: 15px 20px;
-        flex-direction: column;
-        gap: 10px;
+    .hero-comunidad h2{
+        font-size:34px;
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+    .hero-comunidad p{
+        font-size:18px;
     }
 
-    .hero h2 {
-        font-size: 28px;
+    .info-img img{
+        width:100%;
+        height:250px;
     }
 
-    .section {
-        padding: 100px 20px 60px 20px;
+    .main-header{
+        padding:15px 20px;
+        flex-direction:column;
+        gap:10px;
+        height:auto;
     }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
 }
