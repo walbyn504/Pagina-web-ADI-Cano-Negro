@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f5f9f6;
+    color:#333;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:90vh;
+    display:flex;
+    align-items:center;
+    padding:0 10%;
+    background:linear-gradient(
+            rgba(0,0,0,0.30),
+            rgba(0,0,0,0.2)
+        ),
+        url('../../img/comunidad/vidaComunitaria/vidaComunitaria.jpg') center/cover no-repeat;
+    color:white;
+    position:relative;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+    font-weight:700;
+    color:#00e676;
+    text-shadow:0 5px 15px rgba(0,0,0,0.6);
+}
+
+.hero p{
+    font-size:18px;
+    text-shadow:0 5px 15px rgba(0,0,0,0.6);
+}
+
+/* ================= BREADCRUMB ================= */
+
+.breadcrumb{
+    position:absolute;
+    top:30px;
+    right:10%;
+}
+
+.breadcrumb a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:20px;
+}
+
+.breadcrumb a:hover{
+    color:#00e676;
+}
+
+.breadcrumb span{
+    margin:0 8px;
+    opacity:0.5;
+}
+
+/* ================= SECCIONES ================= */
+
+.section{
+    padding:70px 0;
+}
+
+.section.alt{
+    background:#ffffff;
+}
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 10%;
+}
+
+/* ================= TITULOS ================= */
+
+.section h2{
+    font-size:32px;
+    margin-bottom:40px;
+    color:#14532d;
+    padding-bottom:15px;
+    border-bottom:4px solid #00e676;
+}
+
+.section h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#166534;
+}
+
+/* ================= PARRAFOS ================= */
+
+.section p{
+    margin-bottom:20px;
+    line-height:1.7;
+    font-size:16px;
+}
+
+/* ================= BLOQUES DE INFORMACION ================= */
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.07);
+    transition:0.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,0.15);
+}
+
+.info-card h3{
+    margin-bottom:10px;
+}
+
+/* ================= DOS COLUMNAS ================= */
+
+.two-columns{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.text{
+    flex:1;
+}
+
+.collage{
+    flex:1;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.collage img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.4s;
+}
+
+.collage img:hover{
+    transform:scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#14532d;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:1000px){
+
+.info-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+}
+
+@media (max-width:700px){
+
+.info-grid{
+    grid-template-columns:1fr;
+}
+
+.hero{
+    padding:0 6%;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+}
