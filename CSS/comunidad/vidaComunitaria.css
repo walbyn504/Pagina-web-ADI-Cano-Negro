@@ -28,6 +28,7 @@ body{
 
 .hero-text{
     max-width:600px;
+    font-weight: 700;
 }
 
 .hero h1{

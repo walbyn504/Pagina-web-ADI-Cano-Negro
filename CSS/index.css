@@ -125,12 +125,14 @@ nav a.active {
 
 .hero-content {
     max-width: 800px;
+    font-weight: 700;
 }
 
 .location {
     color: #00e676;
     font-size: 16px;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .location i {
