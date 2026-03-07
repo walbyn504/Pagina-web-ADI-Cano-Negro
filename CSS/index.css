@@ -115,7 +115,7 @@ nav a.active {
                 rgba(0, 0, 0, 0.20),
                 rgba(0, 0, 0, 0.20)
               ),
-              url('../img/index/cañoNegroFondo.jpg') center/cover no-repeat;
+              url('../img/index/fondo-cañoNegro.jpeg') center/cover no-repeat;
 
     display: flex;
     align-items: center;
