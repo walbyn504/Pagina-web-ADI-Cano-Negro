@@ -1,148 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADI Caño Negro</title>
-    <link rel="stylesheet" href="../CSS/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<header class="main-header">
-    <div class="logo-area">
-        <img src="../img/logo_ADI_blanco.png" alt="Logo ADI Caño Negro" class="logo-img">
-    
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="#" class="active">Inicio</a></li>
-            <li><a href="../HTML/Senderos/senderos.html">Senderos</a></li>
-            <li><a href="../HTML/comunidad/comunidad.html">Comunidad</a></li>
-            <li><a href="#">Flora y Fauna</a></li>
-            <li><a href="#">Emprendedores</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Bandera Azul Ecológica</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-<section class="hero">
-    <div class="hero-content">
-
-        <h1>
-            Bienvenidos al <br>
-            <span>ADI Caño Negro</span>
-        </h1><br>
-
-        <p class="description">
-            Un tesoro natural en el norte de Costa Rica. Hogar de más de 300 especies
-            de aves, caimanes, monos y una biodiversidad única en el mundo.
-        </p>
-        <br><br>
-        <p class="location">
-            <i class="fa-solid fa-location-dot"></i>
-            Caño Negro, Los Chiles, Alajuela
-        </p>
-    </div>
-</section>
-
-<section class="about-refuge">
-    <div class="about-container">
-        <div class="about-text">
-            <h2>Refugio de Vida Silvestre Caño Negro</h2>
-            <p>
-                El Refugio de Vida Silvestre Caño Negro es uno de los humedales
-                más importantes de Costa Rica y de Centroamérica. Es hogar de
-                más de 300 especies de aves, reptiles, mamíferos y una amplia
-                diversidad de flora.
-            </p>
-
-            <p>
-                Este ecosistema es fundamental para la conservación de especies
-                migratorias y residentes, convirtiéndose en un destino clave
-                para el ecoturismo y la investigación ambiental.
-            </p>
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <img src="../img/logo_ADI_blanco.png" alt="Logo ADI Caño Negro" class="logo-img">
+            <div class="logo-text">
+                <span>ADI Caño Negro</span>
+            </div>
         </div>
 
-        <div class="about-image">
-            <img src="../img/index/garzaBlanca.jpg" alt="Refugio Caño Negro">
-            <small class="image-credit">
-                Foto: Juan Pérez
-            </small>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="../HTML/Senderos/senderos.html">Senderos</a></li>
+                <li><a href="../HTML/comunidad/comunidad.html">Comunidad</a></li>
+                <li><a href="#">Flora y Fauna</a></li>
+                <li><a href="#">Emprendedores</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Bandera Azul</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-tag">Naturaleza, cultura y conservación</p>
+
+            <h1>
+                Descubre la belleza de <br>
+                <span>Caño Negro</span>
+            </h1>
+
+            <p class="description">
+                Un destino único en el norte de Costa Rica, rodeado de biodiversidad,
+                paisajes impresionantes y una comunidad comprometida con la protección
+                de su riqueza natural.
+            </p>
+
+            <p class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                Caño Negro, Los Chiles, Alajuela
+            </p>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="section">
-    <h2>Explora Nuestra Comunidad</h2>
+    <!-- ================= ABOUT ================= -->
+    <section class="about-refuge" id="refugio">
+        <div class="container about-container">
+            <div class="about-text">
+                <span class="section-label">Sobre el refugio</span>
+                <h2>Refugio de Vida Silvestre Caño Negro</h2>
+                <p>
+                    El Refugio de Vida Silvestre Caño Negro es uno de los humedales
+                    más importantes de Costa Rica y Centroamérica. Su riqueza ecológica
+                    lo convierte en un lugar esencial para la protección de aves,
+                    reptiles, mamíferos y una amplia diversidad de flora.
+                </p>
 
-    <div class="cards">
+                <p>
+                    Además de su valor ambiental, Caño Negro representa una oportunidad
+                    para el ecoturismo, la investigación y el fortalecimiento de la comunidad
+                    a través de un desarrollo vinculado con la naturaleza.
+                </p>
+            </div>
 
-        <a href="flora.html" class="card">
-            <img src="../img/index/jabiru.jpg" alt="">
-            <h3>Flora y Fauna</h3>
-            <small class="image-credit">
-                Foto: Juan Pérez
-            </small>
+            <div class="about-image">
+                <img src="../img/index/garzaBlanca.jpg" alt="Refugio Caño Negro">
+                <small class="image-credit">Foto: Juan Pérez</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats-section">
+        <div class="container">
+            <span class="section-label center">Nuestra riqueza natural</span>
+            <h2 class="section-title">Caño Negro en cifras</h2>
+            <p class="section-subtitle">
+                Un destino que destaca por su biodiversidad, su importancia ecológica
+                y el valor de su entorno natural.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3>300+</h3>
+                    <p>Especies de aves</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>100%</h3>
+                    <p>Compromiso con la conservación</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>1</h3>
+                    <p>Humedal de gran importancia ecológica</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CARDS ================= -->
+    <section class="explore-section" id="explora">
+        <div class="container">
+            <span class="section-label center">Explora más</span>
+            <h2 class="section-title">Nuestra comunidad y sus espacios</h2>
+            <p class="section-subtitle">
+                Conoce algunos de los elementos que forman parte de la identidad
+                natural, social y cultural de Caño Negro.
+            </p>
+
+            <div class="cards">
+                <a href="flora.html" class="card">
+                    <div class="card-image">
+                        <img src="../img/index/jabiru.jpg" alt="Flora y fauna">
+                        <span class="card-tag">Naturaleza</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Flora y Fauna</h3>
+                        <p>Descubre especies emblemáticas y la riqueza biológica que distingue a la zona.</p>
+                        <span class="card-link">Ver más <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="../HTML/Senderos/senderos.html" class="card">
+                    <div class="card-image">
+                        <img src="../img/index/sendero.jpg" alt="Senderos naturales">
+                        <span class="card-tag">Aventura</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Senderos Naturales</h3>
+                        <p>Recorre espacios llenos de vegetación, paisajes y conexión con el entorno.</p>
+                        <span class="card-link">Ver más <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="bandera.html" class="card">
+                    <div class="card-image">
+                        <img src="../img/index/banderaAzul.jpg" alt="Bandera Azul Ecológica">
+                        <span class="card-tag">Sostenibilidad</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bandera Azul Ecológica</h3>
+                        <p>Conoce iniciativas ambientales que fortalecen el compromiso de la comunidad.</p>
+                        <span class="card-link">Ver más <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="emprendedores.html" class="card">
+                    <div class="card-image">
+                        <img src="../img/index/emprendedores.jpeg" alt="Emprendedores">
+                        <span class="card-tag">Comunidad</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Emprendedores</h3>
+                        <p>Apoya iniciativas locales y conoce proyectos impulsados por la comunidad.</p>
+                        <span class="card-link">Ver más <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FINAL SECTION ================= -->
+    <section class="banner-section">
+        <div class="container banner-content">
+            <p class="banner-tag">Caño Negro</p>
+            <h2>Un lugar donde la naturaleza y la comunidad conviven en armonía</h2>
+            <p>
+                Vive la esencia de un destino lleno de vida, tradición y paisajes
+                que inspiran a valorar y proteger nuestro entorno.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/adi.canonegro" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+
+        <a href="https://wa.me/506XXXXXX" class="whatsapp-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
         </a>
-
-        <a href="Senderos/senderos.html" class="card">
-            <img src="../img/index/sendero.jpg" alt="">
-            <h3>Senderos Naturales</h3>
-            <small class="image-credit">
-                Foto: Juan Pérez
-            </small>
-        </a>
-
-        <a href="bandera.html" class="card">
-            <img src="../img/index/banderaAzul.jpg" alt="">
-            <h3>Bandera Azul Ecológica</h3>
-            <small class="image-credit">
-                Foto: Juan Pérez
-            </small>
-        </a>
-
-        <a href="emprendedores.html" class="card">
-            <img src="../img/index/emprendedores.jpeg" alt="">
-            <h3>Emprendedores</h3>
-            <small class="image-credit">
-                Foto: Juan Pérez
-            </small>
-        </a>
-
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-    <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
-    <div class="social-links">
-        <a href="https://www.facebook.com/adi.canonegro" target="_blank">
-            <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://youtube.com" target="_blank">
-            <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://tiktok.com" target="_blank">
-            <i class="fab fa-tiktok"></i>
-        </a>
-    </div>
-
-    <a href="https://wa.me/506XXXXXX"
-        class="whatsapp-float"
-        target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-</footer>
-
-<script src="../JS/index.js"></script>
+    </footer>
 
 </body>
+
 </html>
