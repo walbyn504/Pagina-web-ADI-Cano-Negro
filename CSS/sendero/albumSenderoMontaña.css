@@ -1,186 +1,219 @@
 /* ================= VARIABLES ================= */
-
 :root{
-    --verde-principal:#0f6b2f;
-    --verde-secundario:#148a3d;
-    --verde-neon:#00e676;
-    --fondo:#f4f8f5;
+    --verde-principal:#2f5d3a;
+    --verde-secundario:#7faa84;
+    --verde-hover:#5f8f67;
+    --verde-oscuro:#1f3b27;
+    --fondo:#f6f4ee;
+    --fondo-suave:#e8efe6;
+    --fondo-claro:#fcfbf7;
+    --blanco:#ffffff;
+    --texto:#2f3a33;
+    --texto-suave:#617164;
+    --sombra:0 10px 26px rgba(32, 52, 38, 0.10);
+    --sombra-hover:0 16px 34px rgba(32, 52, 38, 0.16);
 }
 
-/* ================= BODY ================= */
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
 
 body{
-    margin:0;
-    font-family:'Poppins',sans-serif;
-    background:linear-gradient(to bottom,#f4f8f5,#ffffff);
-    color:#333;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(180deg, #f6f4ee 0%, #fcfbf7 100%);
+    color:var(--texto);
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:min(1200px, 90%);
+    margin:auto;
 }
 
 /* ================= HERO ================= */
-
 .album-header{
-    height:90vh;
+    min-height:100vh;
     display:flex;
     align-items:center;
     justify-content:flex-start;
     padding:0 8%;
 
     background:
-    linear-gradient(
-        rgba(0,0,0,0.15),
-        rgba(0,0,0,0.25)
-    ),
-    url('../../img/senderos/montaña/senderoMontaña.jpg') center/cover no-repeat;
+        linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.35)),
+        url('../../img/senderos/montaña/senderoMontaña.jpg') center/cover no-repeat;
 
     color:white;
     position:relative;
 }
+/* ================= BREADCRUMB ================= */
+.breadcrumb{
+    position:absolute;
+    top:38px;
+    right:8%;
+    font-size:15px;
+    letter-spacing:0.3px;
+    z-index:10;
+    color:#dff7e6;
+}
 
-/* Texto encima */
+.breadcrumb a{
+    color:white;
+    transition:0.25s ease;
+    font-size:17px;
+    text-shadow:0 3px 10px rgba(0,0,0,0.9);
+}
 
-.album-header .hero-text{
-    max-width:600px;
-    animation:aparecer 1s ease;
+.breadcrumb a:hover{
+    color:#4eef6e;
+}
+
+.breadcrumb span{
+    margin:0 10px;
+    opacity:0.75;
+}
+
+.breadcrumb strong{
+    font-weight:600;
+    color:#dff7e6;
+    text-shadow:0 3px 10px rgba(0,0,0,0.9);
+}
+
+/* ================= HERO TEXT ================= */
+.hero-text{
+    max-width:760px;
+    animation:fadeUp 1s ease;
     position:relative;
     z-index:2;
+}
+
+.hero-tag{
+    display:inline-block;
+    color:#dff7e6;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+
     text-shadow:
-    0 3px 10px rgba(0,0,0,0.9);
+        0 2px 8px rgba(0,0,0,0.65),
+        0 0 18px rgba(0,0,0,0.35);
 }
 
 .album-header h1{
-    font-size:56px;
-    margin-bottom:15px;
-    font-weight:700;
-    color:var(--verde-neon);
+    font-size:74px;
+    font-weight:800;
+    line-height:1.05;
+    margin-bottom:22px;
+    letter-spacing:-1px;
+
     text-shadow:
-        0 8px 25px rgba(0,0,0,0.9),
-        0 4px 10px rgba(0,0,0,0.8);
+        0 4px 12px rgba(0,0,0,0.65),
+        0 10px 30px rgba(0,0,0,0.45);
 }
 
-.album-header p{
-    font-size:18px;
-    line-height:1.6;
-    opacity:1;
-    font-weight:700;
+.album-header h1 span{
+    color:#a8f0bb;
+}
+
+.hero-description{
+    max-width:680px;
+    font-size:21px;
+    color:#f5f5f5;
+    margin-bottom:28px;
+    font-weight:400;
+
     text-shadow:
-        0 6px 20px rgba(0,0,0,0.9);
+        0 3px 10px rgba(0,0,0,0.70),
+        0 6px 18px rgba(0,0,0,0.35);
+}
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
-@keyframes aparecer{
-
-from{
-    opacity:0;
-    transform:translateY(40px);
+/* ================= TEXTOS GENERALES ================= */
+.section-label{
+    display:inline-block;
+    color:var(--verde-principal);
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    margin-bottom:12px;
 }
 
-to{
-    opacity:1;
-    transform:translateY(0);
-}
-
-}
-
-/* ================= BREADCRUMB ================= */
-
-.breadcrumb {
-    position: absolute;
-    top: 35px;
-    right: 8%;
-    font-size: 14px;
-    letter-spacing: 0.3px;
-    z-index: 999;
-    color: #00e676;
-
-    /* sin caja */
-    background: none;
-}
-
-.breadcrumb a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: 0.25s ease;
-    font-size: 20px;
-
-    /* mejor visibilidad */
-    text-shadow: 0 3px 10px rgba(0,0,0,0.9);
-}
-
-.breadcrumb a:hover {
-    color: #00e676;
-}
-
-.breadcrumb span {
-    margin: 0 10px;
-    opacity: 0.6;
-}
-
-.breadcrumb strong {
-    font-weight: 500;
-    color: white;
-    text-shadow: 0 3px 10px rgba(0,0,0,0.9);
+.section-label.center{
+    display:block;
+    text-align:center;
 }
 
 /* ================= INFO SECTION ================= */
-
 .info-section{
-    padding:90px 8%;
-    background:linear-gradient(to bottom,#f4f8f5,#ffffff);
+    padding:95px 0;
+    background:linear-gradient(180deg, #e8efe6 0%, #f6f4ee 100%);
 }
 
 .info-title{
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:55px;
 }
 
 .info-title h2{
-    font-size:34px;
+    font-size:40px;
     color:var(--verde-principal);
-    margin-bottom:10px;
+    margin-bottom:12px;
+    font-weight:800;
 }
 
 .info-title p{
-    color:#777;
-    font-size:16px;
+    color:var(--texto-suave);
+    font-size:17px;
+    max-width:700px;
+    margin:0 auto;
 }
-
-.info-title h2::after{
-    content:"";
-    width:500px;
-    height:4px;
-
-    background:linear-gradient(
-        90deg,
-        var(--verde-secundario),
-        var(--verde-neon)
-    );
-
-    display:block;
-    margin:12px auto 0;
-    border-radius:3px;
-}
-
-/* ================= CARDS INFO ================= */
 
 .info-album{
-    display:flex;
-    gap:35px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    gap:30px;
     max-width:1200px;
     margin:auto;
 }
 
+/* ================= INFO CARDS ================= */
 .info-box,
 .data-box{
-    flex:1;
-    background:white;
-    padding:35px;
-    border-radius:18px;
-
-    box-shadow:0 12px 35px rgba(0,0,0,0.08);
-
+    background:var(--blanco);
+    padding:36px 32px;
+    border-radius:22px;
+    box-shadow:var(--sombra);
     transition:0.35s ease;
-
     position:relative;
     overflow:hidden;
+    border:1px solid rgba(73, 104, 79, 0.08);
 }
 
 .info-box::before,
@@ -194,31 +227,43 @@ to{
 }
 
 .info-box::before{
-    background:var(--verde-principal);
+    background:linear-gradient(90deg, #7faa84, #2f5d3a);
 }
 
 .data-box::before{
-    background:var(--verde-secundario);
+    background:linear-gradient(90deg, #5f8f67, #7faa84);
 }
 
 .info-box:hover,
 .data-box:hover{
     transform:translateY(-8px);
-    box-shadow:0 20px 50px rgba(0,0,0,0.15);
+    box-shadow:var(--sombra-hover);
+}
+
+.box-label{
+    display:inline-block;
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    color:#567760;
+    margin-bottom:12px;
 }
 
 .info-box h3,
 .data-box h3{
     margin-bottom:18px;
-    font-size:20px;
+    font-size:28px;
+    line-height:1.2;
+    font-weight:800;
+    color:#274c32;
 }
 
-.info-box h3{
-    color:var(--verde-principal);
-}
-
-.data-box h3{
-    color:var(--verde-secundario);
+.info-box p{
+    font-size:16px;
+    line-height:1.85;
+    color:var(--texto-suave);
+    margin-bottom:18px;
 }
 
 .data-box ul{
@@ -228,86 +273,196 @@ to{
 }
 
 .data-box li{
-    margin-bottom:14px;
+    margin-bottom:16px;
     font-size:16px;
-    color:#444;
+    color:var(--texto-suave);
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    line-height:1.7;
 }
 
-/* ================= GALERÍA ================= */
-
-.gallery{
-    padding:80px 8%;
-    text-align:center;
-}
-
-.gallery h2{
-    font-size:36px;
+.data-box li i{
     color:var(--verde-principal);
+    margin-top:4px;
+    min-width:18px;
+}
+
+/* ================= GALLERY ================= */
+.gallery{
+    padding:95px 0;
+    background:var(--fondo-claro);
+}
+
+.gallery-title{
+    text-align:center;
     margin-bottom:50px;
 }
 
-.gallery h2::after{
-    content:"";
-    width:800px;
-    height:4px;
+.gallery-title h2{
+    font-size:40px;
+    color:var(--verde-principal);
+    margin-bottom:12px;
+    font-weight:800;
+}
 
-    background:linear-gradient(
-        90deg,
-        var(--verde-secundario),
-        var(--verde-neon)
-    );
-
-    display:block;
-    margin:12px auto 0;
-    border-radius:3px;
+.gallery-title p{
+    color:var(--texto-suave);
+    font-size:17px;
+    max-width:700px;
+    margin:0 auto;
 }
 
 .gallery-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:22px;
+
+    max-width:1100px;
+    margin:auto;
+}
+
+.gallery-grid a{
+    display:block;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:var(--sombra);
 }
 
 .gallery-grid img{
     width:100%;
-    height:260px;
+    height:220px;
     object-fit:cover;
+    border-radius:16px;
 
-    border-radius:15px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
-
-    transition:0.4s ease;
+    transition:0.35s ease;
 }
 
-.gallery-grid img:hover{
-    transform:scale(1.08);
-    box-shadow:0 20px 45px rgba(0,0,0,0.25);
+.gallery-grid a:hover img{
+    transform:scale(1.06);
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= CIERRE ================= */
+.closing-section{
+    background:linear-gradient(180deg, #edf4ee 0%, #f7f5ef 100%);
+    padding:90px 0;
+}
 
-@media(max-width:768px){
-
-.album-header{
-    padding:0 30px;
+.closing-content{
+    max-width:860px;
     text-align:center;
 }
 
-.album-header h1{
-    font-size:36px;
+.closing-tag{
+    color:var(--verde-principal);
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1.3px;
+    margin-bottom:18px;
 }
 
-.album-header p{
-    font-size:16px;
+.closing-content h2{
+    font-size:42px;
+    line-height:1.2;
+    margin-bottom:18px;
+    color:#2e5335;
+    font-weight:800;
 }
 
-.info-album{
-    flex-direction:column;
+.closing-content h2::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:4px;
+    margin:16px auto 0;
+    border-radius:999px;
+    background:linear-gradient(90deg, #7faa84, #2f5d3a);
 }
 
-.gallery-grid img{
-    height:200px;
+.closing-content p{
+    font-size:18px;
+    color:var(--texto-suave);
+    max-width:720px;
+    margin:auto;
 }
 
+/* ================= RESPONSIVE ================= */
+@media (max-width:1100px){
+    .album-header{
+        padding:0 40px;
+    }
+
+    .album-header h1{
+        font-size:60px;
+    }
+
+    .breadcrumb{
+        right:40px;
+    }
+}
+
+@media (max-width:900px){
+    .album-header{
+        padding:40px 20px;
+        text-align:center;
+        justify-content:center;
+    }
+
+    .hero-text{
+        max-width:100%;
+    }
+
+    .hero-description{
+        margin-inline:auto;
+    }
+
+    .breadcrumb{
+        top:20px;
+        right:20px;
+        left:20px;
+        text-align:center;
+        font-size:14px;
+    }
+
+    .closing-content h2{
+        font-size:36px;
+    }
+}
+
+@media (max-width:600px){
+    .album-header h1{
+        font-size:42px;
+    }
+
+    .hero-description{
+        font-size:17px;
+    }
+
+    .info-title h2,
+    .gallery-title h2{
+        font-size:30px;
+    }
+
+    .info-box h3,
+    .data-box h3{
+        font-size:24px;
+    }
+
+    .gallery-grid img{
+        height:220px;
+    }
+
+    .closing-content h2{
+        font-size:30px;
+    }
+
+    .closing-content p{
+        font-size:17px;
+    }
+
+    .hero-tag,
+    .closing-tag{
+        font-size:13px;
+    }
 }

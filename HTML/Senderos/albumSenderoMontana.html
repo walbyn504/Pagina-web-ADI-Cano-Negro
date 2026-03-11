@@ -1,88 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sendero La Montaña</title>
+
     <link rel="stylesheet" href="../../CSS/sendero/albumSenderoMontaña.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<header class="album-header">
-
-    <div class="breadcrumb">
-        <a href="../index.html">Inicio</a>
-        <span>/</span>
-        <a href="../Senderos/senderos.html">Senderos</a>
-    </div>
-
-    <div class="hero-text">
-        <h1>Sendero La Montaña</h1>
-        <p>
-            Un recorrido natural rodeado de bosque primario,
-            miradores y biodiversidad única en Caño Negro.
-        </p>
-    </div>
-
-</header>
-
-
-
-<section class="info-section">
-
-    <div class="info-title">
-        <h2>Información del Sendero</h2>
-        <p>Detalles y características del recorrido</p>
-    </div>
-
-    <div class="info-album">
-
-        <div class="info-box">
-            <h3>Descripción</h3>
-            <p>
-                El Sendero La Montaña es uno de los recorridos más visitados dentro del Refugio.
-                Atraviesa bosque tropical húmedo y permite la observación de aves,
-                monos y diversas especies de flora nativa.
+    <header class="album-header">
+        <div class="hero-text">
+            <p class="hero-tag">Bosque, biodiversidad y aventura</p>
+            <h1>Sendero La <span>Montaña</span></h1>
+            <p class="hero-description">
+                Un recorrido natural rodeado de bosque primario, miradores y una biodiversidad
+                única que refleja la riqueza ecológica de Caño Negro.
             </p>
         </div>
+    </header>
 
-        <div class="data-box">
-            <h3>Detalles del sendero</h3>
-            <ul>
-                <li>📏 Distancia: 2 km</li>
-                <li>⏱ Duración aproximada: 1.5 horas</li>
-                <li>🌿 Dificultad: Moderada</li>
-            </ul>
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Inicio</a>
+                <span>/</span>
+                <a href="../Senderos/senderos.html">Senderos</a>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <!-- INFORMACIÓN -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-title">
+                <span class="section-label center">Explora el recorrido</span>
+                <h2>Información del Sendero</h2>
+                <p>Conoce las características principales de esta experiencia en contacto con la naturaleza.</p>
+            </div>
 
-</section>
+            <div class="info-album">
 
+                <div class="info-box">
+                    <span class="box-label">Descripción</span>
+                    <h3>Un sendero rodeado de vida</h3>
+                    <p>
+                        El Sendero La Montaña es uno de los recorridos más visitados dentro del refugio.
+                        Atraviesa bosque tropical húmedo y permite la observación de aves, monos y
+                        diversas especies de flora nativa.
+                    </p>
 
-<section class="gallery">
-    <h2>Galería de Imágenes</h2>
-    <div class="gallery-grid">
-        <a href="../../img/senderos/montaña/montana1.jpg" class="lightbox">
-            <img src="../../img/senderos/montaña/montana1.jpg" alt="">
-        </a>
+                    <p>
+                        Es una experiencia ideal para quienes desean conectarse con el paisaje,
+                        apreciar la biodiversidad local y disfrutar de un entorno natural lleno
+                        de tranquilidad y valor ecológico.
+                    </p>
+                </div>
 
-        <a href="../../img/senderos/montaña/montana2.jpg" class="lightbox">
-            <img src="../../img/senderos/montaña/montana2.jpg" alt="">
-        </a>
+                <div class="data-box">
+                    <span class="box-label">Detalles</span>
+                    <h3>Características del sendero</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-ruler-horizontal"></i> Distancia: 2 km</li>
+                        <li><i class="fa-solid fa-clock"></i> Duración aproximada: 1.5 horas</li>
+                        <li><i class="fa-solid fa-leaf"></i> Dificultad: Moderada</li>
+                        <li><i class="fa-solid fa-binoculars"></i> Ideal para observación de flora y fauna</li>
+                    </ul>
+                </div>
 
-        <a href="../../img/senderos/montaña/montana3.jpg" class="lightbox">
-            <img src="../../img/senderos/montaña/montana3.jpg" alt="">
-        </a>
+            </div>
+        </div>
+    </section>
 
-        <a href="../../img/senderos/montaña/montana4.jpg" class="lightbox">
-            <img src="../../img/senderos/montaña/montana4.jpg" alt="">
-        </a>
-    </div>
+    <!-- GALERÍA -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-title">
+                <span class="section-label center">Paisajes del recorrido</span>
+                <h2>Galería de Imágenes</h2>
+                <p>Descubre algunos de los rincones naturales que forman parte del sendero.</p>
+            </div>
 
-</section>
+            <div class="gallery-grid">
+                <a href="../../img/senderos/montaña/montana1.jpg" class="lightbox">
+                    <img src="../../img/senderos/montaña/montana1.jpg" alt="Vista del Sendero La Montaña">
+                </a>
 
-<script src="../../JS/senderos.js"></script>
+                <a href="../../img/senderos/montaña/montana2.jpg" class="lightbox">
+                    <img src="../../img/senderos/montaña/montana2.jpg" alt="Bosque del Sendero La Montaña">
+                </a>
+
+                <a href="../../img/senderos/montaña/montana3.jpg" class="lightbox">
+                    <img src="../../img/senderos/montaña/montana3.jpg" alt="Vegetación del Sendero La Montaña">
+                </a>
+
+                <a href="../../img/senderos/montaña/montana4.jpg" class="lightbox">
+                    <img src="../../img/senderos/montaña/montana4.jpg" alt="Recorrido del Sendero La Montaña">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CIERRE -->
+    <section class="closing-section">
+        <div class="container closing-content">
+            <p class="closing-tag">Caño Negro</p>
+            <h2>Cada recorrido es una oportunidad para valorar y proteger la riqueza natural del refugio</h2>
+            <p>
+                Caminar por este sendero permite descubrir paisajes, especies y espacios
+                que forman parte del patrimonio ecológico de Caño Negro.
+            </p>
+        </div>
+    </section>
+
+    <script src="../../JS/senderos.js"></script>
 
 </body>
+
 </html>
