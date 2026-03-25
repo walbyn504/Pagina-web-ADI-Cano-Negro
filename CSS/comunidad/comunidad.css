@@ -128,6 +128,7 @@ nav a.active::after{
         url('../../img/comunidad/cañoNegro.jpg') center/cover no-repeat;
     display:flex;
     align-items:center;
+    justify-content:flex-start;
     padding:0 90px;
     color:white;
 }
@@ -151,9 +152,9 @@ nav a.active::after{
 }
 
 .hero-comunidad h1{
-    font-size:76px;
+    font-size:72px;
     font-weight:800;
-    line-height:1.02;
+    line-height:1.05;
     margin-bottom:22px;
     letter-spacing:-1px;
     text-shadow:
@@ -161,7 +162,11 @@ nav a.active::after{
         0 10px 30px rgba(0,0,0,0.55);
 }
 
-.hero-description{
+.hero-comunidad h1 span{
+    color:#a8f0bb;
+}
+
+.description{
     max-width:680px;
     font-size:22px;
     font-weight:400;
@@ -466,16 +471,16 @@ footer p{
 
     .hero-comunidad{
         padding:40px 20px;
-        text-align:center;
-        justify-content:center;
+        text-align:left;
+        justify-content:flex-start;
     }
 
     .hero-content{
         max-width:100%;
     }
 
-    .hero-description{
-        margin-inline:auto;
+    .description{
+        margin-inline:0;
     }
 
     .info-row,
@@ -493,7 +498,7 @@ footer p{
         font-size:42px;
     }
 
-    .hero-description{
+    .description{
         font-size:17px;
     }
 
