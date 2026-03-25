@@ -1,0 +1,838 @@
+:root{
+    --verde-principal:#2f5d3a;
+    --verde-secundario:#7faa84;
+    --verde-hover:#5f8f67;
+    --verde-oscuro:#1f3b27;
+    --fondo:#f6f4ee;
+    --fondo-suave:#e8efe6;
+    --fondo-claro:#fcfbf7;
+    --blanco:#ffffff;
+    --texto:#2f3a33;
+    --texto-suave:#617164;
+    --sombra:0 10px 26px rgba(32, 52, 38, 0.10);
+    --sombra-hover:0 16px 34px rgba(32, 52, 38, 0.16);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:var(--fondo);
+    color:var(--texto);
+    line-height:1.6;
+    padding-top:90px;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+section,
+header,
+footer{
+    width:100%;
+}
+
+.container{
+    width:min(1200px, 90%);
+    margin:0 auto;
+}
+
+/* HEADER */
+.main-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:90px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+    background:rgba(11,57,28,0.88);
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.18);
+    z-index:1000;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-img{
+    height:60px;
+    width:auto;
+    object-fit:contain;
+}
+
+.logo-text span{
+    color:white;
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:0.4px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:28px;
+    align-items:center;
+}
+
+nav a{
+    position:relative;
+    color:white;
+    font-weight:500;
+    font-size:15px;
+    transition:0.3s ease;
+    padding-bottom:5px;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    width:0;
+    height:3px;
+    border-radius:3px;
+    background:var(--verde-secundario);
+    transition:0.3s ease;
+}
+
+nav a:hover{
+    color:#d8f5df;
+}
+
+nav a:hover::after,
+nav a.active::after{
+    width:100%;
+}
+
+/* HERO */
+.hero-flora{
+    min-height:92vh;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding:0 8%;
+    background:
+        linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.40)),
+        url('../../img/floraFauna/cortezIndex.jpeg') center/cover no-repeat;
+    color:white;
+    position:relative;
+}
+
+.hero-text{
+    max-width:760px;
+    position:relative;
+    z-index:2;
+    text-align:left;
+    animation:fadeUp 1s ease;
+}
+
+.hero-tag{
+    display:inline-block;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    color:#dff7e6;
+    margin-bottom:18px;
+    text-shadow:0 2px 8px rgba(0,0,0,0.75), 0 6px 18px rgba(0,0,0,0.45);
+}
+
+.hero-flora h1{
+    font-size:76px;
+    font-weight:800;
+    line-height:1.02;
+    margin-bottom:22px;
+    letter-spacing:-1px;
+    text-shadow:0 4px 12px rgba(0,0,0,0.70), 0 10px 30px rgba(0,0,0,0.55);
+}
+
+.hero-flora h1 span{
+    color:#a8f0bb;
+}
+
+.hero-description{
+    max-width:680px;
+    font-size:22px;
+    font-weight:400;
+    color:#f3f7f3;
+    text-align:left;
+    text-shadow:0 3px 10px rgba(0,0,0,0.75), 0 6px 20px rgba(0,0,0,0.45);
+}
+
+/* BREADCRUMB */
+.breadcrumb{
+    position:absolute;
+    top:30px;
+    right:10%;
+    font-weight:500;
+    z-index:10;
+}
+
+.breadcrumb a{
+    color:white;
+    transition:0.3s;
+    font-size:18px;
+    text-shadow:0 3px 10px rgba(0,0,0,0.9);
+}
+
+.breadcrumb a:hover{
+    color:#4eef6e;
+}
+
+.breadcrumb span{
+    margin:0 8px;
+    opacity:0.7;
+    color:white;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* TEXTOS */
+.section-label{
+    display:inline-block;
+    color:var(--verde-principal);
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    margin-bottom:12px;
+}
+
+.section-label.center{
+    display:block;
+    text-align:center;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    color:var(--verde-principal);
+    margin-bottom:12px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.section-subtitle{
+    text-align:center;
+    max-width:820px;
+    margin:0 auto;
+    color:var(--texto-suave);
+    font-size:17px;
+    line-height:1.9;
+}
+
+.section-heading{
+    margin-bottom:55px;
+}
+
+/* NAV INTERNA */
+.section-nav{
+    width:100%;
+    padding:28px 0;
+    background:linear-gradient(180deg, #edf4ee 0%, #f7f5ef 100%);
+    border-bottom:1px solid rgba(47,93,58,0.08);
+}
+
+.section-nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+}
+
+.section-nav-links a{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 18px;
+    border-radius:999px;
+    background:var(--blanco);
+    color:var(--verde-principal);
+    border:1px solid rgba(47,93,58,0.10);
+    box-shadow:var(--sombra);
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.section-nav-links a:hover{
+    background:var(--verde-principal);
+    color:white;
+    transform:translateY(-2px);
+}
+
+/* OVERVIEW */
+.overview-section{
+    width:100%;
+    padding:90px 0;
+    background:var(--fondo-claro);
+}
+
+.overview-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:28px;
+}
+
+.overview-card{
+    background:var(--blanco);
+    border-radius:24px;
+    padding:32px 24px;
+    box-shadow:var(--sombra);
+    border:1px solid rgba(47,93,58,0.08);
+    transition:0.35s ease;
+}
+
+.overview-card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--sombra-hover);
+}
+
+.overview-card i{
+    font-size:28px;
+    color:var(--verde-principal);
+    margin-bottom:18px;
+}
+
+.overview-card h3{
+    font-size:23px;
+    color:#274c32;
+    margin-bottom:12px;
+}
+
+.overview-card p{
+    color:var(--texto-suave);
+    line-height:1.8;
+}
+
+/* FLORA */
+.flora-section{
+    width:100%;
+    padding:90px 0;
+    background:linear-gradient(180deg, #f8f6f1 0%, #eef4ee 100%);
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:25px;
+    margin-bottom:60px;
+}
+
+.stat-card{
+    background:var(--blanco);
+    border-radius:22px;
+    padding:30px 22px;
+    text-align:center;
+    box-shadow:var(--sombra);
+    border:1px solid rgba(47,93,58,0.08);
+}
+
+.stat-card h3{
+    font-size:35px;
+    color:var(--verde-oscuro);
+    margin-bottom:8px;
+}
+
+.stat-card p{
+    color:var(--texto-suave);
+    font-size:15px;
+}
+
+.feature-row{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    margin-bottom:60px;
+    flex-wrap:wrap;
+}
+
+.feature-row.reverse{
+    flex-direction:row-reverse;
+}
+
+.feature-image{
+    flex:1;
+    min-width:300px;
+}
+
+.feature-image img{
+    width:100%;
+    border-radius:24px;
+    object-fit:cover;
+    box-shadow:var(--sombra);
+}
+
+.feature-text{
+    flex:1;
+    min-width:300px;
+}
+
+.feature-label{
+    display:inline-block;
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    color:#567760;
+    margin-bottom:12px;
+}
+
+.feature-text h3{
+    font-size:38px;
+    color:#274c32;
+    margin-bottom:18px;
+    line-height:1.15;
+}
+
+.feature-text p{
+    color:var(--texto-suave);
+    line-height:1.9;
+    margin-bottom:16px;
+    font-size:16px;
+}
+
+.flora-info-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:28px;
+}
+
+.info-panel{
+    background:var(--blanco);
+    border-radius:24px;
+    padding:28px 24px;
+    box-shadow:var(--sombra);
+    border:1px solid rgba(47,93,58,0.08);
+}
+
+.info-panel h3{
+    font-size:24px;
+    color:#274c32;
+    margin-bottom:10px;
+}
+
+.panel-scientific{
+    font-style:italic;
+    color:#6d7d71;
+    margin-bottom:10px;
+}
+
+.info-panel p{
+    color:var(--texto-suave);
+    line-height:1.85;
+    margin-bottom:14px;
+}
+
+.info-panel ul{
+    padding-left:18px;
+    color:var(--texto-suave);
+}
+
+.info-panel li{
+    margin-bottom:8px;
+    line-height:1.7;
+}
+
+/* FAUNA INTRO */
+.fauna-intro-section{
+    width:100%;
+    padding:90px 0;
+    background:var(--fondo-claro);
+}
+
+.fauna-summary-grid{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:20px;
+}
+
+.summary-box{
+    background:var(--blanco);
+    border-radius:22px;
+    padding:26px 20px;
+    text-align:center;
+    box-shadow:var(--sombra);
+    border:1px solid rgba(47,93,58,0.08);
+}
+
+.summary-box h3{
+    font-size:22px;
+    color:#274c32;
+    margin-bottom:10px;
+}
+
+.summary-number{
+    font-size:30px;
+    font-weight:800;
+    color:var(--verde-principal);
+    margin-bottom:10px;
+}
+
+.summary-box p{
+    color:var(--texto-suave);
+    line-height:1.7;
+}
+
+/* ANIMAL SECTIONS */
+.animal-section{
+    width:100%;
+    padding:80px 0;
+    background:#ffffff;
+    border-top:1px solid rgba(47,93,58,0.06);
+}
+
+.animal-section.alt{
+    background:linear-gradient(180deg, #edf4ee 0%, #f7f5ef 100%);
+}
+
+.animal-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    align-items:start;
+}
+
+.animal-main{
+    background:var(--blanco);
+    border-radius:26px;
+    padding:34px 30px;
+    box-shadow:var(--sombra);
+    border:1px solid rgba(47,93,58,0.08);
+}
+
+.animal-tag{
+    display:inline-block;
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1.3px;
+    color:#567760;
+    margin-bottom:12px;
+}
+
+.animal-main h2{
+    font-size:40px;
+    color:#274c32;
+    margin-bottom:18px;
+    line-height:1.15;
+}
+
+.animal-main h2 i{
+    margin-right:12px;
+    color:var(--verde-secundario);
+}
+
+.animal-main p{
+    color:var(--texto-suave);
+    line-height:1.9;
+    font-size:16px;
+    margin-bottom:16px;
+}
+
+.animal-side-card{
+    background:linear-gradient(135deg, #2f5d3a 0%, #476c51 100%);
+    color:white;
+    border-radius:26px;
+    padding:30px 24px;
+    box-shadow:var(--sombra-hover);
+}
+
+.animal-side-card h3{
+    font-size:24px;
+    margin-bottom:16px;
+}
+
+.animal-side-card ul{
+    list-style:none;
+}
+
+.animal-side-card li{
+    position:relative;
+    padding-left:20px;
+    margin-bottom:12px;
+    line-height:1.7;
+    color:#eef8f0;
+}
+
+.animal-side-card li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    top:0;
+    color:#dff7e6;
+    font-size:18px;
+}
+
+/* BOTÓN VER MÁS */
+.btn-ver-mas{
+    display:inline-block;
+    margin-top:10px;
+    padding:12px 24px;
+    background:var(--verde-principal);
+    color:white;
+    border-radius:999px;
+    font-weight:600;
+    transition:0.3s ease;
+    box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+
+.btn-ver-mas:hover{
+    background:var(--verde-hover);
+    transform:translateY(-2px);
+}
+
+/* CIERRE */
+.closing-section{
+    width:100%;
+    background:linear-gradient(180deg, #edf4ee 0%, #f7f5ef 100%);
+    padding:90px 0;
+    margin:0;
+}
+
+.closing-content{
+    width:min(1200px, 90%);
+    margin:0 auto;
+    max-width:860px;
+    text-align:center;
+    background:transparent;
+}
+
+.closing-tag{
+    color:var(--verde-principal);
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1.3px;
+    margin-bottom:18px;
+}
+
+.closing-content h2{
+    font-size:42px;
+    line-height:1.2;
+    margin-bottom:18px;
+    color:#2e5335;
+    font-weight:800;
+}
+
+.closing-content h2::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:4px;
+    margin:16px auto 0;
+    border-radius:999px;
+    background:linear-gradient(90deg, #7faa84, #2f5d3a);
+}
+
+.closing-content p{
+    font-size:18px;
+    color:var(--texto-suave);
+    max-width:720px;
+    margin:0 auto;
+    line-height:1.9;
+}
+
+/* FOOTER */
+footer{
+    width:100%;
+    background:var(--verde-principal);
+    color:white;
+    text-align:center;
+    padding:28px 20px;
+    margin:0;
+}
+
+footer p{
+    font-size:15px;
+}
+
+.social-links{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.social-links a{
+    font-size:26px;
+    color:white;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    color:#cfe6d2;
+    transform:scale(1.2);
+}
+
+/* WHATSAPP */
+.whatsapp-float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:white;
+    border-radius:50%;
+    font-size:28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.3s;
+    z-index:1000;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.12);
+}
+
+/* RESPONSIVE */
+@media (max-width:1200px){
+    .overview-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .fauna-summary-grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width:1100px){
+    .main-header{
+        padding:0 25px;
+    }
+
+    nav ul{
+        gap:18px;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+
+    .hero-flora h1{
+        font-size:58px;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width:900px){
+    .main-header{
+        height:auto;
+        padding:15px 20px;
+        flex-direction:column;
+        gap:14px;
+    }
+
+    body{
+        padding-top:140px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-flora{
+        padding:0 40px;
+    }
+
+    .feature-row,
+    .feature-row.reverse{
+        flex-direction:column;
+    }
+
+    .flora-info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .animal-layout{
+        grid-template-columns:1fr;
+    }
+
+    .fauna-summary-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .closing-content h2{
+        font-size:36px;
+    }
+}
+
+@media (max-width:600px){
+    .hero-flora{
+        min-height:75vh;
+        padding:0 20px;
+    }
+
+    .hero-flora h1{
+        font-size:42px;
+    }
+
+    .hero-description{
+        font-size:17px;
+    }
+
+    .breadcrumb{
+        top:20px;
+        right:20px;
+        left:20px;
+    }
+
+    .section-title,
+    .closing-content h2{
+        font-size:30px;
+    }
+
+    .closing-content p{
+        font-size:17px;
+    }
+
+    .overview-grid,
+    .stats-grid,
+    .fauna-summary-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-nav-links a{
+        width:100%;
+        justify-content:center;
+    }
+}
