@@ -29,6 +29,7 @@ body{
     background:var(--fondo);
     color:var(--texto);
     line-height:1.6;
+    padding-top:90px;
 }
 
 img{
@@ -45,56 +46,92 @@ a{
     margin:auto;
 }
 
+/* ================= HEADER ================= */
+.main-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:90px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+    background:rgba(11,57,28,0.88);
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.18);
+    z-index:1000;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-img{
+    height:60px;
+    width:auto;
+    object-fit:contain;
+}
+
+.logo-text span{
+    color:white;
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:0.4px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:28px;
+    align-items:center;
+}
+
+nav a{
+    position:relative;
+    color:white;
+    font-weight:500;
+    font-size:15px;
+    transition:0.3s ease;
+    padding-bottom:5px;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    width:0;
+    height:3px;
+    border-radius:3px;
+    background:var(--verde-secundario);
+    transition:0.3s ease;
+}
+
+nav a:hover{
+    color:#d8f5df;
+}
+
+nav a:hover::after,
+nav a.active::after{
+    width:100%;
+}
+
 /* ================= HERO ================= */
 .album-header{
-    min-height:100vh;
+    min-height:92vh;
     display:flex;
     align-items:center;
     justify-content:flex-start;
     padding:0 8%;
-
     background:
         linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.42)),
         url('../../img/senderos/humedal/senderoHumedal.jpg') center/cover no-repeat;
-
     color:white;
     position:relative;
 }
-
-/* ================= BREADCRUMB ================= */
-.breadcrumb{
-    position:absolute;
-    top:38px;
-    right:8%;
-    font-size:15px;
-    letter-spacing:0.3px;
-    z-index:10;
-    color:#dff7e6;
-}
-
-.breadcrumb a{
-    color:white;
-    transition:0.25s ease;
-    font-size:17px;
-    text-shadow:0 3px 10px rgba(0,0,0,0.9);
-}
-
-.breadcrumb a:hover{
-    color:#4eef6e;
-}
-
-.breadcrumb span{
-    margin:0 10px;
-    opacity:0.75;
-}
-
-.breadcrumb strong{
-    font-weight:600;
-    color:#dff7e6;
-    text-shadow:0 3px 10px rgba(0,0,0,0.9);
-}
-
-/* ================= HERO TEXT ================= */
 
 .hero-text{
     max-width:760px;
@@ -464,6 +501,20 @@ a{
 }
 
 /* ================= RESPONSIVE ================= */
+@media (max-width:1200px){
+    .main-header{
+        padding:0 25px;
+    }
+
+    nav ul{
+        gap:18px;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+}
+
 @media (max-width:1100px){
     .album-header{
         padding:0 40px;
@@ -472,10 +523,6 @@ a{
     .album-header h1{
         font-size:58px;
     }
-
-    .breadcrumb{
-        right:40px;
-    }
 }
 
 @media (max-width:900px){
@@ -483,6 +530,7 @@ a{
         padding:40px 20px;
         text-align:center;
         justify-content:center;
+        min-height:80vh;
     }
 
     .hero-text{
@@ -493,10 +541,20 @@ a{
         margin-inline:auto;
     }
 
-    .breadcrumb{
-        top:25px;
-        right:20px;
-        font-size:14px;
+    .main-header{
+        height:auto;
+        padding:15px 20px;
+        flex-direction:column;
+        gap:14px;
+    }
+
+    body{
+        padding-top:140px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
     .closing-content h2{
