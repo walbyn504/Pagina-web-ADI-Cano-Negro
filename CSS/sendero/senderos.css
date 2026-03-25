@@ -122,19 +122,16 @@ nav a.active::after{
 /* ================= HERO ================= */
 .hero-senderos{
     min-height:100vh;
-
     background:
     linear-gradient(
         rgba(0,0,0,0.25),
         rgba(0,0,0,0.55)
     ),
     url('../../img/senderos/sendero.jpg') center/cover no-repeat;
-
     display:flex;
     align-items:center;
-
+    justify-content:flex-start;
     padding:0 90px;
-
     color:white;
 }
 
@@ -155,21 +152,13 @@ nav a.active::after{
 }
 
 .hero-tag{
-
     display:inline-block;
-
     font-size:15px;
-
     font-weight:700;
-
     letter-spacing:1.4px;
-
     text-transform:uppercase;
-
     color:#dff7e6;
-
     margin-bottom:18px;
-
     text-shadow:
     0 2px 8px rgba(0,0,0,0.75),
     0 6px 18px rgba(0,0,0,0.45);
@@ -178,28 +167,23 @@ nav a.active::after{
 .hero-senderos h1{
     font-size:72px;
     font-weight:800;
-
     line-height:1.05;
-
     margin-bottom:22px;
-
     letter-spacing:-1px;
-
     text-shadow:
     0 4px 12px rgba(0,0,0,0.7),
     0 10px 30px rgba(0,0,0,0.55);
 }
 
-.hero-description{
+.hero-senderos h1 span{
+    color:#a8f0bb;
+}
 
+.description{
     max-width:680px;
-
     font-size:22px;
-
     font-weight:400;
-
     color:#f3f7f3;
-
     text-shadow:
     0 3px 10px rgba(0,0,0,0.75),
     0 6px 20px rgba(0,0,0,0.45);
@@ -510,19 +494,18 @@ footer p{
 
     .hero-senderos{
         padding:40px 20px;
-        text-align:center;
-        justify-content:center;
+        text-align:left;
+        justify-content:flex-start;
     }
 
     .hero-content{
         max-width:100%;
     }
 
-    .hero-description{
-        margin-inline:auto;
+    .description{
+        margin-inline:0;
     }
 
-    .banner-content h2,
     .closing-content h2{
         font-size:36px;
     }
@@ -533,7 +516,7 @@ footer p{
         font-size:42px;
     }
 
-    .hero-description{
+    .description{
         font-size:17px;
     }
 
@@ -541,7 +524,6 @@ footer p{
         font-size:30px;
     }
 
-    .card-image img,
     .sendero-image img{
         height:220px;
     }
