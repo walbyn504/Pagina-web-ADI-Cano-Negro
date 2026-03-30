@@ -175,6 +175,10 @@ nav a.active::after{
     color:#a8f0bb;
 }
 
+.hero p span{
+    color:#59f783;
+}
+
 .description{
     max-width:680px;
     font-size:21px;
@@ -197,13 +201,13 @@ nav a.active::after{
 
 .location i{
     margin-right:8px;
-    color:#8ef0a7;
+    color:#59f783;
 }
 
 /* ================= TEXTOS GENERALES ================= */
 .section-label{
     display:inline-block;
-    color:var(--verde-principal);
+    color:black;
     font-size:14px;
     font-weight:700;
     text-transform:uppercase;
@@ -219,7 +223,7 @@ nav a.active::after{
 .section-title{
     text-align:center;
     font-size:40px;
-    color:var(--verde-principal);
+    color:#10722e;
     margin-bottom:12px;
 }
 
@@ -227,7 +231,7 @@ nav a.active::after{
     text-align:center;
     max-width:700px;
     margin:0 auto;
-    color:var(--texto-suave);
+    color:black;
     font-size:17px;
 }
 
@@ -249,12 +253,12 @@ nav a.active::after{
 
 .about-text h2{
     font-size:38px;
-    color:var(--verde-principal);
+    color:#10722e;;
     margin-bottom:22px;
 }
 
 .about-text p{
-    color:var(--texto-suave);
+    color:black;
     font-size:17px;
     margin-bottom:18px;
 }
@@ -309,12 +313,12 @@ nav a.active::after{
 
 .stat-box h3{
     font-size:42px;
-    color:var(--verde-principal);
+    color:black;
     margin-bottom:8px;
 }
 
 .stat-box p{
-    color:var(--texto-suave);
+    color:black;
     font-size:16px;
 }
 
@@ -366,7 +370,7 @@ nav a.active::after{
     top:16px;
     left:16px;
     background:rgba(255,255,255,0.94);
-    color:var(--verde-principal);
+    color:#10722e;;
     padding:7px 12px;
     border-radius:999px;
     font-size:13px;
@@ -378,19 +382,19 @@ nav a.active::after{
 }
 
 .card-content h3{
-    color:var(--verde-principal);
+    color:#10722e;;
     font-size:22px;
     margin-bottom:10px;
 }
 
 .card-content p{
-    color:var(--texto-suave);
+    color:black;
     font-size:15px;
     margin-bottom:16px;
 }
 
 .card-link{
-    color:var(--verde-principal);
+    color:black;
     font-weight:700;
     display:inline-flex;
     align-items:center;
@@ -428,13 +432,13 @@ nav a.active::after{
     font-size:42px;
     line-height:1.2;
     margin-bottom:18px;
-    color:var(--verde-principal);
+    color:#10722e;
     font-weight:800;
 }
 
 .banner-content p{
     font-size:18px;
-    color:var(--texto-suave);
+    color:black;
     max-width:720px;
     margin:auto;
 }

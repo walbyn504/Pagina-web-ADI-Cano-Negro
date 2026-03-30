@@ -1,5 +1,5 @@
 :root{
-    --verde-secundario:#7faa84;
+    --verde-secundario:#71c98a;
     --verde-hover:#5f8f67;
     --verde-oscuro:#1f3b27;
     --fondo:#f6f4ee;
@@ -203,7 +203,7 @@ nav a.active::after{
 /* TEXTOS */
 .section-label{
     display:inline-block;
-    color:#10722e;
+    color:black;
     font-size:14px;
     font-weight:700;
     text-transform:uppercase;
@@ -386,7 +386,7 @@ nav a.active::after{
     font-weight:700;
     text-transform:uppercase;
     letter-spacing:1.2px;
-    color:#10722e;
+    color:black;
     margin-bottom:12px;
 }
 
@@ -519,20 +519,20 @@ nav a.active::after{
     font-weight:700;
     text-transform:uppercase;
     letter-spacing:1.3px;
-    color:#279047;
+    color:black;
     margin-bottom:12px;
 }
 
 .animal-main h2{
     font-size:40px;
-    color:#1a7e38;
+    color:#10722e;
     margin-bottom:18px;
     line-height:1.15;
 }
 
 .animal-main h2 i{
     margin-right:12px;
-    color:#279047 ;
+    color:#10722e;
 }
 
 .animal-main p{

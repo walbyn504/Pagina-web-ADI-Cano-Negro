@@ -166,6 +166,10 @@ nav a.active::after{
     color:#a8f0bb;
 }
 
+.hero p span{
+    color:#59f783;
+}
+
 .hero-description{
     max-width:680px;
     font-size:21px;

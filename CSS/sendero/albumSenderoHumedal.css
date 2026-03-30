@@ -168,6 +168,10 @@ nav a.active::after{
     color:#a8f0bb;
 }
 
+.album-header p span{
+    color:#59f783;;
+}
+
 .hero-description{
     max-width:700px;
     font-size:22px;
@@ -486,7 +490,7 @@ nav a.active::after{
 .closing-content h2::after{
     content:"";
     display:block;
-    width:120px;
+    width:850px;
     height:4px;
     margin:16px auto 0;
     border-radius:999px;
@@ -498,6 +502,59 @@ nav a.active::after{
     color:var(--texto-suave);
     max-width:720px;
     margin:auto;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:var(--verde-principal);
+    color:white;
+    text-align:center;
+    padding:20px 20px;
+}
+
+footer p{
+    font-size:15px;
+}
+
+.social-links{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.social-links a{
+    font-size:26px;
+    color:white;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    color:#a5d6a7;
+    transform:scale(1.2);
+}
+
+/* ================= WHATSAPP ================= */
+.whatsapp-float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:white;
+    border-radius:50%;
+    font-size:28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.3s;
+    z-index:1000;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.12);
 }
 
 /* ================= RESPONSIVE ================= */
