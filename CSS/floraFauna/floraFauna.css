@@ -1,4 +1,5 @@
 :root{
+    --verde-principal:#1f4d2e;
     --verde-secundario:#71c98a;
     --verde-hover:#5f8f67;
     --verde-oscuro:#1f3b27;
@@ -645,12 +646,11 @@ nav a.active::after{
 
 /* FOOTER */
 footer{
-    width:100%;
-    background:#10722e;
+    background:var(--verde-principal);
     color:white;
     text-align:center;
-    padding:28px 20px;
-    margin:0;
+    padding:30px 20px;
+    border-top:4px solid var(--verde-secundario);
 }
 
 footer p{

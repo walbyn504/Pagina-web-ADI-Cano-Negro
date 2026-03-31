@@ -1,6 +1,6 @@
 /* ================= VARIABLES ================= */
 :root{
-    --verde-principal:#2f5d3a;
+    --verde-principal:#1f4d2e;
     --verde-secundario:#71c98a;
     --verde-hover:#5f8f67;
     --verde-oscuro:#1f3b27;
@@ -430,7 +430,8 @@ footer{
     background:var(--verde-principal);
     color:white;
     text-align:center;
-    padding:20px 20px;
+    padding:30px 20px;
+    border-top:4px solid var(--verde-secundario);
 }
 
 footer p{
