@@ -210,7 +210,7 @@ nav a.active::after{
 
 .section-label{
     display:inline-block;
-    color:var(--verde-principal);
+    color:black;
     font-size:14px;
     font-weight:700;
     text-transform:uppercase;
@@ -226,7 +226,7 @@ nav a.active::after{
 .section h2{
     font-size:44px;
     margin-bottom:14px;
-    color:var(--verde-oscuro);
+    color:#10722e;
     font-weight:800;
     line-height:1.2;
 }
@@ -234,7 +234,7 @@ nav a.active::after{
 .section h2::after{
     content:"";
     display:block;
-    width:120px;
+    width:750px;
     height:4px;
     margin:16px auto 0;
     border-radius:999px;
@@ -248,7 +248,7 @@ nav a.active::after{
 .section-subtitle{
     max-width:760px;
     margin:0 auto;
-    color:var(--texto-suave);
+    color:#10722e;
     font-size:17px;
     line-height:1.8;
 }
@@ -258,7 +258,7 @@ nav a.active::after{
 }
 
 .section p{
-    color:var(--texto-suave);
+    color:black;
     font-size:16.5px;
     line-height:1.9;
     margin-bottom:18px;
@@ -281,7 +281,7 @@ nav a.active::after{
     border-radius:22px;
     box-shadow:var(--sombra);
     border:1px solid rgba(73,104,79,0.08);
-    border-left:6px solid var(--verde-secundario);
+    border-left:6px solid  #10722e;;
 }
 
 /* ================= DOS COLUMNAS ================= */
@@ -337,7 +337,7 @@ nav a.active::after{
 }
 
 .closing-tag{
-    color:var(--verde-principal);
+    color:#10722e;
     font-size:14px;
     font-weight:700;
     text-transform:uppercase;
@@ -349,14 +349,14 @@ nav a.active::after{
     font-size:42px;
     line-height:1.2;
     margin-bottom:18px;
-    color:#2e5335;
+    color:#10722e;
     font-weight:800;
 }
 
 .closing-content h2::after{
     content:"";
     display:block;
-    width:120px;
+    width:750px;
     height:4px;
     margin:16px auto 0;
     border-radius:999px;
@@ -365,7 +365,7 @@ nav a.active::after{
 
 .closing-content p{
     font-size:18px;
-    color:var(--texto-suave);
+    color:black;
     max-width:720px;
     margin:auto;
     line-height:1.8;

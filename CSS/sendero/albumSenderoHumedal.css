@@ -197,7 +197,7 @@ nav a.active::after{
 /* ================= TEXTOS GENERALES ================= */
 .section-label{
     display:inline-block;
-    color:var(--verde-principal);
+     color:black;
     font-size:14px;
     font-weight:700;
     text-transform:uppercase;
@@ -223,13 +223,13 @@ nav a.active::after{
 
 .info-title h2{
     font-size:40px;
-    color:var(--verde-principal);
+    color:#10722e;
     margin-bottom:12px;
     font-weight:800;
 }
 
 .info-title p{
-    color:var(--texto-suave);
+    color:black;
     font-size:17px;
     max-width:700px;
     margin:0 auto;
@@ -286,7 +286,7 @@ nav a.active::after{
     font-weight:700;
     text-transform:uppercase;
     letter-spacing:1.2px;
-    color:#567760;
+    color:black;
     margin-bottom:12px;
 }
 
@@ -296,13 +296,13 @@ nav a.active::after{
     font-size:28px;
     line-height:1.2;
     font-weight:800;
-    color:#274c32;
+    color:#10722e;
 }
 
 .info-box p{
     font-size:16px;
     line-height:1.85;
-    color:var(--texto-suave);
+    color:black;
     margin-bottom:18px;
 }
 
@@ -315,7 +315,7 @@ nav a.active::after{
 .data-box li{
     margin-bottom:16px;
     font-size:16px;
-    color:var(--texto-suave);
+    color:black;
     display:flex;
     align-items:flex-start;
     gap:12px;
@@ -323,7 +323,7 @@ nav a.active::after{
 }
 
 .data-box li i{
-    color:var(--verde-principal);
+     color:#10722e;
     margin-top:4px;
     min-width:18px;
 }
@@ -341,13 +341,13 @@ nav a.active::after{
 
 .gallery-title h2{
     font-size:40px;
-    color:var(--verde-principal);
+    color:#10722e;
     margin-bottom:12px;
     font-weight:800;
 }
 
 .gallery-title p{
-    color:var(--texto-suave);
+    color:black;
     font-size:17px;
     max-width:700px;
     margin:0 auto;
@@ -471,7 +471,7 @@ nav a.active::after{
 }
 
 .closing-tag{
-    color:var(--verde-principal);
+    color:#10722e;
     font-size:14px;
     font-weight:700;
     text-transform:uppercase;
@@ -483,7 +483,7 @@ nav a.active::after{
     font-size:42px;
     line-height:1.2;
     margin-bottom:18px;
-    color:#2e5335;
+    color:#10722e;
     font-weight:800;
 }
 
@@ -499,7 +499,7 @@ nav a.active::after{
 
 .closing-content p{
     font-size:18px;
-    color:var(--texto-suave);
+    color:black;
     max-width:720px;
     margin:auto;
 }

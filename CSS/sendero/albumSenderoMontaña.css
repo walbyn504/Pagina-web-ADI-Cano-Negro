@@ -197,7 +197,7 @@ nav a.active::after{
 /* ================= TEXTOS GENERALES ================= */
 .section-label{
     display:inline-block;
-    color:#10722e;
+    color:black;
     font-size:14px;
     font-weight:700;
     text-transform:uppercase;
