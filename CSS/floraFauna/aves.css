@@ -133,19 +133,18 @@ nav a.active::after {
     min-height: 100vh;
     background:
         linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
-        url('../../img/floraFauna/aves.jpg') center/cover no-repeat;
+        url('../../img/floraFauna/aves.jpg') center center / cover no-repeat;
     display: flex;
-    align-items: flex-start;
-    /* 👈 clave */
+    align-items: center; /* 👈 centrado real como comunidad */
     justify-content: flex-start;
-    padding: 140px 90px 60px;
-    /* 👈 empuja hacia arriba */
+    padding: 0 90px; /* 👈 sin padding vertical */
     color: white;
 }
 
-.birds-hero-content {
-    max-width: 760px;
-    animation: fadeUp 1s ease;
+.birds-hero-content{
+    max-width:760px;
+    animation:fadeUp 1s ease;
+    transform:translateY(-40px); /* 👈 ajuste visual fino */
 }
 
 .hero-chip {
@@ -554,29 +553,141 @@ footer p {
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width:1200px) {
-    .main-header {
-        padding: 0 25px;
+@media (max-width:1200px){
+    .main-header{
+        padding:0 25px;
     }
 
-    nav ul {
-        gap: 18px;
+    nav ul{
+        gap:18px;
     }
 
-    nav a {
-        font-size: 14px;
+    nav a{
+        font-size:14px;
     }
 
-    .birds-hero {
-        padding: 0 40px;
+    .birds-hero{
+        padding:0 40px;
+        background-position:center center;
     }
 
-    .birds-hero h1 {
-        font-size: 58px;
+    .birds-hero h1{
+        font-size:58px;
     }
 
-    .hero-description {
-        font-size: 19px;
+    .hero-description{
+        font-size:19px;
+    }
+
+    .birds-hero-content{
+        transform:translateY(-20px);
+    }
+}
+
+@media (max-width:900px){
+    .birds-highlight{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .birds-grid{
+        grid-template-columns:1fr;
+    }
+
+    .main-header{
+        height:auto;
+        padding:15px 20px;
+        flex-direction:column;
+        gap:14px;
+    }
+
+    body{
+        padding-top:140px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .birds-hero{
+        min-height:84vh;
+        padding:0 24px;
+        align-items:center;
+        justify-content:flex-start;
+        text-align:left;
+        background-position:center center;
+    }
+
+    .birds-hero-content{
+        max-width:100%;
+        transform:translateY(-10px);
+    }
+
+    .birds-hero h1{
+        font-size:56px;
+    }
+
+    .hero-description{
+        margin-inline:0;
+        font-size:18px;
+        max-width:540px;
+    }
+
+    .bird-image{
+        height:290px;
+    }
+}
+
+@media (max-width:600px){
+    .birds-highlight{
+        grid-template-columns:1fr;
+    }
+
+    .birds-hero{
+        min-height:78vh;
+        padding:0 22px;
+        background-position:center center;
+    }
+
+    .birds-hero-content{
+        transform:translateY(0);
+    }
+
+    .birds-hero h1{
+        font-size:42px;
+        line-height:1.06;
+    }
+
+    .hero-description{
+        font-size:17px;
+        line-height:1.7;
+        max-width:100%;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .bird-image{
+        height:230px;
+    }
+
+    .bird-content h3{
+        font-size:24px;
+    }
+
+    .bird-content{
+        padding:22px 18px 18px;
+    }
+
+    .bird-fact{
+        padding:18px 16px 16px;
+        border-radius:16px;
+    }
+
+    .hero-chip{
+        font-size:12px;
+        line-height:1.4;
     }
 }
 
