@@ -23,30 +23,43 @@
             </div>
         </div>
 
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="#" class="active">Inicio</a></li>
-                <li><a href="../HTML/Senderos/senderos.html">Senderos</a></li>
-                <li><a href="../HTML/comunidad/comunidad.html">Comunidad</a></li>
-                <li><a href="../HTML/floraFauna/floraFauna.html">Flora y Fauna</a></li>
-                <li><a href="#">Emprendedores</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Bandera Azul Ecologica</a></li>
+                <li><a href="#" class="active" aria-current="page" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="../HTML/Senderos/senderos.html" data-i18n="nav_senderos">Senderos</a></li>
+                <li><a href="../HTML/comunidad/comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
+                <li><a href="../HTML/floraFauna/floraFauna.html" data-i18n="nav_flora">Flora y Fauna</a></li>
+                <li><a href="#" data-i18n="nav_emprendedores">Emprendedores</a></li>
+                <li><a href="#" data-i18n="nav_videos">Videos</a></li>
+                <li><a href="#" data-i18n="nav_bandera">Bandera Azul Ecológica</a></li>
             </ul>
+
+            <div class="language-dropdown">
+                <button type="button" class="language-toggle" id="languageToggle" aria-label="Selector de idioma">
+                    <span id="currentLanguage">ES</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="language-menu" id="languageMenu">
+                    <button type="button" class="language-option active" data-lang="es">ES</button>
+                    <button type="button" class="language-option" data-lang="en">EN</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- ================= HERO ================= -->
     <section class="hero">
         <div class="hero-content">
-            <p class="hero-tag"><span>Naturaleza, cultura y conservación</span></p>
+            <p class="hero-tag">
+                <span data-i18n="hero_tag">Naturaleza, cultura y conservación</span>
+            </p>
 
-            <h1>
-                Descubre la belleza de
-                <span>Caño Negro</span>
+            <h1 data-i18n="hero_title">
+                Descubre la belleza de <span>Caño Negro</span>
             </h1>
 
-            <p class="description">
+            <p class="description" data-i18n="hero_description">
                 Un destino único en el norte de Costa Rica, rodeado de biodiversidad,
                 paisajes impresionantes y una comunidad comprometida con la protección
                 de su riqueza natural.
@@ -54,7 +67,7 @@
 
             <p class="location">
                 <i class="fa-solid fa-location-dot"></i>
-                Caño Negro, Los Chiles, Alajuela
+                <span data-i18n="hero_location">Caño Negro, Los Chiles, Alajuela</span>
             </p>
         </div>
     </section>
@@ -63,16 +76,16 @@
     <section class="about-refuge" id="refugio">
         <div class="container about-container">
             <div class="about-text">
-                <span class="section-label">Sobre el refugio</span>
-                <h2>Refugio de Vida Silvestre Caño Negro</h2>
-                <p>
+                <span class="section-label" data-i18n="about_label">Sobre el refugio</span>
+                <h2 data-i18n="about_title">Refugio de Vida Silvestre Caño Negro</h2>
+                <p data-i18n="about_text_1">
                     El Refugio de Vida Silvestre Caño Negro es uno de los humedales
                     más importantes de Costa Rica y Centroamérica. Su riqueza ecológica
                     lo convierte en un lugar esencial para la protección de aves,
                     reptiles, mamíferos y una amplia diversidad de flora.
                 </p>
 
-                <p>
+                <p data-i18n="about_text_2">
                     Además de su valor ambiental, Caño Negro representa una oportunidad
                     para el ecoturismo, la investigación y el fortalecimiento de la comunidad
                     a través de un desarrollo vinculado con la naturaleza.
@@ -81,7 +94,7 @@
 
             <div class="about-image">
                 <img src="../img/index/garzaBlanca.jpg" alt="Refugio Caño Negro">
-                <small class="image-credit">Foto: Juan Pérez</small>
+                <small class="image-credit" data-i18n="about_credit">Foto: Juan Pérez</small>
             </div>
         </div>
     </section>
@@ -89,9 +102,9 @@
     <!-- ================= STATS ================= -->
     <section class="stats-section">
         <div class="container">
-            <span class="section-label center">Nuestra riqueza natural</span>
-            <h2 class="section-title">Caño Negro en cifras</h2>
-            <p class="section-subtitle">
+            <span class="section-label center" data-i18n="stats_label">Nuestra riqueza natural</span>
+            <h2 class="section-title" data-i18n="stats_title">Caño Negro en cifras</h2>
+            <p class="section-subtitle" data-i18n="stats_subtitle">
                 Un destino que destaca por su biodiversidad, su importancia ecológica
                 y el valor de su entorno natural.
             </p>
@@ -99,17 +112,17 @@
             <div class="stats-grid">
                 <div class="stat-box">
                     <h3>300+</h3>
-                    <p>Especies de aves</p>
+                    <p data-i18n="stats_1">Especies de aves</p>
                 </div>
 
                 <div class="stat-box">
                     <h3>100%</h3>
-                    <p>Compromiso con la conservación</p>
+                    <p data-i18n="stats_2">Compromiso con la conservación</p>
                 </div>
 
                 <div class="stat-box">
                     <h3>1</h3>
-                    <p>Humedal de gran importancia ecológica</p>
+                    <p data-i18n="stats_3">Humedal de gran importancia ecológica</p>
                 </div>
             </div>
         </div>
@@ -118,9 +131,9 @@
     <!-- ================= CARDS ================= -->
     <section class="explore-section" id="explora">
         <div class="container">
-            <span class="section-label center">Explora más</span>
-            <h2 class="section-title">Nuestra comunidad y sus espacios</h2>
-            <p class="section-subtitle">
+            <span class="section-label center" data-i18n="explore_label">Explora más</span>
+            <h2 class="section-title" data-i18n="explore_title">Nuestra comunidad y sus espacios</h2>
+            <p class="section-subtitle" data-i18n="explore_subtitle">
                 Conoce algunos de los elementos que forman parte de la identidad
                 natural, social y cultural de Caño Negro.
             </p>
@@ -129,48 +142,68 @@
                 <a href="flora.html" class="card">
                     <div class="card-image">
                         <img src="../img/index/jabiru.jpg" alt="Flora y fauna">
-                        <span class="card-tag">Naturaleza</span>
+                        <span class="card-tag" data-i18n="card_tag_1">Naturaleza</span>
                     </div>
                     <div class="card-content">
-                        <h3>Flora y Fauna</h3>
-                        <p>Descubre especies emblemáticas y la riqueza biológica que distingue a la zona.</p>
-                        <span class="card-link">Ver más información<i class="fa-solid fa-arrow-right"></i></span>
+                        <h3 data-i18n="card_title_1">Flora y Fauna</h3>
+                        <p data-i18n="card_desc_1">
+                            Descubre especies emblemáticas y la riqueza biológica que distingue a la zona.
+                        </p>
+                        <span class="card-link">
+                            <span data-i18n="card_link">Ver más información</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
                     </div>
                 </a>
 
                 <a href="../HTML/Senderos/senderos.html" class="card">
                     <div class="card-image">
                         <img src="../img/index/sendero.jpg" alt="Senderos naturales">
-                        <span class="card-tag">Aventura</span>
+                        <span class="card-tag" data-i18n="card_tag_2">Aventura</span>
                     </div>
                     <div class="card-content">
-                        <h3>Senderos Naturales</h3>
-                        <p>Recorre espacios llenos de vegetación, paisajes y conexión con el entorno.</p>
-                        <span class="card-link">Ver más información<i class="fa-solid fa-arrow-right"></i></span>
+                        <h3 data-i18n="card_title_2">Senderos Naturales</h3>
+                        <p data-i18n="card_desc_2">
+                            Recorre espacios llenos de vegetación, paisajes y conexión con el entorno.
+                        </p>
+                        <span class="card-link">
+                            <span data-i18n="card_link">Ver más información</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
                     </div>
                 </a>
 
                 <a href="bandera.html" class="card">
                     <div class="card-image">
                         <img src="../img/index/banderaAzul.jpg" alt="Bandera Azul Ecológica">
-                        <span class="card-tag">Sostenibilidad</span>
+                        <span class="card-tag" data-i18n="card_tag_3">Sostenibilidad</span>
                     </div>
                     <div class="card-content">
-                        <h3>Bandera Azul Ecológica</h3>
-                        <p>Conoce iniciativas ambientales que fortalecen el compromiso de la comunidad.</p>
-                        <span class="card-link">Ver más información<i class="fa-solid fa-arrow-right"></i></span>
+                        <h3 data-i18n="card_title_3">Bandera Azul Ecológica</h3>
+                        <p data-i18n="card_desc_3">
+                            Conoce iniciativas ambientales que fortalecen el compromiso de la comunidad.
+                        </p>
+                        <span class="card-link">
+                            <span data-i18n="card_link">Ver más información</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
                     </div>
                 </a>
 
                 <a href="emprendedores.html" class="card">
                     <div class="card-image">
                         <img src="../img/index/emprendedores.jpeg" alt="Emprendedores">
-                        <span class="card-tag">Comunidad</span>
+                        <span class="card-tag" data-i18n="card_tag_4">Comunidad</span>
                     </div>
                     <div class="card-content">
-                        <h3>Emprendedores</h3>
-                        <p>Apoya iniciativas locales y conoce proyectos impulsados por la comunidad.</p>
-                        <span class="card-link">Ver más información<i class="fa-solid fa-arrow-right"></i></span>
+                        <h3 data-i18n="card_title_4">Emprendedores</h3>
+                        <p data-i18n="card_desc_4">
+                            Apoya iniciativas locales y conoce proyectos impulsados por la comunidad.
+                        </p>
+                        <span class="card-link">
+                            <span data-i18n="card_link">Ver más información</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
                     </div>
                 </a>
             </div>
@@ -180,9 +213,9 @@
     <!-- ================= FINAL SECTION ================= -->
     <section class="banner-section">
         <div class="container banner-content">
-            <p class="banner-tag">Caño Negro</p>
-            <h2>Un lugar donde la naturaleza y la comunidad conviven en armonía</h2>
-            <p>
+            <p class="banner-tag" data-i18n="banner_tag">Caño Negro</p>
+            <h2 data-i18n="banner_title">Un lugar donde la naturaleza y la comunidad conviven en armonía</h2>
+            <p data-i18n="banner_desc">
                 Vive la esencia de un destino lleno de vida, tradición y paisajes
                 que inspiran a valorar y proteger nuestro entorno.
             </p>
@@ -191,27 +224,32 @@
 
     <!-- ================= FOOTER ================= -->
     <footer>
-        <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
+        <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
-            <a href="https://www.facebook.com/adi.canonegro" target="_blank">
+            <a href="https://www.facebook.com/adi.canonegro" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook">
                 <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://youtube.com" target="_blank">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 <i class="fab fa-youtube"></i>
             </a>
-            <a href="https://tiktok.com" target="_blank">
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
                 <i class="fab fa-tiktok"></i>
             </a>
         </div>
-
-        <a href="https://wa.me/506XXXXXX" class="whatsapp-float" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
     </footer>
+
+    <a href="https://wa.me/506XXXXXX" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="../JS/traductor.js"></script>
+    <script src="../JS/index.js"></script>
 
 </body>
 

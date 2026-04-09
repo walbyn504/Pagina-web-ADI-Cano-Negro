@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senderos - ADI Caño Negro</title>
 
     <link rel="stylesheet" href="../../CSS/sendero/senderos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
     <header class="main-header">
@@ -19,40 +22,57 @@
             </div>
         </div>
 
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#" class="active">Senderos</a></li>
-                <li><a href="../comunidad/comunidad.html">Comunidad</a></li>
-                <li><a href="../floraFauna/floraFauna.html">Flora y Fauna</a></li>
-                <li><a href="emprendedores.html">Emprendedores</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="BanderaAzul.html">Bandera Azul Ecológica</a></li>
+                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="#" class="active" aria-current="page" data-i18n="nav_senderos">Senderos</a></li>
+                <li><a href="../comunidad/comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
+                <li><a href="../floraFauna/floraFauna.html" data-i18n="nav_flora">Flora y Fauna</a></li>
+                <li><a href="../emprendedores.html" data-i18n="nav_emprendedores">Emprendedores</a></li>
+                <li><a href="../videos.html" data-i18n="nav_videos">Videos</a></li>
+                <li><a href="../BanderaAzul.html" data-i18n="nav_bandera">Bandera Azul Ecológica</a></li>
             </ul>
+
+            <div class="language-dropdown">
+                <button type="button" class="language-toggle" id="languageToggle" aria-label="Selector de idioma">
+                    <span id="currentLanguage">ES</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="language-menu" id="languageMenu">
+                    <button type="button" class="language-option active" data-lang="es">ES</button>
+                    <button type="button" class="language-option" data-lang="en">EN</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- HERO -->
     <section class="hero-senderos">
         <div class="hero-content">
-            <p class="hero-tag"><span>Naturaleza, senderismo y conservación</span></p>
-            <h1>Senderos Naturales de <span>Caño Negro</span></h1>
-            <p class="description">
+            <p class="hero-tag">
+                <span data-i18n="senderos_hero_tag">Naturaleza, senderismo y conservación</span>
+            </p>
+            <h1 data-i18n="senderos_hero_title">Senderos Naturales de <span>Caño Negro</span></h1>
+            <p class="description" data-i18n="senderos_hero_desc">
                 Recorre senderos rodeados de bosque, humedales y vida silvestre, en un entorno
                 donde cada paso invita a descubrir la riqueza natural de Caño Negro.
             </p>
         </div>
     </section>
 
+    <!-- NAVEGACIÓN INTERNA -->
     <section class="section-nav">
         <div class="container">
             <div class="section-nav-links">
                 <a href="#infoGeneral">
-                    <i class="fa-solid fa-circle-info"></i> Información General
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span data-i18n="senderos_nav_info">Información General</span>
                 </a>
 
                 <a href="#senderos">
-                    <i class="fa-solid fa-route"></i> Senderos
+                    <i class="fa-solid fa-route"></i>
+                    <span data-i18n="senderos_nav_trails">Senderos</span>
                 </a>
             </div>
         </div>
@@ -61,9 +81,9 @@
     <!-- INFORMACIÓN -->
     <section class="info-senderos" id="infoGeneral">
         <div class="container">
-            <span class="section-label center">Explora con responsabilidad</span>
-            <h2 class="section-title">Información acerca de los senderos</h2>
-            <p class="section-subtitle">
+            <span class="section-label center" data-i18n="senderos_info_label">Explora con responsabilidad</span>
+            <h2 class="section-title" data-i18n="senderos_info_title">Información acerca de los senderos</h2>
+            <p class="section-subtitle" data-i18n="senderos_info_subtitle">
                 Antes de iniciar tu recorrido, toma en cuenta algunas recomendaciones para
                 disfrutar de una experiencia segura, consciente y respetuosa con la naturaleza.
             </p>
@@ -73,24 +93,30 @@
                     <div class="info-icon">
                         <i class="fa-solid fa-shoe-prints"></i>
                     </div>
-                    <h3>Recomendaciones</h3>
-                    <p>Utiliza calzado cómodo, lleva agua, protector solar y ropa adecuada para caminar en un entorno natural.</p>
+                    <h3 data-i18n="senderos_box1_title">Recomendaciones</h3>
+                    <p data-i18n="senderos_box1_desc">
+                        Utiliza calzado cómodo, lleva agua, protector solar y ropa adecuada para caminar en un entorno natural.
+                    </p>
                 </div>
 
                 <div class="info-box">
                     <div class="info-icon">
                         <i class="fa-solid fa-leaf"></i>
                     </div>
-                    <h3>Conservación</h3>
-                    <p>Respeta la flora y la fauna, no dejes residuos y ayuda a proteger el equilibrio del ecosistema.</p>
+                    <h3 data-i18n="senderos_box2_title">Conservación</h3>
+                    <p data-i18n="senderos_box2_desc">
+                        Respeta la flora y la fauna, no dejes residuos y ayuda a proteger el equilibrio del ecosistema.
+                    </p>
                 </div>
 
                 <div class="info-box">
                     <div class="info-icon">
                         <i class="fa-solid fa-binoculars"></i>
                     </div>
-                    <h3>Observación</h3>
-                    <p>Lleva cámara o binoculares para disfrutar mejor del paisaje, las aves y los detalles del entorno.</p>
+                    <h3 data-i18n="senderos_box3_title">Observación</h3>
+                    <p data-i18n="senderos_box3_desc">
+                        Lleva cámara o binoculares para disfrutar mejor del paisaje, las aves y los detalles del entorno.
+                    </p>
                 </div>
             </div>
         </div>
@@ -99,9 +125,9 @@
     <!-- SENDEROS -->
     <section class="senderos-section" id="senderos">
         <div class="container">
-            <span class="section-label center">Rutas disponibles</span>
-            <h2 class="section-title">Nuestros Senderos</h2>
-            <p class="section-subtitle">
+            <span class="section-label center" data-i18n="senderos_section_label">Rutas disponibles</span>
+            <h2 class="section-title" data-i18n="senderos_section_title">Nuestros Senderos</h2>
+            <p class="section-subtitle" data-i18n="senderos_section_subtitle">
                 Cada sendero ofrece una experiencia distinta, conectando a los visitantes
                 con paisajes, humedales, bosques y una biodiversidad única.
             </p>
@@ -110,36 +136,36 @@
                 <div class="sendero-card">
                     <div class="sendero-image">
                         <img src="../../img/senderos/montaña/senderoMontaña.jpg" alt="Sendero La Montaña">
-                        <span class="card-tag">Bosque</span>
+                        <span class="card-tag" data-i18n="senderos_card1_tag">Bosque</span>
                     </div>
 
                     <div class="sendero-info">
                         <h3>
-                            <a href="albumSenderoMontana.html">Sendero La Montaña</a>
+                            <a href="albumSenderoMontana.html" data-i18n="senderos_card1_title">Sendero La Montaña</a>
                         </h3>
-                        <p>
+                        <p data-i18n="senderos_card1_desc">
                             Recorrido de 2 km rodeado de bosque primario, vegetación abundante
                             y miradores naturales ideales para contemplar el paisaje.
                         </p>
-                        <span><i class="fa-solid fa-clock"></i> 1.5 horas</span>
+                        <span><i class="fa-solid fa-clock"></i> <span data-i18n="senderos_card1_time">1.5 horas</span></span>
                     </div>
                 </div>
 
                 <div class="sendero-card">
                     <div class="sendero-image">
                         <img src="../../img/senderos/humedal/senderoHumedal.jpg" alt="Sendero El Humedal">
-                        <span class="card-tag">Humedal</span>
+                        <span class="card-tag" data-i18n="senderos_card2_tag">Humedal</span>
                     </div>
 
                     <div class="sendero-info">
                         <h3>
-                            <a href="albumSenderoHumedal.html">Sendero El Humedal</a>
+                            <a href="albumSenderoHumedal.html" data-i18n="senderos_card2_title">Sendero El Humedal</a>
                         </h3>
-                        <p>
+                        <p data-i18n="senderos_card2_desc">
                             Ideal para la observación de aves, fotografía natural y una experiencia
                             tranquila en uno de los ecosistemas más valiosos de la zona.
                         </p>
-                        <span><i class="fa-solid fa-clock"></i> 2 horas</span>
+                        <span><i class="fa-solid fa-clock"></i> <span data-i18n="senderos_card2_time">2 horas</span></span>
                     </div>
                 </div>
             </div>
@@ -149,9 +175,11 @@
     <!-- CIERRE -->
     <section class="closing-section">
         <div class="container closing-content">
-            <p class="closing-tag">Caño Negro</p>
-            <h2>Cada sendero es una oportunidad para conectar con la naturaleza y aprender a conservarla</h2>
-            <p>
+            <p class="closing-tag" data-i18n="senderos_closing_tag">Caño Negro</p>
+            <h2 data-i18n="senderos_closing_title">
+                Cada sendero es una oportunidad para conectar con la naturaleza y aprender a conservarla
+            </h2>
+            <p data-i18n="senderos_closing_desc">
                 Caminar por estos espacios permite descubrir la vida que habita en cada rincón,
                 valorar la biodiversidad y fortalecer el compromiso con su protección.
             </p>
@@ -159,27 +187,30 @@
     </section>
 
     <footer>
-        <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
+        <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
-            <a href="https://www.facebook.com/adi.canonegro" target="_blank">
+            <a href="https://www.facebook.com/adi.canonegro" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://youtube.com" target="_blank">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 <i class="fab fa-youtube"></i>
             </a>
-            <a href="https://tiktok.com" target="_blank">
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
                 <i class="fab fa-tiktok"></i>
             </a>
         </div>
-
-        <a href="https://wa.me/506XXXXXX" class="whatsapp-float" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
     </footer>
+
+    <a href="https://wa.me/506XXXXXX" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="../../JS/traductor.js"></script>
+    <script src="../../JS/senderos.js"></script>
 
 </body>
 </html>
