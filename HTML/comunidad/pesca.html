@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body data-page="pesca">
 
     <!-- ================= HEADER ================= -->
     <header class="main-header">
@@ -23,21 +23,35 @@
             </div>
         </div>
 
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="comunidad.html">Comunidad</a></li>
-                <li><a href="#" class="active">Pesca</a></li>
+                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
+                <li><a href="#" class="active" aria-current="page" data-i18n="nav_pesca">Pesca</a></li>
             </ul>
+
+            <div class="language-dropdown">
+                <button type="button" class="language-toggle" id="languageToggle" aria-label="Selector de idioma">
+                    <span id="currentLanguage">ES</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="language-menu" id="languageMenu">
+                    <button type="button" class="language-option active" data-lang="es">ES</button>
+                    <button type="button" class="language-option" data-lang="en">EN</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- ================= HERO ================= -->
     <section class="hero">
         <div class="hero-text">
-            <p class="hero-tag"><span>Tradición, sostenibilidad y naturaleza</span></p>
-            <h1>Pesca en <span>Caño Negro</span></h1>
-            <p class="hero-description">
+            <p class="hero-tag">
+                <span data-i18n="hero_tag">Tradición, sostenibilidad y naturaleza</span>
+            </p>
+            <h1 data-i18n="hero_title">Pesca en <span>Caño Negro</span></h1>
+            <p class="hero-description" data-i18n="hero_desc">
                 Conoce la pesca artesanal y deportiva en Caño Negro, sus regulaciones,
                 sus especies permitidas y la importancia de proteger este ecosistema.
             </p>
@@ -48,9 +62,9 @@
     <section class="section intro-section">
         <div class="container">
             <div class="section-heading">
-                <span class="section-label center">Información general</span>
-                <h2>Pesca responsable en Caño Negro</h2>
-                <p class="section-subtitle">
+                <span class="section-label center" data-i18n="intro_label">Información general</span>
+                <h2 data-i18n="intro_title">Pesca responsable en Caño Negro</h2>
+                <p class="section-subtitle" data-i18n="intro_desc">
                     La pesca en Caño Negro es una actividad regulada con el objetivo de
                     proteger el ecosistema, conservar las especies y fortalecer la relación
                     entre tradición, comunidad y naturaleza.
@@ -63,8 +77,8 @@
     <section class="section alt">
         <div class="container">
             <div class="section-heading left">
-                <span class="section-label">Actividad local</span>
-                <h2>Tipos de Pesca en Caño Negro</h2>
+                <span class="section-label" data-i18n="tipos_label">Actividad local</span>
+                <h2 data-i18n="tipos_title">Tipos de Pesca en Caño Negro</h2>
             </div>
 
             <div class="content-grid">
@@ -72,8 +86,8 @@
                     <div class="content-icon">
                         <i class="fa-solid fa-fish"></i>
                     </div>
-                    <h3>Pesca Artesanal</h3>
-                    <p>
+                    <h3 data-i18n="artesanal_title">Pesca Artesanal</h3>
+                    <p data-i18n="artesanal_desc">
                         La pesca artesanal es realizada por familias locales utilizando métodos
                         tradicionales que respetan el ecosistema. Esta práctica forma parte de la
                         identidad cultural de la comunidad, proporcionando alimento, ingresos y
@@ -85,8 +99,8 @@
                     <div class="content-icon">
                         <i class="fa-solid fa-water"></i>
                     </div>
-                    <h3>Pesca Deportiva</h3>
-                    <p>
+                    <h3 data-i18n="deportiva_title">Pesca Deportiva</h3>
+                    <p data-i18n="deportiva_desc">
                         La pesca deportiva está orientada a visitantes y turistas que buscan
                         recreación. Se realiza bajo regulaciones específicas, con límites de captura,
                         tamaños mínimos y especies permitidas, promoviendo la conservación y el respeto
@@ -101,25 +115,25 @@
     <section class="section">
         <div class="container">
             <div class="section-heading left">
-                <span class="section-label">Requisitos</span>
-                <h2>Carnet de Pesca</h2>
+                <span class="section-label" data-i18n="carnet_label">Requisitos</span>
+                <h2 data-i18n="carnet_title">Carnet de Pesca</h2>
             </div>
 
             <div class="two-column-boxes">
                 <div class="info-box">
-                    <h3>Documentos necesarios</h3>
+                    <h3 data-i18n="doc_title">Documentos necesarios</h3>
                     <ul class="list">
-                        <li>Fotografía tamaño pasaporte.</li>
-                        <li>Documento de identificación válido.</li>
-                        <li>Portar el carnet durante toda la actividad.</li>
+                        <li data-i18n="doc_1">Fotografía tamaño pasaporte.</li>
+                        <li data-i18n="doc_2">Documento de identificación válido.</li>
+                        <li data-i18n="doc_3">Portar el carnet durante toda la actividad.</li>
                     </ul>
                 </div>
 
                 <div class="info-box">
-                    <h3>Costos</h3>
+                    <h3 data-i18n="costos_title">Costos</h3>
                     <ul class="list">
-                        <li><strong>Visitantes nacionales:</strong> ₡3.500 colones.</li>
-                        <li><strong>Visitantes extranjeros:</strong> $33.50 dólares.</li>
+                        <li data-i18n="costo_1"><strong>Visitantes nacionales:</strong> ₡3.500 colones.</li>
+                        <li data-i18n="costo_2"><strong>Visitantes extranjeros:</strong> $33.50 dólares.</li>
                     </ul>
                 </div>
             </div>
@@ -130,40 +144,38 @@
     <section class="section alt">
         <div class="container">
             <div class="section-heading left">
-                <span class="section-label">Conservación</span>
-                <h2>Periodo de Veda</h2>
+                <span class="section-label" data-i18n="veda_label">Conservación</span>
+                <h2 data-i18n="veda_title">Periodo de Veda</h2>
             </div>
 
             <div class="text-box">
                 <div class="important-note">
                     <i class="fa-solid fa-circle-exclamation"></i>
-                    <p>
+                    <p data-i18n="veda_note">
                         La veda protege la reproducción de las especies y ayuda a conservar
                         el equilibrio del ecosistema del Refugio de Vida Silvestre Caño Negro.
                     </p>
                 </div>
 
-                <p>
+                <p data-i18n="veda_text1">
                     La veda es un periodo en el que se prohíbe o se limita la pesca de ciertas
                     especies con el fin de proteger su reproducción y asegurar la conservación
                     de los recursos naturales del refugio.
                 </p>
 
-                <p>
+                <p data-i18n="veda_text2">
                     Durante este tiempo, los peces se encuentran en su etapa de reproducción,
-                    por lo que capturarlos podría afectar el equilibrio del ecosistema y disminuir
-                    las poblaciones naturales.
+                    por lo que capturarlos podría afectar el equilibrio del ecosistema.
                 </p>
 
-                <p>
+                <p data-i18n="veda_text3">
                     En Caño Negro, el periodo de veda generalmente se establece entre los meses
-                    de <strong>marzo y mayo</strong>, aunque las fechas pueden variar dependiendo
-                    de las regulaciones del MINAE y las condiciones ambientales de cada año.
+                    de <strong>marzo y mayo</strong>.
                 </p>
 
-                <p>
+                <p data-i18n="veda_text4">
                     Respetar este periodo es una forma directa de contribuir a la conservación
-                    de la biodiversidad y a la protección de los recursos del río.
+                    de la biodiversidad.
                 </p>
             </div>
         </div>
@@ -173,17 +185,17 @@
     <section class="section">
         <div class="container">
             <div class="section-heading left">
-                <span class="section-label">Normativa</span>
-                <h2>Restricciones Normativas</h2>
+                <span class="section-label" data-i18n="restric_label">Normativa</span>
+                <h2 data-i18n="restric_title">Restricciones Normativas</h2>
             </div>
 
             <div class="info-box">
                 <ul class="list">
-                    <li>Respetar los periodos de veda establecidos.</li>
-                    <li>No exceder el límite permitido por especie.</li>
-                    <li>Respetar el tamaño mínimo de captura.</li>
-                    <li>Prohibido el uso de atarraya, chinchorro y arbaleta.</li>
-                    <li>No contaminar el entorno natural.</li>
+                    <li data-i18n="r1">Respetar los periodos de veda establecidos.</li>
+                    <li data-i18n="r2">No exceder el límite permitido por especie.</li>
+                    <li data-i18n="r3">Respetar el tamaño mínimo de captura.</li>
+                    <li data-i18n="r4">Prohibido el uso de atarraya, chinchorro y arbaleta.</li>
+                    <li data-i18n="r5">No contaminar el entorno natural.</li>
                 </ul>
             </div>
         </div>
@@ -193,9 +205,9 @@
     <section class="section especies-section">
         <div class="container">
             <div class="section-heading">
-                <span class="section-label center">Biodiversidad acuática</span>
-                <h2>Especies en el Río Caño Negro</h2>
-                <p class="section-subtitle">
+                <span class="section-label center" data-i18n="especies_label">Biodiversidad acuática</span>
+                <h2 data-i18n="especies_title">Especies en el Río Caño Negro</h2>
+                <p class="section-subtitle" data-i18n="especies_desc">
                     Conoce algunas de las especies presentes en el río y sus condiciones de captura o protección.
                 </p>
             </div>
@@ -205,140 +217,140 @@
                 <div class="card">
                     <img src="../../img/comunidad/pesca/Guapote.jpeg" alt="Guapote">
                     <div class="card-body">
-                        <h3>Guapote</h3>
-                        <p>Máximo 5 piezas por persona.</p>
+                        <h3 data-i18n="pez_1_nombre">Guapote</h3>
+                        <p data-i18n="pez_1_desc">Máximo 5 piezas por persona.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/mojarra.jpg" alt="Mojarra">
                     <div class="card-body">
-                        <h3>Mojarra</h3>
-                        <p>Máximo 5 piezas por persona.</p>
+                        <h3 data-i18n="pez_2_nombre">Mojarra</h3>
+                        <p data-i18n="pez_2_desc">Máximo 5 piezas por persona.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/tilapia.jpg" alt="Tilapia">
                     <div class="card-body">
-                        <h3>Tilapia</h3>
-                        <span class="badge">Especie invasora</span>
-                        <p>No tiene límite de captura.</p>
+                        <h3 data-i18n="pez_3_nombre">Tilapia</h3>
+                        <span class="badge" data-i18n="pez_3_badge">Especie invasora</span>
+                        <p data-i18n="pez_3_desc">No tiene límite de captura.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/guapote_lagunero.jpg" alt="Guapote Lagunero">
                     <div class="card-body">
-                        <h3>Guapote Lagunero</h3>
-                        <p>Máximo 5 piezas por persona.</p>
+                        <h3 data-i18n="pez_4_nombre">Guapote Lagunero</h3>
+                        <p data-i18n="pez_4_desc">Máximo 5 piezas por persona.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/roncador.png" alt="Roncador">
                     <div class="card-body">
-                        <h3>Roncador</h3>
-                        <span class="badge">Especie invasora</span>
-                        <p>Máximo 5 piezas por persona.</p>
+                        <h3 data-i18n="pez_5_nombre">Roncador</h3>
+                        <span class="badge" data-i18n="pez_5_badge">Especie invasora</span>
+                        <p data-i18n="pez_5_desc">Máximo 5 piezas por persona.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/robalo.jpg" alt="Robalo">
                     <div class="card-body">
-                        <h3>Robalo</h3>
-                        <p>Máximo 5 piezas por persona.</p>
+                        <h3 data-i18n="pez_6_nombre">Robalo</h3>
+                        <p data-i18n="pez_6_desc">Máximo 5 piezas por persona.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/guabina.jpg" alt="Guabina">
                     <div class="card-body">
-                        <h3>Guabina</h3>
-                        <p>Máximo 5 piezas por persona.</p>
+                        <h3 data-i18n="pez_7_nombre">Guabina</h3>
+                        <p data-i18n="pez_7_desc">Máximo 5 piezas por persona.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/Barbudo.jpeg" alt="Barbudo">
                     <div class="card-body">
-                        <h3>Barbudo</h3>
-                        <p>Pesca libre.</p>
+                        <h3 data-i18n="pez_8_nombre">Barbudo</h3>
+                        <p data-i18n="pez_8_desc">Pesca libre.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/gaspar.jpg" alt="Gaspar">
                     <div class="card-body">
-                        <h3>Gaspar</h3>
-                        <p>1 pieza por familia.</p>
-                        <p>Tamaño mínimo 1.20 m.</p>
+                        <h3 data-i18n="pez_9_nombre">Gaspar</h3>
+                        <p data-i18n="pez_9_desc_1">1 pieza por familia.</p>
+                        <p data-i18n="pez_9_desc_2">Tamaño mínimo 1.20 m.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/sabalo.jpg" alt="Sábalo">
                     <div class="card-body">
-                        <h3>Sábalo</h3>
-                        <p>Permitido únicamente para pesca deportiva.</p>
+                        <h3 data-i18n="pez_10_nombre">Sábalo</h3>
+                        <p data-i18n="pez_10_desc">Permitido únicamente para pesca deportiva.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/machaca.jpg" alt="Machaca">
                     <div class="card-body">
-                        <h3>Sabalete o Machaca</h3>
-                        <p>Máximo 5 piezas por persona.</p>
+                        <h3 data-i18n="pez_11_nombre">Sabalete o Machaca</h3>
+                        <p data-i18n="pez_11_desc">Máximo 5 piezas por persona.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/bobito.jpg" alt="Bobito">
                     <div class="card-body">
-                        <h3>Bobito</h3>
-                        <p>Normalmente se usa como carnada.</p>
+                        <h3 data-i18n="pez_12_nombre">Bobito</h3>
+                        <p data-i18n="pez_12_desc">Normalmente se usa como carnada.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/sardina.png" alt="Sardina">
                     <div class="card-body">
-                        <h3>Sardina</h3>
-                        <p>Normalmente se usa como carnada.</p>
+                        <h3 data-i18n="pez_13_nombre">Sardina</h3>
+                        <p data-i18n="pez_13_desc">Normalmente se usa como carnada.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/pez-diablo.jpg" alt="Pez Diablo">
                     <div class="card-body">
-                        <h3>Pez Diablo</h3>
-                        <span class="badge">Tóxico</span>
+                        <h3 data-i18n="pez_14_nombre">Pez Diablo</h3>
+                        <span class="badge" data-i18n="pez_14_badge">Tóxico</span>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/tortuga.jpg" alt="Tortuga">
                     <div class="card-body">
-                        <h3>Tortuga</h3>
-                        <span class="badge">Prohibido el consumo</span>
+                        <h3 data-i18n="pez_15_nombre">Tortuga</h3>
+                        <span class="badge" data-i18n="pez_15_badge">Prohibido el consumo</span>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/caiman.jpg" alt="Caimán">
                     <div class="card-body">
-                        <h3>Caimán</h3>
-                        <span class="badge">Prohibido el consumo</span>
+                        <h3 data-i18n="pez_16_nombre">Caimán</h3>
+                        <span class="badge" data-i18n="pez_16_badge">Prohibido el consumo</span>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="../../img/comunidad/pesca/cocodrilo.png" alt="Cocodrilo">
                     <div class="card-body">
-                        <h3>Cocodrilo</h3>
-                        <span class="badge">Prohibido el consumo</span>
-                        <span class="badge">Tener precaución</span>
+                        <h3 data-i18n="pez_17_nombre">Cocodrilo</h3>
+                        <span class="badge" data-i18n="pez_17_badge_1">Prohibido el consumo</span>
+                        <span class="badge" data-i18n="pez_17_badge_2">Tener precaución</span>
                     </div>
                 </div>
 
@@ -349,9 +361,9 @@
     <!-- ================= CIERRE ================= -->
     <section class="closing-section">
         <div class="container closing-content">
-            <p class="closing-tag">Caño Negro</p>
-            <h2>La pesca responsable protege la tradición, la comunidad y la biodiversidad del refugio</h2>
-            <p>
+            <p class="closing-tag" data-i18n="cierre_tag">Caño Negro</p>
+            <h2 data-i18n="cierre_title">La pesca responsable protege la tradición, la comunidad y la biodiversidad del refugio</h2>
+            <p data-i18n="cierre_desc">
                 Respetar las regulaciones y valorar las especies del río es parte del compromiso
                 con la conservación y el futuro de Caño Negro.
             </p>
@@ -360,7 +372,7 @@
 
     <!-- ================= FOOTER ================= -->
     <footer>
-        <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
+        <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
             <a href="https://www.facebook.com/adi.canonegro" target="_blank">
@@ -381,6 +393,9 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </footer>
+
+    <script src="../../JS/traductor.js"></script>
+    <script src="../../JS/traducciones/pesca.js"></script>
 
 </body>
 
