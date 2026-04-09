@@ -25,6 +25,12 @@ html{
     scroll-behavior:smooth;
 }
 
+#pesca,
+#vidaComunitaria,
+#puentesFlotantes{
+    scroll-margin-top:140px;
+}
+
 body{
     font-family:'Poppins', sans-serif;
     background:var(--fondo);
