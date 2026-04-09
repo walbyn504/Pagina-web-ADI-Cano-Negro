@@ -12,32 +12,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body data-page="puente">
 
     <!-- ================= HEADER ================= -->
     <header class="main-header">
         <div class="logo-area">
             <img src="../../img/logo_ADI_Blanco.png" alt="Logo ADI Caño Negro" class="logo-img">
             <div class="logo-text">
-                <span>ADI Caño Negro</span>
+                <span data-i18n="logo_text">ADI Caño Negro</span>
             </div>
         </div>
 
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="comunidad.html">Comunidad</a></li>
-                <li><a href="#" class="active">Puentes</a></li>
+                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
+                <li><a href="#" class="active" data-i18n="nav_puentes">Puentes</a></li>
             </ul>
+
+            <div class="language-dropdown">
+                <button type="button" class="language-toggle" id="languageToggle" aria-label="Selector de idioma">
+                    <span id="currentLanguage">ES</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="language-menu" id="languageMenu">
+                    <button type="button" class="language-option active" data-lang="es">ES</button>
+                    <button type="button" class="language-option" data-lang="en">EN</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- ================= HERO ================= -->
     <section class="hero">
         <div class="hero-text">
-            <p class="hero-tag"><Span>Conexión con el humedal</Span></p>
-            <h1>Puentes en <span>Caño Negro</span></h1>
-            <p class="hero-description">
+            <p class="hero-tag" data-i18n="hero_tag">Conexión con el humedal</p>
+            <h1 data-i18n="hero_title">Puentes en <span>Caño Negro</span></h1>
+            <p class="hero-description" data-i18n="hero_description">
                 Estructuras que permiten a la comunidad y a los visitantes acercarse al agua,
                 disfrutar del paisaje y vivir de cerca la riqueza natural de Caño Negro.
             </p>
@@ -49,9 +61,9 @@
         <div class="container">
 
             <div class="section-heading">
-                <span class="section-label center">Infraestructura local</span>
-                <h2>Los Puentes de la Comunidad</h2>
-                <p class="section-subtitle">
+                <span class="section-label center" data-i18n="intro_label">Infraestructura local</span>
+                <h2 data-i18n="intro_title">Los Puentes de la Comunidad</h2>
+                <p class="section-subtitle" data-i18n="intro_subtitle">
                     En Caño Negro existen estructuras conocidas localmente como puentes,
                     aunque en muchos casos funcionan como pasarelas o pequeños muelles
                     que facilitan el acceso al humedal.
@@ -59,13 +71,13 @@
             </div>
 
             <div class="text-box">
-                <p>
+                <p data-i18n="intro_text1">
                     Debido a las características del terreno y a la presencia constante de agua
                     en ciertas áreas, estas estructuras son importantes para acercarse al entorno
                     natural de forma práctica y segura.
                 </p>
 
-                <p>
+                <p data-i18n="intro_text2">
                     Además de su utilidad, forman parte de la identidad visual de la comunidad,
                     ya que conectan a las personas con el paisaje y con muchas de las actividades
                     tradicionales de la zona.
@@ -80,20 +92,20 @@
         <div class="container">
 
             <div class="section-heading left">
-                <span class="section-label">Relación con el entorno</span>
-                <h2>Uso de los Puentes</h2>
+                <span class="section-label" data-i18n="uso_label">Relación con el entorno</span>
+                <h2 data-i18n="uso_title">Uso de los Puentes</h2>
             </div>
 
             <div class="two-columns">
 
                 <article class="text">
-                    <p>
+                    <p data-i18n="uso_text1">
                         Los puentes y muelles de Caño Negro permiten a los habitantes y visitantes
                         acercarse al humedal de forma segura, facilitando actividades como la pesca,
                         los recorridos locales y la observación del paisaje natural.
                     </p>
 
-                    <p>
+                    <p data-i18n="uso_text2">
                         También son espacios muy valorados por quienes disfrutan de la tranquilidad
                         del lugar, de la observación de aves y del contacto directo con la naturaleza
                         que caracteriza a esta región.
@@ -117,8 +129,8 @@
         <div class="container">
 
             <div class="section-heading left">
-                <span class="section-label">Valor comunitario</span>
-                <h2>Importancia para la Comunidad</h2>
+                <span class="section-label" data-i18n="importancia_label">Valor comunitario</span>
+                <h2 data-i18n="importancia_title">Importancia para la Comunidad</h2>
             </div>
 
             <div class="two-columns">
@@ -131,13 +143,13 @@
                 </div>
 
                 <article class="text">
-                    <p>
+                    <p data-i18n="importancia_text1">
                         Estas estructuras permiten un mejor acercamiento al agua y al paisaje natural
                         que distingue a Caño Negro, convirtiéndose en puntos de encuentro entre la
                         comunidad y su entorno.
                     </p>
 
-                    <p>
+                    <p data-i18n="importancia_text2">
                         Además, ayudan a que visitantes y habitantes disfruten de la biodiversidad
                         del humedal, fortaleciendo la relación entre la vida cotidiana, la naturaleza
                         y el valor turístico del lugar.
@@ -152,9 +164,9 @@
     <!-- ================= CIERRE ================= -->
     <section class="closing-section">
         <div class="container closing-content">
-            <p class="closing-tag">Caño Negro</p>
-            <h2>Los puentes reflejan la conexión entre la comunidad y el humedal</h2>
-            <p>
+            <p class="closing-tag" data-i18n="closing_tag">Caño Negro</p>
+            <h2 data-i18n="closing_title">Los puentes reflejan la conexión entre la comunidad y el humedal</h2>
+            <p data-i18n="closing_description">
                 Más que simples estructuras, representan una forma de acercarse a la naturaleza,
                 valorar el paisaje y fortalecer el vínculo entre las personas y el entorno que da vida
                 a Caño Negro.
@@ -164,7 +176,7 @@
 
     <!-- ================= FOOTER ================= -->
     <footer>
-        <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
+        <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
             <a href="https://www.facebook.com/adi.canonegro" target="_blank">
@@ -185,6 +197,9 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </footer>
+
+    <script src="../../JS/traductor.js"></script>
+    <script src="../../JS/traducciones/puente.js"></script>
 
 </body>
 

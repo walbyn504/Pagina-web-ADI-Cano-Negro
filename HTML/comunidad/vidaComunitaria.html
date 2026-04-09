@@ -9,34 +9,49 @@
     <link rel="stylesheet" href="../../CSS/comunidad/vidaComunitaria.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body data-page="vidaComunitaria">
 
     <!-- ================= HEADER ================= -->
     <header class="main-header">
         <div class="logo-area">
             <img src="../../img/logo_ADI_Blanco.png" alt="Logo ADI Caño Negro" class="logo-img">
             <div class="logo-text">
-                <span>ADI Caño Negro</span>
+                <span data-i18n="logo_text">ADI Caño Negro</span>
             </div>
         </div>
 
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="comunidad.html">Comunidad</a></li>
-                <li><a href="#" class="active">Vida Comuitaria</a></li>
+                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
+                <li><a href="#" class="active" data-i18n="nav_vida">Vida Comunitaria</a></li>
             </ul>
+
+            <div class="language-dropdown">
+                <button type="button" class="language-toggle" id="languageToggle" aria-label="Selector de idioma">
+                    <span id="currentLanguage">ES</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="language-menu" id="languageMenu">
+                    <button type="button" class="language-option active" data-lang="es">ES</button>
+                    <button type="button" class="language-option" data-lang="en">EN</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- ================= HERO ================= -->
     <section class="hero">
         <div class="hero-text">
-            <p class="hero-tag"><span>Tradición, identidad y convivencia</span></p>
-            <h1>Vida Comunitaria en <span>Caño Negro</span></h1>
-            <p class="hero-description">
+            <p class="hero-tag">
+                <span data-i18n="hero_tag">Tradición, identidad y convivencia</span>
+            </p>
+            <h1 data-i18n="hero_title">Vida Comunitaria en <span>Caño Negro</span></h1>
+            <p class="hero-description" data-i18n="hero_description">
                 Descubre la cultura, las actividades económicas, las tradiciones y
                 la organización social que dan vida a la comunidad de Caño Negro.
             </p>
@@ -47,9 +62,9 @@
     <section class="section intro-section">
         <div class="container">
             <div class="section-heading">
-                <span class="section-label center">Información general</span>
-                <h2>La Comunidad de Caño Negro</h2>
-                <p class="section-subtitle">
+                <span class="section-label center" data-i18n="intro_label">Información general</span>
+                <h2 data-i18n="intro_title">La Comunidad de Caño Negro</h2>
+                <p class="section-subtitle" data-i18n="intro_subtitle">
                     Caño Negro es una comunidad que destaca por su cercanía con la naturaleza,
                     la cooperación entre vecinos y la preservación de tradiciones que fortalecen
                     su identidad cultural.
@@ -57,20 +72,20 @@
             </div>
 
             <div class="text-box">
-                <p>
+                <p data-i18n="intro_text1">
                     Caño Negro es una comunidad ubicada en la zona norte de Costa Rica,
                     reconocida por su cercanía con el Refugio Nacional de Vida Silvestre
                     y por la fuerte relación que sus habitantes mantienen con
                     la naturaleza.
                 </p>
 
-                <p>
+                <p data-i18n="intro_text2">
                     La vida en esta comunidad se caracteriza por la cooperación entre vecinos,
                     el respeto por el entorno natural y la preservación de costumbres que forman
                     parte de su identidad.
                 </p>
 
-                <p>
+                <p data-i18n="intro_text3">
                     A lo largo de los años, las familias han desarrollado diversas actividades
                     económicas que les permiten vivir en armonía con el ambiente y aprovechar
                     los recursos naturales de forma responsable.
@@ -84,21 +99,21 @@
         <div class="container">
 
             <div class="section-heading left">
-                <span class="section-label">Desarrollo local</span>
-                <h2>Actividades Económicas</h2>
+                <span class="section-label" data-i18n="economia_label">Desarrollo local</span>
+                <h2 data-i18n="economia_title">Actividades Económicas</h2>
             </div>
 
             <div class="two-columns">
 
                 <div class="text">
-                    <p>
+                    <p data-i18n="economia_text1">
                         Entre las principales actividades económicas de Caño Negro se
                         encuentran la pesca, la agricultura y el turismo rural. Estas
                         actividades representan una fuente importante de ingresos para
                         muchas familias de la comunidad.
                     </p>
 
-                    <p>
+                    <p data-i18n="economia_text2">
                         El turismo también ha crecido en la zona gracias a la riqueza
                         natural del refugio, atrayendo visitantes interesados en la
                         observación de aves, paseos en bote y experiencias culturales.
@@ -122,8 +137,8 @@
         <div class="container">
 
             <div class="section-heading left">
-                <span class="section-label">Identidad cultural</span>
-                <h2>Cultura y Tradiciones</h2>
+                <span class="section-label" data-i18n="cultura_label">Identidad cultural</span>
+                <h2 data-i18n="cultura_title">Cultura y Tradiciones</h2>
             </div>
 
             <div class="two-columns">
@@ -136,7 +151,7 @@
                 </div>
 
                 <div class="text">
-                    <p>
+                    <p data-i18n="cultura_text1">
                         La cultura de Caño Negro está marcada por tradiciones que se han
                         transmitido de generación en generación. Las celebraciones
                         comunitarias, las actividades religiosas y las festividades
@@ -144,7 +159,7 @@
                         fortalecer los lazos sociales y mantener viva su identidad.
                     </p>
 
-                    <p>
+                    <p data-i18n="cultura_text2">
                         La gastronomía local también forma parte importante de la cultura,
                         destacándose platillos tradicionales elaborados con productos de
                         la región.
@@ -161,21 +176,21 @@
         <div class="container">
 
             <div class="section-heading left">
-                <span class="section-label">Participación social</span>
-                <h2>Organización Comunitaria</h2>
+                <span class="section-label" data-i18n="organizacion_label">Participación social</span>
+                <h2 data-i18n="organizacion_title">Organización Comunitaria</h2>
             </div>
 
             <div class="two-columns">
 
                 <div class="text">
-                    <p>
+                    <p data-i18n="organizacion_text1">
                         La comunidad cuenta con organizaciones locales que trabajan por
                         el bienestar y el desarrollo del lugar. Estas organizaciones
                         promueven proyectos sociales, educativos y ambientales que
                         buscan mejorar la calidad de vida de los habitantes.
                     </p>
 
-                    <p>
+                    <p data-i18n="organizacion_text2">
                         Además, los vecinos participan activamente en actividades
                         comunitarias, colaborando en iniciativas que fortalecen
                         la convivencia y la protección de los recursos naturales.
@@ -199,9 +214,9 @@
         <div class="container">
 
             <div class="section-heading">
-                <span class="section-label center">Fortaleza comunitaria</span>
-                <h2>Valores de la Vida Comunitaria</h2>
-                <p class="section-subtitle">
+                <span class="section-label center" data-i18n="valores_label">Fortaleza comunitaria</span>
+                <h2 data-i18n="valores_title">Valores de la Vida Comunitaria</h2>
+                <p class="section-subtitle" data-i18n="valores_subtitle">
                     La convivencia en Caño Negro se apoya en principios que fortalecen
                     la identidad, la cooperación y el respeto por el entorno.
                 </p>
@@ -209,24 +224,24 @@
 
             <div class="info-grid">
                 <div class="info-card">
-                    <h3>Cooperación</h3>
-                    <p>
+                    <h3 data-i18n="valor1_title">Cooperación</h3>
+                    <p data-i18n="valor1_text">
                         Los vecinos participan en actividades y proyectos que benefician
                         a la comunidad y fortalecen la unión entre familias.
                     </p>
                 </div>
 
                 <div class="info-card">
-                    <h3>Identidad cultural</h3>
-                    <p>
+                    <h3 data-i18n="valor2_title">Identidad cultural</h3>
+                    <p data-i18n="valor2_text">
                         Las tradiciones, celebraciones y costumbres locales forman parte
                         esencial del sentido de pertenencia de la comunidad.
                     </p>
                 </div>
 
                 <div class="info-card">
-                    <h3>Respeto por la naturaleza</h3>
-                    <p>
+                    <h3 data-i18n="valor3_title">Respeto por la naturaleza</h3>
+                    <p data-i18n="valor3_text">
                         La relación con el entorno natural es parte de la vida diaria y
                         guía muchas de las prácticas de la comunidad.
                     </p>
@@ -239,9 +254,9 @@
     <!-- ================= CIERRE ================= -->
     <section class="closing-section">
         <div class="container closing-content">
-            <p class="closing-tag">Caño Negro</p>
-            <h2>La vida comunitaria refleja la unión entre cultura, trabajo y naturaleza</h2>
-            <p>
+            <p class="closing-tag" data-i18n="closing_tag">Caño Negro</p>
+            <h2 data-i18n="closing_title">La vida comunitaria refleja la unión entre cultura, trabajo y naturaleza</h2>
+            <p data-i18n="closing_description">
                 Conocer la comunidad de Caño Negro es valorar su historia, sus tradiciones
                 y el compromiso de sus habitantes con el desarrollo local y la conservación
                 del entorno.
@@ -251,7 +266,7 @@
 
     <!-- ================= FOOTER ================= -->
     <footer>
-        <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
+        <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
             <a href="https://www.facebook.com/adi.canonegro" target="_blank">
@@ -272,6 +287,9 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </footer>
+
+    <script src="../../JS/traductor.js"></script>
+    <script src="../../JS/traducciones/vidaComunitaria.js"></script>
 
 </body>
 

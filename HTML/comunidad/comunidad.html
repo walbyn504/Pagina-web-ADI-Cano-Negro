@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidad Caño Negro</title>
 
     <link rel="stylesheet" href="../../CSS/comunidad/comunidad.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+
+<body data-page="comunidad">
 
     <header class="main-header">
         <div class="logo-area">
             <img src="../../img/logo_ADI_Blanco.png" alt="Logo ADI Caño Negro" class="logo-img">
             <div class="logo-text">
-                <span>ADI Caño Negro</span>
+                <span data-i18n="logo_text">ADI Caño Negro</span>
             </div>
         </div>
 
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../Senderos/senderos.html">Senderos</a></li>
-                <li><a href="#" class="active">Comunidad</a></li>
-                <li><a href="../floraFauna/floraFauna.html">Flora y Fauna</a></li>
-                <li><a href="emprendedores.html">Emprendedores</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="BanderaAzul.html">Bandera Azul Ecológica</a></li>
+                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="../Senderos/senderos.html" data-i18n="nav_senderos">Senderos</a></li>
+                <li><a href="#" class="active" data-i18n="nav_comunidad">Comunidad</a></li>
+                <li><a href="../floraFauna/floraFauna.html" data-i18n="nav_flora">Flora y Fauna</a></li>
+                <li><a href="emprendedores.html" data-i18n="nav_emprendedores">Emprendedores</a></li>
+                <li><a href="videos.html" data-i18n="nav_videos">Videos</a></li>
+                <li><a href="BanderaAzul.html" data-i18n="nav_bandera">Bandera Azul Ecológica</a></li>
             </ul>
+
+            <div class="language-dropdown">
+                <button type="button" class="language-toggle" id="languageToggle" aria-label="Selector de idioma">
+                    <span id="currentLanguage">ES</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="language-menu" id="languageMenu">
+                    <button type="button" class="language-option active" data-lang="es">ES</button>
+                    <button type="button" class="language-option" data-lang="en">EN</button>
+                </div>
+            </div>
         </nav>
     </header>
-    
 
     <!-- HERO -->
     <section class="hero-comunidad">
         <div class="hero-content">
-            <p class="hero-tag"><span>Cultura, tradición y naturaleza</span></p>
-            <h1>Comunidad de <span><br> Caño Negro </span></h1>
-            <p class="description">
+            <p class="hero-tag">
+                <span data-i18n="comunidad_hero_tag">Cultura, tradición y naturaleza</span>
+            </p>
+            <h1 data-i18n="comunidad_hero_title">
+                Comunidad de <span><br> Caño Negro </span>
+            </h1>
+            <p class="description" data-i18n="comunidad_hero_desc">
                 Un lugar donde la vida comunitaria, el trabajo en conjunto y el respeto
                 por la naturaleza forman parte de la identidad de cada familia.
             </p>
         </div>
     </section>
 
+    <!-- NAV -->
     <section class="section-nav">
         <div class="container">
             <div class="section-nav-links">
-                <a href="#pesca"><i class="fa-solid fa-fish"></i> Pesca</a>
-                <a href="#vidaComunitaria"><i class="fa-solid fa-people-group"></i> Vida comunitaria</a>
-                <a href="#puentesFlotantes"><i class="fa-solid fa-bridge-water"></i> Puentes Flotantes</a>
+                <a href="#pesca">
+                    <i class="fa-solid fa-fish"></i>
+                    <span data-i18n="comunidad_nav_pesca">Pesca</span>
+                </a>
+                <a href="#vidaComunitaria">
+                    <i class="fa-solid fa-people-group"></i>
+                    <span data-i18n="comunidad_nav_vida">Vida comunitaria</span>
+                </a>
+                <a href="#puentesFlotantes">
+                    <i class="fa-solid fa-bridge-water"></i>
+                    <span data-i18n="comunidad_nav_puentes">Puentes Flotantes</span>
+                </a>
             </div>
         </div>
     </section>
@@ -58,9 +86,11 @@
     <!-- INTRO -->
     <section class="intro-comunidad">
         <div class="container intro-content">
-            <span class="section-label center">Identidad local</span>
-            <h2 class="section-title">Una comunidad conectada con su entorno</h2>
-            <p class="section-subtitle">
+            <span class="section-label center" data-i18n="comunidad_intro_label">Identidad local</span>
+            <h2 class="section-title" data-i18n="comunidad_intro_title">
+                Una comunidad conectada con su entorno
+            </h2>
+            <p class="section-subtitle" data-i18n="comunidad_intro_subtitle">
                 Caño Negro no solo destaca por su riqueza natural, sino también por la
                 historia, las tradiciones y el esfuerzo colectivo de su gente.
             </p>
@@ -78,52 +108,30 @@
                 </div>
 
                 <div class="info-text">
-                    <span class="info-label">Tradición viva</span>
-                    <h2 id="pesca"><i class="fa-solid fa-fish"></i> Pesca</h2>
+                    <span class="info-label" data-i18n="comunidad_pesca_label">Tradición viva</span>
+                    <h2 id="pesca" data-i18n="comunidad_pesca_title"></h2>
 
-                    <p>
-                        La pesca es una actividad fundamental para muchas familias de la comunidad,
-                        realizada principalmente en el río Frío y en los humedales. Además de proveer
-                        alimento, representa una fuente de ingresos y fortalece la convivencia entre
-                        los habitantes.
-                    </p>
+                    <p data-i18n="comunidad_pesca_text1"></p>
+                    <p data-i18n="comunidad_pesca_text2"></p>
 
-                    <p>
-                        Se emplean prácticas que buscan respetar el equilibrio natural del ecosistema,
-                        formando parte de la identidad cultural de Caño Negro y promoviendo la
-                        sostenibilidad, la tradición y el respeto por la naturaleza.
-                    </p>
-
-                    <a href="pesca.html" class="btn-ver-mas">
-                        Ver más información <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <a href="pesca.html" class="btn-ver-mas" data-i18n="comunidad_btn_more"></a>
                 </div>
             </div>
 
-            <!-- VIDA COMUNITARIA -->
+            <!-- VIDA -->
             <div class="info-row reverse">
                 <div class="info-img">
                     <img src="../../img/comunidad/comunidad_cañoNegro.jpg" alt="Comunidad Caño Negro">
                 </div>
 
                 <div class="info-text">
-                    <span class="info-label">Convivencia</span>
-                    <h2 id="vidaComunitaria"><i class="fa-solid fa-people-group"></i> Vida Comunitaria</h2>
+                    <span class="info-label" data-i18n="comunidad_vida_label">Convivencia</span>
+                    <h2 id="vidaComunitaria" data-i18n="comunidad_vida_title"></h2>
 
-                    <p>
-                        Caño Negro es una comunidad pequeña pero muy unida. Las personas se conocen,
-                        colaboran entre sí y trabajan juntas para salir adelante. La vida gira en torno
-                        a la naturaleza, el río y las tradiciones que han pasado de generación en generación.
-                    </p>
+                    <p data-i18n="comunidad_vida_text1"></p>
+                    <p data-i18n="comunidad_vida_text2"></p>
 
-                    <p>
-                        Con esfuerzo y organización, la comunidad protege su entorno y promueve un
-                        turismo responsable que beneficie a sus habitantes y fortalezca el desarrollo local.
-                    </p>
-
-                    <a href="vidaComunitaria.html" class="btn-ver-mas">
-                        Ver más información <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <a href="vidaComunitaria.html" class="btn-ver-mas" data-i18n="comunidad_btn_more"></a>
                 </div>
             </div>
 
@@ -134,24 +142,13 @@
                 </div>
 
                 <div class="info-text">
-                    <span class="info-label">Paisaje local</span>
-                    <h2 id="puentesFlotantes"><i class="fa-solid fa-bridge-water"></i> Puentes Flotantes</h2>
+                    <span class="info-label" data-i18n="comunidad_puentes_label">Paisaje local</span>
+                    <h2 id="puentesFlotantes" data-i18n="comunidad_puentes_title"></h2>
 
-                    <p>
-                        Los puentes flotantes son una atracción representativa de la comunidad de Caño Negro.
-                        Más que una estructura, son un punto de encuentro donde vecinos y visitantes comparten
-                        conversaciones y disfrutan del paisaje.
-                    </p>
+                    <p data-i18n="comunidad_puentes_text1"></p>
+                    <p data-i18n="comunidad_puentes_text2"></p>
 
-                    <p>
-                        Durante la temporada lluviosa, cuando el nivel del agua aumenta, estos puentes se
-                        adaptan de forma natural al entorno, reflejando la capacidad de la comunidad para
-                        convivir en armonía con la naturaleza.
-                    </p>
-
-                    <a href="puente.html" class="btn-ver-mas">
-                        Ver más información <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <a href="puente.html" class="btn-ver-mas" data-i18n="comunidad_btn_more"></a>
                 </div>
             </div>
 
@@ -161,17 +158,15 @@
     <!-- CIERRE -->
     <section class="closing-section">
         <div class="container closing-content">
-            <p class="closing-tag">Caño Negro</p>
-            <h2>Una comunidad que conserva su esencia mientras cuida su entorno natural</h2>
-            <p>
-                Conocer Caño Negro también es conocer a su gente, sus costumbres,
-                su historia y la forma en que conviven con la naturaleza.
-            </p>
+            <p class="closing-tag" data-i18n="comunidad_closing_tag">Caño Negro</p>
+            <h2 data-i18n="comunidad_closing_title"></h2>
+            <p data-i18n="comunidad_closing_desc"></p>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
+        <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
             <a href="https://www.facebook.com/adi.canonegro" target="_blank">
@@ -193,5 +188,9 @@
         </a>
     </footer>
 
+    <script src="../../JS/traductor.js"></script>
+    <script src="../../JS/traducciones/comunidad.js"></script>
+
 </body>
+
 </html>
