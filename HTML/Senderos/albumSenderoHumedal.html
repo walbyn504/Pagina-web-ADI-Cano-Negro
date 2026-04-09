@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body data-page="humedal">
 
     <!-- ================= HEADER ================= -->
     <header class="main-header">
@@ -25,19 +25,31 @@
 
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../Senderos/senderos.html">Senderos</a></li>
-                <li><a href="#" class="active">Sendero El Humedal</a></li>
+                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="../Senderos/senderos.html" data-i18n="nav_senderos">Senderos</a></li>
+                <li><a href="#" class="active" data-i18n="humedal_nav_current">Sendero El Humedal</a></li>
             </ul>
+
+            <div class="language-dropdown">
+                <button class="language-toggle" id="languageToggle" type="button">
+                    <span id="currentLanguage">ES</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="language-menu">
+                    <button class="language-option active" data-lang="es" type="button">ES</button>
+                    <button class="language-option" data-lang="en" type="button">EN</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- ================= HERO ================= -->
     <section class="album-header">
         <div class="hero-text">
-            <p class="hero-tag"><span>Agua, aves y biodiversidad</span></p>
-            <h1>Sendero El <span>Humedal</span></h1>
-            <p class="hero-description">
+            <p class="hero-tag" data-i18n="humedal_hero_tag">Agua, aves y biodiversidad</p>
+            <h1 data-i18n="humedal_hero_title">Sendero El <span>Humedal</span></h1>
+            <p class="hero-description" data-i18n="humedal_hero_desc">
                 Un recorrido mágico entre espejos de agua, aves exóticas y la serenidad
                 de uno de los ecosistemas más valiosos del Refugio Caño Negro.
             </p>
@@ -49,36 +61,36 @@
         <div class="container">
 
             <div class="info-title">
-                <span class="section-label center">Explora el recorrido</span>
-                <h2>Información del Sendero</h2>
-                <p>Descubre la riqueza natural del humedal y conoce sus principales características.</p>
+                <span class="section-label center" data-i18n="humedal_info_label">Explora el recorrido</span>
+                <h2 data-i18n="humedal_info_title">Información del Sendero</h2>
+                <p data-i18n="humedal_info_subtitle">Descubre la riqueza natural del humedal y conoce sus principales características.</p>
             </div>
 
             <div class="info-album">
 
                 <div class="info-box">
-                    <span class="box-label">Descripción</span>
-                    <h3>Un ecosistema lleno de vida</h3>
-                    <p>
+                    <span class="box-label" data-i18n="humedal_box1_label">Descripción</span>
+                    <h3 data-i18n="humedal_box1_title">Un ecosistema lleno de vida</h3>
+                    <p data-i18n="humedal_box1_text1">
                         El Sendero El Humedal ofrece una experiencia única de contacto con la biodiversidad
                         acuática. Durante el recorrido podrás observar aves migratorias, reptiles y una amplia
                         variedad de flora adaptada a este ecosistema húmedo.
                     </p>
 
-                    <p>
+                    <p data-i18n="humedal_box1_text2">
                         Es un espacio ideal para admirar la tranquilidad del paisaje, aprender sobre la importancia
                         de los humedales y conectar con uno de los entornos más representativos de Caño Negro.
                     </p>
                 </div>
 
                 <div class="data-box">
-                    <span class="box-label">Detalles</span>
-                    <h3>Características del sendero</h3>
+                    <span class="box-label" data-i18n="humedal_box2_label">Detalles</span>
+                    <h3 data-i18n="humedal_box2_title">Características del sendero</h3>
                     <ul>
-                        <li><i class="fa-solid fa-ruler-horizontal"></i> Distancia: 1.8 km</li>
-                        <li><i class="fa-solid fa-clock"></i> Duración aproximada: 1 hora</li>
-                        <li><i class="fa-solid fa-leaf"></i> Dificultad: Fácil</li>
-                        <li><i class="fa-solid fa-binoculars"></i> Ideal para observación de aves y paisaje</li>
+                        <li><i class="fa-solid fa-ruler-horizontal"></i> <span data-i18n="humedal_detail_1">Distancia: 1.8 km</span></li>
+                        <li><i class="fa-solid fa-clock"></i> <span data-i18n="humedal_detail_2">Duración aproximada: 1 hora</span></li>
+                        <li><i class="fa-solid fa-leaf"></i> <span data-i18n="humedal_detail_3">Dificultad: Fácil</span></li>
+                        <li><i class="fa-solid fa-binoculars"></i> <span data-i18n="humedal_detail_4">Ideal para observación de aves y paisaje</span></li>
                     </ul>
                 </div>
 
@@ -91,9 +103,9 @@
         <div class="container">
 
             <div class="gallery-title">
-                <span class="section-label center">Paisajes del humedal</span>
-                <h2>Galería de Imágenes</h2>
-                <p>Conoce algunos de los escenarios naturales que forman parte de este recorrido.</p>
+                <span class="section-label center" data-i18n="humedal_gallery_label">Paisajes del humedal</span>
+                <h2 data-i18n="humedal_gallery_title">Galería de Imágenes</h2>
+                <p data-i18n="humedal_gallery_desc">Conoce algunos de los escenarios naturales que forman parte de este recorrido.</p>
             </div>
 
             <div class="gallery-grid">
@@ -120,10 +132,11 @@
     <!-- ================= CIERRE ================= -->
     <section class="closing-section">
         <div class="container closing-content">
-            <p class="closing-tag">Caño Negro</p>
-            <h2>Recorrer el humedal es descubrir la importancia de conservar el agua, la vida silvestre y el equilibrio
-                natural</h2>
-            <p>
+            <p class="closing-tag" data-i18n="humedal_closing_tag">Caño Negro</p>
+            <h2 data-i18n="humedal_closing_title">
+                Recorrer el humedal es descubrir la importancia de conservar el agua, la vida silvestre y el equilibrio natural
+            </h2>
+            <p data-i18n="humedal_closing_desc">
                 Cada paso en este sendero permite apreciar la biodiversidad de un ecosistema
                 vital para el refugio y para la identidad natural de Caño Negro.
             </p>
@@ -131,7 +144,7 @@
     </section>
 
     <footer>
-        <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
+        <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
             <a href="https://www.facebook.com/adi.canonegro" target="_blank">
@@ -153,8 +166,9 @@
         </a>
     </footer>
 
-    <script src="../../JS/senderos.js"></script>
-
+    <script src="../../JS/traducciones/humedad.js"></script>
+    <script src="../../JS/traductor.js"></script>
+    
 </body>
 
 </html>

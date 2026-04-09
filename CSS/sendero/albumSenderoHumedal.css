@@ -30,6 +30,7 @@ body{
     color:var(--texto);
     line-height:1.6;
     padding-top:90px;
+    overflow-x:hidden;
 }
 
 img{
@@ -39,6 +40,10 @@ img{
 
 a{
     text-decoration:none;
+}
+
+ul{
+    list-style:none;
 }
 
 .container{
@@ -52,50 +57,72 @@ a{
     top:0;
     left:0;
     width:100%;
-    height:90px;
+    min-height:90px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 50px;
+    gap:20px;
+    padding:0 40px;
     background:rgba(11,57,28,0.88);
     backdrop-filter:blur(10px);
     box-shadow:0 8px 25px rgba(0,0,0,0.18);
     z-index:1000;
+    transition:all 0.3s ease;
 }
 
 .logo-area{
     display:flex;
     align-items:center;
     gap:12px;
+    flex-shrink:0;
 }
 
 .logo-img{
-    height:60px;
+    height:54px;
     width:auto;
     object-fit:contain;
 }
 
 .logo-text span{
     color:white;
-    font-size:22px;
+    font-size:18px;
     font-weight:700;
-    letter-spacing:0.4px;
+    letter-spacing:0.3px;
+    line-height:1.1;
+}
+
+/* ================= NAV ================= */
+nav{
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:14px;
+    min-width:0;
 }
 
 nav ul{
     display:flex;
-    list-style:none;
-    gap:28px;
+    gap:18px;
     align-items:center;
+    justify-content:flex-end;
+    flex-wrap:wrap;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    list-style:none;
 }
 
 nav a{
     position:relative;
     color:white;
-    font-weight:500;
-    font-size:15px;
+    font-weight:600;
+    font-size:13px;
     transition:0.3s ease;
     padding-bottom:5px;
+    white-space:nowrap;
 }
 
 nav a::after{
@@ -119,13 +146,108 @@ nav a.active::after{
     width:100%;
 }
 
+/* ================= LANGUAGE DROPDOWN ================= */
+.language-dropdown{
+    position:relative;
+    margin-left:18px;
+    flex-shrink:0;
+}
+
+.language-toggle{
+    min-width:88px;
+    height:42px;
+    padding:0 14px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    border:1px solid rgba(255,255,255,0.18);
+    border-radius:14px;
+    background:rgba(255,255,255,0.06);
+    color:white;
+    font-family:'Poppins', sans-serif;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.6px;
+    cursor:pointer;
+    transition:0.3s ease;
+    backdrop-filter:blur(8px);
+}
+
+.language-toggle:hover{
+    background:rgba(255,255,255,0.10);
+    border-color:rgba(255,255,255,0.28);
+}
+
+.language-toggle i{
+    font-size:13px;
+    transition:transform 0.25s ease;
+}
+
+.language-dropdown.open .language-toggle i{
+    transform:rotate(180deg);
+}
+
+.language-menu{
+    position:absolute;
+    top:calc(100% + 10px);
+    right:0;
+    min-width:88px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    padding:10px;
+    border-radius:18px;
+    background:rgba(20, 56, 34, 0.94);
+    border:1px solid rgba(255,255,255,0.10);
+    box-shadow:0 18px 35px rgba(0,0,0,0.22);
+    backdrop-filter:blur(14px);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(8px);
+    transition:0.25s ease;
+    z-index:1200;
+}
+
+.language-dropdown.open .language-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.language-option{
+    width:100%;
+    border:none;
+    background:transparent;
+    color:rgba(255,255,255,0.92);
+    font-family:'Poppins', sans-serif;
+    font-size:13px;
+    font-weight:600;
+    text-align:left;
+    padding:12px 14px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.25s ease;
+}
+
+.language-option:hover{
+    background:rgba(255,255,255,0.08);
+    color:#ffffff;
+}
+
+.language-option.active{
+    background:rgba(113, 201, 138, 0.12);
+    color:var(--verde-secundario);
+    box-shadow:inset 0 0 0 1px rgba(113, 201, 138, 0.16);
+}
+
 /* ================= HERO ================= */
 .album-header{
     min-height:92vh;
     display:flex;
     align-items:center;
     justify-content:flex-start;
-    padding:0 8%;
+    padding:0 90px;
     background:
         linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.42)),
         url('../../img/senderos/humedal/senderoHumedal.jpg') center/cover no-repeat;
@@ -169,7 +291,7 @@ nav a.active::after{
 }
 
 .album-header p span{
-    color:#59f783;;
+    color:#59f783;
 }
 
 .hero-description{
@@ -197,7 +319,7 @@ nav a.active::after{
 /* ================= TEXTOS GENERALES ================= */
 .section-label{
     display:inline-block;
-     color:black;
+    color:black;
     font-size:14px;
     font-weight:700;
     text-transform:uppercase;
@@ -323,7 +445,7 @@ nav a.active::after{
 }
 
 .data-box li i{
-     color:#10722e;
+    color:#10722e;
     margin-top:4px;
     min-width:18px;
 }
@@ -490,7 +612,7 @@ nav a.active::after{
 .closing-content h2::after{
     content:"";
     display:block;
-    width:850px;
+    width:min(850px, 100%);
     height:4px;
     margin:16px auto 0;
     border-radius:999px;
@@ -522,6 +644,7 @@ footer p{
     display:flex;
     justify-content:center;
     gap:25px;
+    flex-wrap:wrap;
 }
 
 .social-links a{
@@ -559,21 +682,43 @@ footer p{
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width:1200px){
+@media (max-width:1100px){
     .main-header{
         padding:0 25px;
     }
 
+    nav{
+        gap:10px;
+    }
+
     nav ul{
-        gap:18px;
+        gap:14px;
     }
 
     nav a{
-        font-size:14px;
+        font-size:12px;
     }
-}
 
-@media (max-width:1100px){
+    .language-dropdown{
+        margin-left:10px;
+    }
+
+    .language-toggle{
+        min-width:80px;
+        height:40px;
+        font-size:12px;
+        padding:0 12px;
+    }
+
+    .language-menu{
+        min-width:80px;
+    }
+
+    .language-option{
+        font-size:12px;
+        padding:11px 12px;
+    }
+
     .album-header{
         padding:0 40px;
     }
@@ -584,6 +729,34 @@ footer p{
 }
 
 @media (max-width:900px){
+    .main-header{
+        height:auto;
+        padding:15px 20px;
+        flex-direction:column;
+        gap:14px;
+    }
+
+    body{
+        padding-top:140px;
+    }
+
+    nav{
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+    }
+
+    nav ul{
+        justify-content:center;
+    }
+
+    .language-dropdown{
+        margin-left:0;
+        justify-content:center;
+        align-self:center;
+    }
+
     .album-header{
         padding:40px 20px;
         text-align:center;
@@ -599,28 +772,51 @@ footer p{
         margin-inline:auto;
     }
 
-    .main-header{
-        height:auto;
-        padding:15px 20px;
-        flex-direction:column;
-        gap:14px;
-    }
-
-    body{
-        padding-top:140px;
-    }
-
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
     .closing-content h2{
         font-size:36px;
     }
 }
 
 @media (max-width:600px){
+    body{
+        padding-top:150px;
+    }
+
+    .logo-area{
+        flex-direction:column;
+        text-align:center;
+        gap:8px;
+    }
+
+    .logo-text span{
+        font-size:17px;
+    }
+
+    nav ul{
+        gap:12px;
+    }
+
+    nav a{
+        font-size:12px;
+    }
+
+    .language-dropdown{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        margin-left:0;
+    }
+
+    .language-toggle{
+        min-width:76px;
+        height:38px;
+        font-size:12px;
+    }
+
+    .language-menu{
+        min-width:76px;
+    }
+
     .album-header h1{
         font-size:42px;
     }

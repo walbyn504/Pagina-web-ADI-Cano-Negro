@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body data-page="montana">
 
     <!-- ================= HEADER ================= -->
     <header class="main-header">
@@ -25,19 +25,31 @@
 
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../Senderos/senderos.html">Senderos</a></li>
-                <li><a href="#" class="active">Sendero La Montaña</a></li>
+                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="../Senderos/senderos.html" data-i18n="nav_senderos">Senderos</a></li>
+                <li><a href="#" class="active" data-i18n="montana_nav_current">Sendero La Montaña</a></li>
             </ul>
+
+            <div class="language-dropdown">
+                <button class="language-toggle" id="languageToggle" type="button">
+                    <span id="currentLanguage">ES</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="language-menu">
+                    <button class="language-option active" data-lang="es" type="button">ES</button>
+                    <button class="language-option" data-lang="en" type="button">EN</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- ================= HERO ================= -->
     <section class="album-header">
         <div class="hero-text">
-            <p class="hero-tag"><span>Bosque, biodiversidad y aventura</span></p>
-            <h1>Sendero La <span>Montaña</span></h1>
-            <p class="hero-description">
+            <p class="hero-tag" data-i18n="montana_hero_tag">Bosque, biodiversidad y aventura</p>
+            <h1 data-i18n="montana_hero_title">Sendero La <span>Montaña</span></h1>
+            <p class="hero-description" data-i18n="montana_hero_desc">
                 Un recorrido natural rodeado de bosque primario, miradores y una biodiversidad
                 única que refleja la riqueza ecológica de Caño Negro.
             </p>
@@ -48,23 +60,23 @@
     <section class="info-section">
         <div class="container">
             <div class="info-title">
-                <span class="section-label center">Explora el recorrido</span>
-                <h2>Información del Sendero</h2>
-                <p>Conoce las características principales de esta experiencia en contacto con la naturaleza.</p>
+                <span class="section-label center" data-i18n="montana_info_label">Explora el recorrido</span>
+                <h2 data-i18n="montana_info_title">Información del Sendero</h2>
+                <p data-i18n="montana_info_subtitle">Conoce las características principales de esta experiencia en contacto con la naturaleza.</p>
             </div>
 
             <div class="info-album">
 
                 <div class="info-box">
-                    <span class="box-label">Descripción</span>
-                    <h3>Un sendero rodeado de vida</h3>
-                    <p>
+                    <span class="box-label" data-i18n="montana_box1_label">Descripción</span>
+                    <h3 data-i18n="montana_box1_title">Un sendero rodeado de vida</h3>
+                    <p data-i18n="montana_box1_text1">
                         El Sendero La Montaña es uno de los recorridos más visitados dentro del refugio.
                         Atraviesa bosque tropical húmedo y permite la observación de aves, monos y
                         diversas especies de flora nativa.
                     </p>
 
-                    <p>
+                    <p data-i18n="montana_box1_text2">
                         Es una experiencia ideal para quienes desean conectarse con el paisaje,
                         apreciar la biodiversidad local y disfrutar de un entorno natural lleno
                         de tranquilidad y valor ecológico.
@@ -72,13 +84,13 @@
                 </div>
 
                 <div class="data-box">
-                    <span class="box-label">Detalles</span>
-                    <h3>Características del sendero</h3>
+                    <span class="box-label" data-i18n="montana_box2_label">Detalles</span>
+                    <h3 data-i18n="montana_box2_title">Características del sendero</h3>
                     <ul>
-                        <li><i class="fa-solid fa-ruler-horizontal"></i> Distancia: 2 km</li>
-                        <li><i class="fa-solid fa-clock"></i> Duración aproximada: 1.5 horas</li>
-                        <li><i class="fa-solid fa-leaf"></i> Dificultad: Moderada</li>
-                        <li><i class="fa-solid fa-binoculars"></i> Ideal para observación de flora y fauna</li>
+                        <li><i class="fa-solid fa-ruler-horizontal"></i> <span data-i18n="montana_detail_1">Distancia: 2 km</span></li>
+                        <li><i class="fa-solid fa-clock"></i> <span data-i18n="montana_detail_2">Duración aproximada: 1.5 horas</span></li>
+                        <li><i class="fa-solid fa-leaf"></i> <span data-i18n="montana_detail_3">Dificultad: Moderada</span></li>
+                        <li><i class="fa-solid fa-binoculars"></i> <span data-i18n="montana_detail_4">Ideal para observación de flora y fauna</span></li>
                     </ul>
                 </div>
 
@@ -90,9 +102,9 @@
     <section class="gallery">
         <div class="container">
             <div class="gallery-title">
-                <span class="section-label center">Paisajes del recorrido</span>
-                <h2>Galería de Imágenes</h2>
-                <p>Descubre algunos de los rincones naturales que forman parte del sendero.</p>
+                <span class="section-label center" data-i18n="montana_gallery_label">Paisajes del recorrido</span>
+                <h2 data-i18n="montana_gallery_title">Galería de Imágenes</h2>
+                <p data-i18n="montana_gallery_desc">Descubre algunos de los rincones naturales que forman parte del sendero.</p>
             </div>
 
             <div class="gallery-grid">
@@ -118,9 +130,9 @@
     <!-- ================= CIERRE ================= -->
     <section class="closing-section">
         <div class="container closing-content">
-            <p class="closing-tag">Caño Negro</p>
-            <h2>Cada recorrido es una oportunidad para valorar y proteger la riqueza natural del refugio</h2>
-            <p>
+            <p class="closing-tag" data-i18n="montana_closing_tag">Caño Negro</p>
+            <h2 data-i18n="montana_closing_title">Cada recorrido es una oportunidad para valorar y proteger la riqueza natural del refugio</h2>
+            <p data-i18n="montana_closing_desc">
                 Caminar por este sendero permite descubrir paisajes, especies y espacios
                 que forman parte del patrimonio ecológico de Caño Negro.
             </p>
@@ -128,7 +140,7 @@
     </section>
 
     <footer>
-        <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
+        <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
             <a href="https://www.facebook.com/adi.canonegro" target="_blank">
@@ -150,8 +162,8 @@
         </a>
     </footer>
 
-    <script src="../../JS/senderos.js"></script>
-
+    <script src="../../JS/traductor.js"></script>
+    <script src="../../JS/traducciones/montana.js"></script>
 </body>
 
 </html>
