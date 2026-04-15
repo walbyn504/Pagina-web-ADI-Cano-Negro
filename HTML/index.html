@@ -139,7 +139,7 @@
             </p>
 
             <div class="cards">
-                <a href="flora.html" class="card">
+                <a href="floraFauna/floraFauna.html" class="card">
                     <div class="card-image">
                         <img src="../img/index/jabiru.jpg" alt="Flora y fauna">
                         <span class="card-tag" data-i18n="card_tag_1">Naturaleza</span>
@@ -242,26 +242,90 @@
             </a>
         </div>
     </footer>
-    
+
     <div class="fab-container">
 
-        <!-- Botón principal -->
+        <!-- BOTÓN PRINCIPAL -->
         <button class="fab-main" id="fabToggle">
             <i class="fa-solid fa-plus"></i>
         </button>
 
-        <!-- Opciones -->
-        <div class="fab-options" id="fabOptions">
+        <!-- OPCIONES -->
+        <div class="fab-options">
+
+            <!-- AYUDA -->
+            <a href="#" class="fab-option help" id="openHelp" aria-label="Ayuda">
+                <i class="fa-solid fa-comments"></i>
+            </a>
+
+
+            <!-- UBICACIÓN -->
             <a href="https://www.google.com/maps/dir/?api=1&destination=Refugio+de+Vida+Silvestre+Caño+Negro"
-                target="_blank" class="fab-option map">
+                target="_blank" class="fab-option map" aria-label="Cómo llegar">
                 <i class="fa-solid fa-location-dot"></i>
             </a>
 
-            <a href="https://wa.me/506XXXXXX" target="_blank" class="fab-option whatsapp">
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/506XXXXXX" target="_blank" class="fab-option whatsapp" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
+
+        </div>
+    </div>
+
+    <div class="help-modal" id="helpModal">
+
+        <div class="help-content">
+
+            <button class="close-modal" id="closeHelp">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2>¿En qué podemos ayudarte?</h2>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <h3>📍 ¿Dónde está Caño Negro?</h3>
+                    <p>Se ubica en Los Chiles, Alajuela, Costa Rica, cerca de la frontera con Nicaragua.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>🚗 ¿Cómo llegar?</h3>
+                    <p>Puedes acceder por la Ruta 138 desde Upala o Los Chiles. Usa el botón de ubicación para ver la
+                        ruta.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>🦜 ¿Qué se puede ver?</h3>
+                    <p>Más de 300 especies de aves, además de reptiles, mamíferos y una gran diversidad de flora.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>📅 ¿Mejor época para visitar?</h3>
+                    <p>Durante la estación seca para senderismo, o época lluviosa para ver aves migratorias.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>🎒 ¿Qué llevar?</h3>
+                    <p>Ropa cómoda, repelente, agua, cámara y protección solar.</p>
+                </div>
+
+            </div>
+
         </div>
 
+    </div>
+
+    <div class="chat-ia-tab" id="chatIaTab">
+        <button class="chat-ia-toggle" id="chatIaToggle" aria-label="Abrir acceso a IA">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <a href="https://chat.openai.com/?q=Quiero%20informaci%C3%B3n%20sobre%20Ca%C3%B1o%20Negro" target="_blank"
+            class="chat-ia-link" id="chatIaLink" aria-label="Abrir IA sobre Caño Negro">
+            <span>Acerca de Caño Negro</span>
+        </a>
     </div>
 
     <script src="../JS/traductor.js"></script>
