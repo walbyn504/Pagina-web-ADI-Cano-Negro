@@ -516,27 +516,82 @@ footer p{
     transform:scale(1.20);
 }
 
-/* ================= WHATSAPP ================= */
-.whatsapp-float{
+/* CONTENEDOR */
+.fab-container{
     position:fixed;
-    width:60px;
-    height:60px;
     bottom:25px;
     right:25px;
-    background:#25d366;
-    color:white;
-    border-radius:50%;
-    font-size:28px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 8px 20px rgba(0,0,0,0.3);
-    transition:0.3s;
     z-index:1000;
 }
 
-.whatsapp-float:hover{
-    transform:scale(1.12);
+/* BOTON PRINCIPAL */
+.fab-main{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#1f4d2e;
+    color:white;
+    border:none;
+    font-size:24px;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.fab-main:hover{
+    transform:scale(1.1);
+}
+
+/* OPCIONES */
+.fab-options{
+    position:absolute;
+    bottom:70px;
+    right:0;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+
+    opacity:0;
+    pointer-events:none;
+    transform:translateY(10px);
+    transition:0.3s;
+}
+
+/* CUANDO ESTA ABIERTO */
+.fab-container.open .fab-options{
+    opacity:1;
+    pointer-events:auto;
+    transform:translateY(0);
+}
+
+/* BOTONES HIJOS */
+.fab-option{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    color:white;
+    text-decoration:none;
+    box-shadow:0 6px 16px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.fab-option:hover{
+    transform:scale(1.1);
+}
+
+/* COLORES */
+.fab-option.whatsapp{
+    background:#25d366;
+}
+
+.fab-option.map{
+    background:white;
+    color:#ff3b3b;
+    border:2px solid #ff3b3b;
 }
 
 /* ================= ANIMACIONES ================= */

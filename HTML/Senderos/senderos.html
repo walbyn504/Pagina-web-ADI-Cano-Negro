@@ -95,7 +95,8 @@
                     </div>
                     <h3 data-i18n="senderos_box1_title">Recomendaciones</h3>
                     <p data-i18n="senderos_box1_desc">
-                        Utiliza calzado cómodo, lleva agua, protector solar y ropa adecuada para caminar en un entorno natural.
+                        Utiliza calzado cómodo, lleva agua, protector solar y ropa adecuada para caminar en un entorno
+                        natural.
                     </p>
                 </div>
 
@@ -115,7 +116,8 @@
                     </div>
                     <h3 data-i18n="senderos_box3_title">Observación</h3>
                     <p data-i18n="senderos_box3_desc">
-                        Lleva cámara o binoculares para disfrutar mejor del paisaje, las aves y los detalles del entorno.
+                        Lleva cámara o binoculares para disfrutar mejor del paisaje, las aves y los detalles del
+                        entorno.
                     </p>
                 </div>
             </div>
@@ -147,7 +149,8 @@
                             Recorrido de 2 km rodeado de bosque primario, vegetación abundante
                             y miradores naturales ideales para contemplar el paisaje.
                         </p>
-                        <span><i class="fa-solid fa-clock"></i> <span data-i18n="senderos_card1_time">1.5 horas</span></span>
+                        <span><i class="fa-solid fa-clock"></i> <span data-i18n="senderos_card1_time">1.5
+                                horas</span></span>
                     </div>
                 </div>
 
@@ -165,7 +168,8 @@
                             Ideal para la observación de aves, fotografía natural y una experiencia
                             tranquila en uno de los ecosistemas más valiosos de la zona.
                         </p>
-                        <span><i class="fa-solid fa-clock"></i> <span data-i18n="senderos_card2_time">2 horas</span></span>
+                        <span><i class="fa-solid fa-clock"></i> <span data-i18n="senderos_card2_time">2
+                                horas</span></span>
                     </div>
                 </div>
             </div>
@@ -190,7 +194,8 @@
         <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
-            <a href="https://www.facebook.com/adi.canonegro" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/adi.canonegro" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook">
                 <i class="fab fa-facebook"></i>
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -205,13 +210,31 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/506XXXXXX" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <div class="fab-container">
+
+        <!-- Botón principal -->
+        <button class="fab-main" id="fabToggle">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <!-- Opciones -->
+        <div class="fab-options" id="fabOptions">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Refugio+de+Vida+Silvestre+Caño+Negro"
+                target="_blank" class="fab-option map">
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+
+            <a href="https://wa.me/506XXXXXX" target="_blank" class="fab-option whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </div>
 
     <script src="../../JS/traductor.js"></script>
     <script src="../../JS/traducciones/senderos/senderos.js"></script>
     <script src="../../JS/senderos.js"></script>
 
 </body>
+
 </html>

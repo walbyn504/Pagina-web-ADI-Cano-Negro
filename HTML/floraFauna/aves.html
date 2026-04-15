@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body data-page="aves">
 
     <header class="main-header">
         <div class="logo-area">
@@ -23,12 +23,24 @@
             </div>
         </div>
 
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../floraFauna/floraFauna.html">Flora y Fauna</a></li>
-                <li><a href="aves.html" class="active">Aves</a></li>
+                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="../floraFauna/floraFauna.html" data-i18n="nav_flora">Flora y Fauna</a></li>
+                <li><a href="aves.html" class="active" aria-current="page" data-i18n="nav_aves">Aves</a></li>
             </ul>
+
+            <div class="language-dropdown">
+                <button type="button" class="language-toggle" id="languageToggle" aria-label="Selector de idioma">
+                    <span id="currentLanguage">ES</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="language-menu" id="languageMenu">
+                    <button type="button" class="language-option active" data-lang="es">ES</button>
+                    <button type="button" class="language-option" data-lang="en">EN</button>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -37,12 +49,12 @@
         <div class="birds-hero-content">
             <span class="hero-chip">
                 <i class="fa-solid fa-feather-pointed"></i>
-                Avistamiento • Biodiversidad • Humedal Ramsar
+                <span data-i18n="hero_chip">Avistamiento • Biodiversidad • Humedal Ramsar</span>
             </span>
 
-            <h1>Aves de <br><span>Caño Negro</span></h1>
+            <h1 data-i18n="hero_title">Aves de <br><span>Caño Negro</span></h1>
 
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="hero_desc">
                 Caño Negro es uno de los escenarios naturales más valiosos de Costa Rica para la observación de aves.
                 Sus lagunas, bosques inundados, caños y playones brindan refugio, alimento y descanso a numerosas
                 especies residentes y migratorias.
@@ -54,9 +66,9 @@
     <section class="birds-intro">
         <div class="container">
             <div class="section-heading">
-                <span class="section-label">Guía visual del humedal</span>
-                <h2 class="section-title">Especies destacadas de este paraíso natural</h2>
-                <p class="section-subtitle">
+                <span class="section-label" data-i18n="intro_label">Guía visual del humedal</span>
+                <h2 class="section-title" data-i18n="intro_title">Especies destacadas de este paraíso natural</h2>
+                <p class="section-subtitle" data-i18n="intro_subtitle">
                     Cada una de estas aves refleja la riqueza ecológica de Caño Negro y el valor de conservar
                     un humedal que sostiene vida, turismo responsable y biodiversidad.
                 </p>
@@ -67,8 +79,8 @@
                     <div class="highlight-icon">
                         <i class="fa-solid fa-binoculars"></i>
                     </div>
-                    <h3>Avistamiento privilegiado</h3>
-                    <p>
+                    <h3 data-i18n="highlight1_title">Avistamiento privilegiado</h3>
+                    <p data-i18n="highlight1_desc">
                         El refugio ofrece excelentes condiciones para observar aves durante distintas épocas del año.
                     </p>
                 </article>
@@ -77,8 +89,8 @@
                     <div class="highlight-icon">
                         <i class="fa-solid fa-water"></i>
                     </div>
-                    <h3>Ambientes diversos</h3>
-                    <p>
+                    <h3 data-i18n="highlight2_title">Ambientes diversos</h3>
+                    <p data-i18n="highlight2_desc">
                         Lagunas, canales, bosques inundados y playones crean hábitats ideales para muchas especies.
                     </p>
                 </article>
@@ -87,8 +99,8 @@
                     <div class="highlight-icon">
                         <i class="fa-solid fa-dove"></i>
                     </div>
-                    <h3>Vida residente y migratoria</h3>
-                    <p>
+                    <h3 data-i18n="highlight3_title">Vida residente y migratoria</h3>
+                    <p data-i18n="highlight3_desc">
                         Algunas aves permanecen todo el año y otras visitan el humedal en temporadas específicas.
                     </p>
                 </article>
@@ -97,8 +109,8 @@
                     <div class="highlight-icon">
                         <i class="fa-solid fa-leaf"></i>
                     </div>
-                    <h3>Conservación esencial</h3>
-                    <p>
+                    <h3 data-i18n="highlight4_title">Conservación esencial</h3>
+                    <p data-i18n="highlight4_desc">
                         La salud del humedal es clave para el descanso, la alimentación y reproducción de las aves.
                     </p>
                 </article>
@@ -117,16 +129,16 @@
                     </div>
 
                     <div class="bird-content">
-                        <h3>Garza Agamí</h3>
+                        <h3 data-i18n="bird1_name">Garza Agamí</h3>
                         <span class="bird-scientific">Agamia agami</span>
 
                         <div class="bird-text">
-                            <p>
+                            <p data-i18n="bird1_desc1">
                                 Es una de las aves más llamativas del humedal por su elegancia, su silueta estilizada
                                 y la belleza de su plumaje.
                             </p>
 
-                            <p>
+                            <p data-i18n="bird1_desc2">
                                 Suele habitar sectores tranquilos con vegetación densa, donde encuentra refugio
                                 y condiciones ideales para alimentarse.
                             </p>
@@ -137,9 +149,9 @@
                                 <span class="fact-icon">
                                     <i class="fa-solid fa-feather-pointed"></i>
                                 </span>
-                                <span class="fact-label">Dato curioso</span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
                             </div>
-                            <p>
+                            <p data-i18n="bird1_fact">
                                 Su apariencia fina y su coloración distintiva la convierten en una de las favoritas
                                 para fotógrafos y observadores de aves.
                             </p>
@@ -149,20 +161,20 @@
 
                 <article class="bird-card">
                     <div class="bird-image">
-                        <img src="../../img/floraFauna/jabiru.jpg" alt="Jabirú">
+                        <img src="../../img/floraFauna/jabiru.jpg" alt="Jabirú" class="img-jabiru">
                     </div>
 
                     <div class="bird-content">
-                        <h3>Jabirú</h3>
+                        <h3 data-i18n="bird2_name">Jabirú</h3>
                         <span class="bird-scientific">Jabiru mycteria</span>
 
                         <div class="bird-text">
-                            <p>
+                            <p data-i18n="bird2_desc1">
                                 El jabirú es una de las aves más impresionantes de los humedales de Centroamérica,
                                 destacando por su gran tamaño y porte majestuoso.
                             </p>
 
-                            <p>
+                            <p data-i18n="bird2_desc2">
                                 Su presencia está estrechamente ligada a la salud de los ecosistemas acuáticos
                                 donde encuentra alimento y amplios espacios para desplazarse.
                             </p>
@@ -173,9 +185,9 @@
                                 <span class="fact-icon">
                                     <i class="fa-solid fa-feather-pointed"></i>
                                 </span>
-                                <span class="fact-label">Dato curioso</span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
                             </div>
-                            <p>
+                            <p data-i18n="bird2_fact">
                                 Es una de las aves más grandes que pueden observarse en Caño Negro
                                 y una de las especies más buscadas por los visitantes.
                             </p>
@@ -189,16 +201,16 @@
                     </div>
 
                     <div class="bird-content">
-                        <h3>Espátula Rosada</h3>
+                        <h3 data-i18n="bird3_name">Espátula Rosada</h3>
                         <span class="bird-scientific">Platalea ajaja</span>
 
                         <div class="bird-text">
-                            <p>
+                            <p data-i18n="bird3_desc1">
                                 Esta especie destaca por su hermoso plumaje rosado y por la forma especial de su pico,
                                 adaptado para buscar alimento en aguas poco profundas.
                             </p>
 
-                            <p>
+                            <p data-i18n="bird3_desc2">
                                 Su presencia aporta color y dinamismo al paisaje natural de lagunas, orillas
                                 y playones inundados.
                             </p>
@@ -209,12 +221,11 @@
                                 <span class="fact-icon">
                                     <i class="fa-solid fa-feather-pointed"></i>
                                 </span>
-                                <span class="fact-label">Dato curioso</span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
                             </div>
-                            <p>
+                            <p data-i18n="bird3_fact">
                                 Su pico tiene forma de cuchara y le permite explorar el agua de una manera muy
-                                particular
-                                mientras se alimenta.
+                                particular mientras se alimenta.
                             </p>
                         </div>
                     </div>
@@ -226,16 +237,16 @@
                     </div>
 
                     <div class="bird-content">
-                        <h3>Cigüeñón</h3>
+                        <h3 data-i18n="bird4_name">Cigüeñón</h3>
                         <span class="bird-scientific">Mycteria americana</span>
 
                         <div class="bird-text">
-                            <p>
+                            <p data-i18n="bird4_desc1">
                                 El cigüeñón es un ave grande vinculada a humedales, lagunas someras
                                 y zonas abiertas donde puede desplazarse con facilidad.
                             </p>
 
-                            <p>
+                            <p data-i18n="bird4_desc2">
                                 Su figura robusta y su comportamiento calmado la hacen muy fácil de distinguir
                                 durante los recorridos por el refugio.
                             </p>
@@ -246,9 +257,9 @@
                                 <span class="fact-icon">
                                     <i class="fa-solid fa-feather-pointed"></i>
                                 </span>
-                                <span class="fact-label">Dato curioso</span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
                             </div>
-                            <p>
+                            <p data-i18n="bird4_fact">
                                 Es frecuente verlo caminar lentamente en aguas poco profundas mientras busca alimento
                                 con gran paciencia.
                             </p>
@@ -262,16 +273,16 @@
                     </div>
 
                     <div class="bird-content">
-                        <h3>Pájaro Serpiente o Pato Aguja</h3>
+                        <h3 data-i18n="bird5_name">Pájaro Serpiente o Pato Aguja</h3>
                         <span class="bird-scientific">Anhinga anhinga</span>
 
                         <div class="bird-text">
-                            <p>
+                            <p data-i18n="bird5_desc1">
                                 Esta ave acuática es conocida por su cuello largo y delgado, que sobresale del agua
                                 cuando nada, dándole una apariencia muy singular.
                             </p>
 
-                            <p>
+                            <p data-i18n="bird5_desc2">
                                 Habita lagunas y caños tranquilos, donde suele pescar y luego extender sus alas
                                 al sol después de sumergirse.
                             </p>
@@ -282,9 +293,9 @@
                                 <span class="fact-icon">
                                     <i class="fa-solid fa-feather-pointed"></i>
                                 </span>
-                                <span class="fact-label">Dato curioso</span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
                             </div>
-                            <p>
+                            <p data-i18n="bird5_fact">
                                 Cuando nada, a menudo solo se ve su cuello, por eso parece una serpiente
                                 deslizándose sobre el agua.
                             </p>
@@ -298,16 +309,16 @@
                     </div>
 
                     <div class="bird-content">
-                        <h3>Garza Blanca</h3>
+                        <h3 data-i18n="bird6_name">Garza Blanca</h3>
                         <span class="bird-scientific">Ardea alba</span>
 
                         <div class="bird-text">
-                            <p>
+                            <p data-i18n="bird6_desc1">
                                 Es una de las aves más elegantes y reconocibles de los humedales costarricenses.
                                 Su plumaje blanco le da una presencia muy limpia y distinguida.
                             </p>
 
-                            <p>
+                            <p data-i18n="bird6_desc2">
                                 En Caño Negro puede observarse en lagunas, canales y sectores abiertos donde busca
                                 peces, insectos y otros pequeños organismos.
                             </p>
@@ -318,9 +329,9 @@
                                 <span class="fact-icon">
                                     <i class="fa-solid fa-feather-pointed"></i>
                                 </span>
-                                <span class="fact-label">Dato curioso</span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
                             </div>
-                            <p>
+                            <p data-i18n="bird6_fact">
                                 Es una de las especies que más fácilmente pueden verse durante los recorridos
                                 de observación en zonas acuáticas.
                             </p>
@@ -333,20 +344,39 @@
     </section>
 
     <footer>
-        <p>© 2026 ADI Caño Negro - Todos los derechos reservados</p>
+        <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
-            <a href="https://www.facebook.com/adi.canonegro" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/adi.canonegro" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
         </div>
     </footer>
 
-    <a href="https://wa.me/506XXXXXX" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <div class="fab-container">
 
+        <!-- Botón principal -->
+        <button class="fab-main" id="fabToggle">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <!-- Opciones -->
+        <div class="fab-options" id="fabOptions">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Refugio+de+Vida+Silvestre+Caño+Negro"
+                target="_blank" class="fab-option map">
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+
+            <a href="https://wa.me/506XXXXXX" target="_blank" class="fab-option whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="../../JS/traductor.js"></script>
+    <script src="../../JS/traducciones/floraFauna/aves.js"></script>
 </body>
 
 </html>
