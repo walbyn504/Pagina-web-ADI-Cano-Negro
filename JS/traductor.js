@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentLanguage = document.getElementById("currentLanguage");
     const chatIaLink = document.getElementById("chatIaLink");
 
-    function setLanguage(lang) {
+    const languageLoader = document.getElementById("languageLoader");
+    const languageLoaderText = document.getElementById("languageLoaderText");
+
+    function applyLanguage(lang) {
         if (!pageTranslations || !pageTranslations[lang]) return;
 
         elements.forEach(element => {
@@ -20,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        /* CAMBIAR ENLACE DEL CHAT SEGÚN IDIOMA */
         if (chatIaLink && pageTranslations[lang].chat_link) {
             chatIaLink.href = pageTranslations[lang].chat_link;
         }
@@ -40,6 +42,41 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("language", lang);
     }
 
+    function showLanguageLoader(lang) {
+        if (!languageLoader) return;
+
+        if (languageLoaderText) {
+            languageLoaderText.textContent =
+                lang === "en" ? "Changing language..." : "Cambiando idioma...";
+        }
+
+        languageLoader.classList.add("show");
+    }
+
+    function hideLanguageLoader() {
+        if (!languageLoader) return;
+        languageLoader.classList.remove("show");
+    }
+
+    function setLanguage(lang, withEffect = false) {
+        if (!pageTranslations || !pageTranslations[lang]) return;
+
+        if (!withEffect) {
+            applyLanguage(lang);
+            return;
+        }
+
+        showLanguageLoader(lang);
+
+        setTimeout(() => {
+            applyLanguage(lang);
+
+            setTimeout(() => {
+                hideLanguageLoader();
+            }, 180);
+        }, 250);
+    }
+
     if (languageToggle && languageDropdown) {
         languageToggle.addEventListener("click", (e) => {
             e.stopPropagation();
@@ -52,7 +89,16 @@ document.addEventListener("DOMContentLoaded", () => {
             e.stopPropagation();
 
             const selectedLang = option.dataset.lang;
-            setLanguage(selectedLang);
+            const currentSavedLang = localStorage.getItem("language") || "es";
+
+            if (selectedLang === currentSavedLang) {
+                if (languageDropdown) {
+                    languageDropdown.classList.remove("open");
+                }
+                return;
+            }
+
+            setLanguage(selectedLang, true);
 
             if (languageDropdown) {
                 languageDropdown.classList.remove("open");
