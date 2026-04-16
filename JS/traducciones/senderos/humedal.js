@@ -32,6 +32,27 @@ window.translations.humedal = {
         humedal_gallery_title: "Galería de Imágenes",
         humedal_gallery_desc: "Conoce algunos de los escenarios naturales que forman parte de este recorrido.",
 
+        help_title: "¿En qué podemos ayudarte?",
+
+        faq_q1: "📍 ¿Dónde está Caño Negro?",
+        faq_a1: "Se ubica en Los Chiles, Alajuela, Costa Rica, cerca de la frontera con Nicaragua.",
+
+        faq_q2: "🚗 ¿Cómo llegar?",
+        faq_a2: "Puedes acceder por la Ruta 138 desde Upala o Los Chiles. Usa el botón de ubicación para ver la ruta.",
+
+        faq_q3: "🦜 ¿Qué se puede ver?",
+        faq_a3: "Más de 300 especies de aves, además de reptiles, mamíferos y una gran diversidad de flora.",
+
+        faq_q4: "📅 ¿Mejor época para visitar?",
+        faq_a4: "Durante la estación seca para senderismo, o época lluviosa para ver aves migratorias.",
+
+        faq_q5: "🎒 ¿Qué llevar?",
+        faq_a5: "Ropa cómoda, repelente, agua, cámara y protección solar.",
+
+        chat_tab: "Acerca de Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=Quiero%20informaci%C3%B3n%20sobre%20Ca%C3%B1o%20Negro",
+
         humedal_closing_tag: "Caño Negro",
         humedal_closing_title: "Recorrer el humedal es descubrir la importancia de conservar el agua, la vida silvestre y el equilibrio natural",
         humedal_closing_desc: "Cada paso en este sendero permite apreciar la biodiversidad de un ecosistema vital para el refugio y para la identidad natural de Caño Negro."
@@ -67,6 +88,28 @@ window.translations.humedal = {
         humedal_gallery_label: "Wetland landscapes",
         humedal_gallery_title: "Image Gallery",
         humedal_gallery_desc: "See some of the natural scenes that are part of this route.",
+
+        help_title: "How can we help you?",
+
+        faq_q1: "📍 Where is Caño Negro located?",
+        faq_a1: "It is located in Los Chiles, Alajuela, Costa Rica, near the border with Nicaragua.",
+
+        faq_q2: "🚗 How do I get there?",
+        faq_a2: "You can access it via Route 138 from Upala or Los Chiles. Use the location button to view the route.",
+
+        faq_q3: "🦜 What can be seen there?",
+        faq_a3: "More than 300 bird species, as well as reptiles, mammals, and a great diversity of flora.",
+
+        faq_q4: "📅 Best time to visit?",
+        faq_a4: "During the dry season for hiking, or the rainy season to see migratory birds.",
+
+        faq_q5: "🎒 What should I bring?",
+        faq_a5: "Comfortable clothing, insect repellent, water, a camera, and sun protection.",
+
+        chat_tab: "About Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=I%20want%20information%20about%20Ca%C3%B1o%20Negro",
+
 
         humedal_closing_tag: "Caño Negro",
         humedal_closing_title: "Walking through the wetland means discovering the importance of conserving water, wildlife, and natural balance",

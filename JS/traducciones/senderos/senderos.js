@@ -44,6 +44,27 @@ window.translations.senderos = {
         senderos_card2_desc: "Ideal para la observación de aves, fotografía natural y una experiencia tranquila en uno de los ecosistemas más valiosos de la zona.",
         senderos_card2_time: "2 horas",
 
+        help_title: "¿En qué podemos ayudarte?",
+
+        faq_q1: "📍 ¿Dónde está Caño Negro?",
+        faq_a1: "Se ubica en Los Chiles, Alajuela, Costa Rica, cerca de la frontera con Nicaragua.",
+
+        faq_q2: "🚗 ¿Cómo llegar?",
+        faq_a2: "Puedes acceder por la Ruta 138 desde Upala o Los Chiles. Usa el botón de ubicación para ver la ruta.",
+
+        faq_q3: "🦜 ¿Qué se puede ver?",
+        faq_a3: "Más de 300 especies de aves, además de reptiles, mamíferos y una gran diversidad de flora.",
+
+        faq_q4: "📅 ¿Mejor época para visitar?",
+        faq_a4: "Durante la estación seca para senderismo, o época lluviosa para ver aves migratorias.",
+
+        faq_q5: "🎒 ¿Qué llevar?",
+        faq_a5: "Ropa cómoda, repelente, agua, cámara y protección solar.",
+
+        chat_tab: "Acerca de Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=Quiero%20informaci%C3%B3n%20sobre%20Ca%C3%B1o%20Negro",
+
         senderos_closing_tag: "Caño Negro",
         senderos_closing_title: "Cada sendero es una oportunidad para conectar con la naturaleza y aprender a conservarla",
         senderos_closing_desc: "Caminar por estos espacios permite descubrir la vida que habita en cada rincón, valorar la biodiversidad y fortalecer el compromiso con su protección.",
@@ -93,6 +114,27 @@ window.translations.senderos = {
         senderos_card2_title: "Wetland Trail",
         senderos_card2_desc: "Ideal for birdwatching, nature photography, and a शांत experience in one of the most valuable ecosystems in the area.",
         senderos_card2_time: "2 hours",
+
+        help_title: "How can we help you?",
+
+        faq_q1: "📍 Where is Caño Negro located?",
+        faq_a1: "It is located in Los Chiles, Alajuela, Costa Rica, near the border with Nicaragua.",
+
+        faq_q2: "🚗 How do I get there?",
+        faq_a2: "You can access it via Route 138 from Upala or Los Chiles. Use the location button to view the route.",
+
+        faq_q3: "🦜 What can be seen there?",
+        faq_a3: "More than 300 bird species, as well as reptiles, mammals, and a great diversity of flora.",
+
+        faq_q4: "📅 Best time to visit?",
+        faq_a4: "During the dry season for hiking, or the rainy season to see migratory birds.",
+
+        faq_q5: "🎒 What should I bring?",
+        faq_a5: "Comfortable clothing, insect repellent, water, a camera, and sun protection.",
+
+        chat_tab: "About Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=I%20want%20information%20about%20Ca%C3%B1o%20Negro",
 
         senderos_closing_tag: "Caño Negro",
         senderos_closing_title: "Each trail is an opportunity to connect with nature and learn to protect it",
