@@ -50,6 +50,25 @@ window.translations.index = {
 
         card_link: "Ver más información",
 
+        help_title: "¿En qué podemos ayudarte?",
+
+        faq_q1: "📍 ¿Dónde está Caño Negro?",
+        faq_a1: "Se ubica en Los Chiles, Alajuela, Costa Rica, cerca de la frontera con Nicaragua.",
+
+        faq_q2: "🚗 ¿Cómo llegar?",
+        faq_a2: "Puedes acceder por la Ruta 138 desde Upala o Los Chiles. Usa el botón de ubicación para ver la ruta.",
+
+        faq_q3: "🦜 ¿Qué se puede ver?",
+        faq_a3: "Más de 300 especies de aves, además de reptiles, mamíferos y una gran diversidad de flora.",
+
+        faq_q4: "📅 ¿Mejor época para visitar?",
+        faq_a4: "Durante la estación seca para senderismo, o época lluviosa para ver aves migratorias.",
+
+        faq_q5: "🎒 ¿Qué llevar?",
+        faq_a5: "Ropa cómoda, repelente, agua, cámara y protección solar.",
+
+        chat_tab: "Acerca de Caño Negro",
+
         banner_tag: "Caño Negro",
         banner_title: "Un lugar donde la naturaleza y la comunidad conviven en armonía",
         banner_desc: "Vive la esencia de un destino lleno de vida, tradición y paisajes que inspiran a valorar y proteger nuestro entorno.",
@@ -105,6 +124,25 @@ window.translations.index = {
         card_desc_4: "Support local initiatives and discover community-driven projects.",
 
         card_link: "See more information",
+
+        help_title: "How can we help you?",
+
+        faq_q1: "📍 Where is Caño Negro located?",
+        faq_a1: "It is located in Los Chiles, Alajuela, Costa Rica, near the border with Nicaragua.",
+
+        faq_q2: "🚗 How do I get there?",
+        faq_a2: "You can access it via Route 138 from Upala or Los Chiles. Use the location button to view the route.",
+
+        faq_q3: "🦜 What can be seen there?",
+        faq_a3: "More than 300 bird species, as well as reptiles, mammals, and a great diversity of flora.",
+
+        faq_q4: "📅 Best time to visit?",
+        faq_a4: "During the dry season for hiking, or the rainy season to see migratory birds.",
+
+        faq_q5: "🎒 What should I bring?",
+        faq_a5: "Comfortable clothing, insect repellent, water, a camera, and sun protection.",
+
+        chat_tab: "About Caño Negro",
 
         banner_tag: "Caño Negro",
         banner_title: "A place where nature and community live in harmony",
