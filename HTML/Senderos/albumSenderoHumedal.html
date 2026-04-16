@@ -7,12 +7,15 @@
     <title>Sendero El Humedal</title>
 
     <link rel="stylesheet" href="../../CSS/sendero/albumSenderoHumedal.css">
+    <link rel="stylesheet" href="../../CSS/utlidades/efectoIdioma.css">
+    <link rel="stylesheet" href="../../CSS/utlidades/efectos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body data-page="humedal">
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- ================= HEADER ================= -->
     <header class="main-header">
@@ -45,8 +48,8 @@
     </header>
 
     <!-- ================= HERO ================= -->
-    <section class="album-header">
-        <div class="hero-text">
+    <section class="album-header reveal">
+        <div class="hero-text reveal">
             <p class="hero-tag" data-i18n="humedal_hero_tag">Agua, aves y biodiversidad</p>
             <h1 data-i18n="humedal_hero_title">Sendero El <span>Humedal</span></h1>
             <p class="hero-description" data-i18n="humedal_hero_desc">
@@ -57,8 +60,8 @@
     </section>
 
     <!-- ================= INFO ================= -->
-    <section class="info-section">
-        <div class="container">
+    <section class="info-section reveal">
+        <div class="container reveal">
 
             <div class="info-title">
                 <span class="section-label center" data-i18n="humedal_info_label">Explora el recorrido</span>
@@ -69,7 +72,7 @@
 
             <div class="info-album">
 
-                <div class="info-box">
+                <div class="info-box reveal-left">
                     <span class="box-label" data-i18n="humedal_box1_label">Descripción</span>
                     <h3 data-i18n="humedal_box1_title">Un ecosistema lleno de vida</h3>
                     <p data-i18n="humedal_box1_text1">
@@ -84,7 +87,7 @@
                     </p>
                 </div>
 
-                <div class="data-box">
+                <div class="data-box reveal-right">
                     <span class="box-label" data-i18n="humedal_box2_label">Detalles</span>
                     <h3 data-i18n="humedal_box2_title">Características del sendero</h3>
                     <ul>
@@ -115,19 +118,19 @@
             </div>
 
             <div class="gallery-grid">
-                <a href="../../img/senderos/humedal/humedal1.jpg" class="lightbox">
+                <a href="../../img/senderos/montaña/humedal1.jpg" class="lightbox reveal-zoom">
                     <img src="../../img/senderos/humedal/humedal1.jpg" alt="Humedal 1">
                 </a>
 
-                <a href="../../img/senderos/humedal/humedal2.jpg" class="lightbox">
+                <a href="../../img/senderos/humedal/humedal2.jpg" class="lightbox reveal-zoom">
                     <img src="../../img/senderos/humedal/humedal2.jpg" alt="Humedal 2">
                 </a>
 
-                <a href="../../img/senderos/humedal/humedal3.jpg" class="lightbox">
+                <a href="../../img/senderos/humedal/humedal3.jpg" class="lightbox reveal-zoom">
                     <img src="../../img/senderos/humedal/humedal3.jpg" alt="Humedal 3">
                 </a>
 
-                <a href="../../img/senderos/humedal/humedal4.jpg" class="lightbox">
+                <a href="../../img/senderos/humedal/humedal4.jpg" class="lightbox reveal-zoom">
                     <img src="../../img/senderos/humedal/humedal4.jpg" alt="Humedal 4">
                 </a>
             </div>
@@ -136,8 +139,8 @@
     </section>
 
     <!-- ================= CIERRE ================= -->
-    <section class="closing-section">
-        <div class="container closing-content">
+    <section class="closing-section reveal">
+        <div class="container closing-content reveal">
             <p class="closing-tag" data-i18n="humedal_closing_tag">Caño Negro</p>
             <h2 data-i18n="humedal_closing_title">
                 Recorrer el humedal es descubrir la importancia de conservar el agua, la vida silvestre y el equilibrio
@@ -150,7 +153,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="reveal">
         <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
@@ -255,7 +258,15 @@
         </a>
     </div>
 
+    <div class="language-loader" id="languageLoader">
+        <div class="language-loader-box">
+            <div class="language-spinner"></div>
+            <p id="languageLoaderText">Cambiando idioma...</p>
+        </div>
+    </div>
+
     <script src="../../JS/traducciones/senderos/humedal.js"></script>
+    <script src="../../JS/utilidades/senderos/montanaHumedal.js"></script>
     <script src="../../JS/traductor.js"></script>
     <script src="../../JS/utilidades/fab.js"></script>
     <script src="../../JS/utilidades/modal.js"></script>
