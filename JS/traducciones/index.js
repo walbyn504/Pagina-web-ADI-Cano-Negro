@@ -69,6 +69,8 @@ window.translations.index = {
 
         chat_tab: "Acerca de Caño Negro",
 
+        chat_link: "https://chat.openai.com/?q=Quiero%20informaci%C3%B3n%20sobre%20Ca%C3%B1o%20Negro",
+
         banner_tag: "Caño Negro",
         banner_title: "Un lugar donde la naturaleza y la comunidad conviven en armonía",
         banner_desc: "Vive la esencia de un destino lleno de vida, tradición y paisajes que inspiran a valorar y proteger nuestro entorno.",
@@ -143,6 +145,8 @@ window.translations.index = {
         faq_a5: "Comfortable clothing, insect repellent, water, a camera, and sun protection.",
 
         chat_tab: "About Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=I%20want%20information%20about%20Ca%C3%B1o%20Negro",
 
         banner_tag: "Caño Negro",
         banner_title: "A place where nature and community live in harmony",

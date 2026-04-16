@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const languageToggle = document.getElementById("languageToggle");
     const languageOptions = document.querySelectorAll(".language-option");
     const currentLanguage = document.getElementById("currentLanguage");
+    const chatIaLink = document.getElementById("chatIaLink");
 
     function setLanguage(lang) {
         if (!pageTranslations || !pageTranslations[lang]) return;
@@ -18,6 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 element.innerHTML = pageTranslations[lang][key];
             }
         });
+
+        /* CAMBIAR ENLACE DEL CHAT SEGÚN IDIOMA */
+        if (chatIaLink && pageTranslations[lang].chat_link) {
+            chatIaLink.href = pageTranslations[lang].chat_link;
+        }
 
         languageOptions.forEach(option => {
             option.classList.remove("active");
