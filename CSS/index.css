@@ -801,39 +801,31 @@ footer p {
     z-index: 999;
 }
 
+/* BOTÓN (flecha) */
 .chat-ia-toggle {
-    width: 25px;
-    /* antes 42px */
-    height: 350px;
-    /* antes 110px */
+    width: 18px;
+    height: 380px;
     border: none;
-    border-radius: 14px 0 0 14px;
-    background: #1f4d2e;
-    color: #ffffff;
+    border-radius: 16px 0 0 16px;
+    background: #878787;
+    color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
-    transition: 0.3s ease;
+    transition: 0.25s ease;
     flex-shrink: 0;
 }
 
+/* flecha */
 .chat-ia-toggle i {
-    font-size: 16px;
-    /* antes 18px */
+    font-size: 13px;
     transition: 0.3s ease;
 }
 
-.chat-ia-toggle:hover {
-    background: #163822;
-}
-
-/* ENLACE CERRADO */
 .chat-ia-link {
     width: 0;
-    min-height: 500px;
-    /* antes 280px */
+    height: 500px;
     overflow: hidden;
     opacity: 0;
     pointer-events: none;
@@ -843,47 +835,48 @@ footer p {
     justify-content: center;
 
     background: #1f4d2e;
-    color: rgba(255, 255, 255, 0.97);
-    border: 2px solid rgba(31, 77, 46, 0.16);
-    border-right: none;
-    border-radius: 18px 0 0 18px;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+    color: white;
 
-    text-decoration: none;
-    transition: 0.3s ease;
-    backdrop-filter: blur(8px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.25s ease;
 }
 
-/* TEXTO VERTICAL */
+/* TEXTO */
 .chat-ia-link span {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
-    /* antes 15px */
     font-weight: 700;
-    white-space: nowrap;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.3px;
 }
 
-/* ESTADO ABIERTO */
+/* ABIERTO */
 .chat-ia-tab.open .chat-ia-link {
-    width: 25px;
-    /* antes 64px */
+    width: 28px; /* más delgado */
     opacity: 1;
     pointer-events: auto;
-    margin-right: 2px;
-    /* antes 10px */
 }
 
+/* unir visualmente */
+.chat-ia-tab.open .chat-ia-toggle {
+    background: #bdbdbd;
+}
+
+/* ROTACIÓN */
 .chat-ia-tab.open .chat-ia-toggle i {
     transform: rotate(180deg);
 }
 
-/* HOVER DE LA PESTAÑA ABIERTA */
+/* HOVER */
 .chat-ia-link:hover {
-    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
-    transform: translateX(-3px);
+    background: #123a20;
+    color: white;
+}
+
+.chat-ia-link:hover span {
+    color: white;
 }
 
 /* ================= RESPONSIVE ================= */
