@@ -7,12 +7,15 @@
     <title>ADI Caño Negro</title>
 
     <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/utlidades/efectoIdioma.css">
+    <link rel="stylesheet" href="../CSS/utlidades/efectos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body data-page="index">
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- ================= HEADER ================= -->
     <header class="main-header">
@@ -49,7 +52,7 @@
     </header>
 
     <!-- ================= HERO ================= -->
-    <section class="hero">
+    <section class="hero reveal">
         <div class="hero-content">
             <p class="hero-tag">
                 <span data-i18n="hero_tag">Naturaleza, cultura y conservación</span>
@@ -73,9 +76,9 @@
     </section>
 
     <!-- ================= ABOUT ================= -->
-    <section class="about-refuge" id="refugio">
+    <section class="about-refuge reveal" id="refugio">
         <div class="container about-container">
-            <div class="about-text">
+            <div class="about-text reveal">
                 <span class="section-label" data-i18n="about_label">Sobre el refugio</span>
                 <h2 data-i18n="about_title">Refugio de Vida Silvestre Caño Negro</h2>
                 <p data-i18n="about_text_1">
@@ -92,7 +95,7 @@
                 </p>
             </div>
 
-            <div class="about-image">
+            <div class="about-image reveal">
                 <img src="../img/index/garzaBlanca.jpg" alt="Refugio Caño Negro">
                 <small class="image-credit" data-i18n="about_credit">Foto: Juan Pérez</small>
             </div>
@@ -100,7 +103,7 @@
     </section>
 
     <!-- ================= STATS ================= -->
-    <section class="stats-section">
+    <section class="stats-section reveal">
         <div class="container">
             <span class="section-label center" data-i18n="stats_label">Nuestra riqueza natural</span>
             <h2 class="section-title" data-i18n="stats_title">Caño Negro en cifras</h2>
@@ -110,18 +113,18 @@
             </p>
 
             <div class="stats-grid">
-                <div class="stat-box">
-                    <h3>300+</h3>
+                <div class="stat-box reveal">
+                    <h3 class="counter" data-target="300" data-suffix="+">0</h3>
                     <p data-i18n="stats_1">Especies de aves</p>
                 </div>
 
-                <div class="stat-box">
-                    <h3>100%</h3>
+                <div class="stat-box reveal">
+                    <h3 class="counter" data-target="100" data-suffix="%">0</h3>
                     <p data-i18n="stats_2">Compromiso con la conservación</p>
                 </div>
 
-                <div class="stat-box">
-                    <h3>1</h3>
+                <div class="stat-box reveal">
+                    <h3 class="counter" data-target="1">0</h3>
                     <p data-i18n="stats_3">Humedal de gran importancia ecológica</p>
                 </div>
             </div>
@@ -129,7 +132,7 @@
     </section>
 
     <!-- ================= CARDS ================= -->
-    <section class="explore-section" id="explora">
+    <section class="explore-section reveal" id="explora">
         <div class="container">
             <span class="section-label center" data-i18n="explore_label">Explora más</span>
             <h2 class="section-title" data-i18n="explore_title">Nuestra comunidad y sus espacios</h2>
@@ -139,7 +142,7 @@
             </p>
 
             <div class="cards">
-                <a href="floraFauna/floraFauna.html" class="card">
+                <a href="floraFauna/floraFauna.html" class="card reveal">
                     <div class="card-image">
                         <img src="../img/index/jabiru.jpg" alt="Flora y fauna">
                         <span class="card-tag" data-i18n="card_tag_1">Naturaleza</span>
@@ -156,7 +159,7 @@
                     </div>
                 </a>
 
-                <a href="../HTML/Senderos/senderos.html" class="card">
+                <a href="../HTML/Senderos/senderos.html" class="card reveal">
                     <div class="card-image">
                         <img src="../img/index/sendero.jpg" alt="Senderos naturales">
                         <span class="card-tag" data-i18n="card_tag_2">Aventura</span>
@@ -173,7 +176,7 @@
                     </div>
                 </a>
 
-                <a href="bandera.html" class="card">
+                <a href="bandera.html" class="card reveal">
                     <div class="card-image">
                         <img src="../img/index/banderaAzul.jpg" alt="Bandera Azul Ecológica">
                         <span class="card-tag" data-i18n="card_tag_3">Sostenibilidad</span>
@@ -190,7 +193,7 @@
                     </div>
                 </a>
 
-                <a href="emprendedores.html" class="card">
+                <a href="emprendedores.html" class="card reveal">
                     <div class="card-image">
                         <img src="../img/index/emprendedores.jpeg" alt="Emprendedores">
                         <span class="card-tag" data-i18n="card_tag_4">Comunidad</span>
@@ -211,7 +214,7 @@
     </section>
 
     <!-- ================= FINAL SECTION ================= -->
-    <section class="banner-section">
+    <section class="banner-section reveal">
         <div class="container banner-content">
             <p class="banner-tag" data-i18n="banner_tag">Caño Negro</p>
             <h2 data-i18n="banner_title">Un lugar donde la naturaleza y la comunidad conviven en armonía</h2>
@@ -326,6 +329,13 @@
             class="chat-ia-link" id="chatIaLink" aria-label="Abrir IA sobre Caño Negro">
             <span data-i18n="chat_tab">Acerca de Caño Negro</span>
         </a>
+    </div>
+
+    <div class="language-loader" id="languageLoader">
+        <div class="language-loader-box">
+            <div class="language-spinner"></div>
+            <p id="languageLoaderText">Cambiando idioma...</p>
+        </div>
     </div>
 
     <script src="../JS/traductor.js"></script>
