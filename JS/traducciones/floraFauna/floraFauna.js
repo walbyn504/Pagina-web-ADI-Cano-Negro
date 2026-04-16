@@ -174,6 +174,27 @@ window.translations.floraFauna = {
         extra_card3_desc: "Esta dinámica permite observar especies y comportamientos que no siempre se presentan en otras partes de Costa Rica, lo que aumenta el valor ecológico y turístico del refugio.",
         extra_card4_title: "Dato curioso",
         extra_card4_desc: "Caño Negro es considerado uno de los humedales más importantes del mundo por la extraordinaria densidad de vida silvestre que puede sostener por hectárea.",
+        
+        help_title: "¿En qué podemos ayudarte?",
+
+        faq_q1: "📍 ¿Dónde está Caño Negro?",
+        faq_a1: "Se ubica en Los Chiles, Alajuela, Costa Rica, cerca de la frontera con Nicaragua.",
+
+        faq_q2: "🚗 ¿Cómo llegar?",
+        faq_a2: "Puedes acceder por la Ruta 138 desde Upala o Los Chiles. Usa el botón de ubicación para ver la ruta.",
+
+        faq_q3: "🦜 ¿Qué se puede ver?",
+        faq_a3: "Más de 300 especies de aves, además de reptiles, mamíferos y una gran diversidad de flora.",
+
+        faq_q4: "📅 ¿Mejor época para visitar?",
+        faq_a4: "Durante la estación seca para senderismo, o época lluviosa para ver aves migratorias.",
+
+        faq_q5: "🎒 ¿Qué llevar?",
+        faq_a5: "Ropa cómoda, repelente, agua, cámara y protección solar.",
+
+        chat_tab: "Acerca de Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=Quiero%20informaci%C3%B3n%20sobre%20Ca%C3%B1o%20Negro",
 
         closing_tag: "CAÑO NEGRO",
         closing_title: "La riqueza del humedal está en la relación entre su flora, su fauna y el agua",
@@ -356,6 +377,27 @@ window.translations.floraFauna = {
         extra_card3_desc: "This dynamic makes it possible to observe species and behaviors not always seen in other parts of Costa Rica, increasing the refuge’s ecological and tourism value.",
         extra_card4_title: "Fun fact",
         extra_card4_desc: "Caño Negro is considered one of the most important wetlands in the world due to the extraordinary density of wildlife it can support per hectare.",
+        
+        help_title: "How can we help you?",
+
+        faq_q1: "📍 Where is Caño Negro located?",
+        faq_a1: "It is located in Los Chiles, Alajuela, Costa Rica, near the border with Nicaragua.",
+
+        faq_q2: "🚗 How do I get there?",
+        faq_a2: "You can access it via Route 138 from Upala or Los Chiles. Use the location button to view the route.",
+
+        faq_q3: "🦜 What can be seen there?",
+        faq_a3: "More than 300 bird species, as well as reptiles, mammals, and a great diversity of flora.",
+
+        faq_q4: "📅 Best time to visit?",
+        faq_a4: "During the dry season for hiking, or the rainy season to see migratory birds.",
+
+        faq_q5: "🎒 What should I bring?",
+        faq_a5: "Comfortable clothing, insect repellent, water, a camera, and sun protection.",
+
+        chat_tab: "About Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=I%20want%20information%20about%20Ca%C3%B1o%20Negro",
 
         closing_tag: "CAÑO NEGRO",
         closing_title: "The richness of the wetland lies in the relationship between its flora, fauna, and water",
