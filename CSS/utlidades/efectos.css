@@ -1,0 +1,103 @@
+/* ================= BARRA DE PROGRESO ================= */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, #71c98a, #1f4d2e);
+    z-index: 4000;
+    box-shadow: 0 2px 10px rgba(113, 201, 138, 0.35);
+}
+
+/* ================= REVEAL SCROLL ================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* variantes suaves */
+.about-image.reveal {
+    transform: translateX(40px);
+}
+
+.about-image.reveal.show {
+    transform: translateX(0);
+}
+
+.about-text.reveal {
+    transform: translateX(-40px);
+}
+
+.about-text.reveal.show {
+    transform: translateX(0);
+}
+
+/* ================= PARALLAX HERO ================= */
+.hero {
+    background-attachment: fixed;
+}
+
+/* ================= MEJOR HOVER CARDS ================= */
+.card {
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    background: linear-gradient(
+        135deg,
+        rgba(113, 201, 138, 0.10),
+        rgba(255, 255, 255, 0)
+    );
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-link i {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-link i {
+    transform: translateX(4px);
+}
+
+/* ================= RESPETO A MOVIMIENTO REDUCIDO ================= */
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal.show,
+    .card,
+    .card-image img,
+    .card-link i,
+    .scroll-progress {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        background-attachment: scroll;
+    }
+}

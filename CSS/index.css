@@ -879,6 +879,12 @@ footer p {
     color: white;
 }
 
+@keyframes spinLoader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* ================= RESPONSIVE ================= */
 @media (max-width:1100px) {
     .main-header {
