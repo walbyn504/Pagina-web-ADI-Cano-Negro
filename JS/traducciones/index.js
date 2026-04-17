@@ -19,7 +19,7 @@ window.translations.index = {
         about_title: "Refugio de Vida Silvestre Caño Negro",
         about_text_1: "El Refugio de Vida Silvestre Caño Negro es uno de los humedales más importantes de Costa Rica y Centroamérica.",
         about_text_2: "Además de su valor ambiental, representa una oportunidad para el ecoturismo y la comunidad.",
-        about_credit: "Foto: Juan Pérez",
+        about_credit: "Ibis Blanco (Eudocimus albus)",
 
         stats_label: "Nuestra riqueza natural",
         stats_title: "Caño Negro en cifras",
@@ -96,7 +96,7 @@ window.translations.index = {
         about_title: "Caño Negro Wildlife Refuge",
         about_text_1: "The Caño Negro Wildlife Refuge is one of the most important wetlands in Costa Rica and Central America.",
         about_text_2: "In addition to its environmental value, it represents an opportunity for ecotourism and community development.",
-        about_credit: "Photo: Juan Pérez",
+        about_credit: "White Ibis (Eudocimus albus)",
 
         stats_label: "Our natural richness",
         stats_title: "Caño Negro in numbers",
