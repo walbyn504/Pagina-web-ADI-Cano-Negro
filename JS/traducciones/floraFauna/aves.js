@@ -55,7 +55,23 @@ window.translations.aves = {
         bird6_desc1: "Es una de las aves más elegantes y reconocibles de los humedales costarricenses. Su plumaje blanco le da una presencia muy limpia y distinguida.",
         bird6_desc2: "En Caño Negro puede observarse en lagunas, canales y sectores abiertos donde busca peces, insectos y otros pequeños organismos.",
         bird6_fact: "Es una de las especies que más fácilmente pueden verse durante los recorridos de observación en zonas acuáticas.",
- 
+
+        bird7_name: "Garza Tigre Barreteada",
+        bird7_desc1: "Es una maestra del camuflaje gracias a su plumaje con finas franjas oscuras que imitan las texturas de la corteza y las sombras de los árboles.",
+        bird7_desc2: "A diferencia de otras garzas, es sumamente solitaria y paciente, permaneciendo inmóvil durante largos periodos en troncos caídos sobre el agua.",
+        bird7_fact: "Su grito es un ronquido profundo y potente que se asemeja al rugido de un felino, lo que le da su nombre popular de 'Garza Tigre'.",
+
+        bird8_name: "Pato Cantil",
+        bird8_desc1: "Es un ave acuática muy particular, con un cuello largo y elegante y rayas faciales blancas y negras muy llamativas. Prefiere ríos tranquilos y arroyos con vegetación densa en las orillas.",
+        bird8_desc2: "A diferencia de los patos comunes, no bucea a menudo, sino que se alimenta capturando insectos, arañas y pequeños peces de la superficie del agua o la vegetación colgante. Es un ave solitaria y difícil de observar.",
+        bird8_fact: "Sus patas tienen dedos con lóbulos laterales (no completamente palmeados) y son de color amarillo con rayas negras",
+
+
+        bird9_name: "Garza Tigre Mexicana",
+        bird9_desc1: "Es una garza de gran tamaño y aspecto robusto, famosa por su plumaje finamente ondeado que recuerda las rayas de un tigre. Es una de las especies más emblemáticas de los humedales de Costa Rica.",
+        bird9_desc2: "A diferencia de otras garzas, suele ser solitaria y caza permaneciendo completamente inmóvil durante largos períodos, camuflándose entre la vegetación de las orillas hasta que su presa está cerca.",
+        bird9_fact: "Los adultos presentan una zona de piel desnuda en la garganta de color amarillo verdoso brillante, la cual puede inflar cuando emite sus potentes llamados roncos.",
+
         help_title: "¿En qué podemos ayudarte?",
 
         faq_q1: "📍 ¿Dónde está Caño Negro?",
@@ -135,8 +151,22 @@ window.translations.aves = {
         bird6_desc1: "It is one of the most elegant and recognizable birds of Costa Rican wetlands. Its white plumage gives it a very clean and distinguished presence.",
         bird6_desc2: "In Caño Negro it can be observed in lagoons, channels, and open areas where it looks for fish, insects, and other small organisms.",
         bird6_fact: "It is one of the species most easily seen during birdwatching tours in aquatic areas.",
-        
+
+        bird7_nam: "Bare-throated Tiger Heron",
+        bird7_desc1: "A master of camouflage thanks to its plumage with fine dark stripes that mimic the textures of bark and tree shadows.",
+        bird7_desc2: "Unlike other herons, it is extremely solitary and patient, remaining motionless for long periods on logs over the water.",
+        bird7_fact: "Its call is a deep, powerful snort that resembles a feline's roar, giving it the popular name 'Tiger Heron'.",
+
+        bird8_name: "Sungrebe",
+        bird8_desc1: "It is a very particular water bird, with a long, elegant neck and striking black and white facial stripes. It prefers quiet rivers and streams with dense vegetation along the banks.",
+        bird8_desc2: "Unlike common ducks, it does not dive often, instead feeding by catching insects, spiders, and small fish from the water surface or overhanging vegetation. It is a solitary and difficult bird to observe.",
+        bird8_fact: "Its feet have lobed toes (not fully webbed) and are yellow with black stripes",
         help_title: "How can we help you?",
+
+        bird_tiger_heron_name: "Bare-throated Tiger Heron",
+        bird9_desc1: "A large and robust-looking heron, famous for its finely barred plumage that resembles a tiger's stripes. It is one of the most emblematic species of Costa Rican wetlands.",
+        bird9_desc2: "Unlike other herons, it is usually solitary and hunts by standing completely still for long periods, camouflaging itself among the bank vegetation until its prey is within reach.",
+        bird9_fact: "Adults feature a patch of bright greenish-yellow bare skin on the throat, which they can puff out when making their powerful, raucous calls.",
 
         faq_q1: "📍 Where is Caño Negro located?",
         faq_a1: "It is located in Los Chiles, Alajuela, Costa Rica, near the border with Nicaragua.",
