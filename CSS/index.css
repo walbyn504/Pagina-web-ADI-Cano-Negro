@@ -552,7 +552,7 @@ nav a.active::after {
 }
 
 .banner-tag {
-    color: var(--verde-principal);
+    color: #1f4d2e;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;

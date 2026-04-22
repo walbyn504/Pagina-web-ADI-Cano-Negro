@@ -1,33 +1,72 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const sliders = document.querySelectorAll('.slider-container');
+document.addEventListener("DOMContentLoaded", () => {
+    /* ================= REVEAL ================= */
+    const revealElements = document.querySelectorAll(
+        ".reveal, .reveal-left, .reveal-right, .reveal-zoom"
+    );
+    const sectionTitles = document.querySelectorAll(".section-title");
+    const scrollProgress = document.getElementById("scrollProgress");
 
-    sliders.forEach(slider => {
-        const images = slider.querySelectorAll('.bird-slider img');
-        if (images.length <= 1) {
-            // Si solo hay una imagen, escondemos las flechas
-            slider.querySelectorAll('.slider-btn').forEach(btn => btn.style.display = 'none');
-            return;
-        }
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.14
+    });
 
-        const nextBtn = slider.querySelector('.next');
-        const prevBtn = slider.querySelector('.prev');
+    revealElements.forEach((el) => revealObserver.observe(el));
+    sectionTitles.forEach((title) => revealObserver.observe(title));
+
+    /* ================= BARRA DE PROGRESO ================= */
+    function updateScrollProgress() {
+        if (!scrollProgress) return;
+
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+        scrollProgress.style.width = `${progress}%`;
+    }
+
+    window.addEventListener("scroll", updateScrollProgress);
+    updateScrollProgress();
+
+    /* ================= SLIDERS ================= */
+    const sliders = document.querySelectorAll(".slider-container");
+
+    sliders.forEach((sliderContainer) => {
+        const slides = sliderContainer.querySelectorAll(".bird-slider img");
+        const prevBtn = sliderContainer.querySelector(".slider-btn.prev");
+        const nextBtn = sliderContainer.querySelector(".slider-btn.next");
+
+        if (!slides.length || !prevBtn || !nextBtn) return;
+
         let currentIndex = 0;
 
-        function showImage(index) {
-            images.forEach(img => img.classList.remove('active'));
-            images[index].classList.add('active');
-        }
-
-        nextBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
+        slides.forEach((slide, index) => {
+            slide.classList.toggle("active", index === 0);
         });
 
-        prevBtn.addEventListener('click', (e) => {
+        function showSlide(index) {
+            slides.forEach((slide) => slide.classList.remove("active"));
+            slides[index].classList.add("active");
+        }
+
+        prevBtn.addEventListener("click", (e) => {
             e.preventDefault();
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            showImage(currentIndex);
+            e.stopPropagation();
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        });
+
+        nextBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
         });
     });
 });

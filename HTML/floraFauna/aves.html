@@ -8,12 +8,17 @@
 
     <link rel="stylesheet" href="../../CSS/floraFauna/floraFauna.css">
     <link rel="stylesheet" href="../../CSS/floraFauna/aves.css">
+    <link rel="stylesheet" href="../../CSS/utlidades/efectoIdioma.css">
+    <link rel="stylesheet" href="../../CSS/utlidades/efectosAves.css">
+    <link rel="stylesheet" href="../../JS/utilidades/floraFauna/avesContenedor.js">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body data-page="aves">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <header class="main-header">
         <div class="logo-area">
@@ -46,7 +51,7 @@
 
     <!-- HERO -->
     <section class="birds-hero">
-        <div class="birds-hero-content">
+        <div class="birds-hero-content reveal">
             <span class="hero-chip">
                 <i class="fa-solid fa-feather-pointed"></i>
                 <span data-i18n="hero_chip">Avistamiento • Biodiversidad • Humedal Ramsar</span>
@@ -65,7 +70,7 @@
     <!-- INTRO -->
     <section class="birds-intro">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading reveal">
                 <span class="section-label" data-i18n="intro_label">Guía visual del humedal</span>
                 <h2 class="section-title" data-i18n="intro_title">Especies destacadas de este paraíso natural</h2>
                 <p class="section-subtitle" data-i18n="intro_subtitle">
@@ -75,7 +80,7 @@
             </div>
 
             <div class="birds-highlight">
-                <article class="highlight-card">
+                <article class="highlight-card reveal-left">
                     <div class="highlight-icon">
                         <i class="fa-solid fa-binoculars"></i>
                     </div>
@@ -85,7 +90,7 @@
                     </p>
                 </article>
 
-                <article class="highlight-card">
+                <article class="highlight-card reveal">
                     <div class="highlight-icon">
                         <i class="fa-solid fa-water"></i>
                     </div>
@@ -95,7 +100,7 @@
                     </p>
                 </article>
 
-                <article class="highlight-card">
+                <article class="highlight-card reveal-right">
                     <div class="highlight-icon">
                         <i class="fa-solid fa-dove"></i>
                     </div>
@@ -105,7 +110,7 @@
                     </p>
                 </article>
 
-                <article class="highlight-card">
+                <article class="highlight-card reveal-zoom">
                     <div class="highlight-icon">
                         <i class="fa-solid fa-leaf"></i>
                     </div>
@@ -125,8 +130,12 @@
 
                 <article class="bird-card reveal highlight-card">
                     <div class="bird-image">
-                        <img src="../../img/floraFauna/garzaAgami.jpg" alt="Garza Agamí">
+                        <img src="../../img/floraFauna/agami.JPG" alt="Garza Agamí">
                     </div>
+
+                    <span class="photo-credit">
+                        <span data-i18n="photo_by">Foto:</span> Caño Negro Experience
+                    </span>
 
                     <div class="bird-content">
                         <h3 data-i18n="bird1_name">Garza Agamí</h3>
@@ -158,10 +167,13 @@
                         </div>
                     </div>
                 </article>
+
                 <article class="bird-card reveal highlight-card">
                     <div class="bird-image">
                         <img src="../../img/floraFauna/garzaTigre.jpg" alt="Garza Tigre Barreteada">
                     </div>
+
+                    <div class="bird-credit">&nbsp;</div>
 
                     <div class="bird-content">
                         <h3 data-i18n="bird7_name">Garza Tigre Barreteada</h3>
@@ -196,8 +208,12 @@
 
                 <article class="bird-card reveal highlight-card">
                     <div class="bird-image">
-                        <img src="../../img/floraFauna/jabiru.jpg" alt="Jabirú" class="img-jabiru">
+                        <img src="../../img/floraFauna/jabiru.JPG" alt="Jabirú" class="img-jabiru">
                     </div>
+
+                    <span class="photo-credit">
+                        <span data-i18n="photo_by">Foto:</span> Caño Negro Experience
+                    </span>
 
                     <div class="bird-content">
                         <h3 data-i18n="bird2_name">Jabirú</h3>
@@ -205,7 +221,7 @@
 
                         <div class="bird-text">
                             <p data-i18n="bird2_desc1">
-                                El jabirú es una de las aves más impresionantes de los humedales de Centroamérica,
+                                El jabirú es una de las aves más impresionantes del humedal,
                                 destacando por su gran tamaño y porte majestuoso.
                             </p>
 
@@ -231,59 +247,94 @@
                 </article>
 
                 <article class="bird-card reveal highlight-card">
-                    <div class="bird-image">
-                        <img src="../../img/floraFauna/aves.jpg" alt="Espátula Rosada" class="img-espatula">
+                    <div class="bird-image slider-container">
+                        <div class="bird-slider">
+                            <img src="../../img/floraFauna/garzaCucharon.jpg" alt="Garza Cucharón en Caño Negro"
+                                class="active img-cucharon">
+                            <img src="../../img/floraFauna/garzaCucharon2.jpg" alt="Garza Cucharón en Caño Negro"
+                                class="img-cucharon">
+                            <img src="../../img/floraFauna/garzaCucharon3.jpg" alt="Garza Cucharón en Caño Negro"
+                                class="img-cucharon">
+                        </div>
+
+                        <button class="slider-btn prev" aria-label="Anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Siguiente">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
 
+                    <div class="bird-credit">&nbsp;</div>
+
                     <div class="bird-content">
-                        <h3 data-i18n="bird3_name">Espátula Rosada</h3>
-                        <span class="bird-scientific">Platalea ajaja</span>
+                        <h3 data-i18n="bird3_name">Garza Cucharón</h3>
+                        <span class="bird-scientific">Cochlearius cochlearius</span>
 
                         <div class="bird-text">
                             <p data-i18n="bird3_desc1">
-                                Esta especie destaca por su hermoso plumaje rosado y por la forma especial de su pico,
-                                adaptado para buscar alimento en aguas poco profundas.
+                                Esta fascinante ave nocturna encuentra en los alrededores del Humedal Caño Negro un
+                                refugio ideal,
+                                ocultándose entre los yolillales y la vegetación densa que bordea el río Frío.
                             </p>
 
                             <p data-i18n="bird3_desc2">
-                                Su presencia aporta color y dinamismo al paisaje natural de lagunas, orillas
-                                y playones inundados.
+                                Es una especie emblemática de la zona, fácilmente reconocible por su pico
+                                excepcionalmente ancho,
+                                el cual utiliza para capturar peces y crustáceos en los canales tranquilos del humedal.
                             </p>
                         </div>
 
                         <div class="bird-fact">
                             <div class="fact-top">
                                 <span class="fact-icon">
-                                    <i class="fa-solid fa-feather-pointed"></i>
+                                    <i class="fa-solid fa-water"></i>
                                 </span>
                                 <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
                             </div>
                             <p data-i18n="bird3_fact">
-                                Su pico tiene forma de cuchara y le permite explorar el agua de una manera muy
-                                particular mientras se alimenta.
+                                En Caño Negro, es común verlas durante los tours de bote compartiendo espacio con el
+                                Jabirú,
+                                aunque la Garza Cucharón prefiere las ramas más bajas y oscuras para pasar el día.
                             </p>
                         </div>
                     </div>
                 </article>
 
                 <article class="bird-card reveal highlight-card">
-                    <div class="bird-image">
-                        <img src="../../img/floraFauna/cigueñon.jpg" alt="Cigüeñón">
+                    <div class="bird-image slider-container">
+                        <div class="bird-slider">
+                            <img src="../../img/index/IbisBlanco.jpg" alt="Ibis Blanco" class="active">
+                            <img src="../../img/floraFauna/ibisBlanco2.jpg" alt="Ibis Blanco">
+                            <img src="../../img/floraFauna/ibisBlanco3.jpg" alt="Ibis Blanco">
+                        </div>
+
+                        <button class="slider-btn prev" aria-label="Anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Siguiente">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
 
+                    <div class="bird-credit">&nbsp;</div>
+
                     <div class="bird-content">
-                        <h3 data-i18n="bird4_name">Cigüeñón</h3>
-                        <span class="bird-scientific">Mycteria americana</span>
+                        <h3 data-i18n="bird4_name">Ibis Blanco</h3>
+                        <span class="bird-scientific">Eudocimus albus</span>
 
                         <div class="bird-text">
                             <p data-i18n="bird4_desc1">
-                                El cigüeñón es un ave grande vinculada a humedales, lagunas someras
-                                y zonas abiertas donde puede desplazarse con facilidad.
+                                El ibis blanco es una de las aves acuáticas que puede observarse en los humedales y
+                                áreas abiertas de
+                                Caño Negro, donde encuentra alimento en orillas fangosas, lagunas poco profundas y
+                                sectores inundados.
                             </p>
 
                             <p data-i18n="bird4_desc2">
-                                Su figura robusta y su comportamiento calmado la hacen muy fácil de distinguir
-                                durante los recorridos por el refugio.
+                                Su presencia aporta dinamismo al paisaje del refugio, especialmente cuando recorre
+                                tranquilamente las
+                                riberas en busca de insectos, crustáceos y pequeños organismos propios del ecosistema.
                             </p>
                         </div>
 
@@ -295,8 +346,9 @@
                                 <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
                             </div>
                             <p data-i18n="bird4_fact">
-                                Es frecuente verlo caminar lentamente en aguas poco profundas mientras busca alimento
-                                con gran paciencia.
+                                En Caño Negro puede verse tanto de forma solitaria como en pequeños grupos,
+                                desplazándose con calma
+                                entre los humedales mientras explora el suelo con su largo pico curvado.
                             </p>
                         </div>
                     </div>
@@ -318,6 +370,8 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
+
+                    <div class="bird-credit">&nbsp;</div>
 
                     <div class="bird-content">
                         <h3 data-i18n="bird5_name">Pájaro Serpiente o Pato Aguja</h3>
@@ -355,6 +409,8 @@
                         <img src="../../img/floraFauna/garzaBlanca.jpg" alt="Garza Blanca" class="img-garza">
                     </div>
 
+                    <div class="bird-credit">&nbsp;</div>
+
                     <div class="bird-content">
                         <h3 data-i18n="bird6_name">Garza Blanca</h3>
                         <span class="bird-scientific">Ardea alba</span>
@@ -387,7 +443,6 @@
                 </article>
 
                 <article class="bird-card reveal highlight-card">
-
                     <div class="bird-image slider-container">
                         <div class="bird-slider">
                             <img src="../../img/floraFauna/patoCantil.jpg" alt="Pato Cantil"
@@ -405,6 +460,8 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
+
+                    <div class="bird-credit">&nbsp;</div>
 
                     <div class="bird-content">
                         <h3 data-i18n="bird8_name">Pato Cantil</h3>
@@ -438,20 +495,13 @@
                         </div>
                     </div>
                 </article>
+
                 <article class="bird-card reveal highlight-card">
-
-                    <div class="bird-image slider-container">
-                        <div class="bird-slider">
-                            <img src="../../img/floraFauna/garzaTigreMexicana.JPG" alt="Garza Tigre Mexicana" class="active">
-                        </div>
-
-                        <button class="slider-btn prev" aria-label="Anterior">
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </button>
-                        <button class="slider-btn next" aria-label="Siguiente">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
+                    <div class="bird-image">
+                        <img src="../../img/floraFauna/garzaTigreMexicana.JPG" alt="Garza Tigre Mexicana">
                     </div>
+
+                    <div class="bird-credit">&nbsp;</div>
 
                     <div class="bird-content">
                         <h3 data-i18n="bird9_name">Garza Tigre Mexicana</h3>
@@ -487,7 +537,270 @@
                     </div>
                 </article>
 
+                <article class="bird-card reveal highlight-card">
+                    <div class="bird-image">
+                        <img src="../../img/floraFauna/martin.JPG" alt="Martín Pescador Neotropical en Caño Negro"
+                            class="img-martin">
+                    </div>
+
+                    <div class="bird-credit">&nbsp;</div>
+
+                    <div class="bird-content">
+                        <h3 data-i18n="bird10_name">Martín Pescador Neotropical</h3>
+                        <span class="bird-scientific">Megaceryle torquata</span>
+
+                        <div class="bird-text">
+                            <p data-i18n="bird10_desc1">
+                                Este es el más grande de los martines pescadores en Caño Negro. Es un verdadero gigante
+                                de los ríos,
+                                fácil de identificar por su cresta despeinada y su plumaje gris azulado con vientre
+                                canela.
+                            </p>
+
+                            <p data-i18n="bird10_desc2">
+                                En el río Frío, es común verlo perchado en ramas secas sobre el agua, vigilando con
+                                paciencia
+                                antes de lanzarse en un picado espectacular para capturar peces grandes.
+                            </p>
+                        </div>
+
+                        <div class="bird-fact">
+                            <div class="fact-top">
+                                <span class="fact-icon">
+                                    <i class="fa-solid fa-bullhorn"></i>
+                                </span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
+                            </div>
+                            <p data-i18n="bird10_fact">
+                                Su grito suena como una "matraca" metálica muy fuerte; a menudo se le escucha antes de
+                                verlo
+                                volar a gran velocidad rozando la superficie del agua.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bird-card reveal highlight-card">
+                    <div class="bird-image slider-container">
+                        <div class="bird-slider">
+                            <img src="../../img/floraFauna/martinAmazonico.jpg"
+                                alt="Martín Pescador Amazónico en Caño Negro">
+                            <img src="../../img/floraFauna/martinAmazonico2.jpg"
+                                alt="Martín Pescador Amazónico en Caño Negro" class="active">
+                        </div>
+
+                        <button class="slider-btn prev" aria-label="Anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Siguiente">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="bird-credit">&nbsp;</div>
+
+                    <div class="bird-content">
+                        <h3 data-i18n="bird11_name">Martín Pescador Amazónico</h3>
+                        <span class="bird-scientific">Chloroceryle amazona</span>
+
+                        <div class="bird-text">
+                            <p data-i18n="bird11_desc1">
+                                De tamaño mediano y color verde bronceado, este martín pescador es un habitante
+                                constante de los
+                                bordes de los canales y lagunas del Humedal Caño Negro.
+                            </p>
+
+                            <p data-i18n="bird11_desc2">
+                                Se distingue por su comportamiento territorial; suele vigilar el río Frío desde ramas
+                                bajas,
+                                siendo el macho fácilmente identificable por la banda ancha color castaño en su pecho.
+                            </p>
+                        </div>
+
+                        <div class="bird-fact">
+                            <div class="fact-top">
+                                <span class="fact-icon">
+                                    <i class="fa-solid fa-anchor"></i>
+                                </span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
+                            </div>
+                            <p data-i18n="bird11_fact">
+                                A diferencia del Martín Pescador Grande, es muy común verlo perchado en estructuras
+                                humanas
+                                como muelles y botes, usándolos como puntos estratégicos para pescar.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bird-card reveal highlight-card">
+                    <div class="bird-image">
+                        <img src="../../img/floraFauna/martinVerde.JPG" alt="Martín Pescador Verde en Caño Negro"
+                            class="img-martin-verde">
+                    </div>
+
+                    <div class="bird-credit">&nbsp;</div>
+
+                    <div class="bird-content">
+                        <h3 data-i18n="bird12_name">Martín Pescador Verde</h3>
+                        <span class="bird-scientific">Chloroceryle americana</span>
+
+                        <div class="bird-text">
+                            <p data-i18n="bird12_desc1">
+                                Es el más pequeño de los martines pescadores que habitan el humedal. A pesar de su
+                                tamaño, su plumaje
+                                verde esmeralda oscuro es muy llamativo cuando logra salir de las sombras.
+                            </p>
+
+                            <p data-i18n="bird12_desc2">
+                                En Caño Negro, prefiere los caños estrechos y zonas de vegetación muy baja. Caza desde
+                                ramas que casi
+                                tocan el agua, lo que lo hace un experto en capturar presas en espacios reducidos.
+                            </p>
+                        </div>
+
+                        <div class="bird-fact">
+                            <div class="fact-top">
+                                <span class="fact-icon">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
+                            </div>
+                            <p data-i18n="bird12_fact">
+                                A diferencia de sus parientes más grandes, es muy silencioso. Para anidar, excava
+                                túneles de casi
+                                un metro de profundidad en los barrancos de tierra a la orilla del río Frío.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bird-card reveal highlight-card">
+                    <div class="bird-image slider-container">
+                        <div class="bird-slider">
+                            <img src="../../img/floraFauna/garzaNocturnaCoronaAmarilla.jpg"
+                                alt="Garza Nocturna Coroniamarilla" class="active">
+                            <img src="../../img/floraFauna/garzaNocturnaCoronaAmarilla2.jpg"
+                                alt="Garza Nocturna Coroniamarilla">
+                        </div>
+
+                        <button class="slider-btn prev" aria-label="Anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Siguiente">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="bird-credit">&nbsp;</div>
+
+                    <div class="bird-content">
+                        <h3 data-i18n="bird13_name">Garza Nocturna Coroniamarilla</h3>
+                        <span class="bird-scientific">Nyctanassa violacea</span>
+
+                        <div class="bird-text">
+                            <p data-i18n="bird13_desc1">
+                                La garza nocturna coroniamarilla es una especie frecuente en los humedales de Caño
+                                Negro, donde suele observarse perchada en ramas cercanas al agua o en zonas de
+                                vegetación densa.
+                            </p>
+
+                            <p data-i18n="bird13_desc2">
+                                Aunque es más activa al atardecer y durante la noche, en el refugio también puede verse
+                                durante el día, especialmente en ambientes tranquilos donde descansa y vigila su
+                                entorno.
+                            </p>
+                        </div>
+
+                        <div class="bird-fact">
+                            <div class="fact-top">
+                                <span class="fact-icon">
+                                    <i class="fa-solid fa-moon"></i>
+                                </span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
+                            </div>
+                            <p data-i18n="bird13_fact">
+                                En Caño Negro se alimenta principalmente de crustáceos, como cangrejos y camarones, los
+                                cuales captura con precisión gracias a su vista aguda y su comportamiento paciente.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bird-card reveal highlight-card">
+                    <div class="bird-image slider-container">
+                        <div class="bird-slider">
+                            <img src="../../img/floraFauna/golondrinas.jpg" alt="Golondrina Alirrasposa Sureña"
+                                class="active">
+                            <img src="../../img/floraFauna/golondrinas2.jpg" alt="Golondrina Alirrasposa Sureña">
+                        </div>
+
+                        <button class="slider-btn prev" aria-label="Anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" aria-label="Siguiente">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="bird-credit">&nbsp;</div>
+
+                    <div class="bird-content">
+                        <h3 data-i18n="bird14_name">Golondrina Alirrasposa Sureña</h3>
+                        <span class="bird-scientific">Stelgidopteryx ruficollis</span>
+
+                        <div class="bird-text">
+                            <p data-i18n="bird14_desc1">
+                                La golondrina alirrasposa sureña es una especie activa y sociable que se observa con
+                                frecuencia en los
+                                cielos abiertos de Caño Negro, especialmente cerca de ríos, lagunas y zonas despejadas
+                                del humedal.
+                            </p>
+
+                            <p data-i18n="bird14_desc2">
+                                En el refugio, suele desplazarse en pequeños grupos, volando de forma ágil mientras
+                                captura insectos en
+                                el aire, siendo parte importante del equilibrio natural del ecosistema.
+                            </p>
+                        </div>
+
+                        <div class="bird-fact">
+                            <div class="fact-top">
+                                <span class="fact-icon">
+                                    <i class="fa-solid fa-wind"></i>
+                                </span>
+                                <span class="fact-label" data-i18n="fact_label">Dato curioso</span>
+                            </div>
+                            <p data-i18n="bird14_fact">
+                                A diferencia de otras golondrinas, puede posarse con frecuencia en ramas expuestas,
+                                desde donde descansa
+                                antes de volver a volar para continuar cazando insectos.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
             </div>
+        </div>
+    </section>
+
+    <!-- ================= CIERRE FINAL ================= -->
+    <section class="birds-closing reveal">
+        <div class="container birds-closing-content">
+
+            <span class="birds-closing-label" data-i18n="closing_tag">
+                CAÑO NEGRO
+            </span>
+
+            <h2 data-i18n="closing_title">
+                Un lugar donde la naturaleza y la biodiversidad conviven en armonía
+            </h2>
+
+            <p data-i18n="closing_desc">
+                Descubre la riqueza de las aves de Caño Negro, un humedal lleno de vida,
+                donde cada especie refleja la importancia de conservar nuestro entorno natural.
+            </p>
+
         </div>
     </section>
 
@@ -507,38 +820,28 @@
     </footer>
 
     <div class="fab-container">
-
-        <!-- BOTÓN PRINCIPAL -->
         <button class="fab-main" id="fabToggle">
             <i class="fa-solid fa-plus"></i>
         </button>
 
-        <!-- OPCIONES -->
         <div class="fab-options">
-
-            <!-- AYUDA -->
             <a href="#" class="fab-option help" id="openHelp" aria-label="Ayuda">
                 <i class="fa-solid fa-comments"></i>
             </a>
 
-
-            <!-- UBICACIÓN -->
             <a href="https://www.google.com/maps/dir/?api=1&destination=Refugio+de+Vida+Silvestre+Caño+Negro"
                 target="_blank" class="fab-option map" aria-label="Cómo llegar">
                 <i class="fa-solid fa-location-dot"></i>
             </a>
 
-            <!-- WHATSAPP -->
             <a href="https://wa.me/506XXXXXX" target="_blank" class="fab-option whatsapp" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
-
         </div>
     </div>
 
     <div class="help-modal" id="helpModal">
         <div class="help-content">
-
             <button class="close-modal" id="closeHelp">
                 <i class="fa-solid fa-xmark"></i>
             </button>
@@ -546,7 +849,6 @@
             <h2 data-i18n="help_title">¿En qué podemos ayudarte?</h2>
 
             <div class="faq-list">
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q1">📍 ¿Dónde está Caño Negro?</h3>
                     <p data-i18n="faq_a1">Se ubica en Los Chiles, Alajuela, Costa Rica, cerca de la frontera con
@@ -575,7 +877,6 @@
                     <h3 data-i18n="faq_q5">🎒 ¿Qué llevar?</h3>
                     <p data-i18n="faq_a5">Ropa cómoda, repelente, agua, cámara y protección solar.</p>
                 </div>
-
             </div>
         </div>
     </div>

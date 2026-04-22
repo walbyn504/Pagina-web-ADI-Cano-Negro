@@ -97,6 +97,16 @@ ul {
     line-height: 1.1;
 }
 
+/* CRÉDITO DE FOTO */
+.photo-credit {
+    font-size: 12px;
+    color: #6b746e;
+    margin-top: 6px;
+    margin-left: 4px;
+    font-style: italic;
+    min-height: 18px;
+}
+
 /* ================= NAV ================= */
 nav {
     flex: 1;
@@ -248,7 +258,7 @@ nav a.active::after {
     min-height: 100vh;
     background:
         linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
-        url('../../img/floraFauna/aves.jpg') center center / cover no-repeat;
+        url('../../img/floraFauna/martin.JPG') center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -367,7 +377,8 @@ nav a.active::after {
     padding: 35px 30px;
     border-radius: 22px;
     box-shadow: var(--sombra);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave solo para posición y sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transición suave solo para posición y sombra */
     border: 1px solid rgba(73, 104, 79, 0.08);
     position: relative;
     overflow: hidden;
@@ -375,7 +386,8 @@ nav a.active::after {
 
 /* EFECTO HOVER: Movimiento hacia arriba sin Zoom */
 .highlight-card:hover {
-    transform: translateY(-6px); /* Movimiento leve hacia arriba */
+    transform: translateY(-6px);
+    /* Movimiento leve hacia arriba */
     box-shadow: var(--sombra-hover);
     /* IMPORTANTE: No incluimos 'scale' para evitar el zoom */
 }
@@ -456,10 +468,10 @@ nav a.active::after {
 /* ================= IMAGEN DEL AVE ================= */
 .bird-image {
     position: relative;
-    height: 360px;
     overflow: hidden;
     border-radius: 28px 28px 0 0;
     background: #dfe7df;
+    height: 500px;
 }
 
 .bird-image img {
@@ -493,7 +505,9 @@ nav a.active::after {
 }
 
 .img-jabiru {
-    object-position: center 25%;
+    object-fit: contain;
+    object-position: center top;
+    background: #dfe7df;
 }
 
 .img-garza {
@@ -515,6 +529,7 @@ nav a.active::after {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 18px;
+    min-height: 20px;
 }
 
 .bird-fact {
@@ -919,10 +934,12 @@ footer p {
 .slider-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 3 / 2; 
+    aspect-ratio: 3 / 2;
     overflow: hidden;
-    background-color: #000; /* Fondo negro por si la foto no llena todo */
-    border-radius: 8px 8px 0 0; /* Ajusta según el borde de tus cards */
+    background-color: #000;
+    /* Fondo negro por si la foto no llena todo */
+    border-radius: 8px 8px 0 0;
+    /* Ajusta según el borde de tus cards */
 }
 
 .bird-slider {
@@ -938,8 +955,9 @@ footer p {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Centra y llena la tarjeta */
-    
+    object-fit: cover;
+    /* Centra y llena la tarjeta */
+
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
 }
@@ -973,7 +991,7 @@ footer p {
     cursor: pointer;
     z-index: 10;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-    
+
     /* Invisibles por defecto */
     opacity: 0;
     visibility: hidden;
@@ -992,12 +1010,74 @@ footer p {
 }
 
 .slider-container:hover .bird-slider img {
-    transform: none !important; /* Evita que la imagen crezca o se mueva */
-    scale: 1 !important;        /* Asegura que se mantenga en su tamaño real */
+    transform: none !important;
+    /* Evita que la imagen crezca o se mueva */
+    scale: 1 !important;
+    /* Asegura que se mantenga en su tamaño real */
 }
 
-.slider-btn.prev { left: 5px; }
-.slider-btn.next { right: 5px; }
+.slider-btn.prev {
+    left: 5px;
+}
+
+.slider-btn.next {
+    right: 5px;
+}
+
+/* ================= CIERRE ================= */
+.birds-closing {
+    background: linear-gradient(180deg, #edf4ee 0%, #f7f5ef 100%);
+    padding: 90px 0;
+}
+
+.birds-closing-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+/* etiqueta superior */
+.birds-closing-label {
+    color: #1a1a1a; /* NEGRO, no verde */
+    font-size: 20px; /* más pequeño */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* más separado */
+    margin-bottom: 22px; /* más espacio */
+}
+
+/* título */
+.birds-closing h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: #10722e;
+    font-weight: 800;
+}
+
+/* descripción */
+.birds-closing p {
+    font-size: 18px;
+    color: black;
+    max-width: 720px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .birds-closing {
+        padding: 80px 20px;
+    }
+
+    .birds-closing h2 {
+        font-size: 32px;
+    }
+
+    .birds-closing p {
+        font-size: 16px;
+    }
+}
 
 /* ================= ANIMACIONES ================= */
 @keyframes fadeUp {

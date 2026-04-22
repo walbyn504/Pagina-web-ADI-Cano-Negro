@@ -1,0 +1,375 @@
+/* ================= BARRA DE PROGRESO ================= */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, #71c98a, #1f4d2e);
+    z-index: 4000;
+    box-shadow: 0 2px 10px rgba(113, 201, 138, 0.35);
+}
+
+/* ================= REVEAL ================= */
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-zoom {
+    opacity: 0;
+    transition: opacity 0.85s ease, transform 0.85s ease;
+    will-change: opacity, transform;
+}
+
+.reveal {
+    transform: translateY(42px);
+}
+
+.reveal-left {
+    transform: translateX(-55px);
+}
+
+.reveal-right {
+    transform: translateX(55px);
+}
+
+.reveal-zoom {
+    transform: scale(0.92);
+}
+
+.reveal.show,
+.reveal-left.show,
+.reveal-right.show,
+.reveal-zoom.show {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+}
+
+/* ================= HERO ================= */
+.birds-hero {
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.birds-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(10, 20, 14, 0.10),
+            rgba(10, 20, 14, 0.28));
+    pointer-events: none;
+}
+
+.birds-hero-content {
+    position: relative;
+    z-index: 2;
+    animation: heroFloatBirds 4.5s ease-in-out infinite;
+}
+
+.hero-chip,
+.section-label {
+    animation: pulseSoftBirds 2.8s ease-in-out infinite;
+}
+
+/* ================= TÍTULOS ================= */
+.section-title {
+    position: relative;
+    animation: fadeTitleBirds 1s ease;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    margin: 14px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #71c98a, #1f4d2e);
+    transition: width 0.8s ease;
+}
+
+.section-title.show::after {
+    width: 110px;
+}
+
+/* ================= FONDOS DECORATIVOS ================= */
+.birds-intro,
+.birds-catalog {
+    position: relative;
+    overflow: hidden;
+}
+
+.birds-intro::before,
+.birds-catalog::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(113, 201, 138, 0.14), transparent 70%);
+    animation: floatBlobBirds 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.birds-intro::before {
+    top: -90px;
+    right: -100px;
+}
+
+.birds-catalog::before {
+    bottom: -90px;
+    left: -100px;
+}
+
+/* ================= HIGHLIGHTS ================= */
+.highlight-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 34px rgba(31, 77, 46, 0.14);
+    border-color: rgba(113, 201, 138, 0.35);
+}
+
+.highlight-icon {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.highlight-card:hover .highlight-icon {
+    transform: scale(1.08) rotate(-4deg);
+    box-shadow: 0 10px 20px rgba(31, 77, 46, 0.18);
+}
+
+/* ================= TARJETAS DE AVES ================= */
+.bird-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.bird-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(135deg,
+            rgba(113, 201, 138, 0.12),
+            rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bird-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.22),
+            transparent);
+    transition: left 0.8s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.bird-card:hover::before {
+    opacity: 1;
+}
+
+.bird-card:hover::after {
+    left: 130%;
+}
+
+.bird-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 34px rgba(31, 77, 46, 0.14);
+}
+
+/* ================= IMÁGENES ================= */
+.bird-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.bird-image img,
+.bird-slider img {
+    transition: transform 0.7s ease, filter 0.45s ease;
+}
+
+/* solo imagen única o activa */
+.bird-card:hover .bird-image > img,
+.bird-card:hover .bird-slider img.active {
+    transform: scale(1.06);
+    filter: brightness(1.03);
+}
+
+/* brillo deslizante */
+.bird-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.24),
+            transparent);
+    transition: left 0.8s ease;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.bird-card:hover .bird-image::after {
+    left: 130%;
+}
+
+/* ================= CRÉDITOS ================= */
+.photo-credit,
+.bird-credit {
+    position: relative;
+    z-index: 4;
+}
+
+/* ================= DATO CURIOSO ================= */
+.bird-fact {
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.bird-card:hover .bird-fact {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 28px rgba(31, 77, 46, 0.10);
+    border-color: rgba(113, 201, 138, 0.28);
+}
+
+.fact-icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bird-card:hover .fact-icon {
+    transform: scale(1.08) rotate(-4deg);
+}
+
+/* ================= BOTONES DEL SLIDER ================= */
+.slider-btn {
+    backdrop-filter: blur(6px);
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 30, 20, 0.18);
+    transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: rgba(31, 77, 46, 0.75);
+    transform: translateY(-50%) scale(1.08);
+}
+
+/* ================= KEYFRAMES ================= */
+@keyframes heroFloatBirds {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes pulseSoftBirds {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.03);
+        opacity: 0.94;
+    }
+}
+
+@keyframes fadeTitleBirds {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatBlobBirds {
+
+    0%,
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-18px) translateX(12px);
+    }
+}
+
+/* ================= MOVIMIENTO REDUCIDO ================= */
+@media (prefers-reduced-motion: reduce) {
+
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-zoom,
+    .reveal.show,
+    .reveal-left.show,
+    .reveal-right.show,
+    .reveal-zoom.show,
+    .birds-hero-content,
+    .hero-chip,
+    .section-label,
+    .birds-intro::before,
+    .birds-catalog::before,
+    .bird-card,
+    .bird-card::before,
+    .bird-card::after,
+    .bird-image img,
+    .bird-slider img,
+    .fact-icon,
+    .highlight-icon,
+    .scroll-progress {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .birds-hero {
+        background-attachment: scroll;
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .birds-hero {
+        background-attachment: scroll;
+    }
+
+    .bird-card:hover,
+    .highlight-card:hover {
+        transform: translateY(-4px);
+    }
+}
