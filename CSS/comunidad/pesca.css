@@ -533,31 +533,31 @@ nav a.active::after{
     padding:24px;
     display:flex;
     flex-direction:column;
-    gap:6px;
+    gap: 8px;
 }
 
-.card-body h3{
-    font-size:22px;
-    color:#10722e;
-    font-weight:700;
+.card-body h3 {
+    font-size: 22px;
+    color: #10722e;
+    font-weight: 700;
+    margin: 0 0 8px 0;
 }
 
-.card-body p{
-    color:black;
-    margin-bottom:8px;
-    line-height:1.7;
+.card-body p {
+    color: black;
+    margin: 0;
+    line-height: 1.7;
 }
 
-.badge{
-    display:inline-block;
-    background:#dff5e6;
-    color:black;
-    padding:6px 14px;
-    border-radius:30px;
-    font-size:12px;
-    font-weight:600;
-    margin-bottom:10px;
-    margin-right:8px;
+.card-body .badge {
+    display: inline-block;
+    background: #dff5e6;
+    color: black;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 8px 8px 0;
 }
 
 /* ================= CIERRE ================= */
@@ -908,6 +908,16 @@ footer p{
 
 .chat-ia-link:hover span {
     color: white;
+}
+
+/* CRÉDITO DE FOTO */
+.photo-credit {
+    font-size: 12px;
+    color: #6b746e;
+    margin-top: 6px;
+    margin-left: 4px;
+    font-style: italic;
+    min-height: 18px;
 }
 
 /* ================= ANIMACIONES ================= */
