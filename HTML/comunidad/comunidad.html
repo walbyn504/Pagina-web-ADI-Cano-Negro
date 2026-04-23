@@ -7,13 +7,18 @@
     <title>Comunidad Caño Negro</title>
 
     <link rel="stylesheet" href="../../CSS/comunidad/comunidad.css">
+    <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectosGlobales.css">
     <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectoIdioma.css">
+    <link rel="stylesheet" href="../../CSS/utlidades/efectos/comunidad/comunidad.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body data-page="comunidad">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <header class="main-header">
         <div class="logo-area">
@@ -49,12 +54,12 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero-comunidad">
-        <div class="hero-content">
+    <section class="hero-comunidad reveal">
+        <div class="hero-content reveal">
             <p class="hero-tag">
                 <span data-i18n="comunidad_hero_tag">Cultura, tradición y naturaleza</span>
             </p>
-            <h1 data-i18n="comunidad_hero_title">
+            <h1 class="comunidad-hero-title" data-i18n="comunidad_hero_title">
                 Comunidad de <span><br> Caño Negro </span>
             </h1>
             <p class="description" data-i18n="comunidad_hero_desc">
@@ -65,7 +70,7 @@
     </section>
 
     <!-- NAV -->
-    <section class="section-nav">
+    <section class="section-nav reveal">
         <div class="container">
             <div class="section-nav-links">
                 <a href="#pesca">
@@ -85,13 +90,13 @@
     </section>
 
     <!-- INTRO -->
-    <section class="intro-comunidad">
-        <div class="container intro-content">
-            <span class="section-label center" data-i18n="comunidad_intro_label">Identidad local</span>
-            <h2 class="section-title" data-i18n="comunidad_intro_title">
+    <section class="intro-comunidad reveal">
+        <div class="container intro-content reveal">
+            <span class="section-label center reveal" data-i18n="comunidad_intro_label">Identidad local</span>
+            <h2 class="section-title reveal" data-i18n="comunidad_intro_title">
                 Una comunidad conectada con su entorno
             </h2>
-            <p class="section-subtitle" data-i18n="comunidad_intro_subtitle">
+            <p class="section-subtitle reveal" data-i18n="comunidad_intro_subtitle">
                 Caño Negro no solo destaca por su riqueza natural, sino también por la
                 historia, las tradiciones y el esfuerzo colectivo de su gente.
             </p>
@@ -103,14 +108,14 @@
         <div class="container">
 
             <!-- PESCA -->
-            <div class="info-row">
-                <div class="info-img">
+            <div class="info-row reveal">
+                <div class="info-img reveal-left">
                     <img src="../../img/comunidad/pesca.jpg" alt="Pesca en Caño Negro">
                 </div>
 
-                <div class="info-text">
+                <div class="info-text reveal-right">
                     <span class="info-label" data-i18n="comunidad_pesca_label">Tradición viva</span>
-                    <h2 id="pesca" data-i18n="comunidad_pesca_title"></h2>
+                    <h2 id="pesca" class="section-title section-title-left" data-i18n="comunidad_pesca_title"></h2>
 
                     <p data-i18n="comunidad_pesca_text1"></p>
                     <p data-i18n="comunidad_pesca_text2"></p>
@@ -120,14 +125,14 @@
             </div>
 
             <!-- VIDA -->
-            <div class="info-row reverse">
-                <div class="info-img">
+            <div class="info-row reverse reveal">
+                <div class="info-img reveal-right">
                     <img src="../../img/comunidad/comunidad_cañoNegro.jpg" alt="Comunidad Caño Negro">
                 </div>
 
-                <div class="info-text">
+                <div class="info-text reveal-left">
                     <span class="info-label" data-i18n="comunidad_vida_label">Convivencia</span>
-                    <h2 id="vidaComunitaria" data-i18n="comunidad_vida_title"></h2>
+                    <h2 id="vidaComunitaria" class="section-title section-title-left" data-i18n="comunidad_vida_title"></h2>
 
                     <p data-i18n="comunidad_vida_text1"></p>
                     <p data-i18n="comunidad_vida_text2"></p>
@@ -137,14 +142,14 @@
             </div>
 
             <!-- PUENTES -->
-            <div class="info-row">
-                <div class="info-img">
+            <div class="info-row reveal">
+                <div class="info-img reveal-left">
                     <img src="../../img/comunidad/puente.jpeg" alt="Puente flotante">
                 </div>
 
-                <div class="info-text">
+                <div class="info-text reveal-right">
                     <span class="info-label" data-i18n="comunidad_puentes_label">Paisaje local</span>
-                    <h2 id="puentesFlotantes" data-i18n="comunidad_puentes_title"></h2>
+                    <h2 id="puentesFlotantes" class="section-title section-title-left" data-i18n="comunidad_puentes_title"></h2>
 
                     <p data-i18n="comunidad_puentes_text1"></p>
                     <p data-i18n="comunidad_puentes_text2"></p>
@@ -157,16 +162,16 @@
     </section>
 
     <!-- CIERRE -->
-    <section class="closing-section">
-        <div class="container closing-content">
+    <section class="closing-section reveal">
+        <div class="container closing-content reveal">
             <p class="closing-tag" data-i18n="comunidad_closing_tag">Caño Negro</p>
-            <h2 data-i18n="comunidad_closing_title"></h2>
+            <h2 class="section-title" data-i18n="comunidad_closing_title"></h2>
             <p data-i18n="comunidad_closing_desc"></p>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="reveal">
         <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
         <div class="social-links">
@@ -187,27 +192,21 @@
 
     <div class="fab-container">
 
-        <!-- BOTÓN PRINCIPAL -->
         <button class="fab-main" id="fabToggle">
             <i class="fa-solid fa-plus"></i>
         </button>
 
-        <!-- OPCIONES -->
         <div class="fab-options">
 
-            <!-- AYUDA -->
             <a href="#" class="fab-option help" id="openHelp" aria-label="Ayuda">
                 <i class="fa-solid fa-comments"></i>
             </a>
 
-
-            <!-- UBICACIÓN -->
             <a href="https://www.google.com/maps/dir/?api=1&destination=Refugio+de+Vida+Silvestre+Caño+Negro"
                 target="_blank" class="fab-option map" aria-label="Cómo llegar">
                 <i class="fa-solid fa-location-dot"></i>
             </a>
 
-            <!-- WHATSAPP -->
             <a href="https://wa.me/506XXXXXX" target="_blank" class="fab-option whatsapp" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
@@ -282,6 +281,7 @@
     <script src="../../JS/utilidades/fab.js"></script>
     <script src="../../JS/utilidades/modal.js"></script>
     <script src="../../JS/utilidades/chatIA.js"></script>
+    <script src="../../JS/utilidades/comunidad/comunidad.js"></script>
 
 </body>
 

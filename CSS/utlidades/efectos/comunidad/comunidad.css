@@ -1,0 +1,157 @@
+/* ================= HERO COMUNIDAD ================= */
+.hero-comunidad {
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.hero-comunidad::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 20, 14, 0.14), rgba(10, 20, 14, 0.30));
+    pointer-events: none;
+}
+
+/* ================= TITULO HERO ================= */
+.comunidad-hero-title {
+    position: relative;
+}
+
+
+/* ================= INTRO DECORATIVO ================= */
+.intro-comunidad {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-comunidad::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    top: -90px;
+    right: -100px;
+    background: radial-gradient(circle, rgba(113, 201, 138, 0.14), transparent 70%);
+    pointer-events: none;
+    animation: comunidadBlob 8s ease-in-out infinite;
+}
+
+/* ================= FILAS ================= */
+.info-row {
+    transition: transform 0.35s ease;
+}
+
+/* ================= IMAGEN ================= */
+.info-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.info-img img {
+    transition: transform 0.7s ease, filter 0.45s ease;
+}
+
+.info-row:hover .info-img img {
+    transform: scale(1.06);
+    filter: brightness(1.03);
+}
+
+/* ================= EFECTO BRILLO ================= */
+.info-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.28),
+            transparent);
+    transition: left 0.8s ease;
+    pointer-events: none;
+}
+
+.info-row:hover .info-img::after {
+    left: 130%;
+}
+
+/* ================= TEXTO ================= */
+.info-text {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.info-row:hover .info-text {
+    transform: translateY(-4px);
+}
+
+/* ================= TITULOS INTERNOS ================= */
+.section-title-left {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.section-title-left::after,
+.section-title-left.show::after {
+    content: "";
+    display: block;
+    width: 550px;
+    height: 4px;
+    margin: 14px 0 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #71c98a, #1f4d2e);
+}
+
+/* ================= BOTON ================= */
+.btn-ver-mas {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+    transform: translateX(6px);
+}
+
+/* ================= QUITAR LINEA EN CIERRE ================= */
+.closing-content .section-title::after,
+.closing-content .section-title.show::after {
+    content: none;
+    display: none;
+}
+
+/* ================= ANIMACION DECORATIVA ================= */
+@keyframes comunidadBlob {
+
+    0%,
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-18px) translateX(12px);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .hero-comunidad {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .comunidad-hero-title::after {
+        width: 180px;
+    }
+
+    .section-title-left::after {
+        width: 130px;
+    }
+
+    .closing-content .section-title::after {
+        width: 160px;
+    }
+}
