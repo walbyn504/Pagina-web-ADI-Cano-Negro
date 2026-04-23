@@ -1,0 +1,85 @@
+/* ================= BARRA DE PROGRESO ================= */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, #71c98a, #1f4d2e);
+    z-index: 4000;
+    box-shadow: 0 2px 10px rgba(113, 201, 138, 0.35);
+}
+
+/* ================= REVEAL ================= */
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-zoom {
+    opacity: 0;
+    transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.reveal { transform: translateY(42px); }
+.reveal-left { transform: translateX(-55px); }
+.reveal-right { transform: translateX(55px); }
+.reveal-zoom { transform: scale(0.92); }
+
+.reveal.show,
+.reveal-left.show,
+.reveal-right.show,
+.reveal-zoom.show {
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+}
+
+/* ================= HERO ================= */
+.hero-senderos,
+.album-header {
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero-senderos::before,
+.album-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10,20,14,0.12), rgba(10,20,14,0.24));
+}
+
+.hero-content,
+.hero-text {
+    position: relative;
+    z-index: 2;
+    animation: heroFloat 4.5s infinite;
+}
+
+/* ================= TITULOS ================= */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #71c98a, #1f4d2e);
+    transition: width 0.8s ease;
+}
+
+.section-title.show::after {
+    width: 95px;
+}
+
+/* ================= KEYFRAMES ================= */
+@keyframes heroFloat {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .hero-senderos,
+    .album-header {
+        background-attachment: scroll;
+    }
+}

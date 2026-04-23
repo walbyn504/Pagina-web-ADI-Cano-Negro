@@ -1,50 +1,4 @@
-/* ================= BARRA DE PROGRESO ================= */
-.scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 4px;
-    background: linear-gradient(90deg, #71c98a, #1f4d2e);
-    z-index: 4000;
-    box-shadow: 0 2px 10px rgba(113, 201, 138, 0.35);
-}
-
-/* ================= REVEAL ================= */
-.reveal,
-.reveal-left,
-.reveal-right,
-.reveal-zoom {
-    opacity: 0;
-    transition: opacity 0.85s ease, transform 0.85s ease;
-    will-change: opacity, transform;
-}
-
-.reveal {
-    transform: translateY(42px);
-}
-
-.reveal-left {
-    transform: translateX(-55px);
-}
-
-.reveal-right {
-    transform: translateX(55px);
-}
-
-.reveal-zoom {
-    transform: scale(0.92);
-}
-
-.reveal.show,
-.reveal-left.show,
-.reveal-right.show,
-.reveal-zoom.show {
-    opacity: 1;
-    transform: translate(0, 0) scale(1);
-}
-
-/* ================= HERO ================= */
+/* ================= HERO DE AVES ================= */
 .birds-hero {
     position: relative;
     overflow: hidden;
@@ -55,9 +9,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg,
-            rgba(10, 20, 14, 0.10),
-            rgba(10, 20, 14, 0.28));
+    background: linear-gradient(
+        180deg,
+        rgba(10, 20, 14, 0.10),
+        rgba(10, 20, 14, 0.28)
+    );
     pointer-events: none;
 }
 
@@ -72,7 +28,7 @@
     animation: pulseSoftBirds 2.8s ease-in-out infinite;
 }
 
-/* ================= TÍTULOS ================= */
+/* ================= TITULOS DE AVES ================= */
 .section-title {
     position: relative;
     animation: fadeTitleBirds 1s ease;
@@ -122,7 +78,7 @@
     left: -100px;
 }
 
-/* ================= HIGHLIGHTS ================= */
+/* ================= TARJETAS DESTACADAS ================= */
 .highlight-card {
     transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
@@ -154,9 +110,11 @@
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: linear-gradient(135deg,
-            rgba(113, 201, 138, 0.12),
-            rgba(255, 255, 255, 0));
+    background: linear-gradient(
+        135deg,
+        rgba(113, 201, 138, 0.12),
+        rgba(255, 255, 255, 0)
+    );
     opacity: 0;
     transition: opacity 0.35s ease;
     z-index: 1;
@@ -170,10 +128,12 @@
     left: -120%;
     width: 60%;
     height: 100%;
-    background: linear-gradient(120deg,
-            transparent,
-            rgba(255, 255, 255, 0.22),
-            transparent);
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.22),
+        transparent
+    );
     transition: left 0.8s ease;
     z-index: 2;
     pointer-events: none;
@@ -192,7 +152,7 @@
     box-shadow: 0 20px 34px rgba(31, 77, 46, 0.14);
 }
 
-/* ================= IMÁGENES ================= */
+/* ================= IMAGENES ================= */
 .bird-image {
     position: relative;
     overflow: hidden;
@@ -203,14 +163,12 @@
     transition: transform 0.7s ease, filter 0.45s ease;
 }
 
-/* solo imagen única o activa */
 .bird-card:hover .bird-image > img,
 .bird-card:hover .bird-slider img.active {
     transform: scale(1.06);
     filter: brightness(1.03);
 }
 
-/* brillo deslizante */
 .bird-image::after {
     content: "";
     position: absolute;
@@ -218,10 +176,12 @@
     left: -120%;
     width: 70%;
     height: 100%;
-    background: linear-gradient(120deg,
-            transparent,
-            rgba(255, 255, 255, 0.24),
-            transparent);
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.24),
+        transparent
+    );
     transition: left 0.8s ease;
     z-index: 3;
     pointer-events: none;
@@ -231,7 +191,7 @@
     left: 130%;
 }
 
-/* ================= CRÉDITOS ================= */
+/* ================= CREDITOS ================= */
 .photo-credit,
 .bird-credit {
     position: relative;
@@ -276,27 +236,21 @@
     transform: translateY(-50%) scale(1.08);
 }
 
-/* ================= KEYFRAMES ================= */
+/* ================= KEYFRAMES DE AVES ================= */
 @keyframes heroFloatBirds {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-6px);
     }
 }
 
 @keyframes pulseSoftBirds {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: scale(1);
         opacity: 1;
     }
-
     50% {
         transform: scale(1.03);
         opacity: 0.94;
@@ -308,7 +262,6 @@
         opacity: 0;
         transform: translateY(18px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -316,28 +269,16 @@
 }
 
 @keyframes floatBlobBirds {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0) translateX(0);
     }
-
     50% {
         transform: translateY(-18px) translateX(12px);
     }
 }
 
-/* ================= MOVIMIENTO REDUCIDO ================= */
+/* ================= MOVIMIENTO REDUCIDO SOLO AVES ================= */
 @media (prefers-reduced-motion: reduce) {
-
-    .reveal,
-    .reveal-left,
-    .reveal-right,
-    .reveal-zoom,
-    .reveal.show,
-    .reveal-left.show,
-    .reveal-right.show,
-    .reveal-zoom.show,
     .birds-hero-content,
     .hero-chip,
     .section-label,
@@ -349,8 +290,7 @@
     .bird-image img,
     .bird-slider img,
     .fact-icon,
-    .highlight-icon,
-    .scroll-progress {
+    .highlight-icon {
         transition: none !important;
         animation: none !important;
         transform: none !important;
@@ -362,7 +302,7 @@
     }
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= RESPONSIVE SOLO AVES ================= */
 @media (max-width: 900px) {
     .birds-hero {
         background-attachment: scroll;

@@ -1,0 +1,59 @@
+/* ================= GALERIA ================= */
+.gallery-grid a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 20px;
+    transition: 0.35s;
+}
+
+.gallery-grid a:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 34px rgba(31,77,46,0.14);
+}
+
+.gallery-grid img {
+    transition: 0.7s;
+}
+
+.gallery-grid a:hover img {
+    transform: scale(1.08);
+}
+
+/* ================= LIGHTBOX ================= */
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5000;
+}
+
+.lightbox-overlay img {
+    max-width: 92vw;
+    max-height: 85vh;
+    border-radius: 16px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+}
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
