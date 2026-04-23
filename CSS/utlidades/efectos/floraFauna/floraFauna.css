@@ -1,0 +1,98 @@
+/* ================= HERO ================= */
+.hero-flora {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ================= OVERVIEW ================= */
+.overview-card {
+    transition: 0.3s;
+}
+
+.overview-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.12);
+}
+
+/* ================= STATS ================= */
+.stat-card {
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+/* ================= FEATURE ================= */
+.feature-image img {
+    transition: 0.6s;
+}
+
+.feature-image:hover img {
+    transform: scale(1.08);
+}
+
+/* ================= INFO PANELS ================= */
+.info-panel {
+    transition: 0.3s;
+}
+
+.info-panel:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+/* ================= ANIMAL SECTION ================= */
+.animal-section {
+    position: relative;
+}
+
+/* 🔥 IMPORTANTE: layout corregido */
+.animal-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.animal-side-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ================= BOTON ================= */
+.btn-ver-mas {
+    transition: 0.3s;
+}
+
+.btn-ver-mas:hover {
+    transform: translateX(5px);
+}
+
+/* ================= EFECTO BRILLO ================= */
+.feature-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.3),
+        transparent
+    );
+    transition: 0.8s;
+}
+
+.feature-image:hover::after {
+    left: 130%;
+}

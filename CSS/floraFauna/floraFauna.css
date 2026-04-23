@@ -632,9 +632,9 @@ nav a.active::after{
 
 .animal-layout{
     display:grid;
-    grid-template-columns:2fr 1fr;
+    grid-template-columns:1.5fr 1fr;
     gap:30px;
-    align-items:start;
+    align-items: stretch;
 }
 
 .animal-main{
@@ -643,6 +643,7 @@ nav a.active::after{
     padding:34px 30px;
     box-shadow:var(--sombra);
     border:1px solid rgba(47,93,58,0.08);
+    max-width: 800px;
 }
 
 .animal-tag{
@@ -680,6 +681,7 @@ nav a.active::after{
     border-radius:26px;
     padding:30px 24px;
     box-shadow:var(--sombra-hover);
+    height: 100%;
 }
 
 .animal-side-card h3{
@@ -755,16 +757,6 @@ nav a.active::after{
     margin-bottom:18px;
     color:#10722e;
     font-weight:800;
-}
-
-.closing-content h2::after{
-    content:"";
-    display:block;
-    width:120px;
-    height:4px;
-    margin:16px auto 0;
-    border-radius:999px;
-    background:linear-gradient(90deg, #7faa84, #2c6b3b);
 }
 
 .closing-content p{

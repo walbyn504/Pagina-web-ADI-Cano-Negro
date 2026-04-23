@@ -49,3 +49,22 @@
     border-radius: 50%;
     animation: spinLoader 0.8s linear infinite;
 }
+
+.section-title {
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #71c98a, #1f4d2e);
+    transition: width 0.8s ease;
+}
+
+.section-title.show::after {
+    width: 700px;
+}

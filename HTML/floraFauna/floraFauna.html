@@ -8,12 +8,16 @@
 
     <link rel="stylesheet" href="../../CSS/floraFauna/floraFauna.css">
     <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectoIdioma.css">
+    <link rel="stylesheet" href="../../CSS/utlidades/efectos/floraFauna/floraFauna.css">
+    <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectosGlobales.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body data-page="floraFauna">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <header class="main-header">
         <div class="logo-area">
@@ -50,7 +54,7 @@
 
     <!-- HERO -->
     <section class="hero-flora">
-        <div class="hero-content">
+        <div class="hero-content reveal">
             <p class="hero-tag">
                 <span data-i18n="hero_tag">Sitio RAMSAR • Biodiversidad extraordinaria</span>
             </p>
@@ -86,7 +90,7 @@
     <!-- VISIÓN GENERAL -->
     <section class="overview-section" id="vision-general">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading reveal">
                 <span class="section-label center" data-i18n="overview_label">Panorama ecológico</span>
                 <h2 class="section-title" data-i18n="overview_title">Un humedal donde todo está conectado</h2>
                 <p class="section-subtitle" data-i18n="overview_subtitle">
@@ -97,7 +101,7 @@
             </div>
 
             <div class="overview-grid">
-                <article class="overview-card">
+                <article class="overview-card reveal">
                     <i class="fa-solid fa-seedling"></i>
                     <h3 data-i18n="overview_card1_title">Flora adaptada al agua</h3>
                     <p data-i18n="overview_card1_desc">
@@ -106,7 +110,7 @@
                     </p>
                 </article>
 
-                <article class="overview-card">
+                <article class="overview-card reveal">
                     <i class="fa-solid fa-binoculars"></i>
                     <h3 data-i18n="overview_card2_title">Fauna de gran valor</h3>
                     <p data-i18n="overview_card2_desc">
@@ -115,7 +119,7 @@
                     </p>
                 </article>
 
-                <article class="overview-card">
+                <article class="overview-card reveal">
                     <i class="fa-solid fa-water"></i>
                     <h3 data-i18n="overview_card3_title">Dinámica estacional</h3>
                     <p data-i18n="overview_card3_desc">
@@ -124,7 +128,7 @@
                     </p>
                 </article>
 
-                <article class="overview-card">
+                <article class="overview-card reveal">
                     <i class="fa-solid fa-shield-heart"></i>
                     <h3 data-i18n="overview_card4_title">Importancia de conservación</h3>
                     <p data-i18n="overview_card4_desc">
@@ -139,7 +143,7 @@
     <!-- FLORA -->
     <section class="flora-section" id="flora">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading reveal">
                 <span class="section-label center" data-i18n="flora_label">Flora</span>
                 <h2 class="section-title" data-i18n="flora_title">Vegetación que define el paisaje del humedal</h2>
                 <p class="section-subtitle" data-i18n="flora_subtitle">
@@ -151,30 +155,30 @@
             </div>
 
             <div class="stats-grid">
-                <article class="stat-card">
+                <article class="stat-card reveal-zoom">
                     <h3>300+</h3>
                     <p data-i18n="flora_stat1">especies registradas</p>
                 </article>
-                <article class="stat-card">
+                <article class="stat-card reveal-zoom">
                     <h3>136</h3>
                     <p data-i18n="flora_stat2">tipos de árboles</p>
                 </article>
-                <article class="stat-card">
+                <article class="stat-card reveal-zoom">
                     <h3>91</h3>
                     <p data-i18n="flora_stat3">especies herbáceas</p>
                 </article>
-                <article class="stat-card">
+                <article class="stat-card reveal-zoom">
                     <h3>10</h3>
                     <p data-i18n="flora_stat4">especies de palmas</p>
                 </article>
             </div>
 
             <div class="feature-row">
-                <div class="feature-image">
+                <div class="feature-image reveal-left">
                     <img src="../../img/floraFauna/Yolillal.jpg" alt="Yolillal en Caño Negro">
                 </div>
 
-                <div class="feature-text">
+                <div class="feature-text reveal-right">
                     <span class="feature-label" data-i18n="flora_feature1_label">Ecosistema emblemático</span>
                     <h3 data-i18n="flora_feature1_title">El Yolillal</h3>
                     <p data-i18n="flora_feature1_desc1">
@@ -190,11 +194,11 @@
             </div>
 
             <div class="feature-row reverse">
-                <div class="feature-image">
+                <div class="feature-image reveal-left">
                     <img src="../../img/floraFauna/bosqueInundado.jpg" alt="Bosque inundado">
                 </div>
 
-                <div class="feature-text">
+                <div class="feature-text reveal-right">
                     <span class="feature-label" data-i18n="flora_feature2_label">Bosques adaptados al
                         encharcamiento</span>
                     <h3 data-i18n="flora_feature2_title">Marillal y bosque inundado</h3>
@@ -211,7 +215,7 @@
             </div>
 
             <div class="flora-info-grid">
-                <article class="info-panel">
+                <article class="info-panel reveal">
                     <h3 data-i18n="flora_panel1_title">Vegetación herbácea y acuática</h3>
                     <p data-i18n="flora_panel1_desc">
                         En lagunas y caños aparecen “alfombras” flotantes de plantas que cumplen
@@ -226,7 +230,7 @@
                     </ul>
                 </article>
 
-                <article class="info-panel">
+                <article class="info-panel reveal">
                     <h3 data-i18n="flora_panel2_title">Palma Cuba</h3>
                     <p class="panel-scientific">Acoelorraphe wrightii</p>
                     <p data-i18n="flora_panel2_desc">
@@ -236,7 +240,7 @@
                     </p>
                 </article>
 
-                <article class="info-panel">
+                <article class="info-panel reveal">
                     <h3 data-i18n="flora_panel3_title">Adaptación estacional</h3>
                     <p data-i18n="flora_panel3_desc">
                         En época lluviosa predomina la vegetación flotante y emergente.
@@ -245,7 +249,7 @@
                     </p>
                 </article>
 
-                <article class="info-panel">
+                <article class="info-panel reveal">
                     <h3 data-i18n="flora_panel4_title">Refugio de biodiversidad regional</h3>
                     <p data-i18n="flora_panel4_desc">
                         Caño Negro funciona como refugio para plantas de distribución restringida
@@ -254,7 +258,7 @@
                 </article>
             </div>
 
-            <div class="section-heading flora-subsection-heading">
+            <div class="section-heading flora-subsection-heading reveal">
                 <span class="section-label center" data-i18n="flora_sub_label">Valor botánico</span>
                 <h2 class="section-title" data-i18n="flora_sub_title">Aspectos que hacen única a la flora de Caño Negro
                 </h2>
@@ -266,7 +270,7 @@
             </div>
 
             <div class="flora-info-grid flora-info-grid-secondary">
-                <article class="info-panel">
+                <article class="info-panel reveal">
                     <h3 data-i18n="flora_unique1_title">Asociaciones vegetales</h3>
                     <p data-i18n="flora_unique1_desc">
                         La flora de Caño Negro se organiza en distintas asociaciones según el nivel de inundación.
@@ -282,7 +286,7 @@
                     </ul>
                 </article>
 
-                <article class="info-panel">
+                <article class="info-panel reveal">
                     <h3 data-i18n="flora_unique2_title">Especies de distribución restringida</h3>
                     <p data-i18n="flora_unique2_desc">
                         Algunas plantas presentes en Caño Negro tienen una distribución natural muy limitada
@@ -298,7 +302,7 @@
                     </ul>
                 </article>
 
-                <article class="info-panel">
+                <article class="info-panel reveal">
                     <h3 data-i18n="flora_unique3_title">Conectividad ecológica</h3>
                     <p data-i18n="flora_unique3_desc1">
                         Debido a la conexión del Río Frío con el Lago de Nicaragua, gran parte de la flora
@@ -310,7 +314,7 @@
                     </p>
                 </article>
 
-                <article class="info-panel">
+                <article class="info-panel reveal">
                     <h3 data-i18n="flora_unique4_title">El reto de la conservación</h3>
                     <p data-i18n="flora_unique4_desc1">
                         Más que por la cantidad de especies estrictamente endémicas, Caño Negro destaca por actuar
@@ -329,7 +333,7 @@
     <!-- FAUNA -->
     <section class="fauna-intro-section" id="fauna">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading reveal">
                 <span class="section-label center" data-i18n="fauna_label">Fauna</span>
                 <h2 class="section-title" data-i18n="fauna_title">Una diversidad que cambia con el agua y las estaciones
                 </h2>
@@ -341,35 +345,35 @@
             </div>
 
             <div class="fauna-summary-grid">
-                <article class="summary-box">
+                <article class="summary-box reveal-zoom">
                     <h3 data-i18n="fauna_box1_title">Aves</h3>
                     <p class="summary-number">315 – 400</p>
                     <p data-i18n="fauna_box1_desc">Incluye aves migratorias y residentes; es el grupo más abundante y
                         uno de los mayores atractivos del refugio.</p>
                 </article>
 
-                <article class="summary-box">
+                <article class="summary-box reveal-zoom">
                     <h3 data-i18n="fauna_box2_title">Mamíferos</h3>
                     <p class="summary-number">160</p>
                     <p data-i18n="fauna_box2_desc">Destacan 90 especies de murciélagos y 70 especies terrestres,
                         incluyendo felinos, primates y otras especies asociadas a bosques y humedales.</p>
                 </article>
 
-                <article class="summary-box">
+                <article class="summary-box reveal-zoom">
                     <h3 data-i18n="fauna_box3_title">Peces</h3>
                     <p class="summary-number">49 – 55</p>
                     <p data-i18n="fauna_box3_desc">Claves para el equilibrio acuático del humedal. Sobresale el gaspar,
                         una especie simbólica y de gran valor biológico.</p>
                 </article>
 
-                <article class="summary-box">
+                <article class="summary-box reveal-zoom">
                     <h3 data-i18n="fauna_box4_title">Reptiles</h3>
                     <p class="summary-number">35+</p>
                     <p data-i18n="fauna_box4_desc">Destacan caimanes, cocodrilos, tortugas y otros reptiles ligados a
                         lagunas, orillas, canales y zonas inundables.</p>
                 </article>
 
-                <article class="summary-box">
+                <article class="summary-box reveal-zoom">
                     <h3 data-i18n="fauna_box5_title">Anfibios</h3>
                     <p class="summary-number">30+</p>
                     <p data-i18n="fauna_box5_desc">Indicadores ecológicos del estado ambiental del ecosistema.</p>
@@ -382,7 +386,7 @@
     <section class="animal-section" id="aves">
         <div class="container">
             <div class="animal-layout">
-                <div class="animal-main">
+                <div class="animal-main reveal-left">
                     <span class="animal-tag" data-i18n="birds_tag">Fauna destacada</span>
                     <h2><i class="fa-solid fa-dove"></i> <span data-i18n="birds_title">Aves</span></h2>
                     <p data-i18n="birds_desc1">
@@ -415,7 +419,7 @@
                     </a>
                 </div>
 
-                <aside class="animal-side-card">
+                <aside class="animal-side-card reveal-right">
                     <h3 data-i18n="birds_side_title">Datos clave</h3>
                     <ul>
                         <li data-i18n="birds_side_1">315 a 400 especies aproximadas</li>
@@ -432,7 +436,7 @@
     <section class="animal-section alt" id="mamiferos">
         <div class="container">
             <div class="animal-layout">
-                <div class="animal-main">
+                <div class="animal-main reveal-left">
                     <span class="animal-tag" data-i18n="mammals_tag">Fauna terrestre</span>
                     <h2><i class="fa-solid fa-paw"></i> <span data-i18n="mammals_title">Mamíferos</span></h2>
                     <p data-i18n="mammals_desc1">
@@ -458,7 +462,7 @@
                     </a>
                 </div>
 
-                <aside class="animal-side-card">
+                <aside class="animal-side-card reveal-right">
                     <h3 data-i18n="mammals_side_title">Especies representativas</h3>
                     <ul>
                         <li data-i18n="mammals_side_1">Mono carablanca</li>
@@ -475,7 +479,7 @@
     <section class="animal-section" id="peces">
         <div class="container">
             <div class="animal-layout">
-                <div class="animal-main">
+                <div class="animal-main reveal-left">
                     <span class="animal-tag" data-i18n="fish_tag">Vida acuática</span>
                     <h2><i class="fa-solid fa-fish"></i> <span data-i18n="fish_title">Peces</span></h2>
                     <p data-i18n="fish_desc1">
@@ -500,7 +504,7 @@
                     </a>
                 </div>
 
-                <aside class="animal-side-card">
+                <aside class="animal-side-card reveal-right">
                     <h3 data-i18n="fish_side_title">Dato destacado</h3>
                     <ul>
                         <li data-i18n="fish_side_1">49 a 55 especies aproximadas</li>
@@ -517,7 +521,7 @@
     <section class="animal-section alt" id="reptiles">
         <div class="container">
             <div class="animal-layout">
-                <div class="animal-main">
+                <div class="animal-main reveal-left">
                     <span class="animal-tag" data-i18n="reptiles_tag">Ambientes ribereños</span>
                     <h2><i class="fa-solid fa-dragon"></i> <span data-i18n="reptiles_title">Reptiles</span></h2>
                     <p data-i18n="reptiles_desc1">
@@ -542,7 +546,7 @@
                     </a>
                 </div>
 
-                <aside class="animal-side-card">
+                <aside class="animal-side-card reveal-right">
                     <h3 data-i18n="reptiles_side_title">Observación común</h3>
                     <ul>
                         <li data-i18n="reptiles_side_1">Caimán de anteojos</li>
@@ -559,7 +563,7 @@
     <section class="animal-section" id="anfibios">
         <div class="container">
             <div class="animal-layout">
-                <div class="animal-main">
+                <div class="animal-main reveal-left">
                     <span class="animal-tag" data-i18n="amphibians_tag">Indicadores ambientales</span>
                     <h2><i class="fa-solid fa-frog"></i> <span data-i18n="amphibians_title">Anfibios</span></h2>
                     <p data-i18n="amphibians_desc1">
@@ -578,7 +582,7 @@
                     </a>
                 </div>
 
-                <aside class="animal-side-card">
+                <aside class="animal-side-card reveal-right">
                     <h3 data-i18n="amphibians_side_title">Importancia ecológica</h3>
                     <ul>
                         <li data-i18n="amphibians_side_1">Más de 30 especies</li>
@@ -594,7 +598,7 @@
     <!-- INFORMACIÓN EXTRA -->
     <section class="overview-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading reveal">
                 <span class="section-label center" data-i18n="extra_label">Diversidad biológica</span>
                 <h2 class="section-title" data-i18n="extra_title">Variedad, estacionalidad y vida silvestre</h2>
                 <p class="section-subtitle" data-i18n="extra_subtitle">
@@ -605,7 +609,7 @@
             </div>
 
             <div class="overview-grid">
-                <article class="overview-card">
+                <article class="overview-card reveal">
                     <i class="fa-solid fa-dna"></i>
                     <h3 data-i18n="extra_card1_title">Nota sobre variedades</h3>
                     <p data-i18n="extra_card1_desc">
@@ -615,7 +619,7 @@
                     </p>
                 </article>
 
-                <article class="overview-card">
+                <article class="overview-card reveal">
                     <i class="fa-solid fa-sun"></i>
                     <h3 data-i18n="extra_card2_title">Época seca</h3>
                     <p data-i18n="extra_card2_desc">
@@ -625,7 +629,7 @@
                     </p>
                 </article>
 
-                <article class="overview-card">
+                <article class="overview-card reveal">
                     <i class="fa-solid fa-eye"></i>
                     <h3 data-i18n="extra_card3_title">Avistamiento especial</h3>
                     <p data-i18n="extra_card3_desc">
@@ -635,7 +639,7 @@
                     </p>
                 </article>
 
-                <article class="overview-card">
+                <article class="overview-card reveal">
                     <i class="fa-solid fa-globe"></i>
                     <h3 data-i18n="extra_card4_title">Dato curioso</h3>
                     <p data-i18n="extra_card4_desc">
@@ -649,7 +653,7 @@
 
     <!-- CIERRE -->
     <section class="closing-section">
-        <div class="closing-content">
+        <div class="closing-content reveal">
             <p class="closing-tag" data-i18n="closing_tag">CAÑO NEGRO</p>
             <h2 data-i18n="closing_title">La riqueza del humedal está en la relación entre su flora, su fauna y el agua
             </h2>
@@ -683,27 +687,21 @@
 
     <div class="fab-container">
 
-        <!-- BOTÓN PRINCIPAL -->
         <button class="fab-main" id="fabToggle">
             <i class="fa-solid fa-plus"></i>
         </button>
 
-        <!-- OPCIONES -->
         <div class="fab-options">
 
-            <!-- AYUDA -->
             <a href="#" class="fab-option help" id="openHelp" aria-label="Ayuda">
                 <i class="fa-solid fa-comments"></i>
             </a>
 
-
-            <!-- UBICACIÓN -->
             <a href="https://www.google.com/maps/dir/?api=1&destination=Refugio+de+Vida+Silvestre+Caño+Negro"
                 target="_blank" class="fab-option map" aria-label="Cómo llegar">
                 <i class="fa-solid fa-location-dot"></i>
             </a>
 
-            <!-- WHATSAPP -->
             <a href="https://wa.me/506XXXXXX" target="_blank" class="fab-option whatsapp" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
@@ -778,6 +776,8 @@
     <script src="../../JS/utilidades/fab.js"></script>
     <script src="../../JS/utilidades/modal.js"></script>
     <script src="../../JS/utilidades/chatIA.js"></script>
+    <script src="../../JS/utilidades/efectos.js"></script>
+    <script src="../../JS/utilidades/floraFauna/floraFauna.js"></script>
 </body>
 
 </html>

@@ -19,34 +19,48 @@
     transition: opacity 0.85s ease, transform 0.85s ease;
 }
 
-.reveal { transform: translateY(42px); }
-.reveal-left { transform: translateX(-55px); }
-.reveal-right { transform: translateX(55px); }
-.reveal-zoom { transform: scale(0.92); }
+.reveal {
+    transform: translateY(42px);
+}
+
+.reveal-left {
+    transform: translateX(-55px);
+}
+
+.reveal-right {
+    transform: translateX(55px);
+}
+
+.reveal-zoom {
+    transform: scale(0.92);
+}
 
 .reveal.show,
 .reveal-left.show,
 .reveal-right.show,
 .reveal-zoom.show {
     opacity: 1;
-    transform: translate(0,0) scale(1);
+    transform: translate(0, 0) scale(1);
 }
 
-/* ================= HERO ================= */
+/* ================= HERO GLOBAL ================= */
 .hero-senderos,
-.album-header {
+.album-header,
+.hero-flora {
     background-attachment: fixed;
     position: relative;
 }
 
 .hero-senderos::before,
-.album-header::before {
+.album-header::before,
+.hero-flora::before {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg, rgba(10,20,14,0.12), rgba(10,20,14,0.24));
 }
 
+/* ================= HERO CONTENT ================= */
 .hero-content,
 .hero-text {
     position: relative;
@@ -55,6 +69,10 @@
 }
 
 /* ================= TITULOS ================= */
+.section-title {
+    position: relative;
+}
+
 .section-title::after {
     content: "";
     display: block;
@@ -67,7 +85,22 @@
 }
 
 .section-title.show::after {
-    width: 95px;
+    width: 700px;
+}
+
+/* ================= NAV INTERNA ================= */
+.section-nav-links a {
+    transition: all 0.3s ease;
+}
+
+.section-nav-links a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(31, 77, 46, 0.12);
+}
+
+.section-nav-links a.active-section {
+    background: #10722e;
+    color: #fff;
 }
 
 /* ================= KEYFRAMES ================= */
@@ -79,7 +112,8 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
     .hero-senderos,
-    .album-header {
+    .album-header,
+    .hero-flora {
         background-attachment: scroll;
     }
 }
