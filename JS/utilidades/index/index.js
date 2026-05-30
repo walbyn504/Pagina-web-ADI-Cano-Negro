@@ -1,8 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     const revealElements = document.querySelectorAll(".reveal");
     const counters = document.querySelectorAll(".counter");
     const scrollProgress = document.getElementById("scrollProgress");
     const hero = document.querySelector(".hero");
+
+    const btn = document.querySelector('.navbar-toggler');
+
+    if (btn) {
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+        });
+    }
 
     /* ================= REVEAL ================= */
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -75,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", updateScrollProgress);
     updateScrollProgress();
 
-    /* ================= PARALLAX SUAVE HERO ================= */
+    /* ================= PARALLAX ================= */
     function updateParallax() {
         if (!hero || window.innerWidth <= 900) return;
 

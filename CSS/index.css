@@ -59,7 +59,7 @@ ul {
     width: 100%;
     min-height: 90px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Empuja logo a la izquierda y navegación a la derecha */
     align-items: center;
     gap: 20px;
     padding: 0 40px;
@@ -96,7 +96,7 @@ ul {
     line-height: 1.1;
 }
 
-/* ================= NAV ================= */
+/* ================= NAV DESKTOP ================= */
 nav {
     flex: 1;
     display: flex;
@@ -120,7 +120,7 @@ nav ul li {
     list-style: none;
 }
 
-nav a {
+nav a, .custom-navbar .nav-link {
     position: relative;
     color: white;
     font-weight: 600;
@@ -142,13 +142,37 @@ nav a::after {
     transition: 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover, .custom-navbar .nav-link:hover {
     color: #d8f5df;
 }
 
 nav a:hover::after,
 nav a.active::after {
     width: 100%;
+}
+
+/* Botón Hamburguesa Oculto en Escritorio */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 2000;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
 }
 
 /* ================= LANGUAGE DROPDOWN ================= */
@@ -268,7 +292,6 @@ nav a.active::after {
         opacity: 0;
         transform: translateY(30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -616,7 +639,6 @@ footer p {
     z-index: 1000;
 }
 
-/* BOTÓN PRINCIPAL */
 .fab-main {
     width: 60px;
     height: 60px;
@@ -636,13 +658,9 @@ footer p {
 .fab-main:hover {
     background: #ffffff;
     color: #1f4d2e;
-}
-
-.fab-main:hover {
     transform: scale(1.1);
 }
 
-/* ICONO ROTACIÓN */
 .fab-main i {
     transition: 0.3s ease;
 }
@@ -651,7 +669,6 @@ footer p {
     transform: rotate(45deg);
 }
 
-/* OPCIONES */
 .fab-options {
     position: absolute;
     bottom: 75px;
@@ -659,7 +676,6 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 12px;
-
     opacity: 0;
     pointer-events: none;
     transform: translateY(10px);
@@ -672,7 +688,6 @@ footer p {
     transform: translateY(0);
 }
 
-/* BOTONES HIJOS */
 .fab-option {
     width: 55px;
     height: 55px;
@@ -690,7 +705,6 @@ footer p {
     transform: scale(1.12);
 }
 
-/* COLORES */
 .fab-option.whatsapp {
     background: white;
     color: #25d366;
@@ -735,7 +749,6 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-
     opacity: 0;
     pointer-events: none;
     transition: 0.3s ease;
@@ -801,7 +814,6 @@ footer p {
     z-index: 999;
 }
 
-/* BOTÓN (flecha) */
 .chat-ia-toggle {
     width: 18px;
     height: 380px;
@@ -817,7 +829,6 @@ footer p {
     flex-shrink: 0;
 }
 
-/* flecha */
 .chat-ia-toggle i {
     font-size: 13px;
     transition: 0.3s ease;
@@ -829,20 +840,16 @@ footer p {
     overflow: hidden;
     opacity: 0;
     pointer-events: none;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: #1f4d2e;
     color: white;
-
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     transition: all 0.25s ease;
 }
 
-/* TEXTO */
 .chat-ia-link span {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -852,24 +859,20 @@ footer p {
     letter-spacing: 0.3px;
 }
 
-/* ABIERTO */
 .chat-ia-tab.open .chat-ia-link {
-    width: 28px; /* más delgado */
+    width: 28px;
     opacity: 1;
     pointer-events: auto;
 }
 
-/* unir visualmente */
 .chat-ia-tab.open .chat-ia-toggle {
     background: #bdbdbd;
 }
 
-/* ROTACIÓN */
 .chat-ia-tab.open .chat-ia-toggle i {
     transform: rotate(180deg);
 }
 
-/* HOVER */
 .chat-ia-link:hover {
     background: #123a20;
     color: white;
@@ -885,205 +888,174 @@ footer p {
     }
 }
 
-/* ================= RESPONSIVE ================= */
-@media (max-width:1100px) {
+
+/* ================= SECCIÓN RESPONSIVE Y CONTROL MÓVIL CRÍTICO ================= */
+@media (max-width: 991px) {
     .main-header {
-        padding: 0 25px;
+        padding: 0 24px;
+        min-height: 80px;
+        justify-content: space-between;
     }
 
-    nav {
-        gap: 10px;
+    .logo-area {
+        margin-right: auto; /* Ancla de forma segura el logo a la izquierda */
     }
 
-    nav ul {
-        gap: 14px;
-    }
-
-    nav a {
-        font-size: 12px;
-    }
-
-    .language-switcher {
-        margin-left: 8px;
-        gap: 6px;
-        padding-left: 0;
-    }
-
-    .lang-btn {
+    /* BOTÓN HAMBURGUESA: Alineado perfectamente a la derecha extrema */
+    .navbar-toggler {
+        display: flex !important;
+        margin-left: auto;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
         padding: 6px 10px;
-        min-width: 38px;
-        font-size: 10px;
+        background: transparent;
+        cursor: pointer;
     }
 
-    .hero {
-        padding: 0 40px;
+    /* MENÚ EN TODA LA PANTALLA (Full Screen Overlay) */
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Oculto completamente a la derecha por defecto */
+        width: 100vw;  /* Ocupa el 100% exacto del ancho de pantalla */
+        height: 100vh; /* Ocupa el 100% exacto del alto de pantalla */
+        background: rgba(11, 57, 28, 0.99) !important; /* Capa verde ultra-opaca para evitar transparencias */
+        backdrop-filter: blur(15px);
+        display: flex !important; 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; /* Elementos del menú completamente centrados */
+        padding: 110px 40px 40px 40px; /* Margen superior amplio para no colisionar con la X */
+        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        z-index: 9999;
+        overflow-y: auto; /* Permite scroll vertical interno si la pantalla es muy pequeña */
     }
 
-    .hero h1 {
-        font-size: 58px;
+    /* Estado activo (Cuando se abre con JavaScript o clases de Bootstrap) */
+    .navbar-collapse.show {
+        right: 0 !important; /* Entra y toma posesión de toda la pantalla */
     }
 
-    .about-container {
-        gap: 35px;
+    /* Control de transición nativa */
+    .navbar-collapse.collapsing {
+        right: -100%;
+        height: 100vh !important;
+        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    /* BOTÓN DE CIERRE "X": Esquina superior derecha del menú desplegado */
+    .close-menu-btn, 
+    .navbar-collapse .navbar-toggler[aria-expanded="true"] {
+        position: absolute;
+        top: 25px;
+        right: 24px;
+        background: transparent;
+        border: none;
+        color: #ffffff !important;
+        font-size: 36px; /* Letra grande y clara */
+        font-weight: 300;
+        cursor: pointer;
+        line-height: 1;
+        z-index: 10000;
+        padding: 5px;
+    }
+
+    /* Estructura vertical limpia para la navegación móvil */
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        width: 100%;
+        max-width: 320px;
+        margin-top: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-link, nav a {
+        display: block;
+        padding: 16px 0 !important;
+        font-size: 19px !important; /* Tipografía legible en móviles a pantalla completa */
+        color: #ffffff !important;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    .nav-link:hover, nav a:hover {
+        color: var(--verde-secundario) !important;
+        letter-spacing: 0.5px;
+        transition: all 0.2s ease;
+    }
+
+    /* Remueve la barra inferior decorativa que solo sirve en computadoras */
+    nav a::after {
+        display: none !important;
+    }
+
+    /* Dropdown de idiomas reubicado en la parte inferior del menú móvil */
+    .language-dropdown {
+        margin-left: 0;
+        margin-top: 35px;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .language-toggle {
+        width: 100%;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+    }
+
+    .language-menu {
+        width: 100%;
+        position: relative;
+        top: 5px;
+        right: auto;
+        box-shadow: none;
+        background: rgba(11, 41, 22, 0.95);
     }
 }
 
-@media (max-width:900px) {
+@media (max-width: 1100px) {
     .main-header {
-        height: auto;
-        padding: 15px 20px;
-        flex-direction: column;
-        gap: 14px;
+        padding: 0 25px;
     }
+    nav { gap: 10px; }
+    nav ul { gap: 14px; }
+    nav a { font-size: 12px; }
+    .hero { padding: 0 40px; }
+    .hero h1 { font-size: 58px; }
+    .about-container { gap: 35px; }
+}
 
-    body {
-        padding-top: 140px;
-    }
-
-    nav {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    nav ul {
-        justify-content: center;
-    }
-
-    .language-switcher {
-        margin-left: 0;
-        justify-content: center;
-        padding-left: 0;
-    }
-
+@media (max-width: 900px) {
+    body { padding-top: 100px; }
     .hero {
         padding: 40px 20px;
         text-align: center;
         justify-content: center;
     }
-
-    .hero-content {
-        max-width: 100%;
-    }
-
-    .description {
-        margin-inline: auto;
-    }
-
-    .about-container {
-        flex-direction: column;
-    }
-
-    .banner-content h2 {
-        font-size: 36px;
-    }
+    .hero-content { max-width: 100%; }
+    .description { margin-inline: auto; }
+    .about-container { flex-direction: column; }
+    .banner-content h2 { font-size: 36px; }
 }
 
-@media (max-width:600px) {
-    body {
-        padding-top: 150px;
-    }
-
-    .logo-area {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
-    }
-
-    .logo-text span {
-        font-size: 17px;
-    }
-
-    nav ul {
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 12px;
-    }
-
-    .language-switcher {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .lang-btn {
-        min-width: 44px;
-        font-size: 11px;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .description {
-        font-size: 17px;
-    }
-
-    .section-title {
-        font-size: 30px;
-    }
-
-    .about-text h2 {
-        font-size: 30px;
-    }
-
-    .card-image img {
-        height: 220px;
-    }
-
-    .banner-content h2 {
-        font-size: 30px;
-    }
-
-    .banner-content p {
-        font-size: 17px;
-    }
-
-    .hero-tag,
-    .banner-tag {
-        font-size: 13px;
-    }
-}
-
-@media (max-width:1100px) {
-    .language-dropdown {
-        margin-left: 10px;
-    }
-
-    .language-toggle {
-        min-width: 80px;
-        height: 40px;
-        font-size: 12px;
-        padding: 0 12px;
-    }
-
-    .language-menu {
-        min-width: 80px;
-    }
-
-    .language-option {
-        font-size: 12px;
-        padding: 11px 12px;
-    }
-}
-
-@media (max-width:900px) {
-    .language-dropdown {
-        margin-left: 0;
-    }
-}
-
-@media (max-width:600px) {
-    .language-toggle {
-        min-width: 76px;
-        height: 38px;
-        font-size: 12px;
-    }
-
-    .language-menu {
-        min-width: 76px;
-    }
+@media (max-width: 600px) {
+    body { padding-top: 100px; }
+    .logo-area { gap: 8px; }
+    .logo-text span { font-size: 15px; }
+    .hero h1 { font-size: 42px; }
+    .description { font-size: 17px; }
+    .section-title, .about-text h2, .banner-content h2 { font-size: 30px; }
+    .card-image img { height: 220px; }
+    .banner-content p { font-size: 17px; }
+    .hero-tag, .banner-tag { font-size: 13px; }
 }
