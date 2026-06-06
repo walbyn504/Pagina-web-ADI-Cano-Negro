@@ -38,9 +38,10 @@
                 <!-- MENÚ -->
                 <div class="collapse navbar-collapse justify-content-end" id="menuNav">
 
-                    <!-- Encabezado interno móvil (Aparece arriba solo cuando el menú se abre en celular) -->
+                    <!-- Encabezado interno móvil -->
                     <div class="menu-sidebar-header d-lg-none">
-                        <div class="logo-area">
+                        <!-- Logo apilado: imagen arriba, texto abajo -->
+                        <div class="logo-area mobile-menu-logo">
                             <img src="../img/logo_ADI_blanco.png" alt="Logo ADI Caño Negro" class="logo-img">
                             <div class="logo-text">
                                 <span>ADI Caño Negro</span>
@@ -54,7 +55,7 @@
                     </div>
 
                     <ul class="navbar-nav align-items-lg-center">
-                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                        <li class="nav-item active-page"><a class="nav-link active" href="#">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="../HTML/Senderos/senderos.html">Senderos</a></li>
                         <li class="nav-item"><a class="nav-link" href="../HTML/comunidad/comunidad.html">Comunidad</a>
                         </li>
@@ -82,7 +83,7 @@
             </div>
         </nav>
     </header>
-    
+
     <!-- ================= HERO ================= -->
     <section class="hero reveal">
         <div class="hero-content">
@@ -119,7 +120,6 @@
                     lo convierte en un lugar esencial para la protección de aves,
                     reptiles, mamíferos y una amplia diversidad de flora.
                 </p>
-
                 <p data-i18n="about_text_2">
                     Además de su valor ambiental, Caño Negro representa una oportunidad
                     para el ecoturismo, la investigación y el fortalecimiento de la comunidad
@@ -149,12 +149,10 @@
                     <h3 class="counter" data-target="300" data-suffix="+">0</h3>
                     <p data-i18n="stats_1">Especies de aves</p>
                 </div>
-
                 <div class="stat-box reveal">
                     <h3 class="counter" data-target="100" data-suffix="%">0</h3>
                     <p data-i18n="stats_2">Compromiso con la conservación</p>
                 </div>
-
                 <div class="stat-box reveal">
                     <h3 class="counter" data-target="1">0</h3>
                     <p data-i18n="stats_3">Humedal de gran importancia ecológica</p>
@@ -181,9 +179,8 @@
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="card_title_1">Flora y Fauna</h3>
-                        <p data-i18n="card_desc_1">
-                            Descubre especies emblemáticas y la riqueza biológica que distingue a la zona.
-                        </p>
+                        <p data-i18n="card_desc_1">Descubre especies emblemáticas y la riqueza biológica que distingue a
+                            la zona.</p>
                         <span class="card-link">
                             <span data-i18n="card_link">Ver más información</span>
                             <i class="fa-solid fa-arrow-right"></i>
@@ -198,9 +195,8 @@
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="card_title_2">Senderos Naturales</h3>
-                        <p data-i18n="card_desc_2">
-                            Recorre espacios llenos de vegetación, paisajes y conexión con el entorno.
-                        </p>
+                        <p data-i18n="card_desc_2">Recorre espacios llenos de vegetación, paisajes y conexión con el
+                            entorno.</p>
                         <span class="card-link">
                             <span data-i18n="card_link">Ver más información</span>
                             <i class="fa-solid fa-arrow-right"></i>
@@ -215,9 +211,8 @@
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="card_title_3">Bandera Azul Ecológica</h3>
-                        <p data-i18n="card_desc_3">
-                            Conoce iniciativas ambientales que fortalecen el compromiso de la comunidad.
-                        </p>
+                        <p data-i18n="card_desc_3">Conoce iniciativas ambientales que fortalecen el compromiso de la
+                            comunidad.</p>
                         <span class="card-link">
                             <span data-i18n="card_link">Ver más información</span>
                             <i class="fa-solid fa-arrow-right"></i>
@@ -232,9 +227,8 @@
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="card_title_4">Emprendedores</h3>
-                        <p data-i18n="card_desc_4">
-                            Apoya iniciativas locales y conoce proyectos impulsados por la comunidad.
-                        </p>
+                        <p data-i18n="card_desc_4">Apoya iniciativas locales y conoce proyectos impulsados por la
+                            comunidad.</p>
                         <span class="card-link">
                             <span data-i18n="card_link">Ver más información</span>
                             <i class="fa-solid fa-arrow-right"></i>
@@ -257,7 +251,6 @@
         </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
     <footer>
         <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
 
@@ -279,90 +272,71 @@
     </footer>
 
     <div class="fab-container">
-
-        <!-- BOTÓN PRINCIPAL -->
         <button class="fab-main" id="fabToggle">
             <i class="fa-solid fa-plus"></i>
         </button>
-
-        <!-- OPCIONES -->
         <div class="fab-options">
-
-            <!-- AYUDA -->
             <a href="#" class="fab-option help" id="openHelp" aria-label="Ayuda">
                 <i class="fa-solid fa-comments"></i>
             </a>
-
-
-            <!-- UBICACIÓN -->
             <a href="https://www.google.com/maps/dir/?api=1&destination=Refugio+de+Vida+Silvestre+Caño+Negro"
                 target="_blank" class="fab-option map" aria-label="Cómo llegar">
                 <i class="fa-solid fa-location-dot"></i>
             </a>
-
-            <!-- WHATSAPP -->
             <a href="https://wa.me/506XXXXXX" target="_blank" class="fab-option whatsapp" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
-
         </div>
     </div>
 
+    <!-- ================= MODAL AYUDA ================= -->
     <div class="help-modal" id="helpModal">
         <div class="help-content">
-
             <button class="close-modal" id="closeHelp">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-
             <h2 data-i18n="help_title">¿En qué podemos ayudarte?</h2>
-
             <div class="faq-list">
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q1">📍 ¿Dónde está Caño Negro?</h3>
                     <p data-i18n="faq_a1">Se ubica en Los Chiles, Alajuela, Costa Rica, cerca de la frontera con
                         Nicaragua.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q2">🚗 ¿Cómo llegar?</h3>
                     <p data-i18n="faq_a2">Puedes acceder por la Ruta 138 desde Upala o Los Chiles. Usa el botón de
                         ubicación para ver la ruta.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q3">🦜 ¿Qué se puede ver?</h3>
                     <p data-i18n="faq_a3">Más de 300 especies de aves, además de reptiles, mamíferos y una gran
                         diversidad de flora.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q4">📅 ¿Mejor época para visitar?</h3>
                     <p data-i18n="faq_a4">Durante la estación seca para senderismo, o época lluviosa para ver aves
                         migratorias.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q5">🎒 ¿Qué llevar?</h3>
                     <p data-i18n="faq_a5">Ropa cómoda, repelente, agua, cámara y protección solar.</p>
                 </div>
-
             </div>
         </div>
     </div>
 
+    <!-- ================= PESTAÑA IA ================= -->
     <div class="chat-ia-tab" id="chatIaTab">
         <button class="chat-ia-toggle" id="chatIaToggle" aria-label="Abrir acceso a IA">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
-
         <a href="https://chat.openai.com/?q=Quiero%20informaci%C3%B3n%20sobre%20Ca%C3%B1o%20Negro" target="_blank"
             class="chat-ia-link" id="chatIaLink" aria-label="Abrir IA sobre Caño Negro">
             <span data-i18n="chat_tab">Acerca de Caño Negro</span>
         </a>
     </div>
 
+    <!-- ================= LOADER IDIOMA ================= -->
     <div class="language-loader" id="languageLoader">
         <div class="language-loader-box">
             <div class="language-spinner"></div>
