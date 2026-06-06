@@ -85,7 +85,8 @@
 }
 
 .section-title.show::after {
-    width: 700px;
+    width: 50%; 
+    max-width: 300px; 
 }
 
 /* ================= NAV INTERNA ================= */

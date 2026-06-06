@@ -7,75 +7,110 @@
     <title>Senderos - ADI Caño Negro</title>
 
     <link rel="stylesheet" href="../../CSS/sendero/senderos.css">
-    <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectosGlobales.css">
     <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectoIdioma.css">
-    <link rel="stylesheet" href="../../CSS/utlidades/efectos/senderos/senderos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700;800&display=swap"
+    <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectosGlobales.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
 </head>
 
 <body data-page="senderos">
 
     <div class="scroll-progress" id="scrollProgress"></div>
 
+    <!-- ================= HEADER (igual que index) ================= -->
     <header class="main-header">
         <div class="logo-area">
-            <img src="../../img/logo_ADI_Blanco.png" alt="Logo ADI Caño Negro" class="logo-img">
+            <img src="../../img/LogoADI.png" alt="Logo ADI Caño Negro" class="logo-img">
             <div class="logo-text">
                 <span>ADI Caño Negro</span>
             </div>
         </div>
 
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
-                <li><a href="#" class="active" aria-current="page" data-i18n="nav_senderos">Senderos</a></li>
-                <li><a href="../comunidad/comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
-                <li><a href="../floraFauna/floraFauna.html" data-i18n="nav_flora">Flora y Fauna</a></li>
-                <li><a href="../emprendedores.html" data-i18n="nav_emprendedores">Emprendedores</a></li>
-                <li><a href="../videos.html" data-i18n="nav_videos">Videos</a></li>
-                <li><a href="../BanderaAzul.html" data-i18n="nav_bandera">Bandera Azul Ecológica</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid p-0">
 
-            <div class="language-dropdown">
-                <button type="button" class="language-toggle" id="languageToggle" aria-label="Selector de idioma">
-                    <span id="currentLanguage">ES</span>
-                    <i class="fa-solid fa-chevron-down"></i>
+                <!-- BOTÓN HAMBURGUESA -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="language-menu" id="languageMenu">
-                    <button type="button" class="language-option active" data-lang="es">ES</button>
-                    <button type="button" class="language-option" data-lang="en">EN</button>
+                <!-- MENÚ -->
+                <div class="collapse navbar-collapse justify-content-end" id="menuNav">
+
+                    <!-- Encabezado interno móvil -->
+                    <div class="menu-sidebar-header d-lg-none">
+                        <div class="logo-area mobile-menu-logo">
+                            <img src="../../img/LogoADI.png" alt="Logo ADI Caño Negro" class="logo-img">
+                            <div class="logo-text">
+                                <span>ADI Caño Negro</span>
+                            </div>
+                        </div>
+                        <button class="close-menu-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#menuNav">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                        <li class="nav-item active-page"><a class="nav-link active" href="#" data-i18n="nav_senderos">Senderos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../comunidad/comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../floraFauna/floraFauna.html" data-i18n="nav_flora">Flora y Fauna</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../emprendedores.html" data-i18n="nav_emprendedores">Emprendedores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../videos.html" data-i18n="nav_videos">Videos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../BanderaAzul.html" data-i18n="nav_bandera">Bandera Azul Ecológica</a></li>
+                    </ul>
+
+                    <!-- IDIOMA -->
+                    <div class="language-dropdown ms-lg-3">
+                        <button type="button" class="language-toggle" id="languageToggle">
+                            <span id="currentLanguage">ES</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="language-menu" id="languageMenu">
+                            <button class="language-option active" data-lang="es">ES</button>
+                            <button class="language-option" data-lang="en">EN</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="hero-senderos">
-        <div class="hero-content reveal">
+    <!-- ================= HERO ================= -->
+    <section class="hero-senderos reveal">
+        <div class="hero-content">
             <p class="hero-tag">
                 <span data-i18n="senderos_hero_tag">Naturaleza, senderismo y conservación</span>
             </p>
-            <h1 data-i18n="senderos_hero_title">Senderos Naturales de <span>Caño Negro</span></h1>
+            <h1 data-i18n="senderos_hero_title">
+                Senderos Naturales de <span>Caño Negro</span>
+            </h1>
             <p class="description" data-i18n="senderos_hero_desc">
                 Recorre senderos rodeados de bosque, humedales y vida silvestre, en un entorno
                 donde cada paso invita a descubrir la riqueza natural de Caño Negro.
             </p>
+            <p class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span data-i18n="hero_location">Caño Negro, Los Chiles, Alajuela</span>
+            </p>
         </div>
     </section>
 
+    <!-- ================= NAV ANCLAS ================= -->
     <section class="section-nav reveal">
         <div class="container">
-            <div
-                class="section-nav-links d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
-                <a href="#infoGeneral" class="text-decoration-none">
+            <div class="section-nav-links">
+                <a href="#infoGeneral">
                     <i class="fa-solid fa-circle-info"></i>
                     <span data-i18n="senderos_nav_info">Información General</span>
                 </a>
-
-                <a href="#senderos" class="text-decoration-none">
+                <a href="#senderos">
                     <i class="fa-solid fa-route"></i>
                     <span data-i18n="senderos_nav_trails">Senderos</span>
                 </a>
@@ -83,65 +118,56 @@
         </div>
     </section>
 
-    <section class="info-senderos py-5" id="infoGeneral">
-        <div class="container reveal text-center">
-            <span class="section-label center reveal d-block mb-2" data-i18n="senderos_info_label">Explora con
-                responsabilidad</span>
-            <h2 class="section-title reveal mb-3" data-i18n="senderos_info_title">Información acerca de los senderos
-            </h2>
-            <p class="section-subtitle reveal mx-auto mb-5" style="max-width: 800px;"
-                data-i18n="senderos_info_subtitle">
+    <!-- ================= INFO GENERAL ================= -->
+    <section class="info-senderos reveal" id="infoGeneral">
+        <div class="container">
+            <span class="section-label center reveal" data-i18n="senderos_info_label">Explora con responsabilidad</span>
+            <h2 class="section-title reveal" data-i18n="senderos_info_title">Información acerca de los senderos</h2>
+            <p class="section-subtitle reveal" data-i18n="senderos_info_subtitle">
                 Antes de iniciar tu recorrido, toma en cuenta algunas recomendaciones para
                 disfrutar de una experiencia segura, consciente y respetuosa con la naturaleza.
             </p>
 
-            <div class="row g-4 justify-content-center text-start">
-
-                <div class="col-12 col-md-4 reveal">
-                    <div class="info-box h-100 p-4 border rounded shadow-sm bg-white">
-                        <div class="info-icon mb-3 fs-3 text-success">
-                            <i class="fa-solid fa-shoe-prints"></i>
-                        </div>
-                        <h3 class="h5" data-i18n="senderos_box1_title">Recomendaciones</h3>
-                        <p class="mb-0 text-muted" data-i18n="senderos_box1_desc">
-                            Utiliza calzado cómodo, lleva agua, protector solar y ropa adecuada para caminar en un
-                            entorno natural.
-                        </p>
+            <div class="info-grid">
+                <div class="info-box reveal">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-shoe-prints"></i>
                     </div>
+                    <h3 data-i18n="senderos_box1_title">Recomendaciones</h3>
+                    <p data-i18n="senderos_box1_desc">
+                        Utiliza calzado cómodo, lleva agua, protector solar y ropa adecuada
+                        para caminar en un entorno natural.
+                    </p>
                 </div>
 
-                <div class="col-12 col-md-4 reveal">
-                    <div class="info-box h-100 p-4 border rounded shadow-sm bg-white">
-                        <div class="info-icon mb-3 fs-3 text-success">
-                            <i class="fa-solid fa-leaf"></i>
-                        </div>
-                        <h3 class="h5" data-i18n="senderos_box2_title">Conservación</h3>
-                        <p class="mb-0 text-muted" data-i18n="senderos_box2_desc">
-                            Respeta la flora y la fauna, no dejes residuos y ayuda a proteger el equilibrio del
-                            ecosistema.
-                        </p>
+                <div class="info-box reveal">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-leaf"></i>
                     </div>
+                    <h3 data-i18n="senderos_box2_title">Conservación</h3>
+                    <p data-i18n="senderos_box2_desc">
+                        Respeta la flora y la fauna, no dejes residuos y ayuda a proteger
+                        el equilibrio del ecosistema.
+                    </p>
                 </div>
 
-                <div class="col-12 col-md-4 reveal">
-                    <div class="info-box h-100 p-4 border rounded shadow-sm bg-white">
-                        <div class="info-icon mb-3 fs-3 text-success">
-                            <i class="fa-solid fa-binoculars"></i>
-                        </div>
-                        <h3 class="h5" data-i18n="senderos_box3_title">Observación</h3>
-                        <p class="mb-0 text-muted" data-i18n="senderos_box3_desc">
-                            Lleva cámara o binoculares para disfrutar mejor del paisaje, las aves y los detalles del
-                            entorno.
-                        </p>
+                <div class="info-box reveal">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-binoculars"></i>
                     </div>
+                    <h3 data-i18n="senderos_box3_title">Observación</h3>
+                    <p data-i18n="senderos_box3_desc">
+                        Lleva cámara o binoculares para disfrutar mejor del paisaje,
+                        las aves y los detalles del entorno.
+                    </p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="senderos-section" id="senderos">
-        <div class="container reveal">
+    <!-- ================= SENDEROS ================= -->
+    <section class="senderos-section reveal" id="senderos">
+        <div class="container">
             <span class="section-label center reveal" data-i18n="senderos_section_label">Rutas disponibles</span>
             <h2 class="section-title reveal" data-i18n="senderos_section_title">Nuestros Senderos</h2>
             <p class="section-subtitle reveal" data-i18n="senderos_section_subtitle">
@@ -149,14 +175,15 @@
                 con paisajes, humedales, bosques y una biodiversidad única.
             </p>
 
-            <div class="senderos-grid reveal">
-                <div class="sendero-card reveal">
-                    <div class="sendero-image">
+            <div class="senderos-grid">
+
+                <!-- Sendero 1 -->
+                <div class="card reveal">
+                    <div class="card-image">
                         <img src="../../img/senderos/montaña/senderoMontaña.jpg" alt="Sendero La Montaña">
                         <span class="card-tag" data-i18n="senderos_card1_tag">Bosque</span>
                     </div>
-
-                    <div class="sendero-info reveal">
+                    <div class="sendero-info">
                         <h3>
                             <a href="albumSenderoMontana.html" data-i18n="senderos_card1_title">Sendero La Montaña</a>
                         </h3>
@@ -164,18 +191,25 @@
                             Recorrido de 2 km rodeado de bosque primario, vegetación abundante
                             y miradores naturales ideales para contemplar el paisaje.
                         </p>
-                        <span><i class="fa-solid fa-clock"></i> <span data-i18n="senderos_card1_time">1.5
-                                horas</span></span>
+                        <span class="sendero-meta">
+                            <i class="fa-solid fa-clock"></i>
+                            <span data-i18n="senderos_card1_time">1.5 horas</span>
+                        </span>
+                        <br><br>
+                        <span class="card-link">
+                            <span data-i18n="card_link">Ver más información</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
                     </div>
                 </div>
 
-                <div class="sendero-card reveal">
-                    <div class="sendero-image">
+                <!-- Sendero 2 -->
+                <div class="card reveal">
+                    <div class="card-image">
                         <img src="../../img/senderos/humedal/senderoHumedal.jpg" alt="Sendero El Humedal">
                         <span class="card-tag" data-i18n="senderos_card2_tag">Humedal</span>
                     </div>
-
-                    <div class="sendero-info reveal">
+                    <div class="sendero-info">
                         <h3>
                             <a href="albumSenderoHumedal.html" data-i18n="senderos_card2_title">Sendero El Humedal</a>
                         </h3>
@@ -183,17 +217,26 @@
                             Ideal para la observación de aves, fotografía natural y una experiencia
                             tranquila en uno de los ecosistemas más valiosos de la zona.
                         </p>
-                        <span><i class="fa-solid fa-clock"></i> <span data-i18n="senderos_card2_time">2
-                                horas</span></span>
+                        <span class="sendero-meta">
+                            <i class="fa-solid fa-clock"></i>
+                            <span data-i18n="senderos_card2_time">2 horas</span>
+                        </span>
+                        <br><br>
+                        <span class="card-link">
+                            <span data-i18n="card_link">Ver más información</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section class="closing-section reveal">
-        <div class="container closing-content">
-            <p class="closing-tag" data-i18n="senderos_closing_tag">Caño Negro</p>
+    <!-- ================= BANNER CIERRE ================= -->
+    <section class="banner-section reveal">
+        <div class="container banner-content">
+            <p class="banner-tag" data-i18n="senderos_closing_tag">Caño Negro</p>
             <h2 data-i18n="senderos_closing_title">
                 Cada sendero es una oportunidad para conectar con la naturaleza y aprender a conservarla
             </h2>
@@ -204,12 +247,11 @@
         </div>
     </section>
 
-    <footer class="reveal">
+    <!-- ================= FOOTER ================= -->
+    <footer>
         <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
-
         <div class="social-links">
-            <a href="https://www.facebook.com/adi.canonegro" target="_blank" rel="noopener noreferrer"
-                aria-label="Facebook">
+            <a href="https://www.facebook.com/adi.canonegro" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <i class="fab fa-facebook"></i>
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -224,79 +266,69 @@
         </div>
     </footer>
 
+    <!-- ================= FAB ================= -->
     <div class="fab-container">
         <button class="fab-main" id="fabToggle">
             <i class="fa-solid fa-plus"></i>
         </button>
-
         <div class="fab-options">
             <a href="#" class="fab-option help" id="openHelp" aria-label="Ayuda">
                 <i class="fa-solid fa-comments"></i>
             </a>
-
             <a href="https://www.google.com/maps/dir/?api=1&destination=Refugio+de+Vida+Silvestre+Caño+Negro"
                 target="_blank" class="fab-option map" aria-label="Cómo llegar">
                 <i class="fa-solid fa-location-dot"></i>
             </a>
-
             <a href="https://wa.me/506XXXXXX" target="_blank" class="fab-option whatsapp" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
     </div>
 
+    <!-- ================= MODAL AYUDA ================= -->
     <div class="help-modal" id="helpModal">
         <div class="help-content">
             <button class="close-modal" id="closeHelp">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-
             <h2 data-i18n="help_title">¿En qué podemos ayudarte?</h2>
-
             <div class="faq-list">
                 <div class="faq-item">
                     <h3 data-i18n="faq_q1">📍 ¿Dónde está Caño Negro?</h3>
-                    <p data-i18n="faq_a1">Se ubica en Los Chiles, Alajuela, Costa Rica, cerca de la frontera con
-                        Nicaragua.</p>
+                    <p data-i18n="faq_a1">Se ubica en Los Chiles, Alajuela, Costa Rica, cerca de la frontera con Nicaragua.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q2">🚗 ¿Cómo llegar?</h3>
-                    <p data-i18n="faq_a2">Puedes acceder por la Ruta 138 desde Upala o Los Chiles. Usa el botón de
-                        ubicación para ver la ruta.</p>
+                    <p data-i18n="faq_a2">Puedes acceder por la Ruta 138 desde Upala o Los Chiles. Usa el botón de ubicación para ver la ruta.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q3">🦜 ¿Qué se puede ver?</h3>
-                    <p data-i18n="faq_a3">Más de 300 especies de aves, además de reptiles, mamíferos y una gran
-                        diversidad de flora.</p>
+                    <p data-i18n="faq_a3">Más de 300 especies de aves, además de reptiles, mamíferos y una gran diversidad de flora.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q4">📅 ¿Mejor época para visitar?</h3>
-                    <p data-i18n="faq_a4">Durante la estación seca para senderismo, o época lluviosa para ver aves
-                        migratorias.</p>
+                    <p data-i18n="faq_a4">Durante la estación seca para senderismo, o época lluviosa para ver aves migratorias.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q5">🎒 ¿Qué llevar?</h3>
-                    <p data-i18n="faq_a5">Ropa cómoda, repellent, agua, cámara y protección solar.</p>
+                    <p data-i18n="faq_a5">Ropa cómoda, repelente, agua, cámara y protección solar.</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- ================= PESTAÑA IA ================= -->
     <div class="chat-ia-tab" id="chatIaTab">
         <button class="chat-ia-toggle" id="chatIaToggle" aria-label="Abrir acceso a IA">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
-
         <a href="https://chat.openai.com/?q=Quiero%20informaci%C3%B3n%20sobre%20Ca%C3%B1o%20Negro" target="_blank"
             class="chat-ia-link" id="chatIaLink" aria-label="Abrir IA sobre Caño Negro">
             <span data-i18n="chat_tab">Acerca de Caño Negro</span>
         </a>
     </div>
 
+    <!-- ================= LOADER IDIOMA ================= -->
     <div class="language-loader" id="languageLoader">
         <div class="language-loader-box">
             <div class="language-spinner"></div>
@@ -307,8 +339,8 @@
     <script src="../../JS/traductor.js"></script>
     <script src="../../JS/traducciones/senderos/senderos.js"></script>
     <script src="../../JS/utilidades/senderos/senderos.js"></script>
-    <script src="../../JS/utilidades/fab.js"></script>
     <script src="../../JS/utilidades/modal.js"></script>
+    <script src="../../JS/utilidades/fab.js"></script>
     <script src="../../JS/utilidades/chatIA.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

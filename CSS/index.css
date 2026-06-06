@@ -64,7 +64,7 @@ img {
 }
 
 a {
-    text-decoration: none;
+   text-decoration: none !important;
 }
 
 ul {
@@ -399,7 +399,7 @@ nav a.active,
 
 .location i {
     margin-right: 8px;
-    color: var(--verde-claro);
+    color: var(--naranja-acento);
 }
 
 /* ================= TEXTOS GENERALES ================= */
