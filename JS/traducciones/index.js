@@ -3,12 +3,13 @@ window.translations = window.translations || {};
 window.translations.index = {
     es: {
         nav_inicio: "Inicio",
-        nav_senderos: "Senderos",
+        nav_senderos: "Sendero",
         nav_comunidad: "Comunidad",
         nav_flora: "Flora y Fauna",
         nav_emprendedores: "Emprendedores",
         nav_videos: "Videos",
         nav_bandera: "Bandera Azul Ecológica",
+        nav_flora_fauna: "Flora y Fauna",
 
         hero_tag: "Naturaleza, cultura y conservación",
         hero_title: "Descubre la belleza de <span>Caño Negro</span>",
@@ -37,7 +38,7 @@ window.translations.index = {
         card_desc_1: "Descubre especies emblemáticas y la riqueza biológica que distingue a la zona.",
 
         card_tag_2: "Aventura",
-        card_title_2: "Senderos Naturales",
+        card_title_2: "Sendero Natural",
         card_desc_2: "Recorre espacios llenos de vegetación, paisajes y conexión con el entorno.",
 
         card_tag_3: "Sostenibilidad",
@@ -47,6 +48,14 @@ window.translations.index = {
         card_tag_4: "Comunidad",
         card_title_4: "Emprendedores",
         card_desc_4: "Apoya iniciativas locales y conoce proyectos impulsados por la comunidad.",
+
+        card_tag_5: "Cultura",
+        card_title_5: "Comunidad",
+        card_desc_5: "Conoce las tradiciones, costumbres y vida cotidiana que dan identidad a Caño Negro.",
+
+        card_tag_6: "Videos",
+        card_title_6: "Videos",
+        card_desc_6: "Mira videos sobre el refugio, sus paisajes y la vida en la comunidad.",
 
         card_link: "Ver más información",
 
@@ -75,17 +84,24 @@ window.translations.index = {
         banner_title: "Un lugar donde la naturaleza y la comunidad conviven en armonía",
         banner_desc: "Vive la esencia de un destino lleno de vida, tradición y paisajes que inspiran a valorar y proteger nuestro entorno.",
 
+        footer_about: "Asociación de Desarrollo Integral de Caño Negro, trabajando por la conservación y el desarrollo sostenible de nuestra comunidad.",
+        footer_links_title: "Enlaces rápidos",
+        footer_contact_title: "Contacto",
+        footer_address: "Caño Negro, Los Chiles, Alajuela, Costa Rica",
+        footer_social_title: "Síguenos",
+
         footer_text: "© 2026 ADI Caño Negro - Todos los derechos reservados"
     },
 
     en: {
         nav_inicio: "Home",
-        nav_senderos: "Trails",
+        nav_senderos: "Trail",
         nav_comunidad: "Community",
         nav_flora: "Flora & Fauna",
         nav_emprendedores: "Entrepreneurs",
         nav_videos: "Videos",
         nav_bandera: "Blue Ecological Flag",
+        nav_flora_fauna: "Flora & Fauna",
 
         hero_tag: "Nature, culture and conservation",
         hero_title: "Discover the beauty of <span>Caño Negro</span>",
@@ -114,7 +130,7 @@ window.translations.index = {
         card_desc_1: "Discover emblematic species and the biological richness of the area.",
 
         card_tag_2: "Adventure",
-        card_title_2: "Natural Trails",
+        card_title_2: "Natural Trail",
         card_desc_2: "Explore spaces full of vegetation, landscapes, and connection with nature.",
 
         card_tag_3: "Sustainability",
@@ -124,6 +140,14 @@ window.translations.index = {
         card_tag_4: "Community",
         card_title_4: "Entrepreneurs",
         card_desc_4: "Support local initiatives and discover community-driven projects.",
+
+        card_tag_5: "Culture",
+        card_title_5: "Community",
+        card_desc_5: "Discover the traditions, customs, and daily life that give Caño Negro its identity.",
+
+        card_tag_6: "Videos",
+        card_title_6: "Videos",
+        card_desc_6: "Watch videos about the refuge, its landscapes, and life in the community.",
 
         card_link: "See more information",
 
@@ -151,6 +175,12 @@ window.translations.index = {
         banner_tag: "Caño Negro",
         banner_title: "A place where nature and community live in harmony",
         banner_desc: "Experience a destination full of life, tradition, and landscapes that inspire protection of our environment.",
+
+        footer_about: "Caño Negro Community Development Association, working for conservation and the sustainable development of our community.",
+        footer_links_title: "Quick Links",
+        footer_contact_title: "Contact",
+        footer_address: "Caño Negro, Los Chiles, Alajuela, Costa Rica",
+        footer_social_title: "Follow Us",
 
         footer_text: "© 2026 ADI Caño Negro - All rights reserved"
     }
