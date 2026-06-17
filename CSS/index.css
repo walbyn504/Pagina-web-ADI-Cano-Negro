@@ -61,7 +61,12 @@ body {
 /* Tipografía más orgánica para títulos (no tan "cuadrada" como Poppins) */
 h1,
 h2,
-h3 {
+h3,
+p,
+span,
+h4,
+a,
+small {
     font-family: 'Fraunces', serif;
 }
 
@@ -101,7 +106,7 @@ ul {
     z-index: 1000;
     transition: all 0.3s ease;
     /* Naranja solo aquí como firma de identidad */
-    border-bottom: 2px solid rgba(217, 79, 21, 0.45);
+    border-bottom: 2px solid var(--naranja-acento);
 }
 
 .main-header.scrolled {
@@ -762,7 +767,7 @@ textarea::placeholder {
 }
 
 .banner-tag {
-    color: var(--verde-claro);
+    color: var(--verde-claro) !important;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
@@ -791,7 +796,7 @@ footer {
     background: var(--verde-oscuro);
     color: white;
     /* Naranja como firma en el borde superior del footer */
-    border-top: 4px solid var(--naranja-acento);
+    border-top: 4px solid var(--verde-claro);
 }
 
 .footer-grid {
@@ -1005,23 +1010,23 @@ footer p {
 .fab-main {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    background: var(--verde-principal);
+    border-radius: 22px;
+    background: rgba(20, 40, 20, 0.95);
+    border: 1.5px solid rgba(217, 79, 21, 0.8);
     color: #ffffff;
-    border: none;
     font-size: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 20px rgba(22, 51, 32, 0.30);
-    transition: 0.3s ease;
+    box-shadow: 0 0 18px rgba(217, 79, 21, 0.15);
+    transition: all 0.3s ease;
 }
 
 .fab-main:hover {
-    background: var(--verde-medio);
-    color: #ffffff;
-    transform: scale(1.1);
+    background: rgba(30, 55, 30, 0.98);
+    box-shadow: 0 0 25px rgba(217, 79, 21, 0.3);
+    transform: translateY(-2px);
 }
 
 .fab-main i {
@@ -1081,12 +1086,12 @@ footer p {
 
 .fab-option.map {
     background: white;
-    color: var(--verde-claro);
-    border: 2px solid var(--verde-claro);
+    color: var(--naranja-acento);
+    border: 2px solid var(--naranja-acento);
 }
 
 .fab-option.map:hover {
-    background: var(--verde-medio);
+    background: var(--naranja-acento);
     color: #ffffff;
 }
 
@@ -1186,28 +1191,27 @@ footer p {
     z-index: 999;
 }
 
+/* ================= PESTAÑA IA VERTICAL ================= */
 .chat-ia-toggle {
-    width: 18px;
+    width: 20px;
     height: 380px;
-    border: none;
-    border-radius: 16px 0 0 16px;
-    background: rgba(217, 79, 21, 0.55);
+    border: 1.5px solid rgba(217, 79, 21, 0.8);
+    border-right: none;
+    border-radius: 18px 0 0 18px;
+    background: rgba(20, 40, 20, 0.95);
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: 0.25s ease;
+    transition: all 0.3s ease;
     flex-shrink: 0;
+    box-shadow: 0 0 18px rgba(217, 79, 21, 0.15);
 }
 
 .chat-ia-toggle:hover {
-    background: var(--naranja-acento);
-}
-
-.chat-ia-toggle i {
-    font-size: 13px;
-    transition: 0.3s ease;
+    background: rgba(30, 55, 30, 0.98);
+    box-shadow: 0 0 25px rgba(217, 79, 21, 0.3);
 }
 
 .chat-ia-link {
@@ -1219,11 +1223,29 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--verde-principal);
+
+    background: rgba(20, 40, 20, 0.95);
     color: white;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    transition: all 0.25s ease;
+
+    border-top: 1.5px solid rgba(217, 79, 21, 0.8);
+    border-left: 1.5px solid rgba(217, 79, 21, 0.8);
+    border-bottom: 1.5px solid rgba(217, 79, 21, 0.8);
+
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+
+    box-shadow: 0 0 18px rgba(217, 79, 21, 0.15);
+    transition: all 0.3s ease;
+}
+
+.chat-ia-link:hover {
+    background: rgba(30, 55, 30, 0.98);
+    color: white;
+}
+
+.chat-ia-toggle i {
+    font-size: 13px;
+    transition: 0.3s ease;
 }
 
 .chat-ia-link span {
@@ -1247,11 +1269,6 @@ footer p {
 
 .chat-ia-tab.open .chat-ia-toggle i {
     transform: rotate(180deg);
-}
-
-.chat-ia-link:hover {
-    background: var(--verde-oscuro);
-    color: white;
 }
 
 @keyframes spinLoader {
