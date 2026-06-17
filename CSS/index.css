@@ -10,7 +10,7 @@
     --verde-principal: #163320;
     --verde-medio: #2A6038;
     --verde-secundario: #3D7A4E;
-    --verde-claro: #6AAF55;
+    --verde-claro: #53B53C;
     --verde-hover: #4E9A5A;
     --verde-oscuro: #0E2116;
     --verde-suave: #E8F2E9;
@@ -132,7 +132,7 @@ ul {
 }
 
 .logo-img {
-    height: 64px;
+    height: 72px;
     width: auto;
     object-fit: contain;
 }
@@ -337,7 +337,7 @@ nav a.active,
     min-height: 100vh;
     background:
         linear-gradient(rgba(11, 28, 16, 0.25), rgba(11, 28, 16, 0.55)),
-        url('../img/index/fondoCañoNegro.jpeg') center/cover no-repeat;
+        url('../img/index/fondo.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     padding: 0 90px;
@@ -387,7 +387,7 @@ nav a.active,
 }
 
 .hero p span {
-    color: #a5d6a7;
+    color: var(--verde-claro);
 }
 
 .description {
@@ -414,7 +414,7 @@ nav a.active,
 /* ================= TEXTOS GENERALES ================= */
 .section-label {
     display: inline-block;
-    color: var(--verde-secundario);
+    color: var(--verde-claro);
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
@@ -517,7 +517,7 @@ nav a.active,
     box-shadow: var(--sombra);
     text-align: center;
     transition: 0.3s ease;
-    border-top: 3px solid var(--verde-secundario);
+    border-top: 3px solid var(--verde-claro);
 }
 
 .stat-box:hover {
@@ -592,7 +592,7 @@ nav a.active,
     top: 16px;
     left: 16px;
     background: rgba(255, 255, 255, 0.95);
-    color: var(--verde-medio);
+    color: var(--verde-claro);
     padding: 6px 13px;
     border-radius: 999px;
     font-size: 12px;
@@ -762,7 +762,7 @@ textarea::placeholder {
 }
 
 .banner-tag {
-    color: var(--verde-secundario);
+    color: var(--verde-claro);
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
@@ -802,7 +802,7 @@ footer {
 }
 
 .footer-logo {
-    height: 56px;
+    height: 92px;
     width: auto;
     object-fit: contain;
     margin-bottom: 18px;
@@ -1081,8 +1081,8 @@ footer p {
 
 .fab-option.map {
     background: white;
-    color: var(--verde-medio);
-    border: 2px solid var(--verde-medio);
+    color: var(--verde-claro);
+    border: 2px solid var(--verde-claro);
 }
 
 .fab-option.map:hover {

@@ -45,9 +45,14 @@ document.addEventListener("DOMContentLoaded", () => {
     function showLanguageLoader(lang) {
         if (!languageLoader) return;
 
+        const loaderTexts = {
+            es: "Cambiando idioma...",
+            en: "Changing language...",
+            fr: "Changement de langue..."
+        };
+
         if (languageLoaderText) {
-            languageLoaderText.textContent =
-                lang === "en" ? "Changing language..." : "Cambiando idioma...";
+            languageLoaderText.textContent = loaderTexts[lang] || loaderTexts.es;
         }
 
         languageLoader.classList.add("show");

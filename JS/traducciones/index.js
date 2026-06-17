@@ -3,7 +3,7 @@ window.translations = window.translations || {};
 window.translations.index = {
     es: {
         nav_inicio: "Inicio",
-        nav_senderos: "Sendero",
+        nav_senderos: "Senderos",
         nav_comunidad: "Comunidad",
         nav_flora: "Flora y Fauna",
         nav_emprendedores: "Emprendedores",
@@ -53,7 +53,7 @@ window.translations.index = {
         card_title_5: "Comunidad",
         card_desc_5: "Conoce las tradiciones, costumbres y vida cotidiana que dan identidad a Caño Negro.",
 
-        card_tag_6: "Videos",
+        card_tag_6: "Multimedia",
         card_title_6: "Videos",
         card_desc_6: "Mira videos sobre el refugio, sus paisajes y la vida en la comunidad.",
 
@@ -95,7 +95,7 @@ window.translations.index = {
 
     en: {
         nav_inicio: "Home",
-        nav_senderos: "Trail",
+        nav_senderos: "Trails",
         nav_comunidad: "Community",
         nav_flora: "Flora & Fauna",
         nav_emprendedores: "Entrepreneurs",
@@ -130,7 +130,7 @@ window.translations.index = {
         card_desc_1: "Discover emblematic species and the biological richness of the area.",
 
         card_tag_2: "Adventure",
-        card_title_2: "Natural Trail",
+        card_title_2: "Natural Trails",
         card_desc_2: "Explore spaces full of vegetation, landscapes, and connection with nature.",
 
         card_tag_3: "Sustainability",
@@ -145,7 +145,7 @@ window.translations.index = {
         card_title_5: "Community",
         card_desc_5: "Discover the traditions, customs, and daily life that give Caño Negro its identity.",
 
-        card_tag_6: "Videos",
+        card_tag_6: "Multimedia",
         card_title_6: "Videos",
         card_desc_6: "Watch videos about the refuge, its landscapes, and life in the community.",
 
@@ -183,5 +183,97 @@ window.translations.index = {
         footer_social_title: "Follow Us",
 
         footer_text: "© 2026 ADI Caño Negro - All rights reserved"
+    },
+
+    fr: {
+        nav_inicio: "Accueil",
+        nav_senderos: "Sentiers",
+        nav_comunidad: "Communauté",
+        nav_flora: "Flore et Faune",
+        nav_emprendedores: "Entrepreneurs",
+        nav_videos: "Vidéos",
+        nav_bandera: "Drapeau Bleu Écologique",
+        nav_flora_fauna: "Flore et Faune",
+
+        hero_tag: "Nature, culture et conservation",
+        hero_title: "Découvrez la beauté de <span>Caño Negro</span>",
+        hero_description: "Une destination unique au nord du Costa Rica, entourée de biodiversité, de paysages à couper le souffle et d'une communauté engagée dans la protection de sa richesse naturelle.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
+
+        about_label: "À propos du refuge",
+        about_title: "Refuge de faune sauvage de Caño Negro",
+        about_text_1: "Le Refuge de faune sauvage de Caño Negro est l'une des zones humides les plus importantes du Costa Rica et d'Amérique centrale.",
+        about_text_2: "En plus de sa valeur environnementale, il représente une opportunité pour l'écotourisme et le développement communautaire.",
+        about_credit: "Ibis blanc (Eudocimus albus)",
+
+        stats_label: "Notre richesse naturelle",
+        stats_title: "Caño Negro en chiffres",
+        stats_subtitle: "Une destination reconnue pour sa biodiversité, son importance écologique et la valeur de son environnement naturel.",
+        stats_1: "Espèces d'oiseaux",
+        stats_2: "Engagement envers la conservation",
+        stats_3: "Zone humide d'une grande importance écologique",
+
+        explore_label: "Découvrir davantage",
+        explore_title: "Notre communauté et ses espaces",
+        explore_subtitle: "Découvrez certains des éléments qui font partie de l'identité naturelle, sociale et culturelle de Caño Negro.",
+
+        card_tag_1: "Nature",
+        card_title_1: "Flore et Faune",
+        card_desc_1: "Découvrez des espèces emblématiques et la richesse biologique qui distingue la région.",
+
+        card_tag_2: "Aventure",
+        card_title_2: "Sentier Naturel",
+        card_desc_2: "Parcourez des espaces remplis de végétation, de paysages et de connexion avec la nature.",
+
+        card_tag_3: "Durabilité",
+        card_title_3: "Drapeau Bleu Écologique",
+        card_desc_3: "Découvrez les initiatives environnementales qui renforcent l'engagement de la communauté.",
+
+        card_tag_4: "Communauté",
+        card_title_4: "Entrepreneurs",
+        card_desc_4: "Soutenez les initiatives locales et découvrez des projets portés par la communauté.",
+
+        card_tag_5: "Culture",
+        card_title_5: "Communauté",
+        card_desc_5: "Découvrez les traditions, coutumes et la vie quotidienne qui donnent son identité à Caño Negro.",
+
+        card_tag_6: "Multimédia",
+        card_title_6: "Vidéos",
+        card_desc_6: "Regardez des vidéos sur le refuge, ses paysages et la vie de la communauté.",
+
+        card_link: "Voir plus d'informations",
+
+        help_title: "Comment pouvons-nous vous aider ?",
+
+        faq_q1: "📍 Où se trouve Caño Negro ?",
+        faq_a1: "Il est situé à Los Chiles, Alajuela, Costa Rica, près de la frontière avec le Nicaragua.",
+
+        faq_q2: "🚗 Comment y aller ?",
+        faq_a2: "Vous pouvez y accéder par la Route 138 depuis Upala ou Los Chiles. Utilisez le bouton de localisation pour voir l'itinéraire.",
+
+        faq_q3: "🦜 Que peut-on y voir ?",
+        faq_a3: "Plus de 300 espèces d'oiseaux, ainsi que des reptiles, des mammifères et une grande diversité de flore.",
+
+        faq_q4: "📅 Quelle est la meilleure période pour visiter ?",
+        faq_a4: "Pendant la saison sèche pour la randonnée, ou la saison des pluies pour voir les oiseaux migrateurs.",
+
+        faq_q5: "🎒 Que faut-il apporter ?",
+        faq_a5: "Des vêtements confortables, du répulsif, de l'eau, un appareil photo et une protection solaire.",
+
+        chat_tab: "À propos de Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=Je%20veux%20des%20informations%20sur%20Ca%C3%B1o%20Negro",
+
+        banner_tag: "Caño Negro",
+        banner_title: "Un lieu où la nature et la communauté vivent en harmonie",
+        banner_desc: "Découvrez l'essence d'une destination pleine de vie, de tradition et de paysages qui inspirent la protection de notre environnement.",
+
+        footer_about: "Association de Développement Intégral de Caño Negro, œuvrant pour la conservation et le développement durable de notre communauté.",
+        footer_links_title: "Liens rapides",
+        footer_contact_title: "Contact",
+        footer_address: "Caño Negro, Los Chiles, Alajuela, Costa Rica",
+        footer_social_title: "Suivez-nous",
+
+        footer_text: "© 2026 ADI Caño Negro - Tous droits réservés"
     }
 };
