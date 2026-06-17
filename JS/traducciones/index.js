@@ -20,7 +20,7 @@ window.translations.index = {
         about_title: "Refugio de Vida Silvestre Caño Negro",
         about_text_1: "El Refugio de Vida Silvestre Caño Negro es uno de los humedales más importantes de Costa Rica y Centroamérica.",
         about_text_2: "Además de su valor ambiental, representa una oportunidad para el ecoturismo y la comunidad.",
-        about_credit: "Ibis Blanco (Eudocimus albus)",
+        about_credit: "Garza Blanca (Ardea alba)",
 
         stats_label: "Nuestra riqueza natural",
         stats_title: "Caño Negro en cifras",
@@ -53,7 +53,7 @@ window.translations.index = {
         card_title_5: "Comunidad",
         card_desc_5: "Conoce las tradiciones, costumbres y vida cotidiana que dan identidad a Caño Negro.",
 
-        card_tag_6: "Multimedia",
+        card_tag_6: "Videos",
         card_title_6: "Videos",
         card_desc_6: "Mira videos sobre el refugio, sus paisajes y la vida en la comunidad.",
 
@@ -112,7 +112,7 @@ window.translations.index = {
         about_title: "Caño Negro Wildlife Refuge",
         about_text_1: "The Caño Negro Wildlife Refuge is one of the most important wetlands in Costa Rica and Central America.",
         about_text_2: "In addition to its environmental value, it represents an opportunity for ecotourism and community development.",
-        about_credit: "White Ibis (Eudocimus albus)",
+        about_credit: "White Heron (White firefly)",
 
         stats_label: "Our natural richness",
         stats_title: "Caño Negro in numbers",
@@ -145,7 +145,7 @@ window.translations.index = {
         card_title_5: "Community",
         card_desc_5: "Discover the traditions, customs, and daily life that give Caño Negro its identity.",
 
-        card_tag_6: "Multimedia",
+        card_tag_6: "Videos",
         card_title_6: "Videos",
         card_desc_6: "Watch videos about the refuge, its landscapes, and life in the community.",
 
@@ -204,7 +204,7 @@ window.translations.index = {
         about_title: "Refuge de faune sauvage de Caño Negro",
         about_text_1: "Le Refuge de faune sauvage de Caño Negro est l'une des zones humides les plus importantes du Costa Rica et d'Amérique centrale.",
         about_text_2: "En plus de sa valeur environnementale, il représente une opportunité pour l'écotourisme et le développement communautaire.",
-        about_credit: "Ibis blanc (Eudocimus albus)",
+        about_credit: "Héron blanc (Luciole blanche)",
 
         stats_label: "Notre richesse naturelle",
         stats_title: "Caño Negro en chiffres",
@@ -237,7 +237,7 @@ window.translations.index = {
         card_title_5: "Communauté",
         card_desc_5: "Découvrez les traditions, coutumes et la vie quotidienne qui donnent son identité à Caño Negro.",
 
-        card_tag_6: "Multimédia",
+        card_tag_6: "Vidéos",
         card_title_6: "Vidéos",
         card_desc_6: "Regardez des vidéos sur le refuge, ses paysages et la vie de la communauté.",
 

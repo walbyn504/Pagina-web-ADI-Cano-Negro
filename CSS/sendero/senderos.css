@@ -67,7 +67,8 @@ h3,
 p,
 span,
 h4,
-a {
+a,
+button {
     font-family: 'Fraunces', serif;
 }
 
@@ -106,7 +107,7 @@ ul {
     box-shadow: 0 6px 24px rgba(14, 33, 22, 0.28);
     z-index: 1000;
     transition: all 0.3s ease;
-    border-bottom: 2px solid rgba(217, 79, 21, 0.45);
+    border-bottom: 2px solid var(--naranja-acento);
 }
 
 .main-header.scrolled {
