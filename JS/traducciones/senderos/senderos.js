@@ -15,7 +15,7 @@ window.translations.senderos = {
         senderos_hero_desc: "Recorre senderos rodeados de bosque, humedales y vida silvestre, en un entorno donde cada paso invita a descubrir la riqueza natural de Caño Negro.",
 
         senderos_nav_info: "Información General",
-        senderos_nav_trails: "Senderos",
+        senderos_nav_trails: "Sendero",
 
         senderos_info_label: "Explora con responsabilidad",
         senderos_info_title: "Información acerca de los senderos",
@@ -86,7 +86,7 @@ window.translations.senderos = {
         senderos_hero_desc: "Walk through trails surrounded by forest, wetlands, and wildlife, where every step invites you to discover the natural richness of Caño Negro.",
 
         senderos_nav_info: "General Information",
-        senderos_nav_trails: "Trails",
+        senderos_nav_trails: "Trail",
 
         senderos_info_label: "Explore responsibly",
         senderos_info_title: "Trail Information",

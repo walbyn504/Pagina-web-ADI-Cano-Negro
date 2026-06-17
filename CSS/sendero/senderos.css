@@ -517,114 +517,68 @@ nav a.active,
     background: var(--blanco);
 }
 
-.senderos-grid {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
+/* ── Bloque único: logo + información + link (Eco Drive) ── */
+.sendero-cta {
+    margin: 50px auto 0;
+    max-width: 640px;
+    background: var(--fondo-suave);
+    border: 1px solid rgba(22, 51, 32, 0.08);
+    border-radius: 24px;
+    box-shadow: var(--sombra);
+    padding: 56px 48px;
+    text-align: center;
+    transition: 0.35s ease;
 }
 
-/* ── Tarjeta (mismo patrón que .card del index) ── */
-.card {
-    background: white;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: var(--sombra);
-    transition: 0.35s ease;
-    border: 1px solid rgba(22, 51, 32, 0.07);
+.sendero-cta:hover {
+    box-shadow: var(--sombra-hover);
+}
+
+.sendero-cta-logo {
+    max-width: 220px;
+    max-height: 110px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 28px;
     display: block;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--sombra-hover);
-    border-color: rgba(42, 96, 56, 0.18);
-}
-
-.card-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    transition: 0.45s ease;
-}
-
-.card:hover .card-image img {
-    transform: scale(1.06);
-}
-
-.card-tag {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    background: rgba(255, 255, 255, 0.95);
-    color: var(--verde-medio);
-    padding: 6px 13px;
-    border-radius: 999px;
-    font-size: 12px;
-    font-weight: 700;
-    border: 1px solid rgba(42, 96, 56, 0.18);
-}
-
-.sendero-info {
-    padding: 24px;
-}
-
-.sendero-info h3 {
-    color: var(--verde-principal);
-    font-size: 22px;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.sendero-info h3 a {
-    color: var(--verde-principal);
-    transition: 0.3s ease;
-}
-
-.sendero-info h3 a:hover {
-    color: var(--verde-hover);
-}
-
-.sendero-info p {
+.sendero-cta-desc {
     color: var(--texto-suave);
-    font-size: 15px;
-    margin-bottom: 16px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 auto 32px;
+    max-width: 480px;
 }
 
-.sendero-meta {
+.sendero-cta-button {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    color: var(--texto-muted);
-    font-weight: 600;
-    font-size: 14px;
-    margin-bottom: 16px;
-}
-
-.sendero-meta i {
-    color: var(--naranja-acento);
-}
-
-/* Naranja en el link de la tarjeta — igual que index */
-.card-link {
-    color: var(--naranja-acento);
+    gap: 10px;
+    background: var(--naranja-acento);
+    color: var(--blanco);
     font-weight: 700;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 999px;
     transition: 0.3s ease;
+}
+
+.sendero-cta-button:hover {
+    background: var(--naranja-hover);
+    gap: 14px;
+    transform: translateY(-2px);
+}
+
+.sendero-cta-button i {
     font-size: 14px;
 }
 
-.card:hover .card-link {
-    color: var(--naranja-hover);
-    gap: 12px;
+@media (max-width: 576px) {
+    .sendero-cta {
+        padding: 40px 24px;
+    }
 }
 
 /* ================= BANNER CIERRE ================= */
@@ -1217,10 +1171,6 @@ footer p {
     .section-title,
     .banner-content h2 {
         font-size: 30px;
-    }
-
-    .card-image img {
-        height: 220px;
     }
 
     .banner-content p {
