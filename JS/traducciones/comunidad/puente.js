@@ -107,5 +107,59 @@ window.translations.puente = {
         closing_description: "More than simple structures, they represent a way to get closer to nature, appreciate the landscape, and strengthen the bond between people and the environment that gives life to Caño Negro.",
 
         footer_text: "© 2026 ADI Caño Negro - All rights reserved"
+    },
+
+    fr: {
+        logo_text: "ADI Caño Negro",
+        nav_inicio: "Accueil",
+        nav_comunidad: "Communauté",
+        nav_puentes: "Ponts",
+
+        hero_tag: "Connexion avec la zone humide",
+        hero_title: "Ponts à <span>Caño Negro</span>",
+        hero_description: "Des structures qui permettent à la communauté et aux visiteurs de se rapprocher de l'eau, de profiter du paysage et de vivre de près la richesse naturelle de Caño Negro.",
+
+        intro_label: "Infrastructure locale",
+        intro_title: "Les Ponts de la Communauté",
+        intro_subtitle: "À Caño Negro, il existe des structures connues localement sous le nom de ponts, bien que dans de nombreux cas elles fonctionnent comme des passerelles ou de petits quais facilitant l'accès à la zone humide.",
+        intro_text1: "En raison des caractéristiques du terrain et de la présence constante d'eau dans certaines zones, ces structures sont importantes pour s'approcher de l'environnement naturel de manière pratique et sécurisée.",
+        intro_text2: "En plus de leur utilité, elles font partie de l'identité visuelle de la communauté, car elles relient les personnes au paysage et à de nombreuses activités traditionnelles de la région.",
+
+        uso_label: "Relation avec l'environnement",
+        uso_title: "Utilisation des Ponts",
+        uso_text1: "Les ponts et quais de Caño Negro permettent aux habitants et aux visiteurs de s'approcher de la zone humide en toute sécurité, facilitant des activités telles que la pêche, les promenades locales et l'observation du paysage naturel.",
+        uso_text2: "Ce sont également des espaces très appréciés par ceux qui profitent de la tranquillité du lieu, de l'observation des oiseaux et du contact direct avec la nature qui caractérise cette région.",
+
+        importancia_label: "Valeur communautaire",
+        importancia_title: "Importance pour la Communauté",
+        importancia_text1: "Ces structures permettent une meilleure approche de l'eau et du paysage naturel qui distingue Caño Negro, devenant des points de rencontre entre la communauté et son environnement.",
+        importancia_text2: "De plus, elles aident les visiteurs et les habitants à profiter de la biodiversité de la zone humide, renforçant la relation entre la vie quotidienne, la nature et la valeur touristique du lieu.",
+
+        help_title: "Comment pouvons-nous vous aider ?",
+
+        faq_q1: "📍 Où se trouve Caño Negro ?",
+        faq_a1: "Il se situe à Los Chiles, Alajuela, Costa Rica, près de la frontière avec le Nicaragua.",
+
+        faq_q2: "🚗 Comment y accéder ?",
+        faq_a2: "Vous pouvez y accéder par la Route 138 depuis Upala ou Los Chiles. Utilisez le bouton de localisation pour voir l'itinéraire.",
+
+        faq_q3: "🦜 Que peut-on y observer ?",
+        faq_a3: "Plus de 300 espèces d'oiseaux, ainsi que des reptiles, des mammifères et une grande diversité de flore.",
+
+        faq_q4: "📅 Quelle est la meilleure période pour visiter ?",
+        faq_a4: "Pendant la saison sèche pour la randonnée, ou pendant la saison des pluies pour observer les oiseaux migrateurs.",
+
+        faq_q5: "🎒 Que faut-il emporter ?",
+        faq_a5: "Des vêtements confortables, un répulsif contre les insectes, de l'eau, un appareil photo et une protection solaire.",
+
+        chat_tab: "À propos de Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=Je%20veux%20des%20informations%20sur%20Ca%C3%B1o%20Negro",
+
+        closing_tag: "Caño Negro",
+        closing_title: "Les ponts reflètent la connexion entre la communauté et la zone humide",
+        closing_description: "Plus que de simples structures, ils représentent une façon de se rapprocher de la nature, d'apprécier le paysage et de renforcer le lien entre les personnes et l'environnement qui donne vie à Caño Negro.",
+
+        footer_text: "© 2026 ADI Caño Negro - Tous droits réservés"
     }
 };

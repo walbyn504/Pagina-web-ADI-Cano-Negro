@@ -976,8 +976,24 @@ footer p {
         margin: 0 auto 18px;
     }
 
+    .footer-col h4 {
+        text-align: center;
+    }
+
+    .footer-brand p {
+        text-align: center;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
     .footer-contact li {
         justify-content: center;
+        width: 100%;
     }
 
     .footer-links {
@@ -985,17 +1001,33 @@ footer p {
         grid-template-rows: none;
         grid-auto-flow: row;
         justify-items: center;
+        padding-left: 0;
     }
 
     .footer-links li {
         display: inline-flex;
         align-items: center;
+        justify-content: center;
         gap: 6px;
         padding-left: 0;
+        width: 100%;
     }
 
     .footer-links li::before {
         position: static;
+    }
+
+    .footer-social-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .footer-social-list li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }
 
@@ -1318,11 +1350,22 @@ footer p {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 110px 40px 40px 40px;
+        padding: 150px 40px 40px 40px !important;
         transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
         z-index: 9999;
         overflow-y: auto;
         border-left: 3px solid rgba(217, 79, 21, 0.55);
+    }
+
+    .menu-sidebar-header {
+        padding-top: 0 !important;
+        padding-bottom: 24px !important;
+    }
+
+    .logo-area.mobile-menu-logo {
+        margin: 0 auto !important;
+        width: 100% !important;
+        justify-content: center !important;
     }
 
     .navbar-collapse.show {
@@ -1337,8 +1380,8 @@ footer p {
 
     .close-menu-btn,
     .navbar-collapse .navbar-toggler[aria-expanded="true"] {
-        position: absolute;
-        top: 25px;
+        position: fixed;
+        top: 28px;
         right: 24px;
         background: transparent;
         border: none;
@@ -1536,35 +1579,34 @@ footer p {
 .menu-sidebar-header {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-bottom: 24px;
+    padding: 90px 24px 24px;
     margin-bottom: 8px;
     border-bottom: 1px solid rgba(217, 79, 21, 0.25);
     text-align: center;
 }
 
-/* La X queda fija en la esquina, el logo queda centrado */
+/* La X está fija al viewport, siempre visible en la esquina */
 .menu-sidebar-header .close-menu-btn {
-    position: absolute;
-    top: -80px;
-    /* 🔥 mismo valor que el logo */
-    right: 10px;
+    position: fixed;
+    top: 28px;
+    right: 24px;
 }
 
-/* Logo apilado: imagen arriba, texto abajo, centrado */
+/* Logo en flujo normal, centrado por el flex del header */
 .logo-area.mobile-menu-logo {
     flex-direction: column;
     align-items: center;
     gap: 8px;
     text-align: center;
     display: flex;
-    position: absolute;
-    left: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -80px;
+    position: relative;
+    left: auto;
+    transform: none;
+    top: auto;
 }
 
 .logo-area.mobile-menu-logo .logo-img {

@@ -275,5 +275,143 @@ window.translations.pesca = {
         cierre_desc: "Respecting regulations and valuing river species is part of the commitment to conservation and the future of Caño Negro.",
 
         footer_text: "© 2026 ADI Caño Negro - All rights reserved"
+    },
+
+    fr: {
+        nav_inicio: "Accueil",
+        nav_comunidad: "Communauté",
+        nav_pesca: "Pêche",
+
+        hero_tag: "Tradition, durabilité et nature",
+        hero_title: "Pêche à <span>Caño Negro</span>",
+        hero_desc: "Découvrez la pêche artisanale et sportive à Caño Negro, ses réglementations, les espèces autorisées et l’importance de protéger cet écosystème.",
+
+        intro_label: "Informations générales",
+        intro_title: "Pêche responsable à Caño Negro",
+        intro_desc: "La pêche à Caño Negro est une activité réglementée visant à protéger l’écosystème, à conserver les espèces et à renforcer la relation entre tradition, communauté et nature.",
+
+        tipos_label: "Activité locale",
+        tipos_title: "Types de Pêche à Caño Negro",
+
+        artesanal_title: "Pêche Artisanale",
+        artesanal_desc: "La pêche artisanale est pratiquée par des familles locales utilisant des méthodes traditionnelles respectueuses de l’écosystème. Cette pratique fait partie de l’identité culturelle de la communauté, fournissant de la nourriture, des revenus et renforçant les liens sociaux.",
+
+        deportiva_title: "Pêche Sportive",
+        deportiva_desc: "La pêche sportive est destinée aux visiteurs et touristes à la recherche de loisirs. Elle est pratiquée selon des réglementations spécifiques, avec des limites de capture, des tailles minimales et des espèces autorisées, promouvant la conservation et le respect de la nature.",
+
+        carnet_label: "Exigences",
+        carnet_title: "Permis de Pêche",
+
+        doc_title: "Documents requis",
+        doc_1: "Photo de format passeport.",
+        doc_2: "Document d’identité valide.",
+        doc_3: "Porter le permis pendant toute la durée de l’activité.",
+
+        costos_title: "Tarifs",
+        costo_1: "<strong>Visiteurs nationaux :</strong> ₡3 500 colones.",
+        costo_2: "<strong>Visiteurs étrangers :</strong> 33,50 $ USD.",
+
+        veda_label: "Conservation",
+        veda_title: "Période de Fermeture",
+        veda_note: "La période de fermeture protège la reproduction des espèces et contribue à préserver l’équilibre écologique de l’écosystème du Refuge de Vie Sauvage de Caño Negro.",
+        veda_text1: "La période de fermeture est une période durant laquelle la pêche de certaines espèces est interdite ou limitée afin de protéger leur reproduction et d’assurer la conservation des ressources naturelles du refuge.",
+        veda_text2: "Durant cette période, les poissons sont en phase de reproduction, et les capturer pourrait affecter l’équilibre de l’écosystème.",
+        veda_text3: "À Caño Negro, la période de fermeture est généralement établie entre les mois de <strong>mars et mai</strong>.",
+        veda_text4: "Respecter cette période est une façon directe de contribuer à la conservation de la biodiversité.",
+
+        restric_label: "Réglementation",
+        restric_title: "Restrictions Réglementaires",
+
+        r1: "Respecter les périodes de fermeture établies.",
+        r2: "Ne pas dépasser la limite autorisée par espèce.",
+        r3: "Respecter la taille minimale de capture.",
+        r4: "L’utilisation d’épervier, de filet de pêche et de harpon est interdite.",
+        r5: "Ne pas polluer l’environnement naturel.",
+
+        especies_label: "Biodiversité aquatique",
+        especies_title: "Espèces dans la Rivière Caño Negro",
+        especies_desc: "Découvrez quelques-unes des espèces présentes dans la rivière et leurs conditions de capture ou de protection.",
+
+        pez_1_nombre: "Guapote",
+        pez_1_desc: "Maximum 5 pièces par personne.",
+
+        pez_2_nombre: "Mojarra",
+        pez_2_desc: "Maximum 5 pièces par personne.",
+
+        pez_3_nombre: "Tilapia",
+        pez_3_badge: "Espèce envahissante",
+        pez_3_desc: "Pas de limite de capture.",
+
+        pez_4_nombre: "Guapote Lagunero",
+        pez_4_desc: "Maximum 5 pièces par personne.",
+
+        pez_5_nombre: "Roncador",
+        pez_5_badge: "Espèce envahissante",
+        pez_5_desc: "Maximum 5 pièces par personne.",
+
+        pez_6_nombre: "Robalo",
+        pez_6_desc: "Maximum 5 pièces par personne.",
+
+        pez_7_nombre: "Guabina",
+        pez_7_desc: "Maximum 5 pièces par personne.",
+
+        pez_8_nombre: "Barbudo",
+        pez_8_desc: "Pêche libre.",
+
+        pez_9_nombre: "Gaspar",
+        pez_9_desc_1: "1 pièce par famille.",
+        pez_9_desc_2: "Taille minimale 1,20 m.",
+
+        pez_10_nombre: "Sábalo",
+        pez_10_desc: "Autorisé uniquement pour la pêche sportive.",
+
+        pez_11_nombre: "Sabalete ou Machaca",
+        pez_11_desc: "Maximum 5 pièces par personne.",
+
+        pez_12_nombre: "Bobito",
+        pez_12_desc: "Normalement utilisé comme appât.",
+
+        pez_13_nombre: "Sardine",
+        pez_13_desc: "Normalement utilisée comme appât.",
+
+        pez_14_nombre: "Poisson Diable",
+        pez_14_badge: "Toxique",
+
+        pez_15_nombre: "Tortue",
+        pez_15_badge: "Consommation interdite",
+
+        pez_16_nombre: "Caïman",
+        pez_16_badge: "Consommation interdite",
+
+        pez_17_nombre: "Crocodile",
+        pez_17_badge_1: "Consommation interdite",
+        pez_17_badge_2: "Faire preuve de prudence",
+
+        help_title: "Comment pouvons-nous vous aider ?",
+
+        faq_q1: "📍 Où se trouve Caño Negro ?",
+        faq_a1: "Il se situe à Los Chiles, Alajuela, Costa Rica, près de la frontière avec le Nicaragua.",
+
+        faq_q2: "🚗 Comment y accéder ?",
+        faq_a2: "Vous pouvez y accéder par la Route 138 depuis Upala ou Los Chiles. Utilisez le bouton de localisation pour voir l’itinéraire.",
+
+        faq_q3: "🦜 Que peut-on y observer ?",
+        faq_a3: "Plus de 300 espèces d’oiseaux, ainsi que des reptiles, des mammifères et une grande diversité de flore.",
+
+        faq_q4: "📅 Quelle est la meilleure période pour visiter ?",
+        faq_a4: "Pendant la saison sèche pour la randonnée, ou pendant la saison des pluies pour observer les oiseaux migrateurs.",
+
+        faq_q5: "🎒 Que faut-il emporter ?",
+        faq_a5: "Des vêtements confortables, un répulsif contre les insectes, de l’eau, un appareil photo et une protection solaire.",
+
+        chat_tab: "À propos de Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=Je%20veux%20des%20informations%20sur%20Ca%C3%B1o%20Negro",
+
+        cierre_tag: "Caño Negro",
+        cierre_title: "La pêche responsable protège la tradition, la communauté et la biodiversité du refuge",
+        cierre_desc: "Respecter les réglementations et valoriser les espèces de la rivière fait partie de l’engagement envers la conservation et l’avenir de Caño Negro.",
+
+        footer_text: "© 2026 ADI Caño Negro - Tous droits réservés"
     }
 };

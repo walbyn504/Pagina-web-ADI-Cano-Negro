@@ -131,5 +131,71 @@ window.translations.comunidad = {
         comunidad_closing_desc: "Getting to know Caño Negro also means getting to know its people, customs, history, and the way they live alongside nature.",
 
         footer_text: "© 2026 ADI Caño Negro - All rights reserved"
+    },
+
+    fr: {
+        nav_inicio: "Accueil",
+        nav_senderos: "Sentiers",
+        nav_comunidad: "Communauté",
+        nav_flora: "Flore et Faune",
+        nav_emprendedores: "Entrepreneurs",
+        nav_videos: "Vidéos",
+        nav_bandera: "Drapeau Bleu Écologique",
+
+        comunidad_hero_tag: "Culture, tradition et nature",
+        comunidad_hero_title: "Communauté de <span><br> Caño Negro </span>",
+        comunidad_hero_desc: "Un lieu où la vie communautaire, le travail collectif et le respect de la nature font partie de l'identité de chaque famille.",
+
+        comunidad_nav_pesca: "Pêche",
+        comunidad_nav_vida: "Vie communautaire",
+        comunidad_nav_puentes: "Ponts Flottants",
+
+        comunidad_intro_label: "Identité locale",
+        comunidad_intro_title: "Une communauté connectée à son environnement",
+        comunidad_intro_subtitle: "Caño Negro se distingue non seulement par sa richesse naturelle, mais aussi par l'histoire, les traditions et l'effort collectif de ses habitants.",
+
+        comunidad_pesca_label: "Tradition vivante",
+        comunidad_pesca_title: '<i class="fa-solid fa-fish"></i> Pêche',
+        comunidad_pesca_text1: "La pêche est une activité fondamentale pour de nombreuses familles de la communauté, pratiquée principalement dans la rivière Frío et dans les zones humides. En plus de fournir de la nourriture, elle représente une source de revenus et renforce la cohabitation entre les habitants.",
+        comunidad_pesca_text2: "Des pratiques respectueuses de l'équilibre naturel de l'écosystème sont utilisées, faisant partie de l'identité culturelle de Caño Negro et promouvant la durabilité, la tradition et le respect de la nature.",
+
+        comunidad_vida_label: "Cohabitation",
+        comunidad_vida_title: '<i class="fa-solid fa-people-group"></i> Vie Communautaire',
+        comunidad_vida_text1: "Caño Negro est une communauté petite mais très unie. Les gens se connaissent, collaborent et travaillent ensemble pour aller de l'avant. La vie tourne autour de la nature, de la rivière et des traditions transmises de génération en génération.",
+        comunidad_vida_text2: "Avec effort et organisation, la communauté protège son environnement et promeut un tourisme responsable qui bénéficie à ses habitants et renforce le développement local.",
+
+        comunidad_puentes_label: "Paysage local",
+        comunidad_puentes_title: '<i class="fa-solid fa-bridge-water"></i> Ponts Flottants',
+        comunidad_puentes_text1: "Les ponts flottants sont une attraction représentative de la communauté de Caño Negro. Plus qu'une structure, ils sont un lieu de rencontre où voisins et visiteurs partagent des conversations et profitent du paysage.",
+        comunidad_puentes_text2: "Pendant la saison des pluies, lorsque le niveau de l'eau monte, ces ponts s'adaptent naturellement à l'environnement, reflétant la capacité de la communauté à vivre en harmonie avec la nature.",
+
+        comunidad_btn_more: 'Voir plus d\'informations <i class="fa-solid fa-arrow-right"></i>',
+
+        help_title: "Comment pouvons-nous vous aider ?",
+
+        faq_q1: "📍 Où se trouve Caño Negro ?",
+        faq_a1: "Il se situe à Los Chiles, Alajuela, Costa Rica, près de la frontière avec le Nicaragua.",
+
+        faq_q2: "🚗 Comment y accéder ?",
+        faq_a2: "Vous pouvez y accéder par la Route 138 depuis Upala ou Los Chiles. Utilisez le bouton de localisation pour voir l'itinéraire.",
+
+        faq_q3: "🦜 Que peut-on y observer ?",
+        faq_a3: "Plus de 300 espèces d'oiseaux, ainsi que des reptiles, des mammifères et une grande diversité de flore.",
+
+        faq_q4: "📅 Quelle est la meilleure période pour visiter ?",
+        faq_a4: "Pendant la saison sèche pour la randonnée, ou pendant la saison des pluies pour observer les oiseaux migrateurs.",
+
+        faq_q5: "🎒 Que faut-il emporter ?",
+        faq_a5: "Des vêtements confortables, un répulsif contre les insectes, de l'eau, un appareil photo et une protection solaire.",
+
+        chat_tab: "À propos de Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=Je%20veux%20des%20informations%20sur%20Ca%C3%B1o%20Negro",
+
+        comunidad_closing_tag: "Caño Negro",
+        comunidad_closing_title: "Une communauté qui préserve son essence tout en prenant soin de son environnement naturel",
+        comunidad_closing_desc: "Connaître Caño Negro, c'est aussi connaître ses habitants, leurs coutumes, leur histoire et la façon dont ils vivent aux côtés de la nature.",
+
+        footer_text: "© 2026 ADI Caño Negro - Tous droits réservés"
     }
 };

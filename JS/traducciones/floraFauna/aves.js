@@ -245,11 +245,137 @@ window.translations.aves = {
         chat_link: "https://chat.openai.com/?q=I%20want%20information%20about%20Ca%C3%B1o%20Negro",
 
         fact_label: "Fun fact",
-        
+
         closing_tag: "Caño Negro",
         closing_title: "A refuge where every bird tells a story",
         closing_desc: "Exploring the birds of Caño Negro means discovering the richness of a living wetland, full of color, movement, and species that turn every visit into an unforgettable experience.",
 
         footer_text: "© 2026 ADI Caño Negro - All rights reserved"
+    },
+
+    fr: {
+        nav_inicio: "Accueil",
+        nav_flora: "Flore et Faune",
+        nav_aves: "Oiseaux",
+        "photo_by": "Photo :",
+
+        hero_chip: "Ornithologie • Biodiversité • Zone Humide Ramsar",
+        hero_title: "Oiseaux de <br><span>Caño Negro</span>",
+        hero_desc: "Caño Negro est l'un des cadres naturels les plus précieux du Costa Rica pour l'observation des oiseaux. Ses lagunes, forêts inondées, canaux et berges offrent refuge, nourriture et repos à de nombreuses espèces résidentes et migratrices.",
+
+        intro_label: "Guide visuel de la zone humide",
+        intro_title: "Espèces vedettes de ce paradis naturel",
+        intro_subtitle: "Chacun de ces oiseaux reflète la richesse écologique de Caño Negro et la valeur de la conservation d'une zone humide qui soutient la vie, le tourisme responsable et la biodiversité.",
+
+        highlight1_title: "Observation privilégiée",
+        highlight1_desc: "Le refuge offre d'excellentes conditions pour observer les oiseaux à différentes époques de l'année.",
+
+        highlight2_title: "Environnements diversifiés",
+        highlight2_desc: "Lagunes, canaux, forêts inondées et berges créent des habitats idéaux pour de nombreuses espèces.",
+
+        highlight3_title: "Vie résidente et migratrice",
+        highlight3_desc: "Certains oiseaux restent toute l'année tandis que d'autres visitent la zone humide à des saisons spécifiques.",
+
+        highlight4_title: "Conservation essentielle",
+        highlight4_desc: "La santé de la zone humide est essentielle au repos, à l'alimentation et à la reproduction des oiseaux.",
+
+        bird1_name: "Héron Agami",
+        bird1_desc1: "C'est l'un des oiseaux les plus remarquables de la zone humide par son élégance, sa silhouette fine et la beauté de son plumage.",
+        bird1_desc2: "Il habite généralement des secteurs tranquilles avec une végétation dense, où il trouve refuge et des conditions idéales pour s'alimenter.",
+        bird1_fact: "Son apparence raffinée et sa coloration distinctive en font l'un des favoris des photographes et des ornithologues.",
+
+        bird2_name: "Jabiru",
+        bird2_desc1: "Le jabiru est l'un des oiseaux les plus impressionnants de la zone humide, remarquable par sa grande taille et son port majestueux.",
+        bird2_desc2: "Sa présence est étroitement liée à la santé des écosystèmes aquatiques où il trouve nourriture et de vastes espaces pour se déplacer.",
+        bird2_fact: "C'est l'un des plus grands oiseaux que l'on puisse observer à Caño Negro et l'une des espèces les plus recherchées par les visiteurs.",
+
+        bird3_name: "Héron Cocher",
+        bird3_desc1: "Cet fascinant oiseau nocturne trouve dans les environs de la Zone Humide de Caño Negro un refuge idéal, se cachant parmi les yolillales et la végétation dense qui borde la rivière Frío.",
+        bird3_desc2: "C'est une espèce emblématique de la zone, facilement reconnaissable par son bec exceptionnellement large, qu'il utilise pour capturer des poissons et des crustacés dans les canaux tranquilles de la zone humide.",
+        bird3_fact: "À Caño Negro, il est courant de les voir lors des tours en bateau partageant l'espace avec le Jabiru, bien que le Héron Cocher préfère les branches plus basses et sombres pour passer la journée.",
+
+        bird4_name: "Ibis Blanc",
+        bird4_desc1: "L'ibis blanc est l'un des oiseaux que l'on peut observer dans les zones humides de Caño Negro, notamment dans les zones ouvertes, les lagunes peu profondes et les rives boueuses où il trouve de la nourriture.",
+        bird4_desc2: "Dans le refuge, il fait partie du paysage naturel tandis qu'il parcourt calmement les zones humides, contribuant à la dynamique écologique de l'écosystème.",
+        bird4_fact: "À Caño Negro, on le voit souvent se nourrir en groupe, utilisant son long bec courbe pour chercher des insectes, des crustacés et de petits organismes dans le sol humide.",
+
+        bird5_name: "Anhinga",
+        bird5_desc1: "Cet oiseau aquatique est connu pour son long cou fin qui dépasse de l'eau quand il nage, lui donnant une apparence très singulière.",
+        bird5_desc2: "Il habite des lagunes et des canaux tranquilles, où il pêche souvent puis étend ses ailes au soleil après s'être plongé.",
+        bird5_fact: "Quand il nage, on ne voit souvent que son cou, ce qui lui donne l'apparence d'un serpent glissant sur l'eau.",
+
+        bird6_name: "Grande Aigrette",
+        bird6_desc1: "C'est l'un des oiseaux les plus élégants et reconnaissables des zones humides costaricaines. Son plumage blanc lui confère une présence très nette et distinguée.",
+        bird6_desc2: "À Caño Negro, on peut l'observer dans des lagunes, des canaux et des secteurs ouverts où il cherche des poissons, des insectes et d'autres petits organismes.",
+        bird6_fact: "C'est l'une des espèces les plus facilement observables lors des circuits d'observation dans les zones aquatiques.",
+
+        bird7_name: "Héron Tigre à Gorge Nue",
+        bird7_desc1: "Un maître du camouflage grâce à son plumage avec de fines rayures sombres qui imitent les textures de l'écorce et les ombres des arbres.",
+        bird7_desc2: "Contrairement aux autres hérons, il est extrêmement solitaire et patient, restant immobile pendant de longues périodes sur des troncs couchés sur l'eau.",
+        bird7_fact: "Son cri est un ronflement profond et puissant qui ressemble au rugissement d'un félin, ce qui lui vaut le nom populaire de « Héron Tigre ».",
+
+        bird8_name: "Grébifoulque d'Amérique",
+        bird8_desc1: "C'est un oiseau aquatique très particulier, avec un long cou élégant et des rayures faciales blanches et noires très frappantes. Il préfère les rivières tranquilles et les ruisseaux avec une végétation dense sur les berges.",
+        bird8_desc2: "Contrairement aux canards communs, il ne plonge pas souvent, mais se nourrit en capturant des insectes, des araignées et de petits poissons à la surface de l'eau ou de la végétation pendante. C'est un oiseau solitaire et difficile à observer.",
+        bird8_fact: "Ses pattes ont des orteils à lobes latéraux (non complètement palmés) et sont de couleur jaune avec des rayures noires.",
+
+        bird9_name: "Héron Tigre Mexicain",
+        bird9_desc1: "Un héron de grande taille et d'aspect robuste, célèbre pour son plumage finement ondulé qui rappelle les rayures d'un tigre. C'est l'une des espèces les plus emblématiques des zones humides du Costa Rica.",
+        bird9_desc2: "Contrairement aux autres hérons, il est généralement solitaire et chasse en restant complètement immobile pendant de longues périodes, se camouflant parmi la végétation des berges jusqu'à ce que sa proie soit proche.",
+        bird9_fact: "Les adultes présentent une zone de peau nue sur la gorge de couleur jaune-verdâtre brillant, qu'ils peuvent gonfler lorsqu'ils émettent leurs puissants appels rauques.",
+
+        bird10_name: "Martin-pêcheur à Ventre Roux",
+        bird10_desc1: "C'est le plus grand des martins-pêcheurs à Caño Negro, un véritable géant des rivières Frío et des canaux de la zone humide.",
+        bird10_desc2: "Il est célèbre pour sa patience lorsqu'il se perche au-dessus de l'eau et ses plongeons directs pour capturer de grands poissons.",
+        bird10_fact: "Son cri caractéristique, comme un crécelle, s'entend souvent avant de le voir voler à basse altitude au-dessus de l'eau.",
+
+        bird11_name: "Martin-pêcheur Amazone",
+        bird11_desc1: "De taille moyenne et de couleur vert bronzé, ce martin-pêcheur est un habitant constant des bords des canaux et des lagunes de la Zone Humide de Caño Negro.",
+        bird11_desc2: "Il se distingue par son comportement territorial ; il surveille généralement la rivière Frío depuis des branches basses, le mâle étant facilement identifiable par la large bande châtain sur sa poitrine.",
+        bird11_fact: "Contrairement au Martin-pêcheur à Ventre Roux, il est très courant de le voir perché sur des structures humaines comme des quais et des bateaux, les utilisant comme points stratégiques pour pêcher.",
+
+        bird12_name: "Martin-pêcheur Vert",
+        bird12_desc1: "Le plus petit des martins-pêcheurs habitant la zone humide. Malgré sa taille, son plumage vert émeraude foncé est très frappant lorsqu'il émerge des ombres.",
+        bird12_desc2: "À Caño Negro, il préfère les canaux étroits et les zones à très basse végétation. Il chasse depuis des branches qui touchent presque l'eau, ce qui en fait un expert pour capturer des proies dans des espaces réduits.",
+        bird12_fact: "Contrairement à ses parents plus grands, il est très silencieux. Pour nicher, il creuse des tunnels de près d'un mètre de profondeur dans les berges de terre au bord de la rivière Frío.",
+
+        bird13_name: "Bihoreau Violacé",
+        bird13_desc1: "Le bihoreau violacé est une espèce fréquente dans les zones humides de Caño Negro, où on le voit souvent perché sur des branches proches de l'eau ou dans des zones à végétation dense.",
+        bird13_desc2: "Bien qu'il soit plus actif au crépuscule et pendant la nuit, il peut également être vu pendant la journée dans le refuge, notamment dans des environnements tranquilles où il se repose et surveille son entourage.",
+        bird13_fact: "À Caño Negro, il se nourrit principalement de crustacés, comme des crabes et des crevettes, qu'il capture avec précision grâce à sa vue acérée et son comportement patient.",
+
+        bird14_name: "Hirondelle à Ailes Rugueuses du Sud",
+        bird14_desc1: "L'hirondelle à ailes rugueuses du sud est une espèce active et sociable que l'on observe fréquemment dans les cieux ouverts de Caño Negro, notamment près des rivières, des lagunes et des zones dégagées de la zone humide.",
+        bird14_desc2: "Dans le refuge, elle se déplace souvent en petits groupes, volant de manière agile tout en capturant des insectes en vol, jouant un rôle important dans l'équilibre naturel de l'écosystème.",
+        bird14_fact: "Contrairement à d'autres hirondelles, elle peut se percher fréquemment sur des branches exposées, d'où elle se repose avant de reprendre son vol pour continuer à chasser les insectes.",
+
+        help_title: "Comment pouvons-nous vous aider ?",
+
+        faq_q1: "📍 Où se trouve Caño Negro ?",
+        faq_a1: "Il se situe à Los Chiles, Alajuela, Costa Rica, près de la frontière avec le Nicaragua.",
+
+        faq_q2: "🚗 Comment y accéder ?",
+        faq_a2: "Vous pouvez y accéder par la Route 138 depuis Upala ou Los Chiles. Utilisez le bouton de localisation pour voir l'itinéraire.",
+
+        faq_q3: "🦜 Que peut-on y observer ?",
+        faq_a3: "Plus de 300 espèces d'oiseaux, ainsi que des reptiles, des mammifères et une grande diversité de flore.",
+
+        faq_q4: "📅 Quelle est la meilleure période pour visiter ?",
+        faq_a4: "Pendant la saison sèche pour la randonnée, ou pendant la saison des pluies pour observer les oiseaux migrateurs.",
+
+        faq_q5: "🎒 Que faut-il emporter ?",
+        faq_a5: "Des vêtements confortables, un répulsif contre les insectes, de l'eau, un appareil photo et une protection solaire.",
+
+        chat_tab: "À propos de Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=Je%20veux%20des%20informations%20sur%20Ca%C3%B1o%20Negro",
+
+        fact_label: "Anecdote",
+
+        closing_tag: "Caño Negro",
+        closing_title: "Un refuge où chaque oiseau raconte une histoire",
+        closing_desc: "Explorer les oiseaux de Caño Negro, c'est découvrir la richesse d'une zone humide vivante, pleine de couleurs, de mouvement et d'espèces qui font de chaque visite une expérience inoubliable.",
+
+        footer_text: "© 2026 ADI Caño Negro - Tous droits réservés"
     }
 };

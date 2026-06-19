@@ -147,5 +147,79 @@ window.translations.vidaComunitaria = {
         closing_description: "Getting to know the community of Caño Negro means appreciating its history, traditions, and the commitment of its residents to local development and environmental conservation.",
 
         footer_text: "© 2026 ADI Caño Negro - All rights reserved"
+    },
+
+    fr: {
+        logo_text: "ADI Caño Negro",
+
+        nav_inicio: "Accueil",
+        nav_comunidad: "Communauté",
+        nav_vida: "Vie Communautaire",
+
+        hero_tag: "Tradition, identité et cohabitation",
+        hero_title: "Vie Communautaire à <span>Caño Negro</span>",
+        hero_description: "Découvrez la culture, les activités économiques, les traditions et l'organisation sociale qui donnent vie à la communauté de Caño Negro.",
+
+        intro_label: "Informations générales",
+        intro_title: "La Communauté de Caño Negro",
+        intro_subtitle: "Caño Negro est une communauté qui se distingue par sa proximité avec la nature, la coopération entre voisins et la préservation de traditions qui renforcent son identité culturelle.",
+        intro_text1: "Caño Negro est une communauté située dans la zone nord du Costa Rica, reconnue pour sa proximité avec le Refuge National de Vie Sauvage et pour la forte relation que ses habitants entretiennent avec la nature.",
+        intro_text2: "La vie dans cette communauté se caractérise par la coopération entre voisins, le respect de l'environnement naturel et la préservation de coutumes qui font partie de son identité.",
+        intro_text3: "Au fil des années, les familles ont développé diverses activités économiques qui leur permettent de vivre en harmonie avec l'environnement et d'utiliser les ressources naturelles de manière responsable.",
+
+        economia_label: "Développement local",
+        economia_title: "Activités Économiques",
+        economia_text1: "Parmi les principales activités économiques de Caño Negro se trouvent la pêche, l'agriculture et le tourisme rural. Ces activités représentent une source de revenus importante pour de nombreuses familles de la communauté.",
+        economia_text2: "Le tourisme a également augmenté dans la région grâce à la richesse naturelle du refuge, attirant des visiteurs intéressés par l'observation des oiseaux, les promenades en bateau et les expériences culturelles.",
+
+        cultura_label: "Identité culturelle",
+        cultura_title: "Culture et Traditions",
+        cultura_text1: "La culture de Caño Negro est marquée par des traditions transmises de génération en génération. Les célébrations communautaires, les activités religieuses et les festivités locales sont des espaces où les habitants se réunissent pour renforcer les liens sociaux et maintenir leur identité vivante.",
+        cultura_text2: "La gastronomie locale fait également partie importante de la culture, avec des plats traditionnels préparés à partir de produits de la région.",
+
+        organizacion_label: "Participation sociale",
+        organizacion_title: "Organisation Communautaire",
+        organizacion_text1: "La communauté dispose d'organisations locales qui travaillent pour le bien-être et le développement du lieu. Ces organisations promeuvent des projets sociaux, éducatifs et environnementaux visant à améliorer la qualité de vie des habitants.",
+        organizacion_text2: "De plus, les voisins participent activement aux activités communautaires, collaborant à des initiatives qui renforcent la cohabitation et la protection des ressources naturelles.",
+
+        valores_label: "Force communautaire",
+        valores_title: "Valeurs de la Vie Communautaire",
+        valores_subtitle: "La cohabitation à Caño Negro repose sur des principes qui renforcent l'identité, la coopération et le respect de l'environnement.",
+
+        valor1_title: "Coopération",
+        valor1_text: "Les voisins participent à des activités et des projets qui profitent à la communauté et renforcent l'union entre les familles.",
+
+        valor2_title: "Identité culturelle",
+        valor2_text: "Les traditions, célébrations et coutumes locales font partie essentielle du sentiment d'appartenance de la communauté.",
+
+        valor3_title: "Respect de la nature",
+        valor3_text: "La relation avec l'environnement naturel fait partie de la vie quotidienne et guide de nombreuses pratiques de la communauté.",
+
+        help_title: "Comment pouvons-nous vous aider ?",
+
+        faq_q1: "📍 Où se trouve Caño Negro ?",
+        faq_a1: "Il se situe à Los Chiles, Alajuela, Costa Rica, près de la frontière avec le Nicaragua.",
+
+        faq_q2: "🚗 Comment y accéder ?",
+        faq_a2: "Vous pouvez y accéder par la Route 138 depuis Upala ou Los Chiles. Utilisez le bouton de localisation pour voir l'itinéraire.",
+
+        faq_q3: "🦜 Que peut-on y observer ?",
+        faq_a3: "Plus de 300 espèces d'oiseaux, ainsi que des reptiles, des mammifères et une grande diversité de flore.",
+
+        faq_q4: "📅 Quelle est la meilleure période pour visiter ?",
+        faq_a4: "Pendant la saison sèche pour la randonnée, ou pendant la saison des pluies pour observer les oiseaux migrateurs.",
+
+        faq_q5: "🎒 Que faut-il emporter ?",
+        faq_a5: "Des vêtements confortables, un répulsif contre les insectes, de l'eau, un appareil photo et une protection solaire.",
+
+        chat_tab: "À propos de Caño Negro",
+
+        chat_link: "https://chat.openai.com/?q=Je%20veux%20des%20informations%20sur%20Ca%C3%B1o%20Negro",
+
+        closing_tag: "Caño Negro",
+        closing_title: "La vie communautaire reflète l'union entre culture, travail et nature",
+        closing_description: "Connaître la communauté de Caño Negro, c'est apprécier son histoire, ses traditions et l'engagement de ses habitants envers le développement local et la conservation de l'environnement.",
+
+        footer_text: "© 2026 ADI Caño Negro - Tous droits réservés"
     }
 };

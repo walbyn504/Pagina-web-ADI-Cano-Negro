@@ -816,8 +816,24 @@ footer p {
         margin: 0 auto 18px;
     }
 
+    .footer-col h4 {
+        text-align: center;
+    }
+
+    .footer-brand p {
+        text-align: center;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
     .footer-contact li {
         justify-content: center;
+        width: 100%;
     }
 
     .footer-links {
@@ -825,17 +841,33 @@ footer p {
         grid-template-rows: none;
         grid-auto-flow: row;
         justify-items: center;
+        padding-left: 0;
     }
 
     .footer-links li {
         display: inline-flex;
         align-items: center;
+        justify-content: center;
         gap: 6px;
         padding-left: 0;
+        width: 100%;
     }
 
     .footer-links li::before {
         position: static;
+    }
+
+    .footer-social-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .footer-social-list li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }
 
@@ -1150,7 +1182,7 @@ footer p {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 110px 40px 40px 40px;
+        padding: 150px 40px 40px 40px !important;
         transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
         z-index: 9999;
         overflow-y: auto;
@@ -1168,8 +1200,8 @@ footer p {
     }
 
     .close-menu-btn {
-        position: absolute;
-        top: 25px;
+        position: fixed;
+        top: 28px;
         right: 24px;
         background: transparent;
         border: none;
@@ -1259,19 +1291,20 @@ footer p {
     .menu-sidebar-header {
         width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         position: relative;
-        padding-bottom: 24px;
+        padding: 0 24px 24px !important;
         margin-bottom: 8px;
         border-bottom: 1px solid rgba(217, 79, 21, 0.25);
         text-align: center;
     }
 
     .menu-sidebar-header .close-menu-btn {
-        position: absolute;
-        top: -80px;
-        right: 10px;
+        position: fixed;
+        top: 28px;
+        right: 24px;
     }
 
     .logo-area.mobile-menu-logo {
@@ -1280,10 +1313,13 @@ footer p {
         gap: 8px;
         text-align: center;
         display: flex;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -80px;
+        position: relative;
+        left: auto;
+        transform: none;
+        top: auto;
+        margin: 0 auto !important;
+        width: 100% !important;
+        justify-content: center !important;
     }
 
     .logo-area.mobile-menu-logo .logo-img {

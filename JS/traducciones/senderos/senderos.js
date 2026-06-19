@@ -6,9 +6,12 @@ window.translations.senderos = {
         nav_senderos: "Senderos",
         nav_comunidad: "Comunidad",
         nav_flora: "Flora y Fauna",
+        nav_flora_fauna: "Flora y Fauna",
         nav_emprendedores: "Emprendedores",
         nav_videos: "Videos",
         nav_bandera: "Bandera Azul Ecológica",
+
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         senderos_hero_tag: "Naturaleza, senderismo y conservación",
         senderos_hero_title: "Senderos Naturales de <span>Caño Negro</span>",
@@ -65,10 +68,18 @@ window.translations.senderos = {
 
         chat_link: "https://chat.openai.com/?q=Quiero%20informaci%C3%B3n%20sobre%20Ca%C3%B1o%20Negro",
 
+        senderos_cta_desc: "Conoce el sendero Eco Trail, una experiencia para recorrer de cerca los paisajes, la biodiversidad y los atractivos naturales de Caño Negro. Encuentra toda la información, fotos y detalles del recorrido en su página oficial.",
+        senderos_cta_button: "Conocer Eco-Trail",
+
         senderos_closing_tag: "Caño Negro",
         senderos_closing_title: "Cada sendero es una oportunidad para conectar con la naturaleza y aprender a conservarla",
         senderos_closing_desc: "Caminar por estos espacios permite descubrir la vida que habita en cada rincón, valorar la biodiversidad y fortalecer el compromiso con su protección.",
 
+        footer_about: "Asociación de Desarrollo Integral de Caño Negro, trabajando por la conservación y el desarrollo sostenible de nuestra comunidad.",
+        footer_links_title: "Enlaces rápidos",
+        footer_contact_title: "Contacto",
+        footer_address: "Caño Negro, Los Chiles, Alajuela, Costa Rica",
+        footer_social_title: "Síguenos",
         footer_text: "© 2026 ADI Caño Negro - Todos los derechos reservados"
     },
 
@@ -77,9 +88,12 @@ window.translations.senderos = {
         nav_senderos: "Trails",
         nav_comunidad: "Community",
         nav_flora: "Flora & Fauna",
+        nav_flora_fauna: "Flora & Fauna",
         nav_emprendedores: "Entrepreneurs",
         nav_videos: "Videos",
         nav_bandera: "Blue Ecological Flag",
+
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         senderos_hero_tag: "Nature, hiking and conservation",
         senderos_hero_title: "Nature Trails of <span>Caño Negro</span>",
@@ -136,10 +150,18 @@ window.translations.senderos = {
 
         chat_link: "https://chat.openai.com/?q=I%20want%20information%20about%20Ca%C3%B1o%20Negro",
 
+        senderos_cta_desc: "Discover the Eco Trail, an experience to explore up close the landscapes, biodiversity, and natural attractions of Caño Negro. Find all the information, photos, and route details on their official page.",
+        senderos_cta_button: "Discover Eco-Trail",
+
         senderos_closing_tag: "Caño Negro",
         senderos_closing_title: "Each trail is an opportunity to connect with nature and learn to protect it",
         senderos_closing_desc: "Walking these paths allows you to discover life in every corner, appreciate biodiversity, and strengthen your commitment to conservation.",
 
+        footer_about: "Caño Negro Community Development Association, working for conservation and the sustainable development of our community.",
+        footer_links_title: "Quick Links",
+        footer_contact_title: "Contact",
+        footer_address: "Caño Negro, Los Chiles, Alajuela, Costa Rica",
+        footer_social_title: "Follow Us",
         footer_text: "© 2026 ADI Caño Negro - All rights reserved"
     },
     
@@ -148,9 +170,12 @@ window.translations.senderos = {
         nav_senderos: "Sentiers",
         nav_comunidad: "Communauté",
         nav_flora: "Flore et Faune",
+        nav_flora_fauna: "Flore et Faune",
         nav_emprendedores: "Entrepreneurs",
         nav_videos: "Vidéos",
         nav_bandera: "Drapeau Bleu Écologique",
+
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         senderos_hero_tag: "Nature, randonnée et conservation",
         senderos_hero_title: "Sentiers Naturels de <span>Caño Negro</span>",
@@ -207,10 +232,18 @@ window.translations.senderos = {
 
         chat_link: "https://chat.openai.com/?q=Je%20veux%20des%20informations%20sur%20Ca%C3%B1o%20Negro",
 
+        senderos_cta_desc: "Découvrez le sentier Eco Trail, une expérience pour explorer de près les paysages, la biodiversité et les attractions naturelles de Caño Negro. Trouvez toutes les informations, photos et détails du parcours sur leur page officielle.",
+        senderos_cta_button: "Découvrir Eco-Trail",
+
         senderos_closing_tag: "Caño Negro",
         senderos_closing_title: "Chaque sentier est une occasion de se connecter à la nature et d'apprendre à la préserver",
         senderos_closing_desc: "Parcourir ces espaces permet de découvrir la vie présente dans chaque recoin, d'apprécier la biodiversité et de renforcer l'engagement envers sa protection.",
 
+        footer_about: "Association de Développement Intégral de Caño Negro, œuvrant pour la conservation et le développement durable de notre communauté.",
+        footer_links_title: "Liens rapides",
+        footer_contact_title: "Contact",
+        footer_address: "Caño Negro, Los Chiles, Alajuela, Costa Rica",
+        footer_social_title: "Suivez-nous",
         footer_text: "© 2026 ADI Caño Negro - Tous droits réservés"
     }
 };
