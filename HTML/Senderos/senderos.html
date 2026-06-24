@@ -36,7 +36,7 @@
             <div class="container-fluid p-0">
 
                 <!-- BOTÓN HAMBURGUESA -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -45,14 +45,10 @@
 
                     <!-- Encabezado interno móvil -->
                     <div class="menu-sidebar-header d-lg-none">
-                        <div class="logo-area mobile-menu-logo">
-                            <img src="../../img/LogoADI.png" alt="Logo ADI Caño Negro" class="logo-img">
-                            <div class="logo-text">
-                                <span>ADI Caño Negro</span>
-                            </div>
-                        </div>
+                        <img src="../../img/LogoADI.png" alt="Logo ADI Caño Negro" class="mobile-header-logo">
+                        <span class="mobile-header-title">ADI Caño Negro</span>
                         <button class="close-menu-btn" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#menuNav">
+                            data-bs-target="#menuNav" aria-label="Cerrar menú">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
@@ -289,7 +285,7 @@
 
     <!-- ================= FAB ================= -->
     <div class="fab-container">
-        <button class="fab-main" id="fabToggle">
+        <button class="fab-main" id="fabToggle" aria-label="Abrir acciones rápidas">
             <i class="fa-solid fa-plus"></i>
         </button>
         <div class="fab-options">
@@ -309,7 +305,7 @@
     <!-- ================= MODAL AYUDA ================= -->
     <div class="help-modal" id="helpModal">
         <div class="help-content">
-            <button class="close-modal" id="closeHelp">
+            <button class="close-modal" id="closeHelp" aria-label="Cerrar ayuda">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <h2 data-i18n="help_title">¿En qué podemos ayudarte?</h2>

@@ -77,7 +77,7 @@ img {
 }
 
 a {
-   text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 ul {
@@ -102,6 +102,7 @@ ul {
     gap: 20px;
     padding: 0 40px;
     background: rgba(11, 28, 16, 0.92);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 6px 24px rgba(14, 33, 22, 0.28);
     z-index: 1000;
@@ -121,20 +122,6 @@ ul {
     align-items: center;
     gap: 12px;
     flex-shrink: 0;
-}
-
-@media (max-width: 991px) {
-    .logo-area.mobile-menu-logo {
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
-        margin-bottom: 10px;
-    }
-
-    .logo-area.mobile-menu-logo .logo-text span {
-        font-size: 16px;
-        text-align: center;
-    }
 }
 
 .logo-img {
@@ -267,6 +254,7 @@ nav a.active,
     letter-spacing: 0.6px;
     cursor: pointer;
     transition: 0.3s ease;
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
 }
 
@@ -297,6 +285,7 @@ nav a.active,
     background: rgba(11, 28, 16, 0.97);
     border: 1px solid rgba(217, 79, 21, 0.35);
     box-shadow: 0 18px 35px rgba(217, 79, 21, 0.14);
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     opacity: 0;
     visibility: hidden;
@@ -565,7 +554,7 @@ nav a.active,
     overflow: hidden;
     box-shadow: var(--sombra);
     transition: 0.35s ease;
-    border:0.1px solid var(--verde-claro) !important;
+    border: 0.1px solid var(--verde-claro) !important;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1345,12 +1334,13 @@ footer p {
         width: 100vw;
         height: 100vh;
         background: rgba(11, 28, 16, 0.99) !important;
+        -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         display: flex !important;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 150px 40px 40px 40px !important;
+        padding: 0px 40px 40px !important;
         transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
         z-index: 9999;
         overflow-y: auto;
@@ -1358,14 +1348,43 @@ footer p {
     }
 
     .menu-sidebar-header {
-        padding-top: 0 !important;
-        padding-bottom: 24px !important;
+        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 20px 8px 20px 8px !important;
+        margin-top: 110px !important;
+        margin-bottom: 8px;
+        border-bottom: 1px solid rgba(217, 79, 21, 0.25);
     }
 
-    .logo-area.mobile-menu-logo {
-        margin: 0 auto !important;
-        width: 100% !important;
-        justify-content: center !important;
+    .mobile-header-logo {
+        height: 76px;
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .mobile-header-title {
+        flex: 1;
+        text-align: center;
+        color: white;
+        font-family: 'Fraunces', serif;
+        font-size: 19px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .close-menu-btn {
+        position: static !important;
+        flex-shrink: 0;
+        background: transparent;
+        border: none;
+        color: #ffffff !important;
+        font-size: 32px;
+        cursor: pointer;
+        padding: 5px;
+        line-height: 1;
     }
 
     .navbar-collapse.show {
@@ -1500,13 +1519,14 @@ footer p {
 
 @media (max-width: 900px) {
     body {
-        padding-top: 100px;
+        padding-top: 0;
     }
 
     .hero {
-        padding: 40px 20px;
+        padding: 120px 20px 60px;
         text-align: center;
         justify-content: center;
+        min-height: 100vh;
     }
 
     .hero-content {
@@ -1532,7 +1552,7 @@ footer p {
 
 @media (max-width: 600px) {
     body {
-        padding-top: 100px;
+        padding-top: 0;
     }
 
     .logo-area {
@@ -1573,52 +1593,4 @@ footer p {
     .banner-tag {
         font-size: 13px;
     }
-}
-
-/* ================= MENÚ SIDEBAR MÓVIL (cabecera interna) ================= */
-.menu-sidebar-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 90px 24px 24px;
-    margin-bottom: 8px;
-    border-bottom: 1px solid rgba(217, 79, 21, 0.25);
-    text-align: center;
-}
-
-/* La X está fija al viewport, siempre visible en la esquina */
-.menu-sidebar-header .close-menu-btn {
-    position: fixed;
-    top: 28px;
-    right: 24px;
-}
-
-/* Logo en flujo normal, centrado por el flex del header */
-.logo-area.mobile-menu-logo {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    text-align: center;
-    display: flex;
-    position: relative;
-    left: auto;
-    transform: none;
-    top: auto;
-}
-
-.logo-area.mobile-menu-logo .logo-img {
-    height: 62px;
-    width: auto;
-}
-
-.logo-area.mobile-menu-logo .logo-text span {
-    font-size: 15px;
-    font-weight: 700;
-    color: white;
-    display: block;
-    text-align: center;
-    letter-spacing: 0.3px;
 }

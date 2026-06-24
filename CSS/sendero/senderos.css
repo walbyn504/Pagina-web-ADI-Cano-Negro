@@ -1182,7 +1182,7 @@ footer p {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 150px 40px 40px 40px !important;
+        padding: 0px 40px 40px !important;
         transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
         z-index: 9999;
         overflow-y: auto;
@@ -1290,41 +1290,42 @@ footer p {
     /* Menú sidebar móvil */
     .menu-sidebar-header {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        padding: 0 24px 24px !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 80px 8px 20px 8px !important;
         margin-bottom: 8px;
         border-bottom: 1px solid rgba(217, 79, 21, 0.25);
-        text-align: center;
     }
 
-    .menu-sidebar-header .close-menu-btn {
-        position: fixed;
-        top: 28px;
-        right: 24px;
-    }
-
-    .logo-area.mobile-menu-logo {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        text-align: center;
-        display: flex;
-        position: relative;
-        left: auto;
-        transform: none;
-        top: auto;
-        margin: 0 auto !important;
-        width: 100% !important;
-        justify-content: center !important;
-    }
-
-    .logo-area.mobile-menu-logo .logo-img {
-        height: 62px;
+    .mobile-header-logo {
+        height: 76px;
         width: auto;
+        flex-shrink: 0;
+    }
+
+    .mobile-header-title {
+        flex: 1;
+        text-align: center;
+        color: white;
+        font-family: 'Fraunces', serif;
+        font-size: 19px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .close-menu-btn {
+        position: static !important;
+        flex-shrink: 0;
+        background: transparent;
+        border: none;
+        color: #ffffff !important;
+        font-size: 32px;
+        cursor: pointer;
+        padding: 5px;
+        line-height: 1;
+        z-index: auto;
     }
 
     .logo-area.mobile-menu-logo .logo-text span {
@@ -1361,11 +1362,11 @@ footer p {
 
 @media (max-width: 900px) {
     body {
-        padding-top: 100px;
+        padding-top: 0;
     }
 
     .hero-senderos {
-        padding: 40px 20px;
+        padding: 120px 20px 60px;
         text-align: center;
         justify-content: center;
     }
@@ -1385,7 +1386,7 @@ footer p {
 
 @media (max-width: 600px) {
     body {
-        padding-top: 100px;
+        padding-top: 0;
     }
 
     .logo-area {

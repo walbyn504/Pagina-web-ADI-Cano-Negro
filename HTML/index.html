@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADI Caño Negro</title>
 
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/index.css?v=4">
     <link rel="stylesheet" href="../CSS/utlidades/efectos/efectoIdioma.css">
     <link rel="stylesheet" href="../CSS/utlidades/efectos/efectosGlobales.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -33,7 +33,8 @@
             <div class="container-fluid p-0">
 
                 <!-- BOTÓN HAMBURGUESA -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -42,28 +43,28 @@
 
                     <!-- Encabezado interno móvil -->
                     <div class="menu-sidebar-header d-lg-none">
-                        <!-- Logo apilado: imagen arriba, texto abajo -->
-                        <div class="logo-area mobile-menu-logo">
-                            <img src="../img/LogoADI.png" alt="Logo ADI Caño Negro" class="logo-img">
-                            <div class="logo-text">
-                                <span>ADI Caño Negro</span>
-                            </div>
-                        </div>
-                        <!-- Botón X para cerrar -->
-                        <button class="close-menu-btn" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#menuNav">
+                        <img src="../img/LogoADI.png" alt="Logo ADI Caño Negro" class="mobile-header-logo">
+                        <span class="mobile-header-title">ADI Caño Negro</span>
+                        <button class="close-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                            aria-label="Cerrar menú">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
 
                     <ul class="navbar-nav align-items-lg-center">
-                        <li class="nav-item active-page"><a class="nav-link active" href="#" data-i18n="nav_inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../HTML/Senderos/senderos.html" data-i18n="nav_senderos">Sendero</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../HTML/comunidad/comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../HTML/floraFauna/floraFauna.html" data-i18n="nav_flora_fauna">Flora y Fauna</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav_emprendedores">Emprendedores</a></li>
+                        <li class="nav-item active-page"><a class="nav-link active" href="#"
+                                data-i18n="nav_inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../HTML/Senderos/senderos.html"
+                                data-i18n="nav_senderos">Sendero</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../HTML/comunidad/comunidad.html"
+                                data-i18n="nav_comunidad">Comunidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../HTML/floraFauna/floraFauna.html"
+                                data-i18n="nav_flora_fauna">Flora y Fauna</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"
+                                data-i18n="nav_emprendedores">Emprendedores</a></li>
                         <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav_videos">Videos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav_bandera">Bandera Azul Ecológica</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav_bandera">Bandera Azul
+                                Ecológica</a></li>
                     </ul>
 
                     <!-- IDIOMA -->
@@ -361,7 +362,7 @@
     </footer>
 
     <div class="fab-container">
-        <button class="fab-main" id="fabToggle">
+        <button class="fab-main" id="fabToggle" aria-label="Abrir acciones rápidas">
             <i class="fa-solid fa-plus"></i>
         </button>
         <div class="fab-options">
@@ -381,7 +382,7 @@
     <!-- ================= MODAL AYUDA ================= -->
     <div class="help-modal" id="helpModal">
         <div class="help-content">
-            <button class="close-modal" id="closeHelp">
+            <button class="close-modal" id="closeHelp" aria-label="Cerrar ayuda">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <h2 data-i18n="help_title">¿En qué podemos ayudarte?</h2>
