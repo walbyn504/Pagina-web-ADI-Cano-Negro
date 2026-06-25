@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADI Caño Negro</title>
 
-    <link rel="stylesheet" href="../CSS/index.css?v=4">
-    <link rel="stylesheet" href="../CSS/utlidades/efectos/efectoIdioma.css">
-    <link rel="stylesheet" href="../CSS/utlidades/efectos/efectosGlobales.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/index.css?v=5">
+    <link rel="stylesheet" href="../CSS/utlidades/efectos/efectoIdioma.css">
+    <link rel="stylesheet" href="../CSS/utlidades/efectos/efectosGlobales.css">
 </head>
 
 <body data-page="index">
@@ -39,7 +39,7 @@
                 </button>
 
                 <!-- MENÚ -->
-                <div class="collapse navbar-collapse justify-content-end" id="menuNav">
+                <div class="collapse navbar-collapse justify-content-lg-end" id="menuNav">
 
                     <!-- Encabezado interno móvil -->
                     <div class="menu-sidebar-header d-lg-none">
@@ -112,26 +112,28 @@
 
     <!-- ================= ABOUT ================= -->
     <section class="about-refuge reveal" id="refugio">
-        <div class="container about-container">
-            <div class="about-text reveal">
-                <span class="section-label" data-i18n="about_label">Sobre el refugio</span>
-                <h2 data-i18n="about_title">Refugio de Vida Silvestre Caño Negro</h2>
-                <p data-i18n="about_text_1">
-                    El Refugio de Vida Silvestre Caño Negro es uno de los humedales
-                    más importantes de Costa Rica y Centroamérica. Su riqueza ecológica
-                    lo convierte en un lugar esencial para la protección de aves,
-                    reptiles, mamíferos y una amplia diversidad de flora.
-                </p>
-                <p data-i18n="about_text_2">
-                    Además de su valor ambiental, Caño Negro representa una oportunidad
-                    para el ecoturismo, la investigación y el fortalecimiento de la comunidad
-                    a través de un desarrollo vinculado con la naturaleza.
-                </p>
-            </div>
+        <div class="container">
+            <div class="row g-5 align-items-center about-container">
+                <div class="col-12 col-lg-6 about-text reveal">
+                    <span class="section-label" data-i18n="about_label">Sobre el refugio</span>
+                    <h2 data-i18n="about_title">Refugio de Vida Silvestre Caño Negro</h2>
+                    <p data-i18n="about_text_1">
+                        El Refugio de Vida Silvestre Caño Negro es uno de los humedales
+                        más importantes de Costa Rica y Centroamérica. Su riqueza ecológica
+                        lo convierte en un lugar esencial para la protección de aves,
+                        reptiles, mamíferos y una amplia diversidad de flora.
+                    </p>
+                    <p data-i18n="about_text_2">
+                        Además de su valor ambiental, Caño Negro representa una oportunidad
+                        para el ecoturismo, la investigación y el fortalecimiento de la comunidad
+                        a través de un desarrollo vinculado con la naturaleza.
+                    </p>
+                </div>
 
-            <div class="about-image reveal">
-                <img src="../img/index/garzaBlanca.JPG" alt="Refugio Caño Negro">
-                <small class="image-credit" data-i18n="about_credit">Garza Blanca (Ardea alba)</small>
+                <div class="col-12 col-lg-6 about-image reveal">
+                    <img src="../img/index/garzaBlanca.JPG" alt="Refugio Caño Negro">
+                    <small class="image-credit" data-i18n="about_credit">Garza Blanca (Ardea alba)</small>
+                </div>
             </div>
         </div>
     </section>
@@ -146,18 +148,24 @@
                 y el valor de su entorno natural.
             </p>
 
-            <div class="stats-grid">
-                <div class="stat-box reveal">
-                    <h3 class="counter" data-target="300" data-suffix="+">0</h3>
-                    <p data-i18n="stats_1">Especies de aves</p>
+            <div class="stats-grid row g-4 justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="stat-box reveal">
+                        <h3 class="counter" data-target="300" data-suffix="+">0</h3>
+                        <p data-i18n="stats_1">Especies de aves</p>
+                    </div>
                 </div>
-                <div class="stat-box reveal">
-                    <h3 class="counter" data-target="100" data-suffix="%">0</h3>
-                    <p data-i18n="stats_2">Compromiso con la conservación</p>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="stat-box reveal">
+                        <h3 class="counter" data-target="100" data-suffix="%">0</h3>
+                        <p data-i18n="stats_2">Compromiso con la conservación</p>
+                    </div>
                 </div>
-                <div class="stat-box reveal">
-                    <h3 class="counter" data-target="1">0</h3>
-                    <p data-i18n="stats_3">Humedal de gran importancia ecológica</p>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="stat-box reveal">
+                        <h3 class="counter" data-target="1">0</h3>
+                        <p data-i18n="stats_3">Humedal de gran importancia ecológica</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -173,103 +181,109 @@
                 natural, social y cultural de Caño Negro.
             </p>
 
-            <div class="cards">
-                <a href="floraFauna/floraFauna.html" class="card reveal">
-                    <div class="card-image">
-                        <img src="../img/index/jabiru.jpg" alt="Flora y fauna">
-                        <span class="card-tag" data-i18n="card_tag_1">Naturaleza</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="card_title_1">Flora y Fauna</h3>
-                        <p data-i18n="card_desc_1">Descubre especies emblemáticas y la riqueza biológica que distingue a
-                            la zona.</p>
-                        <span class="card-link">
-                            <span data-i18n="card_link">Ver más información</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
+            <div class="cards row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="floraFauna/floraFauna.html" class="card-item reveal">
+                        <div class="card-image">
+                            <img src="../img/index/jabiru.jpg" alt="Flora y fauna">
+                            <span class="card-tag" data-i18n="card_tag_1">Naturaleza</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 data-i18n="card_title_1">Flora y Fauna</h3>
+                            <p data-i18n="card_desc_1">Descubre especies emblemáticas y la riqueza biológica que distingue a la zona.</p>
+                            <span class="card-link">
+                                <span data-i18n="card_link">Ver más información</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
 
-                <a href="../HTML/Senderos/senderos.html" class="card reveal">
-                    <div class="card-image">
-                        <img src="../img/index/sendero.jpg" alt="Senderos naturales">
-                        <span class="card-tag" data-i18n="card_tag_2">Aventura</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="card_title_2">Senderos Naturales</h3>
-                        <p data-i18n="card_desc_2">Recorre espacios llenos de vegetación, paisajes y conexión con el
-                            entorno.</p>
-                        <span class="card-link">
-                            <span data-i18n="card_link">Ver más información</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="../HTML/Senderos/senderos.html" class="card-item reveal">
+                        <div class="card-image">
+                            <img src="../img/index/sendero.jpg" alt="Senderos naturales">
+                            <span class="card-tag" data-i18n="card_tag_2">Aventura</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 data-i18n="card_title_2">Senderos Naturales</h3>
+                            <p data-i18n="card_desc_2">Recorre espacios llenos de vegetación, paisajes y conexión con el entorno.</p>
+                            <span class="card-link">
+                                <span data-i18n="card_link">Ver más información</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
 
-                <a href="bandera.html" class="card reveal">
-                    <div class="card-image">
-                        <img src="../img/index/banderaAzul.jpg" alt="Bandera Azul Ecológica">
-                        <span class="card-tag" data-i18n="card_tag_3">Sostenibilidad</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="card_title_3">Bandera Azul Ecológica</h3>
-                        <p data-i18n="card_desc_3">Conoce iniciativas ambientales que fortalecen el compromiso de la
-                            comunidad.</p>
-                        <span class="card-link">
-                            <span data-i18n="card_link">Ver más información</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="bandera.html" class="card-item reveal">
+                        <div class="card-image">
+                            <img src="../img/index/banderaAzul.jpg" alt="Bandera Azul Ecológica">
+                            <span class="card-tag" data-i18n="card_tag_3">Sostenibilidad</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 data-i18n="card_title_3">Bandera Azul Ecológica</h3>
+                            <p data-i18n="card_desc_3">Conoce iniciativas ambientales que fortalecen el compromiso de la comunidad.</p>
+                            <span class="card-link">
+                                <span data-i18n="card_link">Ver más información</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
 
-                <a href="emprendedores.html" class="card reveal">
-                    <div class="card-image">
-                        <img src="../img/index/emprendedores.jpeg" alt="Emprendedores">
-                        <span class="card-tag" data-i18n="card_tag_4">Comunidad</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="card_title_4">Emprendedores</h3>
-                        <p data-i18n="card_desc_4">Apoya iniciativas locales y conoce proyectos impulsados por la
-                            comunidad.</p>
-                        <span class="card-link">
-                            <span data-i18n="card_link">Ver más información</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="emprendedores.html" class="card-item reveal">
+                        <div class="card-image">
+                            <img src="../img/index/emprendedores.jpeg" alt="Emprendedores">
+                            <span class="card-tag" data-i18n="card_tag_4">Comunidad</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 data-i18n="card_title_4">Emprendedores</h3>
+                            <p data-i18n="card_desc_4">Apoya iniciativas locales y conoce proyectos impulsados por la comunidad.</p>
+                            <span class="card-link">
+                                <span data-i18n="card_link">Ver más información</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
 
-                <a href="../HTML/comunidad/comunidad.html" class="card reveal">
-                    <div class="card-image">
-                        <img src="../img/comunidad/vidaComunitaria/fiesta.jpg" alt="Comunidad">
-                        <span class="card-tag" data-i18n="card_tag_5">Cultura</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="card_title_5">Comunidad</h3>
-                        <p data-i18n="card_desc_5">Conoce las tradiciones, costumbres y vida cotidiana que dan
-                            identidad a Caño Negro.</p>
-                        <span class="card-link">
-                            <span data-i18n="card_link">Ver más información</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="../HTML/comunidad/comunidad.html" class="card-item reveal">
+                        <div class="card-image">
+                            <img src="../img/comunidad/vidaComunitaria/fiesta.jpg" alt="Comunidad">
+                            <span class="card-tag" data-i18n="card_tag_5">Cultura</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 data-i18n="card_title_5">Comunidad</h3>
+                            <p data-i18n="card_desc_5">Conoce las tradiciones, costumbres y vida cotidiana que dan identidad a Caño Negro.</p>
+                            <span class="card-link">
+                                <span data-i18n="card_link">Ver más información</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
 
                 <!-- TODO: reemplazar la imagen por una miniatura real de video cuando esté disponible -->
-                <a href="#" class="card reveal">
-                    <div class="card-image">
-                        <img src="../img/index/fondo.jpg" alt="Videos">
-                        <span class="card-tag" data-i18n="card_tag_6">Videos</span>
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="card_title_6">Videos</h3>
-                        <p data-i18n="card_desc_6">Mira videos sobre el refugio, sus paisajes y la vida en la
-                            comunidad.</p>
-                        <span class="card-link">
-                            <span data-i18n="card_link">Ver más información</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#" class="card-item reveal">
+                        <div class="card-image">
+                            <img src="../img/index/fondo.jpg" alt="Videos">
+                            <span class="card-tag" data-i18n="card_tag_6">Videos</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 data-i18n="card_title_6">Videos</h3>
+                            <p data-i18n="card_desc_6">Mira videos sobre el refugio, sus paisajes y la vida en la comunidad.</p>
+                            <span class="card-link">
+                                <span data-i18n="card_link">Ver más información</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -287,7 +301,7 @@
     </section>
 
     <footer>
-        <div class="container footer-grid">
+        <div class="footer-grid">
 
             <div class="footer-col footer-brand">
                 <img src="../img/Logo.png" alt="Logo ADI Caño Negro" class="footer-logo">
@@ -319,12 +333,10 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
-                        <!-- TODO: reemplazar por el correo real de la ADI -->
                         <a href="mailto:info@adicanonegro.org">info@adicanonegro.org</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <!-- TODO: reemplazar por el teléfono real de la ADI -->
                         <a href="tel:+50600000000">+506 0000-0000</a>
                     </li>
                 </ul>
@@ -356,7 +368,7 @@
 
         </div>
 
-        <div class="container footer-bottom">
+        <div class="footer-bottom">
             <p data-i18n="footer_text">© 2026 ADI Caño Negro - Todos los derechos reservados</p>
         </div>
     </footer>

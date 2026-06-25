@@ -45,6 +45,30 @@
     box-sizing: border-box;
 }
 
+/* Bootstrap Reboot usa selectores de elemento (especificidad 0,0,1) que
+   ganan sobre el * universal (0,0,0). Estos overrides los neutralizan. */
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -446,15 +470,6 @@ nav a.active,
     background: var(--fondo);
 }
 
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.about-text {
-    flex: 1;
-}
 
 .about-text h2 {
     font-size: 38px;
@@ -467,10 +482,6 @@ nav a.active,
     font-size: 17px;
     margin-bottom: 18px;
     line-height: 1.8;
-}
-
-.about-image {
-    flex: 1;
 }
 
 .about-image img {
@@ -500,9 +511,6 @@ nav a.active,
 
 .stats-grid {
     margin-top: 45px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
 }
 
 .stat-box {
@@ -543,12 +551,9 @@ nav a.active,
 
 .cards {
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
 }
 
-.card {
+.card-item {
     background: white;
     border-radius: 24px;
     overflow: hidden;
@@ -558,9 +563,10 @@ nav a.active,
     display: flex;
     flex-direction: column;
     height: 100%;
+    text-decoration: none;
 }
 
-.card:hover {
+.card-item:hover {
     transform: translateY(-8px);
     box-shadow: var(--sombra-hover);
     border-color: rgba(42, 96, 56, 0.18);
@@ -578,7 +584,7 @@ nav a.active,
     transition: 0.45s ease;
 }
 
-.card:hover .card-image img {
+.card-item:hover .card-image img {
     transform: scale(1.06);
 }
 
@@ -627,7 +633,7 @@ nav a.active,
     margin-top: auto;
 }
 
-.card:hover .card-link {
+.card-item:hover .card-link {
     color: var(--naranja-hover);
     gap: 12px;
 }
@@ -790,6 +796,9 @@ footer {
 }
 
 .footer-grid {
+    width: min(1200px, 90%);
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: 1.1fr 1.6fr 1fr 0.7fr;
     gap: 40px;
@@ -911,6 +920,9 @@ footer {
 }
 
 .footer-bottom {
+    width: min(1200px, 90%);
+    margin-left: auto;
+    margin-right: auto;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
     padding: 26px 0;
     text-align: center;
@@ -1328,23 +1340,29 @@ footer p {
     }
 
     .navbar-collapse {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100vw;
-        height: 100vh;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100dvh !important;
         background: rgba(11, 28, 16, 0.99) !important;
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         display: flex !important;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0px 40px 40px !important;
-        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-        z-index: 9999;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        padding: 0 40px 40px !important;
+        transform: translateX(100vw) !important;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        z-index: 99999 !important;
         overflow-y: auto;
         border-left: 3px solid rgba(217, 79, 21, 0.55);
+    }
+
+    /* Ocultar FAB cuando el menú está abierto */
+    body:has(#menuNav.show) .fab-container {
+        display: none !important;
     }
 
     .menu-sidebar-header {
@@ -1354,7 +1372,7 @@ footer p {
         align-items: center !important;
         justify-content: space-between !important;
         padding: 20px 8px 20px 8px !important;
-        margin-top: 110px !important;
+        margin-top: 20px !important;
         margin-bottom: 8px;
         border-bottom: 1px solid rgba(217, 79, 21, 0.25);
     }
@@ -1388,13 +1406,13 @@ footer p {
     }
 
     .navbar-collapse.show {
-        right: 0 !important;
+        transform: translateX(0) !important;
     }
 
     .navbar-collapse.collapsing {
-        right: -100%;
-        height: 100vh !important;
-        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        transform: translateX(100vw) !important;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        height: 100dvh !important;
     }
 
     .close-menu-btn,
@@ -1537,16 +1555,8 @@ footer p {
         margin-inline: auto;
     }
 
-    .about-container {
-        flex-direction: column;
-    }
-
     .banner-content h2 {
         font-size: 36px;
-    }
-
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1581,10 +1591,6 @@ footer p {
         height: 220px;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
     .banner-content p {
         font-size: 17px;
     }
@@ -1592,5 +1598,154 @@ footer p {
     .hero-tag,
     .banner-tag {
         font-size: 13px;
+    }
+}
+
+/* ── 768px: iPad Mini, iPad Air, Surface Pro 7 portrait ── */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .about-container {
+        gap: 28px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+}
+
+/* ── 480px: Surface Duo, Samsung A51/71, Galaxy S20 Ultra ── */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .stat-box h3 {
+        font-size: 36px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── 390px: iPhone 12 Pro, iPhone 14 Pro Max, Pixel 7 ── */
+@media (max-width: 390px) {
+    .hero {
+        padding: 110px 16px 50px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .logo-img {
+        height: 44px;
+    }
+
+    .logo-text span {
+        font-size: 13px;
+    }
+
+    .section-title,
+    .about-text h2,
+    .banner-content h2 {
+        font-size: 24px;
+    }
+
+    .section-subtitle,
+    .about-text p {
+        font-size: 15px;
+    }
+
+    .card-image img {
+        height: 190px;
+    }
+}
+
+/* ── 344px: Galaxy Z Fold 5 (plegado), pantallas muy estrechas ── */
+@media (max-width: 344px) {
+    .hero {
+        padding: 100px 12px 40px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .hero-tag,
+    .banner-tag {
+        font-size: 11px;
+        padding: 5px 12px;
+        letter-spacing: 1px;
+    }
+
+    .location {
+        font-size: 13px;
+    }
+
+    .logo-img {
+        height: 36px;
+    }
+
+    .logo-text span {
+        font-size: 11px;
+    }
+
+    .section-title,
+    .about-text h2,
+    .banner-content h2 {
+        font-size: 20px;
+    }
+
+    .stat-box h3 {
+        font-size: 30px;
+    }
+
+    .banner-content p,
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .card-image img {
+        height: 170px;
+    }
+}
+
+/* ── Pantallas cortas: Nest Hub (1024×600), Nest Hub Max (1280×800) ── */
+@media (max-height: 700px) and (min-width: 900px) {
+    .hero {
+        min-height: 100dvh;
+        padding: 90px 40px 30px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .hero-tag {
+        margin-bottom: 12px;
     }
 }

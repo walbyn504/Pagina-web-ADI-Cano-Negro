@@ -20,6 +20,10 @@
     box-sizing:border-box;
 }
 
+ul, ol { padding: 0; margin: 0; list-style: none; }
+p, h1, h2, h3, h4, h5, h6 { margin-bottom: 0; }
+a { text-decoration: none; color: inherit; }
+
 html{
     scroll-behavior:smooth;
 }
@@ -785,6 +789,85 @@ footer p{
         opacity:1;
         transform:translateY(0);
     }
+}
+
+/* ================= NAVBAR MÓVIL ================= */
+    /* Ocultar FAB cuando menú abierto */
+    body:has(#menuNav.show) .fab-container {
+        display: none !important;
+    }
+@media (max-width: 991px) {
+    .main-header { padding: 0 24px; min-height: 80px; }
+    .logo-area { margin-right: auto; }
+
+    .navbar-toggler {
+        display: flex !important;
+        margin-left: auto;
+        border: 2px solid rgba(217, 79, 21, 0.70);
+        border-radius: 8px;
+        padding: 6px 10px;
+        background: rgba(217, 79, 21, 0.08);
+        cursor: pointer;
+        transition: 0.25s ease;
+    }
+    .navbar-toggler:hover { border-color: var(--naranja-acento); background: rgba(217, 79, 21, 0.14); }
+
+    .navbar-collapse {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100dvh !important;
+        transform: translateX(100vw) !important;
+        background: rgba(11, 28, 16, 0.99) !important;
+        backdrop-filter: blur(15px);
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        padding: 0 40px 40px !important;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        z-index: 99999 !important;
+        overflow-y: auto;
+        border-left: 3px solid rgba(217, 79, 21, 0.55);
+    }
+    .navbar-collapse.show { transform: translateX(0) !important; }
+    .navbar-collapse.collapsing { transform: translateX(100vw) !important; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important; height: 100dvh !important; }
+
+    .menu-sidebar-header {
+        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 20px 8px !important;
+        margin-top: 20px !important;
+        margin-bottom: 8px;
+        border-bottom: 1px solid rgba(217, 79, 21, 0.25);
+    }
+    .mobile-header-logo { height: 60px; width: auto; flex-shrink: 0; }
+    .mobile-header-title { flex: 1; text-align: center; color: white; font-size: 17px; font-weight: 700; white-space: nowrap; }
+    .close-menu-btn { position: static !important; flex-shrink: 0; background: transparent; border: none; color: #fff !important; font-size: 28px; cursor: pointer; padding: 5px; line-height: 1; }
+
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+        width: 100%;
+        max-width: 320px;
+        margin-top: 10px;
+        padding: 0;
+        text-align: center;
+    }
+    .navbar-nav li { width: 100%; border-bottom: 1px solid rgba(217, 79, 21, 0.18); border-radius: 10px; transition: background 0.2s; }
+    .navbar-nav li:hover { background: rgba(217, 79, 21, 0.10); border-bottom-color: rgba(217, 79, 21, 0.35); }
+    .navbar-nav li.active-page { background: rgba(217, 79, 21, 0.13); border-left: 3px solid var(--naranja-acento); border-radius: 10px; }
+    .nav-link { display: block; padding: 14px 0 !important; font-size: 17px !important; color: #fff !important; font-weight: 600; }
+    .nav-link:hover { color: var(--naranja-acento) !important; }
+
+    .language-dropdown { margin-left: 0; margin-top: 28px; width: 100%; max-width: 220px; }
+    .language-toggle { width: 100%; justify-content: space-between; background: rgba(217, 79, 21, 0.08); border: 1px solid rgba(217, 79, 21, 0.45); border-radius: 12px; }
+    .language-menu { width: 100%; position: relative; top: 5px; right: auto; box-shadow: none; background: rgba(11, 28, 16, 0.97); }
 }
 
 /* ================= RESPONSIVE ================= */

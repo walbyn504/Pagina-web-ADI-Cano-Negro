@@ -43,6 +43,28 @@
     box-sizing: border-box;
 }
 
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 html {
     scroll-padding-top: 100px;
     width: 100%;
@@ -476,9 +498,6 @@ nav a.active,
 
 .info-grid {
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
 }
 
 .info-box {
@@ -1171,32 +1190,37 @@ footer p {
     }
 
     .navbar-collapse {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100vw;
-        height: 100vh;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100dvh !important;
+        transform: translateX(100vw) !important;
         background: rgba(11, 28, 16, 0.99) !important;
         backdrop-filter: blur(15px);
         display: flex !important;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
         padding: 0px 40px 40px !important;
-        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-        z-index: 9999;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        z-index: 99999 !important;
         overflow-y: auto;
         border-left: 3px solid rgba(217, 79, 21, 0.55);
     }
 
     .navbar-collapse.show {
-        right: 0 !important;
+        transform: translateX(0) !important;
+    }
+
+    body:has(#menuNav.show) .fab-container {
+        display: none !important;
     }
 
     .navbar-collapse.collapsing {
-        right: -100%;
-        width: 100%;
-        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        transform: translateX(100vw) !important;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        height: 100dvh !important;
     }
 
     .close-menu-btn {
@@ -1421,5 +1445,132 @@ footer p {
     .section-nav-links a {
         width: 100%;
         justify-content: center;
+    }
+}
+
+/* ── 768px: iPad Mini, iPad Air, Surface Pro 7 portrait ── */
+@media (max-width: 768px) {
+    .hero-senderos h1 {
+        font-size: 50px;
+    }
+
+}
+
+/* ── 480px: Surface Duo, Samsung A51/71, Galaxy S20 Ultra ── */
+@media (max-width: 480px) {
+    .hero-senderos h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .section-nav-links {
+        gap: 10px;
+    }
+
+    .section-nav-links a {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+}
+
+/* ── 390px: iPhone 12 Pro, iPhone 14 Pro Max, Pixel 7 ── */
+@media (max-width: 390px) {
+    .hero-senderos {
+        padding: 110px 16px 50px;
+    }
+
+    .hero-senderos h1 {
+        font-size: 32px;
+    }
+
+    .logo-img {
+        height: 44px;
+    }
+
+    .logo-text span {
+        font-size: 13px;
+    }
+
+    .section-title,
+    .banner-content h2 {
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+        font-size: 15px;
+    }
+}
+
+/* ── 344px: Galaxy Z Fold 5 (plegado), pantallas muy estrechas ── */
+@media (max-width: 344px) {
+    .hero-senderos {
+        padding: 100px 12px 40px;
+    }
+
+    .hero-senderos h1 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .hero-tag,
+    .banner-tag {
+        font-size: 11px;
+        padding: 5px 12px;
+        letter-spacing: 1px;
+    }
+
+    .location {
+        font-size: 13px;
+    }
+
+    .logo-img {
+        height: 36px;
+    }
+
+    .logo-text span {
+        font-size: 11px;
+    }
+
+    .section-title,
+    .banner-content h2 {
+        font-size: 20px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+
+    .section-nav-links a {
+        font-size: 12px;
+        padding: 9px 12px;
+    }
+}
+
+/* ── Pantallas cortas: Nest Hub (1024×600), Nest Hub Max (1280×800) ── */
+@media (max-height: 700px) and (min-width: 900px) {
+    .hero-senderos {
+        min-height: 100dvh;
+        padding: 90px 40px 30px;
+    }
+
+    .hero-senderos h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .hero-tag {
+        margin-bottom: 12px;
     }
 }

@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flora y Fauna - Caño Negro</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../../CSS/floraFauna/floraFauna.css">
     <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectoIdioma.css">
     <link rel="stylesheet" href="../../CSS/utlidades/efectos/floraFauna/floraFauna.css">
     <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectosGlobales.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body data-page="floraFauna">
@@ -27,27 +30,41 @@
             </div>
         </div>
 
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
-                <li><a href="../Senderos/senderos.html" data-i18n="nav_senderos">Senderos</a></li>
-                <li><a href="../comunidad/comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
-                <li><a href="#" class="active" aria-current="page" data-i18n="nav_flora">Flora y Fauna</a></li>
-                <li><a href="../comunidad/emprendedores.html" data-i18n="nav_emprendedores">Emprendedores</a></li>
-                <li><a href="../comunidad/videos.html" data-i18n="nav_videos">Videos</a></li>
-                <li><a href="../comunidad/BanderaAzul.html" data-i18n="nav_bandera">Bandera Azul Ecológica</a></li>
-            </ul>
-
-            <div class="language-dropdown">
-                <button type="button" class="language-toggle" id="languageToggle" aria-label="Selector de idioma">
-                    <span id="currentLanguage">ES</span>
-                    <i class="fa-solid fa-chevron-down"></i>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid p-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="language-menu" id="languageMenu">
-                    <button type="button" class="language-option active" data-lang="es">ES</button>
-                    <button type="button" class="language-option" data-lang="en">EN</button>
-                    <button type="button" class="language-option" data-lang="fr">FR</button>
+                <div class="collapse navbar-collapse justify-content-lg-end" id="menuNav">
+                    <div class="menu-sidebar-header d-lg-none">
+                        <img src="../../img/Logo.png" alt="Logo ADI Caño Negro" class="mobile-header-logo">
+                        <span class="mobile-header-title">ADI Caño Negro</span>
+                        <button class="close-menu-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#menuNav" aria-label="Cerrar menú">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Senderos/senderos.html" data-i18n="nav_senderos">Senderos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../comunidad/comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
+                        <li class="nav-item active-page"><a class="nav-link active" href="#" data-i18n="nav_flora">Flora y Fauna</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav_emprendedores">Emprendedores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav_videos">Videos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav_bandera">Bandera Azul Ecológica</a></li>
+                    </ul>
+                    <div class="language-dropdown ms-lg-3">
+                        <button type="button" class="language-toggle" id="languageToggle">
+                            <span id="currentLanguage">ES</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="language-menu" id="languageMenu">
+                            <button class="language-option active" data-lang="es">ES</button>
+                            <button class="language-option" data-lang="en">EN</button>
+                            <button class="language-option" data-lang="fr">FR</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -779,6 +796,7 @@
     <script src="../../JS/utilidades/chatIA.js"></script>
     <script src="../../JS/utilidades/efectos.js"></script>
     <script src="../../JS/utilidades/floraFauna/floraFauna.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

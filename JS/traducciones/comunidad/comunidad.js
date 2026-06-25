@@ -13,6 +13,7 @@ window.translations.comunidad = {
         comunidad_hero_tag: "Cultura, tradición y naturaleza",
         comunidad_hero_title: "Comunidad de <span><br> Caño Negro </span>",
         comunidad_hero_desc: "Un lugar donde la vida comunitaria, el trabajo en conjunto y el respeto por la naturaleza forman parte de la identidad de cada familia.",
+        comunidad_hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         comunidad_nav_pesca: "Pesca",
         comunidad_nav_vida: "Vida comunitaria",
@@ -64,6 +65,11 @@ window.translations.comunidad = {
         comunidad_closing_title: "Una comunidad que conserva su esencia mientras cuida su entorno natural",
         comunidad_closing_desc: "Conocer Caño Negro también es conocer a su gente, sus costumbres, su historia y la forma en que conviven con la naturaleza.",
 
+        footer_about: "Asociación de Desarrollo Integral de Caño Negro, trabajando por la conservación y el desarrollo sostenible de nuestra comunidad.",
+        footer_links_title: "Enlaces rápidos",
+        footer_contact_title: "Contacto",
+        footer_address: "Caño Negro, Los Chiles, Alajuela, Costa Rica",
+        footer_social_title: "Síguenos",
         footer_text: "© 2026 ADI Caño Negro - Todos los derechos reservados"
     },
 
@@ -79,6 +85,7 @@ window.translations.comunidad = {
         comunidad_hero_tag: "Culture, tradition and nature",
         comunidad_hero_title: "Community of <span><br> Caño Negro </span>",
         comunidad_hero_desc: "A place where community life, teamwork, and respect for nature are part of every family's identity.",
+        comunidad_hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         comunidad_nav_pesca: "Fishing",
         comunidad_nav_vida: "Community life",
@@ -130,6 +137,11 @@ window.translations.comunidad = {
         comunidad_closing_title: "A community that preserves its essence while caring for its natural surroundings",
         comunidad_closing_desc: "Getting to know Caño Negro also means getting to know its people, customs, history, and the way they live alongside nature.",
 
+        footer_about: "Caño Negro Community Development Association, working for conservation and the sustainable development of our community.",
+        footer_links_title: "Quick Links",
+        footer_contact_title: "Contact",
+        footer_address: "Caño Negro, Los Chiles, Alajuela, Costa Rica",
+        footer_social_title: "Follow Us",
         footer_text: "© 2026 ADI Caño Negro - All rights reserved"
     },
 
@@ -145,6 +157,7 @@ window.translations.comunidad = {
         comunidad_hero_tag: "Culture, tradition et nature",
         comunidad_hero_title: "Communauté de <span><br> Caño Negro </span>",
         comunidad_hero_desc: "Un lieu où la vie communautaire, le travail collectif et le respect de la nature font partie de l'identité de chaque famille.",
+        comunidad_hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         comunidad_nav_pesca: "Pêche",
         comunidad_nav_vida: "Vie communautaire",
@@ -196,6 +209,11 @@ window.translations.comunidad = {
         comunidad_closing_title: "Une communauté qui préserve son essence tout en prenant soin de son environnement naturel",
         comunidad_closing_desc: "Connaître Caño Negro, c'est aussi connaître ses habitants, leurs coutumes, leur histoire et la façon dont ils vivent aux côtés de la nature.",
 
+        footer_about: "Association de Développement Intégral de Caño Negro, œuvrant pour la conservation et le développement durable de notre communauté.",
+        footer_links_title: "Liens rapides",
+        footer_contact_title: "Contact",
+        footer_address: "Caño Negro, Los Chiles, Alajuela, Costa Rica",
+        footer_social_title: "Suivez-nous",
         footer_text: "© 2026 ADI Caño Negro - Tous droits réservés"
     }
 };
