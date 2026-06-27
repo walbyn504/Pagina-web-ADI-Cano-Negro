@@ -104,4 +104,16 @@ document.addEventListener("DOMContentLoaded", () => {
     updateParallax();
     activateHoverEffects();
     activateSmoothAnchor();
+
+    const activePageLink = document.querySelector('.nav-item.active-page .nav-link');
+    if (activePageLink) {
+        activePageLink.addEventListener('click', (e) => {
+            const menu = document.getElementById('menuNav');
+            if (menu && menu.classList.contains('show')) {
+                e.preventDefault();
+                const closeBtn = document.querySelector('.close-menu-btn');
+                if (closeBtn) closeBtn.click();
+            }
+        });
+    }
 });

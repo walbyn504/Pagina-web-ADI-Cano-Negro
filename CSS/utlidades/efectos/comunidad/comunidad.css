@@ -98,7 +98,7 @@
 .section-title-left.show::after {
     content: "";
     display: block;
-    width: 550px;
+    width: min(550px, 100%);
     height: 4px;
     margin: 14px 0 0;
     border-radius: 999px;

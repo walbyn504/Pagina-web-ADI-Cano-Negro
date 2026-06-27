@@ -629,7 +629,7 @@ ul {
     cursor: pointer;
     transition: all 0.3s ease;
     flex-shrink: 0;
-    box-shadow: 0 0 18px rgba(217, 79, 21, 0.15);
+    box-shadow: -5px 0 14px rgba(0,0,0,0.55), 0 0 20px rgba(217, 79, 21, 0.22);
 }
 
 .chat-ia-toggle:hover {
@@ -717,7 +717,7 @@ ul {
     }
 
     .hero-senderos {
-        padding: 120px 20px 60px;
+        padding: 120px 28px 60px;
         text-align: center;
         justify-content: center;
     }
@@ -798,7 +798,7 @@ ul {
 /* ── 390px: iPhone 12 Pro, iPhone 14 Pro Max, Pixel 7 ── */
 @media (max-width: 390px) {
     .hero-senderos {
-        padding: 110px 16px 50px;
+        padding: 110px 24px 50px;
     }
 
     .hero-senderos h1 {
@@ -818,7 +818,7 @@ ul {
 /* ── 344px: Galaxy Z Fold 5 (plegado), pantallas muy estrechas ── */
 @media (max-width: 344px) {
     .hero-senderos {
-        padding: 100px 12px 40px;
+        padding: 100px 20px 40px;
     }
 
     .hero-senderos h1 {

@@ -451,26 +451,23 @@ ul {
 .fab-main {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    background: #1f4d2e;
+    border-radius: 22px;
+    background: rgba(20, 40, 20, 0.95);
     color: #ffffff;
-    border: none;
+    border: 1.5px solid rgba(217, 79, 21, 0.8);
     font-size: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 18px rgba(217, 79, 21, 0.15);
     transition: 0.3s ease;
 }
 
 .fab-main:hover {
-    background: #ffffff;
-    color: #1f4d2e;
-}
-
-.fab-main:hover {
-    transform: scale(1.1);
+    background: rgba(30, 55, 30, 0.98);
+    box-shadow: 0 0 25px rgba(217, 79, 21, 0.3);
+    transform: translateY(-2px);
 }
 
 /* ICONO ROTACIÓN */
@@ -636,16 +633,18 @@ ul {
 .chat-ia-toggle {
     width: 18px;
     height: 380px;
-    border: none;
-    border-radius: 16px 0 0 16px;
-    background: #878787;
-    color: #000000;
+    border: 2px solid rgba(217, 79, 21, 0.95);
+    border-right: none;
+    border-radius: 18px 0 0 18px;
+    background: rgba(20, 40, 20, 0.95);
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: 0.25s ease;
     flex-shrink: 0;
+    box-shadow: -5px 0 14px rgba(0,0,0,0.55), 0 0 20px rgba(217, 79, 21, 0.22);
 }
 
 /* flecha */
@@ -665,7 +664,7 @@ ul {
     align-items: center;
     justify-content: center;
 
-    background: #1f4d2e;
+    background: rgba(20, 40, 20, 0.95);
     color: white;
 
     border-top-left-radius: 10px;
@@ -693,7 +692,7 @@ ul {
 
 /* unir visualmente */
 .chat-ia-tab.open .chat-ia-toggle {
-    background: #bdbdbd;
+    background: var(--naranja-acento);
 }
 
 /* ROTACIÓN */
@@ -703,7 +702,7 @@ ul {
 
 /* HOVER */
 .chat-ia-link:hover {
-    background: #123a20;
+    background: rgba(30, 55, 30, 0.98);
     color: white;
 }
 
@@ -904,21 +903,21 @@ ul {
     }
 
     body {
-        padding-top: 140px;
+        padding-top: 0;
     }
 
     .birds-hero {
-        min-height: 84vh;
-        padding: 40px 20px;
+        min-height: 100vh;
+        padding: 120px 28px 60px;
         align-items: center;
-        justify-content: flex-start;
-        text-align: left;
+        justify-content: center;
+        text-align: center;
         background-position: center center;
     }
 
     .birds-hero-content {
         max-width: 100%;
-        transform: translateY(-10px);
+        transform: translateY(0);
     }
 
     .birds-hero h1 {
@@ -926,7 +925,7 @@ ul {
     }
 
     .hero-description {
-        margin-inline: 0;
+        margin-inline: auto;
         font-size: 18px;
         max-width: 540px;
     }
@@ -936,9 +935,15 @@ ul {
     }
 }
 
+@media (max-width:768px) {
+    .birds-hero h1 {
+        font-size: 50px;
+    }
+}
+
 @media (max-width:600px) {
     body {
-        padding-top: 150px;
+        padding-top: 0;
     }
 
     .birds-highlight {
@@ -946,13 +951,9 @@ ul {
     }
 
     .birds-hero {
-        min-height: 78vh;
-        padding: 0 22px;
+        min-height: 100dvh;
+        padding: 90px 28px 32px;
         background-position: center center;
-    }
-
-    .birds-hero-content {
-        transform: translateY(0);
     }
 
     .birds-hero h1 {
@@ -992,7 +993,66 @@ ul {
         font-size: 12px;
         line-height: 1.4;
     }
+}
 
+/* ── 480px: Surface Duo, Galaxy S20 Ultra ── */
+@media (max-width:480px) {
+    .birds-hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+}
+
+/* ── 390px: iPhone 12/14 Pro, Pixel 7 ── */
+@media (max-width:390px) {
+    .birds-hero {
+        padding: 110px 24px 50px;
+    }
+
+    .birds-hero h1 {
+        font-size: 32px;
+    }
+}
+
+/* ── 344px: Galaxy Z Fold 5, pantallas muy estrechas ── */
+@media (max-width:344px) {
+    .birds-hero {
+        padding: 100px 20px 40px;
+    }
+
+    .birds-hero h1 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-chip {
+        font-size: 11px;
+    }
+}
+
+/* ── Nest Hub (1024×600), Nest Hub Max (1280×800) ── */
+@media (max-height:700px) and (min-width:900px) {
+    .birds-hero {
+        min-height: 100dvh;
+        padding: 90px 40px 30px;
+    }
+
+    .birds-hero h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 }
 
 /* ================= FIX SCROLL NAV ================= */

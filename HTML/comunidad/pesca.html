@@ -593,7 +593,7 @@
                 btn.textContent = i;
                 btn.dataset.page = i;
                 btn.addEventListener('click', (function (p) {
-                    return function () { goTo(p); };
+                    return function () { goTo(p, true); };
                 })(i));
                 numbersEl.appendChild(btn);
             }
@@ -612,7 +612,8 @@
                 var end = Math.min(page * ITEMS_PER_PAGE, cards.length);
                 infoEl.textContent = 'Mostrando ' + start + '–' + end + ' de ' + cards.length + ' especies';
                 if (scroll) {
-                    document.querySelector('.especies-section .section-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    var sec = document.querySelector('.especies-section');
+                    if (sec) { window.scrollTo({ top: sec.getBoundingClientRect().top + window.scrollY - 110, behavior: 'smooth' }); }
                 }
             }
 

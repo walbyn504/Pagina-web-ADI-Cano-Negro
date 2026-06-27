@@ -63,6 +63,7 @@ a {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -554,7 +555,7 @@ ul {
     position: fixed;
     top: 50%;
     right: 0;
-    margin-top: -190px;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     z-index: 1500;
@@ -566,7 +567,7 @@ ul {
     border: 2px solid rgba(217, 79, 21, 0.95);
     border-right: none;
     border-radius: 18px 0 0 18px;
-    background: rgba(11, 28, 16, 0.98);
+    background: rgba(20, 40, 20, 0.95);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -639,12 +640,8 @@ ul {
 
 /* ── 1100px: hero ajuste + quitar padding-top del body ── */
 @media (max-width: 1100px) {
-    body {
-        padding-top: 0;
-    }
-
     .hero-comunidad {
-        padding: 90px 40px 0;
+        padding: 0 40px;
     }
 
     .hero-comunidad h1 {
@@ -666,7 +663,7 @@ ul {
     }
 
     .hero-comunidad {
-        padding: 120px 20px 60px;
+        padding: 120px 28px 60px;
         text-align: center;
         justify-content: center;
         min-height: 100vh;
@@ -694,8 +691,7 @@ ul {
     }
 
     .btn-ver-mas {
-        justify-content: center;
-        width: 100%;
+        justify-content: flex-start;
     }
 
     .banner-content h2 {
@@ -777,7 +773,7 @@ ul {
 /* ── 390px: iPhone 12 Pro, iPhone 14 Pro Max, Pixel 7 ── */
 @media (max-width: 390px) {
     .hero-comunidad {
-        padding: 110px 16px 50px;
+        padding: 110px 24px 50px;
     }
 
     .hero-comunidad h1 {
@@ -801,7 +797,7 @@ ul {
 /* ── 344px: Galaxy Z Fold 5 (plegado), pantallas muy estrechas ── */
 @media (max-width: 344px) {
     .hero-comunidad {
-        padding: 100px 12px 40px;
+        padding: 100px 20px 40px;
     }
 
     .hero-comunidad h1 {
