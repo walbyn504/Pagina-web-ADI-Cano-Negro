@@ -15,10 +15,13 @@
     <link rel="stylesheet" href="../../CSS/utlidades/header.css">
     <link rel="stylesheet" href="../../CSS/comunidad/pesca.css">
     <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectoIdioma.css">
+    <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectosGlobales.css">
     <link rel="stylesheet" href="../../CSS/utlidades/footer.css">
 </head>
 
 <body data-page="pesca">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- ================= HEADER ================= -->
     <header class="main-header">
@@ -82,7 +85,7 @@
     </section>
 
     <!-- ================= INTRO ================= -->
-    <section class="section intro-section">
+    <section class="section intro-section reveal">
         <div class="container">
             <div class="section-heading">
                 <span class="section-label center" data-i18n="intro_label">Información general</span>
@@ -97,7 +100,7 @@
     </section>
 
     <!-- ================= TIPOS DE PESCA ================= -->
-    <section class="section alt">
+    <section class="section alt reveal">
         <div class="container">
             <div class="section-heading left">
                 <span class="section-label" data-i18n="tipos_label">Actividad local</span>
@@ -105,7 +108,7 @@
             </div>
 
             <div class="content-grid">
-                <div class="content-card">
+                <div class="content-card reveal-left">
                     <div class="content-icon">
                         <i class="fa-solid fa-fish"></i>
                     </div>
@@ -118,7 +121,7 @@
                     </p>
                 </div>
 
-                <div class="content-card">
+                <div class="content-card reveal-right">
                     <div class="content-icon">
                         <i class="fa-solid fa-water"></i>
                     </div>
@@ -135,7 +138,7 @@
     </section>
 
     <!-- ================= CARNET ================= -->
-    <section class="section">
+    <section class="section reveal">
         <div class="container">
             <div class="section-heading left">
                 <span class="section-label" data-i18n="carnet_label">Requisitos</span>
@@ -164,7 +167,7 @@
     </section>
 
     <!-- ================= VEDA ================= -->
-    <section class="section alt">
+    <section class="section alt reveal">
         <div class="container">
             <div class="section-heading left">
                 <span class="section-label" data-i18n="veda_label">Conservación</span>
@@ -205,7 +208,7 @@
     </section>
 
     <!-- ================= RESTRICCIONES ================= -->
-    <section class="section">
+    <section class="section reveal">
         <div class="container">
             <div class="section-heading left">
                 <span class="section-label" data-i18n="restric_label">Normativa</span>
@@ -225,7 +228,7 @@
     </section>
 
     <!-- ================= ESPECIES ================= -->
-    <section class="section especies-section">
+    <section class="section especies-section reveal">
         <div class="container">
             <div class="section-heading">
                 <span class="section-label center" data-i18n="especies_label">Biodiversidad acuática</span>
@@ -238,7 +241,7 @@
             <div class="grid-full">
 
                 <div class="card">
-                    <img src="../../img/comunidad/pesca/Guapote.jpeg" alt="Guapote">
+                    <img src="../../img/comunidad/pesca/guapote.JPG" alt="Guapote">
                     <div class="card-body">
                         <h3 data-i18n="pez_1_nombre">Guapote</h3>
                         <p data-i18n="pez_1_desc">Máximo 5 piezas por persona.</p>
@@ -263,7 +266,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="../../img/comunidad/pesca/guapote_lagunero.jpg" alt="Guapote Lagunero">
+                    <img src="../../img/comunidad/pesca/guapote_lagunero.png" alt="Guapote Lagunero">
                     <div class="card-body">
                         <h3 data-i18n="pez_4_nombre">Guapote Lagunero</h3>
                         <p data-i18n="pez_4_desc">Máximo 5 piezas por persona.</p>
@@ -271,7 +274,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="../../img/comunidad/pesca/roncador.png" alt="Roncador">
+                    <img src="../../img/comunidad/pesca/roncador.jpg" alt="Roncador">
                     <div class="card-body">
                         <h3 data-i18n="pez_5_nombre">Roncador</h3>
                         <span class="badge" data-i18n="pez_5_badge">Especie invasora</span>
@@ -321,7 +324,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="../../img/comunidad/pesca/machaca.jpg" alt="Machaca">
+                    <img src="../../img/comunidad/pesca/machaca.png" alt="Machaca">
                     <div class="card-body">
                         <h3 data-i18n="pez_11_nombre">Sabalete o Machaca</h3>
                         <p data-i18n="pez_11_desc">Máximo 5 piezas por persona.</p>
@@ -329,7 +332,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="../../img/comunidad/pesca/bobito.jpg" alt="Bobito">
+                    <img src="../../img/comunidad/pesca/bobito.png" alt="Bobito">
                     <div class="card-body">
                         <h3 data-i18n="pez_12_nombre">Bobito</h3>
                         <p data-i18n="pez_12_desc">Normalmente se usa como carnada.</p>
@@ -369,12 +372,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="../../img/comunidad/pesca/cocodrilo.png" alt="Cocodrilo">
-
-                    <span class="photo-credit">
-                        <span data-i18n="photo_by">Foto:</span> Caño Negro Experience
-                    </span>
-
+                    <img src="../../img/comunidad/pesca/cocodrilo.JPG" alt="Cocodrilo">
                     <div class="card-body">
                         <h3 data-i18n="pez_17_nombre">Cocodrilo</h3>
                         <span class="badge" data-i18n="pez_17_badge_1">Prohibido el consumo</span>
@@ -383,19 +381,32 @@
                 </div>
 
             </div>
+
+            <!-- ── Paginación ── -->
+            <nav class="species-pagination" aria-label="Paginación de especies">
+                <button class="page-btn prev-btn" id="prevPage" aria-label="Página anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="page-numbers" id="pageNumbers"></div>
+                <button class="page-btn next-btn" id="nextPage" aria-label="Siguiente página">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </nav>
+            <p class="species-pagination-info" id="paginationInfo"></p>
+
         </div>
     </section>
 
     <!-- ================= CIERRE ================= -->
-    <section class="closing-section">
+    <section class="closing-section reveal">
         <div class="container closing-content">
             <p class="closing-tag" data-i18n="cierre_tag">Caño Negro</p>
             <h2 data-i18n="cierre_title">La pesca responsable protege la tradición, la comunidad y la biodiversidad del
                 refugio</h2>
-            <p data-i18n="cierre_desc">
+            <span data-i18n="cierre_desc">
                 Respetar las regulaciones y valorar las especies del río es parte del compromiso
                 con la conservación y el futuro de Caño Negro.
-            </p>
+            </span>
         </div>
     </section>
 
@@ -433,11 +444,11 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:info@adicanonegro.org">info@adicanonegro.org</a>
+                        <a href="mailto:adicanonegro@gmail.com">adicanonegro@gmail.com</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+50600000000">+506 0000-0000</a>
+                        <a href="tel:+50683318263">+506 8331-8263</a>
                     </li>
                 </ul>
             </div>
@@ -565,11 +576,57 @@
         </div>
     </div>
 
+    <script>
+        (function () {
+            var ITEMS_PER_PAGE = 6;
+            var current = 1;
+            var cards = Array.from(document.querySelectorAll('.grid-full .card'));
+            var total = Math.ceil(cards.length / ITEMS_PER_PAGE);
+            var numbersEl = document.getElementById('pageNumbers');
+            var prevBtn = document.getElementById('prevPage');
+            var nextBtn = document.getElementById('nextPage');
+            var infoEl = document.getElementById('paginationInfo');
+
+            for (var i = 1; i <= total; i++) {
+                var btn = document.createElement('button');
+                btn.className = 'page-btn' + (i === 1 ? ' active' : '');
+                btn.textContent = i;
+                btn.dataset.page = i;
+                btn.addEventListener('click', (function (p) {
+                    return function () { goTo(p); };
+                })(i));
+                numbersEl.appendChild(btn);
+            }
+
+            function goTo(page, scroll) {
+                current = page;
+                cards.forEach(function (card, idx) {
+                    card.style.display = Math.floor(idx / ITEMS_PER_PAGE) + 1 === page ? '' : 'none';
+                });
+                numbersEl.querySelectorAll('.page-btn').forEach(function (b) {
+                    b.classList.toggle('active', parseInt(b.dataset.page) === page);
+                });
+                prevBtn.disabled = page === 1;
+                nextBtn.disabled = page === total;
+                var start = (page - 1) * ITEMS_PER_PAGE + 1;
+                var end = Math.min(page * ITEMS_PER_PAGE, cards.length);
+                infoEl.textContent = 'Mostrando ' + start + '–' + end + ' de ' + cards.length + ' especies';
+                if (scroll) {
+                    document.querySelector('.especies-section .section-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+
+            prevBtn.addEventListener('click', function () { if (current > 1) goTo(current - 1, true); });
+            nextBtn.addEventListener('click', function () { if (current < total) goTo(current + 1, true); });
+            goTo(1, false);
+        })();
+    </script>
     <script src="../../JS/traductor.js"></script>
     <script src="../../JS/traducciones/comunidad/pesca.js"></script>
     <script src="../../JS/utilidades/fab.js"></script>
     <script src="../../JS/utilidades/modal.js"></script>
     <script src="../../JS/utilidades/chatIA.js"></script>
+    <script src="../../JS/utilidades/comunidad/comunidad.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

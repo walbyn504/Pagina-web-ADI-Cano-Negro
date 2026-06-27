@@ -17,7 +17,7 @@ window.translations.comunidad = {
 
         comunidad_nav_pesca: "Pesca",
         comunidad_nav_vida: "Vida comunitaria",
-        comunidad_nav_puentes: "Puentes Flotantes",
+        comunidad_nav_puentes: "Muelles Flotantes",
 
         comunidad_intro_label: "Identidad local",
         comunidad_intro_title: "Una comunidad conectada con su entorno",
@@ -34,7 +34,7 @@ window.translations.comunidad = {
         comunidad_vida_text2: "Con esfuerzo y organización, la comunidad protege su entorno y promueve un turismo responsable que beneficie a sus habitantes y fortalezca el desarrollo local.",
 
         comunidad_puentes_label: "Paisaje local",
-        comunidad_puentes_title: '<i class="fa-solid fa-bridge-water"></i> Puentes Flotantes',
+        comunidad_puentes_title: '<i class="fa-solid fa-bridge-water"></i> Muelles Flotantes',
         comunidad_puentes_text1: "Los puentes flotantes son una atracción representativa de la comunidad de Caño Negro. Más que una estructura, son un punto de encuentro donde vecinos y visitantes comparten conversaciones y disfrutan del paisaje.",
         comunidad_puentes_text2: "Durante la temporada lluviosa, cuando el nivel del agua aumenta, estos puentes se adaptan de forma natural al entorno, reflejando la capacidad de la comunidad para convivir en armonía con la naturaleza.",
 
@@ -89,7 +89,7 @@ window.translations.comunidad = {
 
         comunidad_nav_pesca: "Fishing",
         comunidad_nav_vida: "Community life",
-        comunidad_nav_puentes: "Floating Bridges",
+        comunidad_nav_puentes: "Floating springs",
 
         comunidad_intro_label: "Local identity",
         comunidad_intro_title: "A community connected to its surroundings",
@@ -106,7 +106,7 @@ window.translations.comunidad = {
         comunidad_vida_text2: "With effort and organization, the community protects its surroundings and promotes responsible tourism that benefits its residents and strengthens local development.",
 
         comunidad_puentes_label: "Local landscape",
-        comunidad_puentes_title: '<i class="fa-solid fa-bridge-water"></i> Floating Bridges',
+        comunidad_puentes_title: '<i class="fa-solid fa-bridge-water"></i> Floating Springs',
         comunidad_puentes_text1: "Floating bridges are a representative attraction of the Caño Negro community. More than a structure, they are a meeting point where residents and visitors share conversations and enjoy the scenery.",
         comunidad_puentes_text2: "During the rainy season, when the water level rises, these bridges adapt naturally to the environment, reflecting the community’s ability to live in harmony with nature.",
 
@@ -161,7 +161,7 @@ window.translations.comunidad = {
 
         comunidad_nav_pesca: "Pêche",
         comunidad_nav_vida: "Vie communautaire",
-        comunidad_nav_puentes: "Ponts Flottants",
+        comunidad_nav_puentes: "Ressorts Flottants",
 
         comunidad_intro_label: "Identité locale",
         comunidad_intro_title: "Une communauté connectée à son environnement",
@@ -178,7 +178,7 @@ window.translations.comunidad = {
         comunidad_vida_text2: "Avec effort et organisation, la communauté protège son environnement et promeut un tourisme responsable qui bénéficie à ses habitants et renforce le développement local.",
 
         comunidad_puentes_label: "Paysage local",
-        comunidad_puentes_title: '<i class="fa-solid fa-bridge-water"></i> Ponts Flottants',
+        comunidad_puentes_title: '<i class="fa-solid fa-bridge-water"></i> Ressorts Flottants',
         comunidad_puentes_text1: "Les ponts flottants sont une attraction représentative de la communauté de Caño Negro. Plus qu'une structure, ils sont un lieu de rencontre où voisins et visiteurs partagent des conversations et profitent du paysage.",
         comunidad_puentes_text2: "Pendant la saison des pluies, lorsque le niveau de l'eau monte, ces ponts s'adaptent naturellement à l'environnement, reflétant la capacité de la communauté à vivre en harmonie avec la nature.",
 

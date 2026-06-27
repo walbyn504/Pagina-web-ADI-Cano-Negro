@@ -554,19 +554,19 @@ ul {
     position: fixed;
     top: 50%;
     right: 0;
-    transform: translateY(-50%);
+    margin-top: -190px;
     display: flex;
     align-items: center;
-    z-index: 999;
+    z-index: 1500;
 }
 
 .chat-ia-toggle {
-    width: 20px;
+    width: 22px;
     height: 380px;
-    border: 1.5px solid rgba(217, 79, 21, 0.8);
+    border: 2px solid rgba(217, 79, 21, 0.95);
     border-right: none;
     border-radius: 18px 0 0 18px;
-    background: rgba(20, 40, 20, 0.95);
+    background: rgba(11, 28, 16, 0.98);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -574,7 +574,7 @@ ul {
     cursor: pointer;
     transition: all 0.3s ease;
     flex-shrink: 0;
-    box-shadow: 0 0 18px rgba(217, 79, 21, 0.15);
+    box-shadow: -5px 0 14px rgba(0,0,0,0.55), 0 0 20px rgba(217, 79, 21, 0.22);
 }
 
 .chat-ia-toggle:hover {

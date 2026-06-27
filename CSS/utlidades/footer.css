@@ -1,8 +1,8 @@
 /* ================= FOOTER COMPARTIDO ================= */
 footer {
-    background: var(--verde-oscuro);
+    background: #0b1c10;
     color: white;
-    border-top: 4px solid var(--verde-claro);
+    border-top: 4px solid var(--naranja-acento);
 }
 
 .footer-grid {
@@ -53,6 +53,7 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
 .footer-links li {
