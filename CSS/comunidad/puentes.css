@@ -477,38 +477,6 @@ nav a.active::after{
     line-height:1.8;
 }
 
-/* ================= FOOTER ================= */
-footer{
-    background:var(--verde-principal);
-    color:white;
-    text-align:center;
-    padding:30px 20px;
-    border-top:4px solid var(--verde-secundario);
-}
-
-footer p{
-    font-size:15px;
-}
-
-.social-links{
-    margin-top:15px;
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
-}
-
-.social-links a{
-    font-size:26px;
-    color:white;
-    transition:0.3s;
-}
-
-.social-links a:hover{
-    color:#a5d6a7;
-    transform:scale(1.20);
-}
-
 /* ================= FAB ================= */
 .fab-container {
     position: fixed;
