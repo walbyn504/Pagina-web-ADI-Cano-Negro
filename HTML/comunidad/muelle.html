@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puentes Flotantes - Caño Negro</title>
+    <title>Muelles Flotantes - Caño Negro</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -13,12 +13,15 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../../CSS/utlidades/header.css">
-    <link rel="stylesheet" href="../../CSS/comunidad/puentes.css">
+    <link rel="stylesheet" href="../../CSS/comunidad/muelle.css">
     <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectoIdioma.css">
+    <link rel="stylesheet" href="../../CSS/utlidades/efectos/efectosGlobales.css">
     <link rel="stylesheet" href="../../CSS/utlidades/footer.css">
 </head>
 
-<body data-page="puente">
+<body data-page="muelle">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- ================= HEADER ================= -->
     <header class="main-header">
@@ -45,11 +48,16 @@
                         </button>
                     </div>
                     <ul class="navbar-nav align-items-lg-center">
-                        <li class="nav-item"><a class="nav-link" href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../Senderos/senderos.html" data-i18n="nav_senderos">Senderos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="comunidad.html" data-i18n="nav_comunidad">Comunidad</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../floraFauna/floraFauna.html" data-i18n="nav_flora">Flora y Fauna</a></li>
-                        <li class="nav-item active-page"><a class="nav-link active" href="#" data-i18n="nav_puentes">Puentes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html"
+                                data-i18n="nav_inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Senderos/senderos.html"
+                                data-i18n="nav_senderos">Senderos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comunidad.html"
+                                data-i18n="nav_comunidad">Comunidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../floraFauna/floraFauna.html"
+                                data-i18n="nav_flora">Flora y Fauna</a></li>
+                        <li class="nav-item active-page"><a class="nav-link active" href="#"
+                                data-i18n="nav_Muelles">Muelles</a></li>
                     </ul>
                     <div class="language-dropdown ms-lg-3">
                         <button type="button" class="language-toggle" id="languageToggle">
@@ -68,131 +76,115 @@
     </header>
 
     <!-- ================= HERO ================= -->
-    <section class="hero">
-        <div class="hero-text">
-            <p class="hero-tag" data-i18n="hero_tag">Conexión con el humedal</p>
-            <h1 data-i18n="hero_title">Puentes en <span>Caño Negro</span></h1>
-            <p class="hero-description" data-i18n="hero_description">
-                Estructuras que permiten a la comunidad y a los visitantes acercarse al agua,
-                disfrutar del paisaje y vivir de cerca la riqueza natural de Caño Negro.
+    <section class="hero-muelle reveal">
+        <div class="hero-content">
+            <p class="hero-tag">
+                <span data-i18n="hero_tag">Conexión con el humedal</span>
+            </p>
+            <h1 data-i18n="hero_title">Muelles<br>en <span>Caño Negro</span></h1>
+            <p class="description" data-i18n="hero_description">
+                Plataformas sobre el agua que te llevan al corazón del humedal, donde podés sentir la corriente,
+                contemplar la fauna y vivir de cerca la magia de Caño Negro.
+            </p>
+            <p class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span data-i18n="hero_location">Caño Negro, Los Chiles, Alajuela</span>
             </p>
         </div>
     </section>
 
     <!-- ================= INTRO ================= -->
-    <section class="section intro-section">
-        <div class="container">
-
-            <div class="section-heading">
-                <span class="section-label center" data-i18n="intro_label">Infraestructura local</span>
-                <h2 data-i18n="intro_title">Los Puentes de la Comunidad</h2>
-                <p class="section-subtitle" data-i18n="intro_subtitle">
-                    En Caño Negro existen estructuras conocidas localmente como puentes,
-                    aunque en muchos casos funcionan como pasarelas o pequeños muelles
-                    que facilitan el acceso al humedal.
-                </p>
-            </div>
-
-            <div class="text-box">
+    <section class="intro-muelle reveal">
+        <div class="container intro-content">
+            <span class="section-label center reveal" data-i18n="intro_label">Una experiencia única</span>
+            <h2 class="section-title reveal" data-i18n="intro_title">Estar sobre el agua</h2>
+            <p class="section-subtitle reveal" data-i18n="intro_subtitle">
+                Los muelles de Caño Negro no sirven para cruzar el agua de un lado a otro. Son plataformas que te
+                adentran en el humedal y te colocan directamente sobre él, creando una experiencia que no se parece
+                a ninguna otra.
+            </p>
+            <div class="intro-text-box reveal">
                 <p data-i18n="intro_text1">
-                    Debido a las características del terreno y a la presencia constante de agua
-                    en ciertas áreas, estas estructuras son importantes para acercarse al entorno
-                    natural de forma práctica y segura.
+                    Desde sus tablones podés sentir el movimiento del río debajo, la corriente que pasa, y las
+                    pequeñas olas que levantan las lanchas al pasar. No es solo un lugar de paso; es un lugar donde
+                    detenerse.
                 </p>
-
                 <p data-i18n="intro_text2">
-                    Además de su utilidad, forman parte de la identidad visual de la comunidad,
-                    ya que conectan a las personas con el paisaje y con muchas de las actividades
-                    tradicionales de la zona.
+                    Son un atractivo tanto para los visitantes que llegan al refugio como para las personas de la
+                    comunidad, que los usan como punto de encuentro con la naturaleza que los rodea cada día.
                 </p>
             </div>
-
         </div>
     </section>
 
     <!-- ================= USO ================= -->
-    <section class="section alt">
+    <section class="info-muelle reveal">
         <div class="container">
-
-            <div class="section-heading left">
-                <span class="section-label" data-i18n="uso_label">Relación con el entorno</span>
-                <h2 data-i18n="uso_title">Uso de los Puentes</h2>
-            </div>
-
-            <div class="two-columns">
-
-                <article class="text">
+            <div class="row g-5 align-items-center">
+                <div class="col-12 col-lg-6 info-text reveal-left">
+                    <span class="section-label" data-i18n="uso_label">Momentos en el muelle</span>
+                    <h2 class="section-title section-title-left" data-i18n="uso_title">¿Qué se vive desde los muelles?</h2>
                     <p data-i18n="uso_text1">
-                        Los puentes y muelles de Caño Negro permiten a los habitantes y visitantes
-                        acercarse al humedal de forma segura, facilitando actividades como la pesca,
-                        los recorridos locales y la observación del paisaje natural.
+                        Podés pescar con caña mientras el río corre bajo tus pies, fotografiar las garzas que
+                        descansan en las orillas, o simplemente sentarte a ver cómo el sol se hunde entre los
+                        árboles al atardecer.
                     </p>
-
                     <p data-i18n="uso_text2">
-                        También son espacios muy valorados por quienes disfrutan de la tranquilidad
-                        del lugar, de la observación de aves y del contacto directo con la naturaleza
-                        que caracteriza a esta región.
+                        Desde ahí también se observan los canales, las lagunas y la fauna del refugio: caimanes
+                        asoleándose, tortugas, monos, y cientos de especies de aves que hacen de Caño Negro uno de
+                        los destinos de observación más ricos de Costa Rica.
                     </p>
-                </article>
-
-                <div class="collage">
-                    <img src="../../img/puentes/puente1.jpg" alt="Puente en Caño Negro">
-                    <img src="../../img/puentes/puente2.jpg" alt="Pasarela sobre el agua">
-                    <img src="../../img/puentes/puente3.jpg" alt="Muelle de madera">
-                    <img src="../../img/puentes/puente4.jpg" alt="Puente comunitario">
                 </div>
-
+                <div class="col-12 col-lg-6 info-img reveal-right">
+                    <div class="img-collage">
+                        <img src="../../img/comunidad/puentes/muelle8.jpg" alt="Muelle en Caño Negro">
+                        <img src="../../img/comunidad/puentes/muelle6.png" alt="Pasarela sobre el agua">
+                        <img src="../../img/comunidad/puentes/muelle3.jpg" alt="Muelle de madera">
+                        <img src="../../img/comunidad/puentes/muelle5.jpg" alt="Muelle comunitario">
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
 
     <!-- ================= IMPORTANCIA ================= -->
-    <section class="section">
+    <section class="info-muelle alt reveal">
         <div class="container">
-
-            <div class="section-heading left">
-                <span class="section-label" data-i18n="importancia_label">Valor comunitario</span>
-                <h2 data-i18n="importancia_title">Importancia para la Comunidad</h2>
-            </div>
-
-            <div class="two-columns">
-
-                <div class="collage">
-                    <img src="../../img/puentes/puente5.jpg" alt="Puente comunitario">
-                    <img src="../../img/puentes/puente6.jpg" alt="Pasarela de madera">
-                    <img src="../../img/puentes/puente7.jpg" alt="Puente sobre humedal">
-                    <img src="../../img/puentes/puente8.jpg" alt="Vista del puente">
-                </div>
-
-                <article class="text">
+            <div class="row g-5 align-items-center">
+                <div class="col-12 col-lg-6 order-lg-2 info-text reveal-right">
+                    <span class="section-label" data-i18n="importancia_label">Parte de la identidad local</span>
+                    <h2 class="section-title section-title-left"
+                        data-i18n="importancia_title">Para la comunidad y los visitantes</h2>
                     <p data-i18n="importancia_text1">
-                        Estas estructuras permiten un mejor acercamiento al agua y al paisaje natural
-                        que distingue a Caño Negro, convirtiéndose en puntos de encuentro entre la
-                        comunidad y su entorno.
+                        Para las personas de Caño Negro, los muelles son espacios de encuentro, de pesca y de
+                        contemplación que forman parte de la vida cotidiana junto al río. Son suyos desde siempre.
                     </p>
-
                     <p data-i18n="importancia_text2">
-                        Además, ayudan a que visitantes y habitantes disfruten de la biodiversidad
-                        del humedal, fortaleciendo la relación entre la vida cotidiana, la naturaleza
-                        y el valor turístico del lugar.
+                        Para los visitantes son una de las experiencias más auténticas del refugio: estar sobre el
+                        agua, rodeado de naturaleza, sintiendo el viento y escuchando el humedal, es algo que no
+                        se olvida fácilmente.
                     </p>
-                </article>
-
+                </div>
+                <div class="col-12 col-lg-6 order-lg-1 info-img reveal-left">
+                    <div class="img-collage">
+                        <img src="../../img/comunidad/puentes/muelle4.png" alt="Muelle comunitario">
+                        <img src="../../img/comunidad/puentes/muelle2.png" alt="Pasarela de madera">
+                        <img src="../../img/comunidad/puentes/muelle7.png" alt="Muelle sobre humedal">
+                        <img src="../../img/comunidad/puentes/muelle1.jpg" alt="Vista del muelle">
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
 
     <!-- ================= CIERRE ================= -->
-    <section class="closing-section">
-        <div class="container closing-content">
-            <p class="closing-tag" data-i18n="closing_tag">Caño Negro</p>
-            <h2 data-i18n="closing_title">Los puentes reflejan la conexión entre la comunidad y el humedal</h2>
+    <section class="banner-section reveal">
+        <div class="container banner-content">
+            <p class="banner-tag" data-i18n="closing_tag">Caño Negro</p>
+            <h2 data-i18n="closing_title">El agua, el silencio y la naturaleza en un mismo lugar</h2>
             <p data-i18n="closing_description">
-                Más que simples estructuras, representan una forma de acercarse a la naturaleza,
-                valorar el paisaje y fortalecer el vínculo entre las personas y el entorno que da vida
-                a Caño Negro.
+                Pararse sobre un muelle en Caño Negro es pararse sobre el humedal mismo. Es sentir el río,
+                ver la fauna y entender por qué este lugar es tan especial.
             </p>
         </div>
     </section>
@@ -271,91 +263,73 @@
         </div>
     </footer>
 
+    <!-- ================= FAB ================= -->
     <div class="fab-container">
-
-        <!-- BOTÓN PRINCIPAL -->
         <button class="fab-main" id="fabToggle" aria-label="Abrir acciones rápidas">
             <i class="fa-solid fa-plus"></i>
         </button>
-
-        <!-- OPCIONES -->
         <div class="fab-options">
-
-            <!-- AYUDA -->
             <a href="#" class="fab-option help" id="openHelp" aria-label="Ayuda">
                 <i class="fa-solid fa-comments"></i>
             </a>
-
-
-            <!-- UBICACIÓN -->
             <a href="https://www.google.com/maps/dir/?api=1&destination=Refugio+de+Vida+Silvestre+Caño+Negro"
                 target="_blank" class="fab-option map" aria-label="Cómo llegar">
                 <i class="fa-solid fa-location-dot"></i>
             </a>
-
-            <!-- WHATSAPP -->
             <a href="https://wa.me/506XXXXXX" target="_blank" class="fab-option whatsapp" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
-
         </div>
     </div>
 
+    <!-- ================= MODAL AYUDA ================= -->
     <div class="help-modal" id="helpModal">
         <div class="help-content">
-
             <button class="close-modal" id="closeHelp" aria-label="Cerrar ayuda">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-
             <h2 data-i18n="help_title">¿En qué podemos ayudarte?</h2>
-
             <div class="faq-list">
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q1">📍 ¿Dónde está Caño Negro?</h3>
                     <p data-i18n="faq_a1">Se ubica en Los Chiles, Alajuela, Costa Rica, cerca de la frontera con
                         Nicaragua.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q2">🚗 ¿Cómo llegar?</h3>
                     <p data-i18n="faq_a2">Puedes acceder por la Ruta 138 desde Upala o Los Chiles. Usa el botón de
                         ubicación para ver la ruta.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q3">🦜 ¿Qué se puede ver?</h3>
                     <p data-i18n="faq_a3">Más de 300 especies de aves, además de reptiles, mamíferos y una gran
                         diversidad de flora.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q4">📅 ¿Mejor época para visitar?</h3>
                     <p data-i18n="faq_a4">Durante la estación seca para senderismo, o época lluviosa para ver aves
                         migratorias.</p>
                 </div>
-
                 <div class="faq-item">
                     <h3 data-i18n="faq_q5">🎒 ¿Qué llevar?</h3>
                     <p data-i18n="faq_a5">Ropa cómoda, repelente, agua, cámara y protección solar.</p>
                 </div>
-
             </div>
         </div>
     </div>
 
+    <!-- ================= PESTAÑA IA ================= -->
     <div class="chat-ia-tab" id="chatIaTab">
         <button class="chat-ia-toggle" id="chatIaToggle" aria-label="Abrir acceso a IA">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
-
         <a href="https://chat.openai.com/?q=Quiero%20informaci%C3%B3n%20sobre%20Ca%C3%B1o%20Negro" target="_blank"
             class="chat-ia-link" id="chatIaLink" aria-label="Abrir IA sobre Caño Negro">
             <span data-i18n="chat_tab">Acerca de Caño Negro</span>
         </a>
     </div>
-    
+
+    <!-- ================= LOADER IDIOMA ================= -->
     <div class="language-loader" id="languageLoader">
         <div class="language-loader-box">
             <div class="language-spinner"></div>
@@ -364,10 +338,11 @@
     </div>
 
     <script src="../../JS/traductor.js"></script>
-    <script src="../../JS/traducciones/comunidad/puente.js"></script>
+    <script src="../../JS/traducciones/comunidad/muelle.js"></script>
     <script src="../../JS/utilidades/fab.js"></script>
     <script src="../../JS/utilidades/modal.js"></script>
     <script src="../../JS/utilidades/chatIA.js"></script>
+    <script src="../../JS/utilidades/comunidad/comunidad.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

@@ -9,6 +9,7 @@ window.translations.pesca = {
         hero_tag: "Tradición, sostenibilidad y naturaleza",
         hero_title: "Pesca en <span>Caño Negro</span>",
         hero_desc: "Conoce la pesca artesanal y deportiva en Caño Negro, sus regulaciones, sus especies permitidas y la importancia de proteger este ecosistema.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         intro_label: "Información general",
         intro_title: "Pesca responsable en Caño Negro",
@@ -147,6 +148,7 @@ window.translations.pesca = {
         hero_tag: "Tradition, sustainability and nature",
         hero_title: "Fishing in <span>Caño Negro</span>",
         hero_desc: "Learn about artisanal and sport fishing in Caño Negro, its regulations, allowed species, and the importance of protecting this ecosystem.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         intro_label: "General information",
         intro_title: "Responsible fishing in Caño Negro",
@@ -285,6 +287,7 @@ window.translations.pesca = {
         hero_tag: "Tradition, durabilité et nature",
         hero_title: "Pêche à <span>Caño Negro</span>",
         hero_desc: "Découvrez la pêche artisanale et sportive à Caño Negro, ses réglementations, les espèces autorisées et l’importance de protéger cet écosystème.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         intro_label: "Informations générales",
         intro_title: "Pêche responsable à Caño Negro",

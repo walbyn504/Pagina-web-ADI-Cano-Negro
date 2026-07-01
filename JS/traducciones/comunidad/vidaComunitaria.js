@@ -9,8 +9,9 @@ window.translations.vidaComunitaria = {
         nav_vida: "Vida Comunitaria",
 
         hero_tag: "Tradición, identidad y convivencia",
-        hero_title: "Vida Comunitaria en <span>Caño Negro</span>",
+        hero_title: "Vida Comunitaria<br>en <span>Caño Negro</span>",
         hero_description: "Descubre la cultura, las actividades económicas, las tradiciones y la organización social que dan vida a la comunidad de Caño Negro.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         intro_label: "Información general",
         intro_title: "La Comunidad de Caño Negro",
@@ -21,12 +22,12 @@ window.translations.vidaComunitaria = {
 
         economia_label: "Desarrollo local",
         economia_title: "Actividades Económicas",
-        economia_text1: "Entre las principales actividades económicas de Caño Negro se encuentran la pesca, la agricultura y el turismo rural. Estas actividades representan una fuente importante de ingresos para muchas familias de la comunidad.",
+        economia_text1: "Entre las principales actividades económicas de Caño Negro se encuentran la pesca, la agricultura, la ganadería y el turismo rural. Estas actividades representan una fuente importante de ingresos para muchas familias de la comunidad.",
         economia_text2: "El turismo también ha crecido en la zona gracias a la riqueza natural del refugio, atrayendo visitantes interesados en la observación de aves, paseos en bote y experiencias culturales.",
 
         cultura_label: "Identidad cultural",
         cultura_title: "Cultura y Tradiciones",
-        cultura_text1: "La cultura de Caño Negro está marcada por tradiciones que se han transmitido de generación en generación. Las celebraciones comunitarias, las actividades religiosas y las festividades locales son espacios donde los habitantes se reúnen para fortalecer los lazos sociales y mantener viva su identidad.",
+        cultura_text1: "La cultura de Caño Negro está marcada por tradiciones que se han transmitido de generación en generación. Las celebraciones comunitarias y las festividades locales son espacios donde los habitantes se reúnen para fortalecer los lazos sociales y mantener viva su identidad.",
         cultura_text2: "La gastronomía local también forma parte importante de la cultura, destacándose platillos tradicionales elaborados con productos de la región.",
 
         organizacion_label: "Participación social",
@@ -83,8 +84,9 @@ window.translations.vidaComunitaria = {
         nav_vida: "Community Life",
 
         hero_tag: "Tradition, identity and coexistence",
-        hero_title: "Community Life in <span>Caño Negro</span>",
+        hero_title: "Community Life<br>in <span>Caño Negro</span>",
         hero_description: "Discover the culture, economic activities, traditions, and social organization that bring life to the community of Caño Negro.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         intro_label: "General information",
         intro_title: "The Community of Caño Negro",
@@ -95,12 +97,12 @@ window.translations.vidaComunitaria = {
 
         economia_label: "Local development",
         economia_title: "Economic Activities",
-        economia_text1: "Among the main economic activities in Caño Negro are fishing, agriculture, and rural tourism. These activities represent an important source of income for many families in the community.",
+        economia_text1: "Among the main economic activities in Caño Negro are fishing, agriculture, livestock farming, and rural tourism. These activities represent an important source of income for many families in the community.",
         economia_text2: "Tourism has also grown in the area thanks to the refuge’s natural richness, attracting visitors interested in birdwatching, boat rides, and cultural experiences.",
 
         cultura_label: "Cultural identity",
         cultura_title: "Culture and Traditions",
-        cultura_text1: "The culture of Caño Negro is marked by traditions passed down from generation to generation. Community celebrations, religious activities, and local festivities are spaces where residents gather to strengthen social ties and keep their identity alive.",
+        cultura_text1: "The culture of Caño Negro is marked by traditions passed down from generation to generation. Community celebrations and local festivities are spaces where residents gather to strengthen social ties and keep their identity alive.",
         cultura_text2: "Local gastronomy is also an important part of the culture, featuring traditional dishes made with products from the region.",
 
         organizacion_label: "Social participation",
@@ -157,8 +159,9 @@ window.translations.vidaComunitaria = {
         nav_vida: "Vie Communautaire",
 
         hero_tag: "Tradition, identité et cohabitation",
-        hero_title: "Vie Communautaire à <span>Caño Negro</span>",
+        hero_title: "Vie Communautaire<br>à <span>Caño Negro</span>",
         hero_description: "Découvrez la culture, les activités économiques, les traditions et l'organisation sociale qui donnent vie à la communauté de Caño Negro.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         intro_label: "Informations générales",
         intro_title: "La Communauté de Caño Negro",
@@ -169,12 +172,12 @@ window.translations.vidaComunitaria = {
 
         economia_label: "Développement local",
         economia_title: "Activités Économiques",
-        economia_text1: "Parmi les principales activités économiques de Caño Negro se trouvent la pêche, l'agriculture et le tourisme rural. Ces activités représentent une source de revenus importante pour de nombreuses familles de la communauté.",
+        economia_text1: "Parmi les principales activités économiques de Caño Negro se trouvent la pêche, l'agriculture, l'élevage et le tourisme rural. Ces activités représentent une source de revenus importante pour de nombreuses familles de la communauté.",
         economia_text2: "Le tourisme a également augmenté dans la région grâce à la richesse naturelle du refuge, attirant des visiteurs intéressés par l'observation des oiseaux, les promenades en bateau et les expériences culturelles.",
 
         cultura_label: "Identité culturelle",
         cultura_title: "Culture et Traditions",
-        cultura_text1: "La culture de Caño Negro est marquée par des traditions transmises de génération en génération. Les célébrations communautaires, les activités religieuses et les festivités locales sont des espaces où les habitants se réunissent pour renforcer les liens sociaux et maintenir leur identité vivante.",
+        cultura_text1: "La culture de Caño Negro est marquée par des traditions transmises de génération en génération. Les célébrations communautaires et les festivités locales sont des espaces où les habitants se réunissent pour renforcer les liens sociaux et maintenir leur identité vivante.",
         cultura_text2: "La gastronomie locale fait également partie importante de la culture, avec des plats traditionnels préparés à partir de produits de la région.",
 
         organizacion_label: "Participation sociale",
