@@ -13,6 +13,7 @@ window.translations.floraFauna = {
         hero_tag: "Sitio RAMSAR • Biodiversidad extraordinaria",
         hero_title: "Flora y Fauna de <span>Caño Negro</span>",
         hero_desc: "Caño Negro es uno de los humedales más importantes del mundo, donde la vegetación, el agua y la vida silvestre forman un paisaje dinámico y de enorme valor ecológico para Costa Rica.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         nav_internal_overview: "Visión general",
         nav_internal_flora: "Flora",
@@ -216,6 +217,7 @@ window.translations.floraFauna = {
         hero_tag: "RAMSAR Site • Extraordinary biodiversity",
         hero_title: "Flora and Fauna of <span>Caño Negro</span>",
         hero_desc: "Caño Negro is one of the most important wetlands in the world, where vegetation, water, and wildlife create a dynamic landscape of enormous ecological value for Costa Rica.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         nav_internal_overview: "Overview",
         nav_internal_flora: "Flora",
@@ -419,6 +421,7 @@ window.translations.floraFauna = {
         hero_tag: "Site RAMSAR • Biodiversité extraordinaire",
         hero_title: "Flore et Faune de <span>Caño Negro</span>",
         hero_desc: "Caño Negro est l’une des zones humides les plus importantes du monde, où la végétation, l’eau et la faune sauvage forment un paysage dynamique d’une énorme valeur écologique pour le Costa Rica.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         nav_internal_overview: "Vue d’ensemble",
         nav_internal_flora: "Flore",

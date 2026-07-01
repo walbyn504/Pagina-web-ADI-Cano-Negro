@@ -10,6 +10,7 @@ window.translations.aves = {
         hero_chip: "Avistamiento • Biodiversidad • Humedal Ramsar",
         hero_title: "Aves de <br><span>Caño Negro</span>",
         hero_desc: "Caño Negro es uno de los escenarios naturales más valiosos de Costa Rica para la observación de aves. Sus lagunas, bosques inundados, caños y playones brindan refugio, alimento y descanso a numerosas especies residentes y migratorias.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         intro_label: "Guía visual del humedal",
         intro_title: "Especies destacadas de este paraíso natural",
@@ -137,6 +138,7 @@ window.translations.aves = {
         hero_chip: "Birdwatching • Biodiversity • Ramsar Wetland",
         hero_title: "Birds of <br><span>Caño Negro</span>",
         hero_desc: "Caño Negro is one of Costa Rica’s most valuable natural settings for birdwatching. Its lagoons, flooded forests, channels, and mudflats provide refuge, food, and rest for numerous resident and migratory species.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         intro_label: "Wetland visual guide",
         intro_title: "Featured species of this natural paradise",
@@ -262,6 +264,7 @@ window.translations.aves = {
         hero_chip: "Ornithologie • Biodiversité • Zone Humide Ramsar",
         hero_title: "Oiseaux de <br><span>Caño Negro</span>",
         hero_desc: "Caño Negro est l'un des cadres naturels les plus précieux du Costa Rica pour l'observation des oiseaux. Ses lagunes, forêts inondées, canaux et berges offrent refuge, nourriture et repos à de nombreuses espèces résidentes et migratrices.",
+        hero_location: "Caño Negro, Los Chiles, Alajuela",
 
         intro_label: "Guide visuel de la zone humide",
         intro_title: "Espèces vedettes de ce paradis naturel",

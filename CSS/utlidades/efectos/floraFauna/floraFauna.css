@@ -4,79 +4,164 @@
     overflow: hidden;
 }
 
-/* ================= OVERVIEW ================= */
-.overview-card {
-    transition: 0.3s;
-}
-
-.overview-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 30px rgba(0,0,0,0.12);
-}
-
-/* ================= STATS ================= */
-.stat-card {
-    transition: 0.3s;
-}
-
-.stat-card:hover {
-    transform: scale(1.05);
-}
-
-/* ================= FEATURE ================= */
-.feature-image img {
-    transition: 0.6s;
-}
-
-.feature-image:hover img {
-    transform: scale(1.08);
-}
-
-/* ================= INFO PANELS ================= */
-.info-panel {
-    transition: 0.3s;
-}
-
-.info-panel:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
-}
-
-/* ================= ANIMAL SECTION ================= */
-.animal-section {
+.hero-content {
     position: relative;
+    z-index: 2;
+    animation: heroFloatFlora 4.5s ease-in-out infinite;
 }
 
-/* 🔥 IMPORTANTE: layout corregido */
-.animal-layout {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 30px;
-    align-items: stretch;
+.hero-tag {
+    animation: pulseSoftFlora 2.8s ease-in-out infinite;
 }
 
-.animal-side-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* ================= TITULO SECCIÓN ANIMADO ================= */
+.section-title {
+    position: relative;
+    animation: fadeTitleFlora 1s ease;
 }
 
-/* ================= BOTON ================= */
-.btn-ver-mas {
-    transition: 0.3s;
+.section-title::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    margin: 16px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #71c98a, #1f4d2e);
+    transition: width 0.8s ease;
 }
 
-.btn-ver-mas:hover {
-    transform: translateX(5px);
+.section-title.show::after {
+    width: 110px;
 }
 
-/* ================= EFECTO BRILLO ================= */
-.feature-image {
+/* ================= QUITAR SUBRAYADO EN CIERRE ================= */
+.closing-section .section-title::after,
+.closing-section .section-title.show::after {
+    content: none;
+    display: none;
+}
+
+/* ================= FONDOS DECORATIVOS ================= */
+.overview-section,
+.flora-section,
+.fauna-intro-section {
     position: relative;
     overflow: hidden;
 }
 
+.overview-section::before,
+.flora-section::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(113, 201, 138, 0.12), transparent 70%);
+    animation: floatBlobFlora 9s ease-in-out infinite;
+    pointer-events: none;
+    top: -80px;
+    right: -100px;
+}
+
+.fauna-intro-section::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(113, 201, 138, 0.10), transparent 70%);
+    animation: floatBlobFlora 10s ease-in-out infinite reverse;
+    pointer-events: none;
+    bottom: -70px;
+    left: -90px;
+}
+
+/* ================= KEYFRAMES ================= */
+@keyframes heroFloatFlora {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-6px); }
+}
+
+@keyframes pulseSoftFlora {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50%       { transform: scale(1.03); opacity: 0.93; }
+}
+
+@keyframes fadeTitleFlora {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatBlobFlora {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50%       { transform: translateY(-16px) translateX(10px); }
+}
+
+@keyframes pulseTagFlora {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50%       { transform: scale(1.04); opacity: 0.88; }
+}
+
+@keyframes fabGlowFlora {
+    0%, 100% {
+        box-shadow: 0 0 18px rgba(217, 79, 21, 0.15), 0 0 0 0 rgba(217, 79, 21, 0.40);
+    }
+    50% {
+        box-shadow: 0 0 28px rgba(217, 79, 21, 0.28), 0 0 0 14px rgba(217, 79, 21, 0);
+    }
+}
+
+/* ================= OVERVIEW CARDS ================= */
+.overview-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.overview-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 34px rgba(14, 33, 22, 0.14);
+    border-color: rgba(113, 201, 138, 0.35);
+}
+
+/* ================= STATS ================= */
+.stat-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 28px rgba(14, 33, 22, 0.13);
+}
+
+/* ================= FEATURE ROW ================= */
+.feature-row {
+    transition: transform 0.35s ease;
+}
+
+.feature-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.feature-image img {
+    transition: transform 0.7s ease, filter 0.45s ease;
+}
+
+.feature-row:hover .feature-image img {
+    transform: scale(1.06);
+    filter: brightness(1.03);
+}
+
+.feature-text {
+    transition: transform 0.35s ease;
+}
+
+.feature-row:hover .feature-text {
+    transform: translateY(-4px);
+}
+
+/* ================= EFECTO BRILLO EN FEATURE IMAGE ================= */
 .feature-image::after {
     content: "";
     position: absolute;
@@ -87,12 +172,117 @@
     background: linear-gradient(
         120deg,
         transparent,
-        rgba(255,255,255,0.3),
+        rgba(255, 255, 255, 0.28),
         transparent
     );
-    transition: 0.8s;
+    transition: left 0.8s ease;
+    pointer-events: none;
 }
 
-.feature-image:hover::after {
+.feature-row:hover .feature-image::after {
     left: 130%;
+}
+
+/* ================= INFO PANELS ================= */
+.info-panel {
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.info-panel:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 30px rgba(14, 33, 22, 0.12);
+    border-color: rgba(113, 201, 138, 0.30);
+}
+
+/* ================= SUMMARY BOX ================= */
+.summary-box {
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.summary-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 34px rgba(14, 33, 22, 0.13);
+    border-color: rgba(113, 201, 138, 0.35);
+}
+
+/* ================= ANIMAL SECTIONS ================= */
+.animal-section {
+    position: relative;
+}
+
+.animal-side-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.animal-side-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 30px rgba(14, 33, 22, 0.12);
+}
+
+/* ================= BOTON VER MÁS ================= */
+.btn-ver-mas {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+    transform: translateX(6px);
+}
+
+/* ================= ANIMAL TAG PULSE ================= */
+.animal-tag {
+    animation: pulseTagFlora 3s ease-in-out infinite;
+}
+
+/* ================= ANIMAL SECTION ICON ================= */
+.animal-main h2 i {
+    transition: transform 0.4s ease;
+    display: inline-block;
+}
+
+.animal-main:hover h2 i {
+    transform: scale(1.18) rotate(-6deg);
+}
+
+/* ================= FAB GLOW ================= */
+.fab-main {
+    animation: fabGlowFlora 2.4s ease-in-out infinite;
+}
+
+.fab-container.open .fab-main {
+    animation: none;
+}
+
+/* ================= MOVIMIENTO REDUCIDO ================= */
+@media (prefers-reduced-motion: reduce) {
+    .hero-content,
+    .hero-tag,
+    .section-title,
+    .animal-tag,
+    .fab-main,
+    .overview-section::before,
+    .flora-section::before,
+    .fauna-intro-section::before,
+    .feature-image img,
+    .feature-image::after,
+    .overview-card,
+    .stat-card,
+    .info-panel,
+    .summary-box,
+    .animal-side-card,
+    .animal-main h2 i,
+    .btn-ver-mas {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .overview-card:hover,
+    .summary-box:hover,
+    .info-panel:hover,
+    .animal-side-card:hover {
+        transform: translateY(-4px);
+    }
 }
